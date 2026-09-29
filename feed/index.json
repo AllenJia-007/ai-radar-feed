@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": null,
+  "radars": [
+    {
+      "key": "ai-capability",
+      "title": "AI 能力",
+      "path": "feed/radars/ai-capability.json"
+    },
+    {
+      "key": "ai-work-system",
+      "title": "AI 工作系统",
+      "path": "feed/radars/ai-work-system.json"
+    },
+    {
+      "key": "agent-governance",
+      "title": "Agent 治理",
+      "path": "feed/radars/agent-governance.json"
+    },
+    {
+      "key": "finance-ai-cases",
+      "title": "财经 AI 案例",
+      "path": "feed/radars/finance-ai-cases.json"
+    },
+    {
+      "key": "frontier-regulation",
+      "title": "前沿 AI 监管",
+      "path": "feed/radars/frontier-regulation.json"
+    }
+  ]
+}
