@@ -2,6 +2,71 @@
   "schemaVersion": 1,
   "radarKey": "ai-capability",
   "radarTitle": "AI 能力",
-  "updatedAt": null,
-  "reports": []
+  "updatedAt": "2026-09-29T20:35:17+08:00",
+  "reports": [
+    {
+      "id": "ai-capability:2026-09-29",
+      "radarKey": "ai-capability",
+      "radarTitle": "AI 能力",
+      "reportDate": "2026-09-29",
+      "headline": "NVIDIA 将企业 Agent 安全控制面下沉到独立运行时和硬件隔离层，形成“业务授权—运行时强制执行—独立监督”的分层架构。",
+      "conclusion": "NVIDIA 发布 Open Agent Safety Platform，标志企业 Agent 的安全控制面正从模型与 Agent Harness 内部，下沉到独立运行时和硬件隔离层。重要变化不是新增一个安全产品，而是“业务授权—运行时强制执行—独立监督”开始形成可落地的分层架构。",
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "独立运行时成为强制控制面",
+          "what": "OpenShell 作为位于模型和 Agent Harness 之外的开源安全运行时，追踪动作并执行策略。",
+          "evidence": "官方称其对文件访问、系统调用和网络连接实施运行时策略检查；真实凭据不向 Agent 暴露，仅在获准端点请求时注入。",
+          "why_it_matters": "企业 Agent 的安全边界不再主要依赖提示词、模型自律或工具白名单，而是依赖 Agent 无法绕过的外部执行层。",
+          "impact": "统一 Agent 底座应把 Harness 的“决策”与 Runtime 的“最终执行许可”拆开设计。"
+        },
+        {
+          "title": "监督进一步下沉到独立硬件域",
+          "what": "Sentry 运行在 BlueField-4 DPU 的带外信任域，持续监测 Agent 行为，并可在毫秒级隔离越界 Agent。",
+          "evidence": "该控制域独立于 Agent 与主机软件，提供身份校验、零信任访问策略和可证明遥测。",
+          "why_it_matters": "即使 Agent 或主机环境被攻破，仍保留一层不可由 Agent 控制的监督与阻断能力。",
+          "impact": "高自主、长任务或高敏数据场景，应增加独立 Watchdog、Kill Switch 与不可篡改审计，而非仅增强应用层规则。"
+        },
+        {
+          "title": "企业架构开始出现分层收敛",
+          "what": "Anthropic、SAP、Salesforce、IBM 等围绕该平台公开了集成方式。",
+          "evidence": "Anthropic 将 Agent Loop 与执行 Sandbox 分离；SAP 将业务授权、角色与流程上下文置于执行层之上，再由 OpenShell 实施运行时隔离；Salesforce 支持在 Slack 中审批权限提升。",
+          "why_it_matters": "行业正在从“单一 Agent 平台包办一切”转向业务治理层、Agent Harness、执行运行时、基础设施监督的分层协作。",
+          "impact": "财经 Agent 工作系统应把业务授权依据、技术权限和执行隔离分别建模，并保留从业务规则到具体动作的审计链。"
+        }
+      ],
+      "recommendations": [
+        "应吸收｜将目标架构明确为 Agent → Harness（规划与决策）→ Runtime（策略强制执行）→ 独立 Watchdog（不可绕过监督）。",
+        "应吸收｜高自主 Agent 默认采用全量沙箱、最小权限、凭据代理注入、权限升级人工审批和动作级遥测。",
+        "应观察｜“毫秒级隔离”“正式验证”等效果目前主要来自厂商口径；进入企业标准前，应在真实作业负载上验证性能开销、策略覆盖和误阻断率。"
+      ],
+      "sources": [
+        {
+          "name": "NVIDIA Newsroom｜Open Agent Safety Platform",
+          "date": "2026-09-28",
+          "url": "https://nvidianews.nvidia.com/news/open-agent-safety-platform",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "NVIDIA Open Agent Safety Platform 产品页",
+          "date": "2026-09-28",
+          "url": "https://www.nvidia.com/en-us/solutions/ai/agent-safety/",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "NVIDIA OpenShell GitHub",
+          "date": "2026-09-28",
+          "url": "https://github.com/NVIDIA/OpenShell",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "SAP News Center｜SAP and NVIDIA OpenShell",
+          "date": "2026-09-28",
+          "url": "https://news.sap.com/2026/09/sap-nvidia-openshell-auditable-ai-agents-enterprise-systems/",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-09-29T20:35:17+08:00"
+    }
+  ]
 }
