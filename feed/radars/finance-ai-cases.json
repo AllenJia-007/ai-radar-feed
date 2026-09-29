@@ -2,6 +2,51 @@
   "schemaVersion": 1,
   "radarKey": "finance-ai-cases",
   "radarTitle": "财经 AI 案例",
-  "updatedAt": null,
-  "reports": []
+  "updatedAt": "2026-09-29T20:35:16+08:00",
+  "reports": [
+    {
+      "id": "finance-ai-cases:2026-09-29",
+      "radarKey": "finance-ai-cases",
+      "radarTitle": "财经 AI 案例",
+      "reportDate": "2026-09-29",
+      "headline": "房贷承保 AI 的成熟度证明开始从“准确率/提效”升级为“生产规模 + 独立认证 + 可保险的责任承担”。",
+      "conclusion": "Gateless Smart Underwrite 已处理超过 23 万笔贷款且供应方称无索赔；AZP 将治理、控制、可审计性和运营成熟度纳入最高级认证，并为符合条件的交易提供保险化风险保障路径。真正值得改变判断的是：高风险 AI 的落地机制开始把技术能力证明与经济责任、风险转移连接起来。",
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "房贷承保 AI 首次形成“生产规模—独立认证—保险承保”闭环",
+          "what": "AZP 对 Gateless Smart Underwrite 授予 AI 房贷技术认证最高级 Platinum。系统分析借款人信用、资产、收入和就业资料，自动验证材料并清除满足规则的贷款条件；异常和需要判断的项目转交承保人员，贷款机构保留最终合规与贷款决策责任。",
+          "evidence": "AZP/供应方披露，使用该系统的贷款机构已生产并出售超过 230,000 笔贷款，未发生索赔。认证覆盖治理、控制、可审计性、运营成熟度和风险管理；符合条件的客户及交易可另行获得 Lloyd's 保单、Munich Re 承保的陈述与保证风险保障。规模与“无索赔”为厂商/认证方自报，尚非监管或审计机构独立验证。",
+          "why_it_matters": "过去通常用准确率、人工复核和日志证明高风险 AI“可用”；本案例进一步把技术认证与经济责任、保险承保连接起来，使剩余风险开始可识别、可定价、可转移。",
+          "impact": "对可写入、可过账、可审批、可形成合规结论的高风险财经 Agent，治理设计应增加“责任边界—可追溯证据—损失口径—赔付/追偿安排”四项；内部可先通过责任保证、供应商赔偿条款或风险准备金模拟保险机制。"
+        }
+      ],
+      "recommendations": [
+        "应吸收｜把高风险 Agent 的准入从“模型准确率”升级为“场景级可保性”：是否有稳定边界、完整轨迹、可量化损失和明确责任主体。",
+        "应观察｜23 万笔无索赔仍是认证方/供应方口径；在独立审计、实际赔付条款和失效案例公开前，不应等同于“全自动承保已成熟”。",
+        "暂不跟进｜无需照搬外部保险产品；先为自动过账、资金执行、税务申报等动作建立限额、审批点、责任人和损失回溯机制。"
+      ],
+      "sources": [
+        {
+          "name": "AZP Insurance Specialists：Smart Underwrite 认证与保险支持框架公告",
+          "date": "2026-09-28",
+          "url": "https://www.prnewswire.com/news-releases/azp-insurance-specialists-certifies-gateless-smart-underwrite-under-new-ai-and-insurance-backed-risk-framework-302892024.html",
+          "evidence_strength": "中"
+        },
+        {
+          "name": "Gateless：Smart Underwrite 承保流程、人机分工及客户应用说明",
+          "date": "2025-09-30",
+          "url": "https://gateless.com/changing-the-game-gateless-redefines-ai-driven-underwriting/",
+          "evidence_strength": "中"
+        },
+        {
+          "name": "AI Brief：AZP Platinum 认证摘要（二手）",
+          "date": "2026-09-29",
+          "url": "https://dailyaibrief.com/news/azp-gateless-smart-underwrite-platinum-certification-eeHubOFM",
+          "evidence_strength": "中"
+        }
+      ],
+      "updatedAt": "2026-09-29T20:35:16+08:00"
+    }
+  ]
 }
