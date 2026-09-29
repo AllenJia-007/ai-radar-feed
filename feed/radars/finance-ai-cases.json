@@ -2,8 +2,52 @@
   "schemaVersion": 1,
   "radarKey": "finance-ai-cases",
   "radarTitle": "财经 AI 案例",
-  "updatedAt": "2026-09-29T20:35:16+08:00",
+  "updatedAt": "2026-09-30T07:54:26+08:00",
   "reports": [
+    {
+      "id": "finance-ai-cases:2026-09-30",
+      "radarKey": "finance-ai-cases",
+      "radarTitle": "财经 AI 案例",
+      "reportDate": "2026-09-30",
+      "headline": "审计 Agent 的能力边界正在从“单点抽取与核对”推进到“完整程序执行”，产品核心转向可复核的证据链与工作底稿。",
+      "conclusion": "CROP Accountants & Advisers 的现金测试由 Agent 完成证据收集、验证、报告和工作底稿准备，厂商及客户自报流程提速约 80%，随后由专业人员复核。真正值得改变判断的是：审计类 Agent 已开始交付完整、可回溯的作业包，而不只是回答或单点自动化；但目前仍属于设计伙伴验证，不能等同规模化生产。",
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "CROP：Agent 执行完整现金测试程序，实测提速约 80%",
+          "what": "DataSnipper 的 Alwin 在 CROP Accountants & Advisers 执行完整现金测试程序，跨数百份材料完成证据收集、验证、报告及工作底稿准备；Agent 返回完成的底稿和异常，审计人员复核并保留判断与签署责任。",
+          "evidence": "CROP 设计伙伴测试中，现金测试流程约提速 80%，从数小时缩短为数分钟 Agent 运行加人工复核。BDO Czech Republic 已开发数十个 Agent 测试不同审计程序证据；Rehmann 测试收入交易与存货成本程序。每项结论回链源证据，并记录 Agent 与人工修改。上述效果为厂商及客户自报，尚未披露生产覆盖规模、差错率或独立审计结果。",
+          "why_it_matters": "这不是聊天问答或单字段抽取，而是把审计程序作为可委托任务交给 Agent，并直接交付可复核工作底稿。成熟产品的核心不只是模型能力，而是证据链、过程留痕、权限与复核工作流。",
+          "impact": "财经 Agent 的交付物应从“答案”升级为“可验证作业包”：结论、源证据、执行步骤、异常清单、Agent/人工变更记录和审批状态一体化；优先选择规则边界明确、证据来源可定位、最终责任可保留给人的作业程序。"
+        }
+      ],
+      "recommendations": [
+        "应吸收｜把“证据原生”作为财经 Agent 的基础能力，结果必须能逐项回链到制度、凭证、明细和底稿。",
+        "应观察｜80% 提速来自设计伙伴验证，不能等同规模化生产；后续应看批量项目覆盖、复核返工率、漏报率及监管检查表现。",
+        "暂不跟进｜不追求“全自动审计”；先建设“Agent 执行完整程序、人审核异常与结论”的任务级委托模式。"
+      ],
+      "sources": [
+        {
+          "name": "DataSnipper：Alwin 官方公告与客户实测",
+          "date": "2026-09-22",
+          "url": "https://www.datasnipper.com/resources/datasnipper-launches-alwin-end-to-end-agentic-automation-for-audit-finance",
+          "evidence_strength": "中"
+        },
+        {
+          "name": "PR Newswire：DataSnipper Alwin 官方新闻稿分发",
+          "date": "2026-09-22",
+          "url": "https://www.prnewswire.com/news-releases/datasnipper-launches-alwin-for-end-to-end-agentic-automation-302886146.html",
+          "evidence_strength": "中"
+        },
+        {
+          "name": "Context Windows：CROP 审计自动化案例整理（二手）",
+          "date": "2026-09-29",
+          "url": "https://www.contextwindows.ai/case-study/crop-audit-automation",
+          "evidence_strength": "中"
+        }
+      ],
+      "updatedAt": "2026-09-30T07:54:26+08:00"
+    },
     {
       "id": "finance-ai-cases:2026-09-29",
       "radarKey": "finance-ai-cases",
