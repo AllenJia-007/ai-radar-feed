@@ -2,6 +2,57 @@
   "schemaVersion": 1,
   "radarKey": "frontier-regulation",
   "radarTitle": "前沿 AI 监管",
-  "updatedAt": null,
-  "reports": []
+  "updatedAt": "2026-09-29T12:40:07.013Z",
+  "reports": [
+    {
+      "id": "frontier-regulation:2026-09-29",
+      "radarKey": "frontier-regulation",
+      "radarTitle": "前沿 AI 监管",
+      "reportDate": "2026-09-29",
+      "headline": "Ban Artificial Superintelligence Act 已形成参众两院对应版本，监管主张从单院倡议升级为双院立法路径。",
+      "conclusion": "参议员 Bernie Sanders 已于 2026 年 9 月 23 日在参议院提出 S. 5493，并被转交参议院商务、科学和运输委员会；众议员 Greg Casar 随后于 9 月 24 日提出 H.R. 10538，转交众议院监督与政府改革委员会。两案目前均处委员会阶段、尚无听证、修订、表决或行政部门正式支持，因此短期成为法律的确定性仍低；但其制度主张已经明确覆盖训练暂停、训练前申报、全生命周期监测、部署前审批、危险能力移除和模型销毁，值得作为前沿模型强监管上限情景持续跟踪。",
+      "currentStatus": "S. 5493：2026-09-23 提交参议院，已二读并转交参议院商务、科学和运输委员会；H.R. 10538：2026-09-24 提交众议院，转交众议院监督与政府改革委员会。两案均处委员会阶段，尚无委员会审议、修订、表决或行政部门明确立场。",
+      "items": [
+        {
+          "title": "参议院对应版本 S. 5493 正式进入委员会",
+          "what": "Bernie Sanders 于 9 月 23 日提出 S. 5493；官方 Congressional Record Index 将 Ban Artificial Superintelligence Act 明确关联至 S. 5493。其后众议院版本 H.R. 10538 于 9 月 24 日提交。",
+          "evidence": "GovInfo 的国会记录索引明确列出 Congressional Bills：S. 5493；国会行动记录显示该案已二读并转交参议院商务、科学和运输委员会。H.R. 10538 文本显示其被转交众议院监督与政府改革委员会。",
+          "why_it_matters": "这满足“出现配套参议院版本”的关键状态变化，意味着法案已不再只是众议院单线倡议，而具备参众两院并行推进的正式载体；不过当前仍只是委员会起点，尚不能据此判断通过概率显著上升。",
+          "impact": "企业级 Agent 与模型治理应把“训练/微调暂停、训练前申报、中途评测、部署前审批、危险能力移除、运行后持续监控、强制下线/销毁”纳入极端监管情景库，并映射到内部暂停、降权、隔离和退出机制。"
+        }
+      ],
+      "recommendations": [
+        "继续盯住参议院商务委员会和众议院监督委员会是否排期听证、发布修订稿或形成两院协调文本；这些才是下一层真正提高通过概率的信号。",
+        "将模型治理台账从“上线审批”扩展为训练、微调、部署和运行后的全生命周期控制点，预先定义暂停、降权、隔离、能力移除与下线触发条件。",
+        "当前不要把该提案当成已生效义务；用于情景规划与治理上限对标，而非合规基线。"
+      ],
+      "sources": [
+        {
+          "name": "U.S. Government Publishing Office — Congressional Record Index: Ban Artificial Superintelligence Act",
+          "date": "2026-09-25",
+          "url": "https://www.govinfo.gov/app/details/CRI-2026/CRI-2026-BAN-ARTIFICIAL-SUPERINTELLIGENCE-7C950",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Congress.gov — S. 5493 (119th Congress)",
+          "date": "2026-09-23",
+          "url": "https://www.congress.gov/bill/119th-congress/senate-bill/5493",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Congress.gov — H.R. 10538 (119th Congress)",
+          "date": "2026-09-24",
+          "url": "https://www.congress.gov/bill/119th-congress/house-bill/10538",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Office of Senator Bernie Sanders — Bill announcement",
+          "date": "2026-09-23",
+          "url": "https://www.sanders.senate.gov/press-releases/news-sanders-casar-introduce-legislation-to-create-new-federal-agency-to-ban-artificial-superintelligence-pause-advanced-ai-development/",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-09-29T12:40:07.013Z"
+    }
+  ]
 }
