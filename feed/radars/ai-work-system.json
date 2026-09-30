@@ -2,6 +2,71 @@
   "schemaVersion": 1,
   "radarKey": "ai-work-system",
   "radarTitle": "AI 工作系统",
-  "updatedAt": null,
-  "reports": []
+  "updatedAt": "2026-09-30T08:16:00+08:00",
+  "reports": [
+    {
+      "id": "ai-work-system:2026-09-30",
+      "radarKey": "ai-work-system",
+      "radarTitle": "AI 工作系统",
+      "reportDate": "2026-09-30",
+      "headline": "团队成为共享 Agent 的运行主体，Codex 延伸为云端持续工作区",
+      "conclusion": "OpenAI 将“团队”提升为 AI 工作系统中的一等运行主体：团队可共同拥有空间、插件和持续任务，任务以团队服务账户及组织批准的连接运行；同时 Codex Cloud 将执行环境从单台桌面延伸为可跨设备继续、电脑休眠后仍运行的云端工作区。EurekaX Claw 应从“个人助手 + 组织分发”补上“团队作业单元 + 云端持续执行”这一层。",
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "团队成为共享 Agent 工作的最小责任单元",
+          "what": "ChatGPT Business/Enterprise 新增 Teams 与 Team Tasks。团队可共享 Pages、Spaces、插件和重复任务；获权成员能共同查看结果、修改指令和维护任务。",
+          "evidence": "团队任务在云端以团队自己的服务账户运行，使用保存的任务指令和团队配置的连接；运行责任不再绑定最初创建人。",
+          "why_it_matters": "这不是简单共享会话，而是把任务所有权、运行身份、维护责任和历史记录从个人转移到团队。",
+          "impact": "EurekaX Claw 应在“个人空间”和“组织资产”之间增加团队作业单元，承载团队工作区、共享任务、运行历史、共同维护和离岗可接续。"
+        },
+        {
+          "title": "能力包与访问身份正式解耦",
+          "what": "工作区管理员配置组织批准的连接，团队负责人选择本团队可用连接；团队成员无需分别连接同一供应商账户。",
+          "evidence": "官方明确“共享插件”与“授予应用连接访问权”是两项独立设置；插件提供工具或技能，指定服务账户决定可访问的数据与动作。团队任务不会自动继承创建人的个人记忆、自定义指令或聊天历史。",
+          "why_it_matters": "企业 Agent 的核心治理对象不只是 Skill/MCP，还包括独立的执行身份、数据权限和显式上下文。",
+          "impact": "EurekaX Claw 需拆分管理专业能力包、连接凭据或服务身份、任务上下文与执行授权，避免把个人 OAuth 或个人记忆隐式带入团队任务。"
+        },
+        {
+          "title": "Codex 形成跨端云执行环境",
+          "what": "Codex Cloud 支持在桌面、Web、移动端启动和续接任务；环境可复用，每个任务使用隔离工作区，电脑休眠后仍可继续。",
+          "evidence": "云环境保留项目仓库、工具与依赖，并受组织的 Codex 云访问策略约束。",
+          "why_it_matters": "桌面客户端不再等同于执行宿主，而更像任务发起、监督与本地高权限执行入口。",
+          "impact": "EurekaX Claw 应采用混合运行时：本地承担文件、桌面应用和高权限操作；云端承担长任务、定时任务和团队共享任务，并统一任务状态与审计。"
+        }
+      ],
+      "recommendations": [
+        "应吸收｜在“个人—组织”之间增加团队层，优先定义团队工作区、团队任务所有权、共同维护、运行历史与交接机制。",
+        "应吸收｜建立“能力包—服务身份—数据权限—任务上下文—执行环境”五层解耦模型，Skill 安装不能等同于数据授权。",
+        "应观察｜云端持续执行应与 Claw 本地高权限执行形成明确分工；暂不把所有桌面任务云化。"
+      ],
+      "sources": [
+        {
+          "name": "OpenAI｜ChatGPT Business release notes",
+          "date": "2026-09-29",
+          "url": "https://help.openai.com/en/articles/11391654-chatgpt-business-release-notes",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "OpenAI｜Creating and managing team tasks in ChatGPT",
+          "date": "2026-09-30",
+          "url": "https://help.openai.com/en/articles/20001540-creating-and-managing-team-tasks-in-chatgpt",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "OpenAI｜Teams in ChatGPT",
+          "date": "2026-09-30",
+          "url": "https://help.openai.com/en/articles/20001541-teams-in-chatgpt",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "OpenAI｜Cloud environments",
+          "date": "2026-09-29",
+          "url": "https://learn.chatgpt.com/docs/environments/cloud-environments",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-09-30T08:16:00+08:00"
+    }
+  ]
 }
