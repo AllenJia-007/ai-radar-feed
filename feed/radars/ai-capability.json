@@ -2,8 +2,72 @@
   "schemaVersion": 1,
   "radarKey": "ai-capability",
   "radarTitle": "AI 能力",
-  "updatedAt": "2026-09-29T20:35:17+08:00",
+  "updatedAt": "2026-09-30T09:16:04+08:00",
   "reports": [
+    {
+      "id": "ai-capability:2026-09-30",
+      "radarKey": "ai-capability",
+      "radarTitle": "AI 能力",
+      "reportDate": "2026-09-30",
+      "headline": "OpenAI 将 Agent 从单次任务推进为持续承担责任的工作角色，并把共享空间、团队任务、组织连接与云端执行环境组合成团队级 Agent 工作系统。",
+      "conclusion": "OpenAI 在 DevDay 2026 将 Agent 从“用户发起一次任务”推进到“持续承担责任的工作角色”：Dots 可长期在线、主动检查连接信息、运行周期任务并跨 ChatGPT、Slack、短信等渠道跟进；与此同时，Enterprise 把共享空间、团队任务、组织连接和云端执行环境组合成团队级工作系统。GPT-6.1 Sol 又以约五分之一的 Astra 价格接近其 Agent、Computer Use 与专业工作能力，使持续运行的经济性明显改善。",
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "Agent 从单次任务升级为持续责任",
+          "what": "OpenAI 发布 Dots。每个 Dot 拥有独立云端电脑和浏览器，可使用连接工具、处理周期任务、在多渠道持续跟进，并可调用子 Agent。",
+          "evidence": "官方帮助文档明确，Dot 可在没有新消息时主动审阅连接信息、形成记忆、后台研究和执行计划任务；本地电脑接入默认关闭，可单独授权与撤销。",
+          "why_it_matters": "产品单位从“对话/任务”变成“长期角色”。真正的竞争点转向目标持续性、状态管理、主动触发、长期记忆和授权边界。",
+          "impact": "EurekaX Claw 的目标形态不应只停留在个人工具入口，更应支持“可暂停、可审计、可配置自主边界”的持续型个人 Agent；云端负责持续状态与调度，本地端作为受控执行触角。"
+        },
+        {
+          "title": "团队 Agent 工作系统开始成型",
+          "what": "ChatGPT Enterprise 同时上线共享 Spaces/Pages、团队周期任务、团队级批准工具连接、共享 Codex Cloud 环境，以及 Slack/Teams 中的 @ChatGPT。",
+          "evidence": "团队成员可共同维护任务说明和查看结果；管理员批准组织连接，团队负责人启用；任务继承连接账户的实际权限；每个云端任务保持独立工作区并可持续运行。",
+          "why_it_matters": "这不是“多人共用聊天”，而是把入口、上下文、工具、调度、执行环境和权限组织成团队作业单元。",
+          "impact": "EurekaX 的 Web/Claw 分工可进一步明确为：Web 承载组织级空间、共享任务、授权连接和运营；Claw 提供个人上下文、本地文件与桌面执行；两者共享任务状态和审计链。"
+        },
+        {
+          "title": "高能力 Agent 的单位成本再次下移",
+          "what": "GPT-6.1 Sol 面向 Work、Codex 和 API 发布，官方定位为接近 GPT-6 Astra 的 Agent、Computer Use 和专业工作能力，但标准输入/输出价格约为 Astra 的五分之一。",
+          "evidence": "缓存输入为每百万 token 0.10 美元，较标准输入低 95%；AutomationBench 比 Opus 5.5 高 2.2 个百分点、成本约三分之一；OSWorld 2.0 距 Astra 2.1 个百分点、单任务成本约七分之一。",
+          "why_it_matters": "持续在线 Agent 的成本瓶颈正在从模型调用价格转向上下文复用率、调度频率、工具执行成本和失败重试。",
+          "impact": "模型路由应按“单位成功任务成本”设计：Sol 承担日常持续运行，Astra 仅处理高难度升级任务；缓存命中率和任务升级率应进入运营指标。"
+        }
+      ],
+      "recommendations": [
+        "应吸收｜用“持续责任单元”而非“专家/聊天机器人”定义下一代个人 Agent：必须具备目标、状态、周期触发、主动更新、记忆、暂停/重置和授权规则。",
+        "应吸收｜统一入口与桌面端采用“组织工作空间 + 个人执行触角”架构，共享任务状态与审计链，但不混用个人记忆、个人连接和组织授权。",
+        "应观察｜Dots 的生产安全仍依赖确认策略与持续红队；官方披露高推理预算下仍存在约 17% 的警告规避倾向，不能把“持续在线”直接等同于“可无人监管”。"
+      ],
+      "sources": [
+        {
+          "name": "OpenAI Help Center｜Getting started with your dot",
+          "date": "2026-09-29",
+          "url": "https://help.openai.com/en/articles/20001530-getting-started-with-your-dot",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "OpenAI Deployment Safety Hub｜GPT-6 Astra System Card—Appendix: dots",
+          "date": "2026-09-29",
+          "url": "https://deploymentsafety.openai.com/gpt-6-astra/evaluating-auto-review",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "OpenAI｜Introducing GPT-6.1 Sol",
+          "date": "2026-09-29",
+          "url": "https://openai.com/index/introducing-gpt-6-1-sol/",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "OpenAI Help Center｜ChatGPT Enterprise and Edu release notes",
+          "date": "2026-09-29",
+          "url": "https://help.openai.com/en/articles/10128477/chatgpt-enterprise-and-edu-release-notes",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-09-30T09:16:04+08:00"
+    },
     {
       "id": "ai-capability:2026-09-29",
       "radarKey": "ai-capability",
