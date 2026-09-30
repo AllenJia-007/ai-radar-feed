@@ -2,8 +2,72 @@
   "schemaVersion": 1,
   "radarKey": "ai-work-system",
   "radarTitle": "AI 工作系统",
-  "updatedAt": "2026-09-30T08:16:00+08:00",
+  "updatedAt": "2026-10-01T07:56:00+08:00",
   "reports": [
+    {
+      "id": "ai-work-system:2026-10-01",
+      "radarKey": "ai-work-system",
+      "radarTitle": "AI 工作系统",
+      "reportDate": "2026-10-01",
+      "headline": "Google 用 Skills 取代 Gems，专家形态开始退到表现层",
+      "conclusion": "Google 已明确将在 2027 年用 Skills 全面替代 Gems：专业角色不再作为独立对话容器存在，而被收敛为可组合、可自动调用、可跨入口复用的 SKILL.md 能力单元。对 EurekaX Claw 的直接含义是：不宜长期并行建设“专家资产”和“Skill 资产”两套体系；专家更适合作为面向用户的角色或任务入口，底层能力应统一沉淀为 Skill。",
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "Gems 进入退场期，Skill 成为统一能力对象",
+          "what": "Google 9 月 30 日公布迁移计划。Workspace Skills 10 月 5 日开始分批上线，Gemini App Skills 10 月 13 日开始上线；企业版 Gems 最早于 2027 年 3 月 1 日停止使用。",
+          "evidence": "Workspace Studio 已禁止新增 Ask a Gem 步骤；现有流程需迁移为 Ask Gemini，并选择一个或多个 Skills。剩余 Gems 将被自动转换为待审核、未启用的 Skill 草稿。",
+          "why_it_matters": "这是产品对象的合并，不是普通功能迭代。独立“专家/Gem”正在退到表现层，真正可治理、可复用的资产变成 Skill。",
+          "impact": "EurekaX Claw 的专家应定义为“角色画像 + 任务入口 + 上下文范围”的轻容器，其方法、规则、模板和作业步骤统一落入 Skill 生命周期，避免专家与 Skill 两套建设、测试、发布和运营机制。"
+        },
+        {
+          "title": "Skill 从单一提示词升级为可组合能力包",
+          "what": "Gemini Skills 支持在同一任务中组合多个 Skill，也可由系统根据意图自动选择；用户可上传、下载包含 SKILL.md、脚本和参考资料的能力包。",
+          "evidence": "Google 将 Skill 定义为任务的“how”，与 Task（what）和 Schedule（when）分离；SKILL.md 支持跨工具转移，单个 Skill 可引用其他 Skills。",
+          "why_it_matters": "专业能力开始从“选一个专家”转向“按任务动态组合多个能力”，执行编排将逐渐替代固定专家入口。",
+          "impact": "EurekaX Claw 应建设 Skill 选择、组合、依赖、优先级和冲突处理机制；专家团若保留，应体现为后台 Skill 或 Agent 编排结果，而不是预先固定的一组角色界面。"
+        },
+        {
+          "title": "迁移机制本身成为平台能力",
+          "what": "自动迁移会保留 Gem 的名称、描述、指令、知识文件及共享权限，但以停用草稿进入 Skill 列表，必须由创建者审核后启用；Gemini App 与 Workspace Skills 当前仍不同步。",
+          "evidence": "Google 要求高优先级 Gems 提前人工重建，流程引用也需逐步替换；迁移不是直接原样上线。",
+          "why_it_matters": "能力资产迁移必须包含结构转换、权限继承、验证和重新发布，不能只做格式导入。",
+          "impact": "EurekaX Claw 未来若收敛专家与 Skill，需要设计“盘点—转换—测试—审批—发布—回滚”的迁移通道，并明确个人、团队、组织三类资产的继承规则。"
+        }
+      ],
+      "recommendations": [
+        "应吸收｜将 Skill 确立为 Claw 唯一底层专业能力资产；专家保留为交互入口和上下文容器，不再复制一套方法与知识资产。",
+        "应吸收｜把多 Skill 组合与自动选取纳入 1—2 年主线，同时建立冲突、版本、依赖和可解释调用机制。",
+        "应观察｜Google 当前跨 Gemini App 与 Workspace 的 Skill 仍不同步，说明“统一标准”不等于“统一运行时”；Claw 应先统一资产格式，再逐步统一分发与执行。"
+      ],
+      "sources": [
+        {
+          "name": "Google｜About the transition from Gems to skills",
+          "date": "2026-09-30",
+          "url": "https://knowledge.workspace.google.com/admin/generative-ai/gemini-app/about-the-transition-to-skills",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Google｜Create & manage skills for Gemini Apps",
+          "date": "2026-10-01（检索）",
+          "url": "https://support.google.com/gemini/answer/17094296",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Google｜How Gems transition to skills impacts Workspace Studio flows",
+          "date": "2026-10-01（检索）",
+          "url": "https://support.google.com/workspace-studio/answer/18336943",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Google｜Learn how skills work in Google Workspace & Workspace Studio",
+          "date": "2026-10-01（检索）",
+          "url": "https://support.google.com/workspace-studio/answer/17307546",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-10-01T07:56:00+08:00"
+    },
     {
       "id": "ai-work-system:2026-09-30",
       "radarKey": "ai-work-system",
