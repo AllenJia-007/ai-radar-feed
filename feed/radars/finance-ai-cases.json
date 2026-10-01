@@ -2,8 +2,52 @@
   "schemaVersion": 1,
   "radarKey": "finance-ai-cases",
   "radarTitle": "财经 AI 案例",
-  "updatedAt": "2026-09-30T07:54:26+08:00",
+  "updatedAt": "2026-10-02T07:41:23+08:00",
   "reports": [
+    {
+      "id": "finance-ai-cases:2026-10-02",
+      "radarKey": "finance-ai-cases",
+      "radarTitle": "财经 AI 案例",
+      "reportDate": "2026-10-02",
+      "headline": "具名试点显示，催收 Agent 已从通话辅助推进到可直接完成付款处置的任务级自治。",
+      "conclusion": "Indiana Finance Company 的催收 Agent 已在试点中承担外呼与来电、身份核验、账户信息查询、收款或约定付款、承诺还款记录和转人工等任务。单次外呼活动中，Agent 一小时完成的呼叫量相当于约 28 名支持人员，90% 目标账户获得语音留言或付款链接、完成实时通话，或被转交人工。真正值得改变判断的是：催收 Agent 已开始嵌入支付平台并闭环执行交易动作；但当前证据仍是厂商与客户自报的单次试点，尚未披露回款率、履约率、合规差错和长期稳定性。",
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "Indiana Finance：催收 Agent 从外呼辅助推进到付款闭环",
+          "what": "PayNearMe 的 AI Servicing & Collections Agent 在 Indiana Finance Company 试点中处理主动催收和来电服务。Agent 可基于支付数据、业务规则与工作流识别意图、核验客户、提供账户信息、接受或安排付款、记录承诺还款、管理退订，并在需要判断或个性化协助时转人工。",
+          "evidence": "PayNearMe 与客户披露：一次外呼活动中，Agent 一小时完成的呼叫量相当于约 28 名支持人员；90% 目标账户收到语音留言或 Smart Link、完成实时通话，或被转交人工。系统直接嵌入 PayXM，现已向客户开放。证据为厂商新闻稿及客户高管引语，未披露活动账户数、实际回款率、承诺履约率、投诉率、差错率和持续运行周期，因此证据强度为中。",
+          "why_it_matters": "这把 Agent 的边界从“回答问题或辅助坐席”推进到“受规则约束地执行付款动作并形成结果”。成熟产品形态不再是独立聊天入口，而是嵌入交易系统、具备动作权限、能在异常处干净转人工的任务型 Agent。",
+          "impact": "企业财经 AI 应优先设计“结果闭环 + 异常转交”场景：用确定性规则限定可执行动作，接入账户、应收、支付与身份数据，并保存授权、动作、转人工原因和结果。验证指标不能只看吞吐量，还要覆盖回款率、承诺履约率、误触达、投诉、人工接管率和合规例外。"
+        }
+      ],
+      "recommendations": [
+        "应吸收｜把财经 Agent 嵌入作业系统，按“读取上下文—应用规则—执行动作—记录结果—异常转人工”设计，而不是另建一个问答入口。",
+        "应观察｜呼叫能力相当于 28 人只证明容量，不证明催收质量；进入规模化前必须补齐回款率、承诺履约率、合规差错、投诉与持续稳定性指标。",
+        "暂不跟进｜涉及困难客户协商、争议处理和高风险承诺变更时，不追求全自治；保留人工判断、实时接管和完整上下文移交。"
+      ],
+      "sources": [
+        {
+          "name": "PayNearMe：Indiana Finance 催收 Agent 试点与量化结果",
+          "date": "2026-10-01",
+          "url": "https://home.paynearme.com/press/paynearme-launches-ai-servicing-and-collections-agent-to-help-support-teams-scale-while-lowering-the-cost-to-serve/",
+          "evidence_strength": "中"
+        },
+        {
+          "name": "PayNearMe：AI Servicing & Collections Agent 产品与人机分工说明",
+          "date": "2026-10-01",
+          "url": "https://home.paynearme.com/lp/ai-servicing-collections-agent/",
+          "evidence_strength": "中"
+        },
+        {
+          "name": "PayNearMe：支付 Agent 的系统集成、规则与治理前提",
+          "date": "2026-09-30",
+          "url": "https://home.paynearme.com/blog/paynearmes-vision-for-the-future-of-ai-in-payments/",
+          "evidence_strength": "中"
+        }
+      ],
+      "updatedAt": "2026-10-02T07:41:23+08:00"
+    },
     {
       "id": "finance-ai-cases:2026-09-30",
       "radarKey": "finance-ai-cases",
