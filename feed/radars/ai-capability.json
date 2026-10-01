@@ -2,8 +2,66 @@
   "schemaVersion": 1,
   "radarKey": "ai-capability",
   "radarTitle": "AI 能力",
-  "updatedAt": "2026-09-30T09:16:04+08:00",
+  "updatedAt": "2026-10-01T09:18:42+08:00",
   "reports": [
+    {
+      "id": "ai-capability:2026-10-01",
+      "radarKey": "ai-capability",
+      "radarTitle": "AI 能力",
+      "reportDate": "2026-10-01",
+      "headline": "Anthropic把AI劳动力的判断从“能否完成任务”推进到“环境适配＋单位经济性”：机器人虽可覆盖74%的体力任务，但仅0.3%的任务具备成本竞争力。",
+      "conclusion": "Anthropic把AI劳动力的判断从“能否完成任务”推进到“环境适配＋单位经济性”：机器人虽可覆盖74%的体力任务（占全部工时34%），但仅0.3%的任务具备成本竞争力。企业AI规划不应再把技术暴露度直接等同于可替代性。",
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "AI劳动力评价出现可复用的“四道门”",
+          "what": "Anthropic发布任务级机器人暴露指数，把当前能力、工作环境、成本、偏好与监管分开衡量。",
+          "evidence": "当前机器人可执行74%的体力任务；机器人与大模型合计暴露81%的工作；但机器人只在0.3%的任务上比人力便宜。",
+          "why_it_matters": "它量化证明“能做”与“会被企业采用”之间存在巨大断层，改变了仅凭能力榜单估算自动化价值的做法。",
+          "impact": "企业AI机会评估应固定检查四道门：任务能力覆盖、环境适配、单次成功任务成本、授权与接受度。"
+        },
+        {
+          "title": "环境工程本身成为Agent能力的一部分",
+          "what": "研究用E0—E3区分机器人只能在专用环境、结构化人类场所或非结构化环境完成任务。",
+          "evidence": "约50%的体力任务只能在专门改造的环境中完成；22%可在结构化人类场所完成；仅2%可在非结构化环境完成。",
+          "why_it_matters": "近期落地上，重构环境往往比等待通用自主能力提升更可控、更快形成价值。",
+          "impact": "Agent/Harness设计要把数据标准、流程状态、权限、工具接口和异常通道视为“数字工作环境”，主动把任务改造成可控、可观测、可回退的结构化场景。"
+        },
+        {
+          "title": "替代节奏应按任务与经济性规划，而非按岗位整包判断",
+          "what": "研究用50年历史数据回测暴露度与就业、工资变化，并估算成本竞争力扩散速度。",
+          "evidence": "完全暴露职业约20年后，相对同产业未暴露职业工资低7.1%、就业低34.2%；按历史约3%的价格下降速度，成本可竞争任务从0.3%升到10%仍需约40年。",
+          "why_it_matters": "AI劳动力更可能先改变高暴露、环境可控且经济性成立的任务组合，而非整类岗位同步消失。",
+          "impact": "产品路线应以“任务包＋单位经济性＋例外率”排序；优先自动化高频、规则清晰、可回退环节，并保留人类处理关系、判断和异常。"
+        }
+      ],
+      "recommendations": [
+        "应吸收｜在企业AI立项模板中加入四门评估，并把“技术可做率”与“经济可替代率”分开报告。",
+        "应吸收｜Harness优先建设结构化环境：统一数据、明确状态机、最小权限、可观测性与人工接管，这些不是配套，而是能力的一部分。",
+        "应观察｜研究聚焦美国实体劳动，且部分任务时长与成本估计由模型辅助生成；可迁移其方法，不直接套用百分比到知识工作或中国市场。"
+      ],
+      "sources": [
+        {
+          "name": "Anthropic Research｜What work can robots do?",
+          "date": "2026-09-30",
+          "url": "https://www.anthropic.com/research/what-work-can-robots-do",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Anthropic｜Appendix to What work can robots do?",
+          "date": "2026-09-30",
+          "url": "https://cdn.sanity.io/files/4zrzovbb/website/d27288375b0ac486cb9da0a30a94423b36ff0443.pdf",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "O*NET Resource Center｜O*NET Database（研究使用29.3版）",
+          "date": "2025",
+          "url": "https://www.onetcenter.org/database.html",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-10-01T09:18:42+08:00"
+    },
     {
       "id": "ai-capability:2026-09-30",
       "radarKey": "ai-capability",
