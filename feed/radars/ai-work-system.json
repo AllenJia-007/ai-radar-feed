@@ -2,8 +2,65 @@
   "schemaVersion": 1,
   "radarKey": "ai-work-system",
   "radarTitle": "AI 工作系统",
-  "updatedAt": "2026-10-01T07:56:00+08:00",
+  "updatedAt": "2026-10-02T07:51:23+08:00",
   "reports": [
+    {
+      "id": "ai-work-system:2026-10-02",
+      "radarKey": "ai-work-system",
+      "radarTitle": "AI 工作系统",
+      "reportDate": "2026-10-02",
+      "headline": "常驻代理与云端执行成为默认形态",
+      "conclusion": "OpenAI Dots 把“常驻、主动、会积累上下文的个人代理”变成一等产品对象；Claude 则将在 10 月 6 日把 Pro/Max 新 Cowork 任务统一迁至云端并移除本地-only选项。EurekaX Claw 应把云端持续任务与跨端状态作为默认底座，把电脑保留为按需连接、受控授权的高权限执行端。",
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "常驻代理成为一等产品对象",
+          "what": "OpenAI 推出 Dots，面向 Pro、Business Premium 和可由管理员启用的 Enterprise 测试开放。每个 Dot 拥有独立云电脑，可持续处理多个项目，并在 ChatGPT、Slack、Teams 间保持上下文。",
+          "evidence": "Dots 可主动读取已授权连接做只读“主动研究”，并通过独立 Auto-review、Custom Rules 和强制接管规则约束外部动作；插件权限与 ChatGPT Work、Codex 共用。Dot 会长期积累自己的上下文，但目前不能逐条查看、修改或删除记忆，只能删除整个 Dot 上下文。",
+          "why_it_matters": "这把 Agent 从“按次启动的任务执行器”升级为“长期承担责任、主动发现工作、跨入口延续关系”的主体，同时把持续记忆、委派、行动审查与身份边界绑定成一个系统对象。",
+          "impact": "EurekaX Claw 的目标形态应从“专家入口集合”进一步转向“可长期负责的个人/岗位 Agent”。每个 Agent 需具备独立身份、持续上下文、任务队列、主动观察范围、行动规则和可清理生命周期；专家与 Skill 只是其可调用能力，不应再等同于 Agent 本身。"
+        },
+        {
+          "title": "云端成为持续工作的默认执行中心",
+          "what": "Anthropic 明确自 2026 年 10 月 6 日起，Pro/Max 新 Cowork 任务全部在云端运行，并移除“Only on your computer”；已有本地任务可继续。若必须本地运行，用户需转到 Claude Code。",
+          "evidence": "云端任务可在设备离线时继续和定时运行，状态与文件跨桌面、Web、移动端同步；访问本地文件、浏览器、电脑控制或本地 MCP 时，仍需桌面端在线并按已授权范围代理。云端取用本地文件时仅复制所需文件，删除会话后删除副本。",
+          "why_it_matters": "这不是多一个运行选项，而是默认执行中心正式从电脑迁到云端；桌面客户端变成云端 Agent 访问本地资源和高权限动作的受控桥梁。",
+          "impact": "EurekaX Claw 不宜继续以“桌面本地运行时”为产品中心。应采用云端 Agent 控制面 + 隔离执行环境 + 本地能力代理的三层架构，并把数据出端提示、短时授权、文件副本生命周期、离线降级和本地-only替代路径列为核心边界。"
+        }
+      ],
+      "recommendations": [
+        "应吸收｜把“Agent”定义为长期责任主体：独立身份、持续上下文、任务队列、主动研究范围、行动策略和审计记录必须一体设计；Skill 只负责“怎么做”。",
+        "应吸收｜默认采用云端持续执行，本地端只暴露最小必要能力，并通过会话级授权、明确连接状态和可追溯副本管理进入云任务。",
+        "应观察｜Dots 的逐条记忆治理仍不成熟，Cowork 云端仍为 beta；Claw 可吸收架构方向，但不应照搬“只能整体删除上下文”或把云端迁移视为已完成企业验证。"
+      ],
+      "sources": [
+        {
+          "name": "OpenAI｜Introducing dots",
+          "date": "2026-09-29",
+          "url": "https://openai.com/index/introducing-dots/",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "OpenAI｜How we build safety, security, and privacy into dots",
+          "date": "2026-09-29",
+          "url": "https://openai.com/index/how-we-build-safety-security-and-privacy-into-dots/",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "OpenAI Help｜Dots privacy, security, and safety FAQs",
+          "date": "2026-10-01（更新）",
+          "url": "https://help.openai.com/en/articles/20001529-dots-privacy-security-and-safety-faqs",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Anthropic｜Use Claude Cowork on web, desktop, and mobile",
+          "date": "2026-10-01（更新）",
+          "url": "https://support.claude.com/en/articles/15520349-use-claude-cowork-on-web-desktop-and-mobile",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-10-02T07:51:23+08:00"
+    },
     {
       "id": "ai-work-system:2026-10-01",
       "radarKey": "ai-work-system",
