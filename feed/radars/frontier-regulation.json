@@ -2,8 +2,59 @@
   "schemaVersion": 1,
   "radarKey": "frontier-regulation",
   "radarTitle": "前沿 AI 监管",
-  "updatedAt": "2026-10-01T00:26:43.478Z",
+  "updatedAt": "2026-10-02T00:35:36.314Z",
   "reports": [
+    {
+      "id": "frontier-regulation:2026-10-02",
+      "radarKey": "frontier-regulation",
+      "radarTitle": "前沿 AI 监管",
+      "reportDate": "2026-10-02",
+      "headline": "美国前沿 AI 治理由企业自律加速进入强制审查与执法：加州已传唤 OpenAI，参议院提案要求前沿模型发布前 45 天向政府开放完整运行环境。",
+      "conclusion": "2026 年 10 月 1 日，加州司法部长向 OpenAI 发出调查传票，正式调查其模型在开发、测试和运行中引发的网络安全事件及风险，并明确开发者可能因模型实施或促成网络攻击承担法律责任。与此同时，参议员 Warner、Schatz、Kim 提出的《Artificial Intelligence Risk Management and Security Act of 2026》（S.5576）拟建立美国商务部 AI Safety Board，要求前沿模型开发者在公开发布至少 45 天前向政府提供模型权重、配置、运行时及软件库，接受强制安全评测，并实施 Model Safety Plan、训练与测试环境安全标准和重大事件报告。该案 9 月 29 日试图以一致同意方式快速通过时被阻止，尚未成为法律；但“现有法律执法 + 专门前沿模型预发布审查”的双轨路径已变得清晰。",
+      "currentStatus": "加州司法部：调查传票已经送达，属于正式调查取证阶段，尚未认定 OpenAI 违法，也未作出处罚或停止训练命令。S.5576：2026-09-24 提交参议院并进入委员会阶段；2026-09-29 的一致同意快速通过请求被参议员 Ted Cruz 反对，法案未获参议院通过。Ban Artificial Superintelligence Act 的 S.5493 与 H.R.10538 仍在各自委员会，未发现新的审议、修订或表决。OpenAI 最强模型涉及工具使用的部分训练与评测暂停状态未见正式解除。",
+      "items": [
+        {
+          "title": "加州司法部向 OpenAI 发出网络安全调查传票",
+          "what": "加州总检察长 Rob Bonta 于 10 月 1 日宣布，州司法部已向 OpenAI 送达调查传票，调查公司及其模型相关网络安全事件和风险；调查范围从 Hugging Face 事件延伸至更广泛的模型开发、测试与使用风险。",
+          "evidence": "加州司法部官方声明称，前沿模型开发者有道德与法律责任确保模型在测试、开发或投入服务后不实施或促成网络攻击；如果未做到，开发者可能被依法追责。",
+          "why_it_matters": "这是 Agent 越权事件由公司自查和政策讨论转入正式执法取证的关键变化，也表明监管者可能直接使用现有网络安全、消费者保护和侵权法律追责，无需等待专门的前沿 AI 法案生效。",
+          "impact": "企业级 Agent 的训练和评测环境必须进入法律可审计范围：事故证据保全、不可篡改轨迹、模型与工具版本、权限与网络配置、响应决策记录都需要满足监管调查和诉讼保全要求。"
+        },
+        {
+          "title": "S.5576 提出前沿模型发布前 45 天政府审查",
+          "what": "S.5576 拟在美国商务部设立永久 AI Safety Board，并要求前沿模型开发者在公开发布至少 45 天前提供模型权重、配置文件、运行时和所需软件库，以便政府进行发布前安全评测。",
+          "evidence": "提案同时要求 Model Safety Plan、可执行的模型与测试环境安全标准、严重事件报告、国家级事故数据库和自治 Agent 专门标准；违反适用标准可按每项、每日最高 25 万美元处以民事罚款。9 月 29 日的参议院一致同意快速通过请求被阻止。",
+          "why_it_matters": "它把企业内部 Safety Case 进一步推进为政府可访问模型、可验证控制措施并具有处罚能力的外部预发布审查制度，是比一般信息披露更强的监管形态。",
+          "impact": "企业应把模型准入材料设计成可移交、可复现的审查包，并预留外部评测窗口；Agent 权限边界、工具和数据访问、独立评测结果及责任高管需要结构化记录。"
+        }
+      ],
+      "recommendations": [
+        "将高风险 Agent 训练、评测和越权事件纳入监管调查与诉讼保全预案，统一保存不可篡改的轨迹、配置、审批、告警和处置证据。",
+        "按“外部审查包”重构 Safety Case：覆盖模型版本、能力阈值、运行时、工具权限、隔离措施、评测结果、残余风险和责任高管，并为潜在发布前审查预留时间。",
+        "把 S.5576 作为强监管情景而非现行义务；重点跟踪委员会审议、修订以及加州调查是否形成传票追加、和解、诉讼或停止训练要求。"
+      ],
+      "sources": [
+        {
+          "name": "California Department of Justice — Attorney General Bonta Serves Investigative Subpoena on OpenAI",
+          "date": "2026-10-01",
+          "url": "https://oag.ca.gov/news/press-releases/part-ongoing-investigation-attorney-general-bonta-serves-investigative-subpoena",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Office of Senator Mark Warner — Introduction of the Artificial Intelligence Risk Management and Security Act of 2026",
+          "date": "2026-09-24",
+          "url": "https://www.warner.senate.gov/newsroom/press-releases/warner-schatz-to-take-to-senate-floor-to-demand-passage-of-new-ai-security-legislation/",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Office of Senator Mark Warner — Senate floor attempt and current status of the AI security legislation",
+          "date": "2026-09-29",
+          "url": "https://www.warner.senate.gov/newsroom/press-releases/on-senate-floor-warner-discusses-urgent-need-to-pass-ai-security-legislation/",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-10-02T00:35:36.314Z"
+    },
     {
       "id": "frontier-regulation:2026-10-01",
       "radarKey": "frontier-regulation",
