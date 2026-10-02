@@ -2,8 +2,52 @@
   "schemaVersion": 1,
   "radarKey": "finance-ai-cases",
   "radarTitle": "财经 AI 案例",
-  "updatedAt": "2026-10-02T07:41:23+08:00",
+  "updatedAt": "2026-10-03T07:40:35+08:00",
   "reports": [
+    {
+      "id": "finance-ai-cases:2026-10-03",
+      "radarKey": "finance-ai-cases",
+      "radarTitle": "财经 AI 案例",
+      "reportDate": "2026-10-03",
+      "headline": "经营分析 Agent 的产品形态正在从单一问答，转向“专业子 Agent 分工、受控工具取证、统一归因、业务专家决策”的分析系统。",
+      "conclusion": "AW Rostamani Group 在汽车备件丢单分析试点中，以 5 个专业子 Agent 调查客户、库存、价格、经销商、平行进口和汇率等因素，并通过 20 多个受治理工具连接数据湖、业务系统与外部市场数据。厂商估算每次调查可节省约 10 小时；业务用户正在测试和完善，业务专家负责解释结果与决定行动。真正值得改变判断的是多 Agent 经营分析已出现可拆解的真实作业模式，但该案例仍是试点，时间节省为估算值，不能等同生产成熟。",
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "AW Rostamani：5 个子 Agent 协同调查备件丢单原因",
+          "what": "AW Rostamani Group 的汽车备件业务建设 Spare Parts Loss of Sales Agent。5 个专业子 Agent 分别分析客户购买、零件表现、库存、竞品价格、经销商行为、平行进口与汇率等因素；平台比较各 Agent 发现并汇总为统一解释，在转化率下降时主动调查并提醒业务团队。",
+          "evidence": "案例披露 5 个专业子 Agent、20 多个受治理工具，连接集团数据湖、业务系统和外部市场数据；厂商估算每次调查平均节省约 10 小时。该方案已作为试点启动，业务用户在实际场景中测试和完善。数据与 AI 团队负责工具和集成，业务专家测试回答、校准语义定义并补充黄金问题；Agent 输出发现和预警，业务人员解释分析并决定行动。节省时间为估算值，尚无生产覆盖量、准确率、业务增益和长期稳定性数据，证据强度为中。",
+          "why_it_matters": "它把经营分析 Agent 从“自然语言问数”推进到“围绕业务事件进行多因子归因”。有效形态不是一个万能 Agent，而是围绕因果假设配置专业分工、证据工具和汇总机制，并把业务判断留给最接近问题的人。",
+          "impact": "智能分析产品应支持“业务问题—原因树—专业子任务—工具与证据—交叉校验—综合结论—人工决策”的标准范式；平台团队提供编排、权限和评测底座，领域专家维护语义定义、黄金问题与判断规则。试点验证需补充真实节省时间、归因准确性、证据可追溯、业务行动采纳率和最终经营改善。"
+        }
+      ],
+      "recommendations": [
+        "应吸收｜把多 Agent 用于可并行、可验证的因果拆解，而不是为了展示“Agent 团队”；每个子 Agent 必须对应明确业务假设、数据权限和证据来源。",
+        "应吸收｜建立“平台团队管工具与治理、领域专家管语义与黄金问题、业务人员管解释与行动”的三方运营机制。",
+        "应观察｜10 小时为估算值且仍属试点；进入生产前必须用真实案例验证归因准确率、证据完整率、人工返工率和业务行动效果。"
+      ],
+      "sources": [
+        {
+          "name": "Dataiku：AW Rostamani 多 Agent 丢单分析客户案例",
+          "date": "2026-10-02",
+          "url": "https://www.dataiku.com/blog/awr-group",
+          "evidence_strength": "中"
+        },
+        {
+          "name": "Dataiku：Succeed 2026 的人员、编排与治理框架",
+          "date": "2026-10-02",
+          "url": "https://www.dataiku.com/blog/dataiku-succeed-2026",
+          "evidence_strength": "中"
+        },
+        {
+          "name": "Dataiku 官方博客索引：案例发布日期核验",
+          "date": "2026-10-02",
+          "url": "https://www.dataiku.com/blog",
+          "evidence_strength": "弱"
+        }
+      ],
+      "updatedAt": "2026-10-03T07:40:35+08:00"
+    },
     {
       "id": "finance-ai-cases:2026-10-02",
       "radarKey": "finance-ai-cases",
