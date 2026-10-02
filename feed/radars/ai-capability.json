@@ -2,8 +2,72 @@
   "schemaVersion": 1,
   "radarKey": "ai-capability",
   "radarTitle": "AI 能力",
-  "updatedAt": "2026-10-01T09:18:42+08:00",
+  "updatedAt": "2026-10-02T08:36:45+08:00",
   "reports": [
+    {
+      "id": "ai-capability:2026-10-02",
+      "radarKey": "ai-capability",
+      "radarTitle": "AI 能力",
+      "reportDate": "2026-10-02",
+      "headline": "Gemini 4 Argon把前沿模型推进到百万级输出预算和真实企业专业任务；更关键的是，Google同步把行为监控、执行中止、密封沙箱与分级准入纳入发布机制。",
+      "conclusion": "Gemini 4 Argon把前沿模型推进到百万级输出预算和真实企业专业任务；更值得改变判断的是，Google同步把行为监控、执行中止、密封沙箱与分级准入纳入发布机制。长任务Agent的控制面必须成为独立系统能力，不能依赖模型自律。",
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "能力单位从短回答转向长轨迹专业任务",
+          "what": "Gemini 4 Argon把单次输出上限从64K提升到100万token，定位于持续多步的软件工程、财经、法律和安全任务。",
+          "evidence": "官方公布AutomationBench 51.3%、Vals Finance Agent v2 65.4%、DeepSWE v1.1 77.9%；Google内部Agent已处理最高80万行代码迁移，并识别和实施数据中心内存优化，已释放超过300 TiB。",
+          "why_it_matters": "能力边界从“更长上下文”推进为“可在一条轨迹中持续研究、实验、修改和验证”，Harness的重要性随轨迹长度放大。",
+          "impact": "企业Agent底座需把检查点、证据链、预算、可恢复执行、子任务隔离和阶段审批作为长任务默认能力；不能只扩大上下文窗口。"
+        },
+        {
+          "title": "行为监控与中止机制进入前沿Agent发布栈",
+          "what": "Google明确披露将监控Argon的推理过程和动作，必要时停止执行；高风险训练或评测前先隔离并密封沙箱。",
+          "evidence": "训练运行使用相似监控并向专门事件响应团队告警；监控发现不直接回灌训练，以降低模型学习规避监控的风险。",
+          "why_it_matters": "这把安全评测从上线前测试推进为运行时独立控制，并要求监督器与被监督模型保持目标和数据隔离。",
+          "impact": "Harness应形成Agent、执行器、监督器三方分离：监督器读取不可篡改动作日志并拥有独立停止权；异常样本先进入人工审查与隔离队列。"
+        },
+        {
+          "title": "前沿能力按信任级别与用途分层开放",
+          "what": "Argon首先只向受信任的安全防御机构开放；开发者、企业和消费者的广泛开放仍在后续。",
+          "evidence": "Fairwind已有650多个合作伙伴；要求用户级身份、抗钓鱼多因素认证、访问控制和员工使用追踪，禁止转售或共享访问；通过Gemini Enterprise访问支持零数据保留。",
+          "why_it_matters": "模型发布不再只是开放或不开放，而是能力版本、用途、组织身份、数据保留与审计要求的组合授权。",
+          "impact": "企业模型接入应采用分级能力目录：高风险能力按角色和任务审批，绑定组织身份、使用范围、日志与保留策略。"
+        }
+      ],
+      "recommendations": [
+        "应吸收｜将长任务Harness验收指标从“能否完成”扩展为检查点恢复率、证据完整率、预算偏差、人工接管成功率和异常隔离时间。",
+        "应吸收｜控制面与模型优化面分离：模型负责计划，执行器强制权限，独立监督器拥有中止权；监督信号先经人工与规则复核。",
+        "应观察｜Argon尚未全面开放，且核心横向成绩多为厂商评测；在API可用性、延迟、稳定性和独立评测明确前，不把它直接设为生产默认模型。"
+      ],
+      "sources": [
+        {
+          "name": "Google｜Gemini 4 Argon: our next era of frontier intelligence",
+          "date": "2026-09-30",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Google DeepMind｜Gemini 4 Argon model page",
+          "date": "2026-09-30",
+          "url": "https://deepmind.google/models/gemini/",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Google DeepMind｜Fairwind Program",
+          "date": "2026-09-30",
+          "url": "https://deepmind.google/fairwind-program/",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Google DeepMind｜Securing the future of AI agents",
+          "date": "2026-06-18",
+          "url": "https://deepmind.google/blog/securing-the-future-of-ai-agents/",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-10-02T08:36:45+08:00"
+    },
     {
       "id": "ai-capability:2026-10-01",
       "radarKey": "ai-capability",
