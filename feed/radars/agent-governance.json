@@ -2,8 +2,65 @@
   "schemaVersion": 1,
   "radarKey": "agent-governance",
   "radarTitle": "Agent 治理",
-  "updatedAt": "2026-09-30T07:53:30+08:00",
+  "updatedAt": "2026-10-02T08:16:57+08:00",
   "reports": [
+    {
+      "id": "agent-governance:2026-10-02",
+      "radarKey": "agent-governance",
+      "radarTitle": "Agent 治理",
+      "reportDate": "2026-10-02",
+      "headline": "治理对象从 Agent 本体扩展到完整依赖链",
+      "conclusion": "Google 将 Agent→Gateway→工具与 MCP Server 的端到端调用链做成可关联日志、指标和策略判定的运行观测面；Microsoft 同期进入旧版 ERP MCP Server 的既定退役节点，并要求迁移到动态 MCP。治理不应只管理 Agent，还要同步管理网关、MCP、工具、权限、版本、调用成本和退役依赖。",
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "调用链成为治理与评价对象",
+          "what": "Google Agent Gateway 新增 Cloud Trace 集成，可从 Agent 经网关追踪到 Google Cloud 服务、工具、其他 Agent 和 MCP Server。",
+          "evidence": "官方文档明确支持 OpenTelemetry 与 W3C TraceContext，并关联 trace、log、metric；日志包含 allow/deny、MCP 方法与工具名、匹配的 Agent Registry 资源，且可识别 403 拒绝和未注册端点流量。该能力处于 Preview。",
+          "why_it_matters": "治理证据从 Agent 级汇总指标下沉到单次任务的完整执行链，可把策略判定、依赖调用、异常和延迟归因到具体节点。",
+          "impact": "“1 个资产总账”补充 Agent—Gateway—MCP—工具—业务系统依赖拓扑与追踪标识；“4 类评价”增加授权失败、未注册端点、追踪完整性和分段时延；“1 条生命周期”补充基于调用链的故障定位与回滚验证。"
+        },
+        {
+          "title": "MCP 进入独立生命周期与成本治理",
+          "what": "Microsoft 的静态 Dynamics 365 ERP MCP Server（13 个工具）在 2026-10-01 进入既定退役节点，官方要求迁移到动态 MCP Server。",
+          "evidence": "动态服务器按调用者权限、应用配置、扩展和个性化实时决定可见菜单、数据与动作；允许接入的 Agent 客户端需显式配置。非 Copilot Studio 客户端按每次工具调用 0.1 Copilot Credit 计费。",
+          "why_it_matters": "即使 Agent 本体不变，依赖服务器的退役、工具面变化、客户端准入和计价规则也会独立改变可用性、风险与成本。",
+          "impact": "“1 条生命周期”扩展为依赖版本、兼容性、迁移、灰度、回退和退役；“1 个资产总账”增加替代版本、允许客户端与责任人；“1 套资源机制”把工具调用成本归集到 Agent、任务和业务价值。"
+        }
+      ],
+      "recommendations": [
+        "应吸收：将 Agent、Gateway、MCP Server、工具和业务系统登记为有向依赖拓扑，而非平面清单；任何节点变更都能反查受影响 Agent。",
+        "应吸收：MCP 版本、工具面或计价规则变更必须经过影响分析、兼容回归、灰度迁移与回退验证，高风险依赖未通过门禁不得发布。",
+        "应观察：Google 端到端追踪仍为 Preview；先按任务风险设置采样、留存和访问控制，再评估观测成本与证据完整性的平衡。"
+      ],
+      "sources": [
+        {
+          "name": "Google Cloud：Gemini Enterprise Agent Platform release notes",
+          "date": "2026-09-30",
+          "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/release-notes",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Google Cloud：Monitor traffic through Agent Gateway",
+          "date": "2026-10-01",
+          "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/govern/gateways/monitor-agent-gateway",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Microsoft Learn：Use Model Context Protocol for finance and operations apps",
+          "date": "2026-08-19（退役节点：2026-10-01）",
+          "url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/copilot/copilot-mcp",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Microsoft Learn：Security for Dynamics 365 ERP MCP",
+          "date": "2026-08-19",
+          "url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/copilot/mcp/mcp-security",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-10-02T08:16:57+08:00"
+    },
     {
       "id": "agent-governance:2026-09-30",
       "radarKey": "agent-governance",
