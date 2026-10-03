@@ -2,8 +2,52 @@
   "schemaVersion": 1,
   "radarKey": "ai-work-system",
   "radarTitle": "AI 工作系统",
-  "updatedAt": "2026-10-02T07:51:23+08:00",
+  "updatedAt": "2026-10-03T08:19:46+08:00",
   "reports": [
+    {
+      "id": "ai-work-system:2026-10-03",
+      "radarKey": "ai-work-system",
+      "radarTitle": "AI 工作系统",
+      "reportDate": "2026-10-03",
+      "headline": "Claude 将 Runtime 扩展纳入插件与治理体系",
+      "conclusion": "Claude Code 新增 Mods，使插件可以进入 Runtime 内部，重写提示与工具调用、改造界面、替换内置功能，并通过组织策略决定加载对象和顺序。对 EurekaX Claw 的直接影响是：除 Skill 与 MCP 外，需要单独设计“运行时扩展层”，但该层必须默认受控，不能与普通能力包共用同一信任级别。",
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "插件从能力包升级为 Runtime 扩展载体",
+          "what": "Anthropic 2026 年 10 月 1 日发布 Claude Code Mods。Mod 是随插件分发的 JavaScript/TypeScript 事件处理器，运行于 Claude Code 进程内；可在事件前、后或替代默认流程执行，并可由 Claude Code 自己生成、安装和热加载。",
+          "evidence": "Mod 可重写提交给模型的提示，阻断、改写、重试或批准工具调用，读取或修改界面，并替换内置功能；Anthropic 已把 /diff 等自身功能改造成内置 Mod，计划继续缩小核心、把更多能力移到 Mod。Mod 不受沙箱保护，拥有用户级文件、进程、网络、环境变量和会话访问权限。",
+          "why_it_matters": "这补齐了 Skill（方法）、MCP（工具）之外的第三类关键扩展——改变 Agent Runtime 自身行为和交互。专业能力包开始同时包含“教它怎么做、给它什么工具、改变它如何运行”三种对象，扩展边界从任务能力进入产品内核。",
+          "impact": "EurekaX Claw 应把扩展体系分为 Skill、Connector/MCP、Runtime Mod 三层；专家只做角色与上下文入口。Runtime Mod 可承担权限前置检查、审计、专用界面和流程拦截，但必须采用独立高风险准入、组织签名、版本锁定、加载顺序和紧急停用机制，不能按普通 Skill 一键安装。"
+        }
+      ],
+      "recommendations": [
+        "应吸收｜在 Claw 1—2 年架构中预留受控 Runtime 扩展点，用于界面、事件、权限、审计和任务编排定制；不要把所有定制继续堆入提示词或 Skill。",
+        "应吸收｜建立三级信任：Skill 可审阅、MCP 按工具与数据授权、Runtime Mod 按本地代码治理；安装同一“能力包”时必须分别展示并审批三类权限。",
+        "暂不跟进｜个人自由编写和热加载 Mod 不适合企业 Claw 首发。优先支持组织签名 Mod、禁止侧载、固定加载顺序及默认安全策略，再考虑个人扩展。"
+      ],
+      "sources": [
+        {
+          "name": "Anthropic｜Customize Claude Code with mods",
+          "date": "2026-10-01",
+          "url": "https://claude.com/blog/claude-code-mods",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Claude Code Docs｜Mods overview",
+          "date": "2026-10-03（检索）",
+          "url": "https://code.claude.com/docs/en/plugins/mods/overview",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Claude Code Docs｜Manage mods for your organization",
+          "date": "2026-10-03（检索）",
+          "url": "https://code.claude.com/docs/en/plugins/mods/admin",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-10-03T08:19:46+08:00"
+    },
     {
       "id": "ai-work-system:2026-10-02",
       "radarKey": "ai-work-system",
