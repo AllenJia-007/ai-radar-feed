@@ -2,8 +2,72 @@
   "schemaVersion": 1,
   "radarKey": "ai-capability",
   "radarTitle": "AI 能力",
-  "updatedAt": "2026-10-02T08:36:45+08:00",
+  "updatedAt": "2026-10-03T09:11:27+08:00",
   "reports": [
+    {
+      "id": "ai-capability:2026-10-03",
+      "radarKey": "ai-capability",
+      "radarTitle": "AI 能力",
+      "reportDate": "2026-10-03",
+      "headline": "Anthropic把企业AI的核心瓶颈从模型和平台不足进一步定义为缺少能把AI带进真实业务并交付生产结果的人，并用前沿部署工程师的选拔、驻留和考核机制将这一角色正式化。",
+      "conclusion": "Anthropic把企业AI的核心瓶颈从“模型和平台不足”进一步定义为“缺少能把AI带进真实业务并交付生产结果的人”。它投入1亿美元培养1万名前沿部署工程师，采用选拔、模拟部署、安全评审、真实项目驻留和最终考核的完整机制；这意味着企业AI COE需要建立一种介于平台工程师、领域产品经理和变革顾问之间的新型交付角色，而不是继续依赖普及式培训。",
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "企业AI出现独立的前沿部署工程师角色",
+          "what": "Anthropic推出Claude Frontier Academy，计划在2027年底前培养1万名Frontier Deployed Engineers，首批来自头部咨询机构、银行和生命科学企业。",
+          "evidence": "项目投入1亿美元；参与者必须具备扎实工程基础、能够推动他人采用AI，并由所在组织提名。",
+          "why_it_matters": "厂商不再假设开放模型加通识培训即可形成生产力，而是把从业务问题到生产交付的跨界人才视为独立能力资产。",
+          "impact": "财经AI COE应明确FDE类角色，串起场景选择、流程重构、数据与系统集成、安全评审、上线运营和交接；平台团队提供底座，领域团队承担业务责任，FDE把两者变成可运行系统。"
+        },
+        {
+          "title": "培养机制从课程认证升级为真实项目交付闭环",
+          "what": "FDE培养采用四天强化训练、十二周真实项目驻留和两次实操考核。",
+          "evidence": "前三天完成模拟企业部署，从客户需求和方案设计做到测试、安全评审、合规和生产交付；第四天新场景考核。通过者随后在本组织领导真实项目，十二周后再考核。澳大利亚联邦银行确认首批20名工程师参与。",
+          "why_it_matters": "评价对象不再是会不会使用模型，而是能否在真实组织约束下把Agent系统交付、治理并移交运营。",
+          "impact": "内部人才机制可采用带项目入训：每人绑定真实Agent改造课题，用生产上线、效果、合规、稳定性和知识转移作为结业标准，而不是课程学时或证书数量。"
+        },
+        {
+          "title": "TOB竞争延伸到可验证的交付网络",
+          "what": "Frontier Academy建立在Claude Partner Network之上，但把普遍认证与能够领导最难项目的少数骨干分层。",
+          "evidence": "Anthropic披露已有46,000家机构的专业人员获得超过175,000项认证、近4,000人完成Basecamp；伙伴等级按活跃认证人员、生产客户和公开客户案例核验，而非只看培训人数。",
+          "why_it_matters": "企业AI厂商开始把实施方法、交付人才、生产案例和伙伴评级一起产品化；TOB壁垒不再只是模型与Agent平台。",
+          "impact": "财经Agent治理中的人才资产应与Agent资产总账关联，记录谁具备哪类场景的生产交付能力、交付过哪些Agent、运行效果和可复用资产，而不是只统计培训覆盖率。"
+        }
+      ],
+      "recommendations": [
+        "应吸收｜在财经AI工作组/COE中设立模型中立的“Agent部署工程师”角色，责任边界覆盖场景到生产交接，但不替代领域Owner和底座Owner。",
+        "应吸收｜建立“选拔—模拟—真实项目—考核—复制”机制；候选人必须带真实项目入训，结业必须形成上线结果、复用资产与接班人。",
+        "应观察｜Anthropic仍以Claude生态扩张为目标；可吸收角色与机制，但内部能力标准应保持模型中立，避免把厂商证书等同于企业交付能力。"
+      ],
+      "sources": [
+        {
+          "name": "Anthropic｜Claude Frontier Academy: $100M to train 10,000 engineers",
+          "date": "2026-10-02",
+          "url": "https://www.anthropic.com/news/claude-frontier-academy",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Claude by Anthropic｜Frontier Academy program page",
+          "date": "2026-10-02",
+          "url": "https://claude.com/programs/frontier-academy",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Commonwealth Bank｜CommBank engineers deepen expertise through Anthropic's Claude Frontier Academy",
+          "date": "2026-10-02",
+          "url": "https://www.commbank.com.au/articles/newsroom/2026/10/commbank-engineers-anthropic-claude-frontier-academy.html",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Anthropic｜Claude Partner Network Services Track and Partner Hub",
+          "date": "2026-06-03",
+          "url": "https://www.anthropic.com/news/services-track-partner-hub",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-10-03T09:11:27+08:00"
+    },
     {
       "id": "ai-capability:2026-10-02",
       "radarKey": "ai-capability",
