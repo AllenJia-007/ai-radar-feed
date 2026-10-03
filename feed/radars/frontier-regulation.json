@@ -2,8 +2,65 @@
   "schemaVersion": 1,
   "radarKey": "frontier-regulation",
   "radarTitle": "前沿 AI 监管",
-  "updatedAt": "2026-10-02T00:35:36.314Z",
+  "updatedAt": "2026-10-03T00:04:23.000Z",
   "reports": [
+    {
+      "id": "frontier-regulation:2026-10-03",
+      "radarKey": "frontier-regulation",
+      "radarTitle": "前沿 AI 监管",
+      "reportDate": "2026-10-03",
+      "headline": "白宫已用行政命令把“Super Intelligence”确立为联邦政府的积极发展叙事，并启动联邦定义立法起草；这构成对“禁止 ASI”路线的明确行政政策分歧。",
+      "conclusion": "美国总统于 2026 年 9 月 29 日签署第 14434 号行政命令《Inaugurating the Era of Super Intelligence》，并于 10 月 2 日刊入《联邦公报》。命令要求行政机关在官方通信、公共传播、政策声明和非制定法文件中用“Super Intelligence（SI）”替代“Artificial Intelligence”，暂时把 SI 定义为现行联邦法所称的全部 AI，并要求总统科学技术助理在 60 天内提交新的联邦定义立法文本、相应修法建议和可能的进一步行政行动。该命令没有设定训练暂停、许可、强制评测、发布前审批或模型下线义务，也未改变既有法规与合同；但它以扩展能力和赢得竞争为明确方向，构成行政部门对 Ban Artificial Superintelligence Act 所代表“暂停并禁止 ASI”路线的实质政策分歧。",
+      "currentStatus": "第 14434 号行政命令已经生效，约束行政机关在非制定法文件和公开传播中的术语使用；现阶段“SI”临时沿用 15 U.S.C. 9401(3) 的 AI 定义，未新增企业合规义务，也未改变既有法规、行政行动、合同或拨款。总统科学技术助理须在签署后 60 天内提交联邦定义立法文本及后续行动建议。S.5493 与 H.R.10538 仍处各自委员会阶段，未发现新的审议、修订或表决；白宫亦未直接评论这两案。",
+      "items": [
+        {
+          "title": "白宫以行政命令确立“发展超级智能”的联邦政策叙事",
+          "what": "第 14434 号行政命令要求行政机关在官方通信、公共传播、政策声明和非制定法文件中使用“Super Intelligence”或“SI”替代“Artificial Intelligence”，并将政策目标表述为把握能力扩展机会。",
+          "evidence": "行政命令称当代前沿系统正代表一个“超级智能”新时代，并要求全体行政机关采用 SI 术语；白宫配套事实清单进一步强调扩大能力、消除其所称的过度监管并赢得 SI 竞争。",
+          "why_it_matters": "这不是直接否决 Ban Artificial Superintelligence Act，但已构成联邦行政部门对其“暂停并禁止 ASI”政策框架的明确分歧，降低现届政府主动支持此类禁令的可能性。",
+          "impact": "企业不能把美国政府文件中的“SI”自动解释为超越人类或灾难性能力层级；治理制度应继续以可测能力、危害和自主性阈值为准，并维护 AI、前沿模型、AGI、ASI、SI 等术语映射。"
+        },
+        {
+          "title": "联邦“超级智能”定义进入 60 天立法起草程序",
+          "what": "行政命令要求总统科学技术助理在 60 天内提出 SI 的联邦制定法定义，评估是否取代现行 AI 定义，列出配套修法并建议进一步行政行动。",
+          "evidence": "正式文本明确要求提交拟议立法语言、对现行法中 AI 定义的替代评估、必要的技术性和一致性修订，以及适合通过行政命令采取的后续行动建议。",
+          "why_it_matters": "当前 SI 只是覆盖所有法定 AI 的临时标签；真正可能改变监管边界的是后续定义及其是否写入联邦法、采购规则或行政监管文件。",
+          "impact": "企业应把术语与适用范围变化纳入政策变更管理，重点评估未来定义是否触发新的报告、采购、安全评测、事故披露或合同条款。"
+        }
+      ],
+      "recommendations": [
+        "不要把“SI”名称直接用作企业风险等级；继续采用能力、危害、自主性、工具权限和可逆性等可验证阈值，并建立美国政策术语对照表。",
+        "重点跟踪 60 天定义提案是否区分现有 AI、前沿模型、AGI 与灾难性风险 ASI，以及是否伴随新的行政行动或制定法修改。",
+        "把 Ban Artificial Superintelligence Act 继续作为强监管上限情景，但在当前行政立场下，不应把其短期获行政支持视为基准假设；只有委员会推进或白宫直接表态才重新上调概率。"
+      ],
+      "sources": [
+        {
+          "name": "The White House — Executive Order 14434: Inaugurating the Era of Super Intelligence",
+          "date": "2026-09-29",
+          "url": "https://www.whitehouse.gov/presidential-actions/2026/09/inaugurating-the-era-of-super-intelligence/",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Federal Register — Executive Order 14434",
+          "date": "2026-10-02",
+          "url": "https://www.whitehouse.gov/wp-content/uploads/2026/09/eo-14434.pdf",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "The White House — Fact Sheet: President Donald J. Trump Inaugurates the Era of Super Intelligence",
+          "date": "2026-09-29",
+          "url": "https://www.whitehouse.gov/fact-sheets/2026/09/fact-sheet-president-donald-j-trump-inaugurates-the-era-of-super-intelligence/",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Congress.gov — H.R. 10538 (119th Congress)",
+          "date": "2026-09-24",
+          "url": "https://www.congress.gov/bill/119th-congress/house-bill/10538",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-10-03T00:04:23.000Z"
+    },
     {
       "id": "frontier-regulation:2026-10-02",
       "radarKey": "frontier-regulation",
