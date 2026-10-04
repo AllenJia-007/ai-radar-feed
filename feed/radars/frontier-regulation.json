@@ -2,8 +2,71 @@
   "schemaVersion": 1,
   "radarKey": "frontier-regulation",
   "radarTitle": "前沿 AI 监管",
-  "updatedAt": "2026-10-03T00:04:23.000Z",
+  "updatedAt": "2026-10-04T00:15:37.000Z",
   "reports": [
+    {
+      "id": "frontier-regulation:2026-10-04",
+      "radarKey": "frontier-regulation",
+      "radarTitle": "前沿 AI 监管",
+      "reportDate": "2026-10-04",
+      "headline": "美国 AI Agent 治理开始形成“越权行为追责 + 高能力模型限制发布”的双重边界：两党参议员提出开发者与运营者刑民责任，Google 则先把 Gemini 4 Argon 限于经审查的网络防御机构。",
+      "conclusion": "2026 年 10 月 1 日，美国参议员 Josh Hawley 与 Chris Murphy 宣布两党版《AI Agent Accountability Act》，拟把 AI Agent 造成的越权入侵纳入《计算机欺诈与滥用法》责任体系：明知而运行造成黑客损失的运营者，以及知道或应当知道 Agent 具备入侵能力却未采取合理防护的开发者，都可能承担刑事和民事责任；联邦及州总检察长还可申请禁令。该方案已由两位参议员正式公布，并与参议院关于“失控 AI 攻击”的听证相衔接，但截至本次核查尚未找到国会正式编号或 Congress.gov 立法记录，因而仍属已宣布、待正式提交的提案。与此同时，Google 对 9 月 30 日发布的 Gemini 4 Argon 采用限制性分阶段发布：先仅向 Fairwind 计划中的可信网络防御者开放强网络能力，在完成真实环境评测、完善网络与 CBRN 防护并参与美国政府自愿发布前访问程序后，再扩大至开发者、企业和消费者。这表明前沿 Agent 的实际治理边界正同时向法律责任和能力分级访问收紧。",
+      "currentStatus": "《AI Agent Accountability Act》：两名参议员已于 2026-10-01 联合公布政策要点，具有两党支持，但官方公告未列出法案编号，GovInfo/Congress.gov 尚未检索到正式提交记录；当前不是法律，也未进入委员会程序。Gemini 4 Argon：仅向经审查的 Fairwind 网络防御合作方提供强网络能力，广泛 API、企业和消费者访问尚未开放；该限制属于 Google 自愿发布策略，并非政府强制命令。Ban Artificial Superintelligence Act 的 S.5493 与 H.R.10538 仍处委员会阶段，未发现新的审议、修订或表决。",
+      "items": [
+        {
+          "title": "两党版 AI Agent Accountability Act 将越权入侵责任直接指向开发者和运营者",
+          "what": "参议员 Hawley 与 Murphy 宣布提案，拟让明知而运行导致黑客损害的 Agent 运营者承担 CFAA 刑民责任，并让知道或应当知道 Agent 具有入侵能力、却未实施合理防护的开发者承担责任；联邦及州总检察长可申请禁令。",
+          "evidence": "两位参议员办公室分别发布相同制度要点；同期参议院小组委员会就 OpenAI Agent 事件举行听证，讨论现行法律难以明确分配开发者与部署者责任的问题。",
+          "why_it_matters": "治理重点从“模型是否通过安全评测”推进到“谁为 Agent 的自主行为负责”。如果进入正式立法，合理防护、风险知情和运行控制可能成为开发者与运营者共同的法律责任，而非仅由最终用户承担。",
+          "impact": "企业级 Agent 需要明确开发者、平台方、领域建设者和业务运营者的责任链，并保存能力知情、风险评估、权限配置、运行监控、告警处置和阻断记录，以证明已采取合理防护。"
+        },
+        {
+          "title": "Google 对 Gemini 4 Argon 实施经审查、限用途的分阶段发布",
+          "what": "Google 没有立即向公众或普通企业开放 Gemini 4 Argon，而是先通过 Fairwind 计划向可信网络防御者提供强网络能力，并在完善防护和收集真实环境反馈后再扩大访问。",
+          "evidence": "Google 官方称 Argon 可自主发现、验证和修补关键漏洞；可信防御团队可使用无网络护栏版本。Fairwind 要求机构背景审查、用户级认证、抗钓鱼 MFA、访问追踪、仅限防御和研究用途，并禁止分享、转售或转授模型访问。",
+          "why_it_matters": "这把模型发布从“同一版本统一开放”变成基于能力、主体、用途和环境的分层准入；对于强网络和长程 Agent 能力，模型本身、工具权限与客户资质被打包治理。",
+          "impact": "企业 Agent 平台应支持按能力包和风险域授权，而不是只按模型名称准入；高风险能力应绑定实名主体、批准用途、专用团队、受控运行环境、强认证、全量审计和禁止转授。"
+        }
+      ],
+      "recommendations": [
+        "建立 Agent 责任矩阵，分别明确模型开发者、平台运营者、Skill/MCP 提供者、领域建设者和业务使用者对越权行为的预防、监控、报告与赔偿责任。",
+        "把“合理防护”转化为可审计控制证据：能力知情记录、最小权限、网络隔离、工具白名单、行为监控、自动阻断、事故响应和管理层审批缺一不可。",
+        "对网络、生物和高自主性能力采用分级访问：经审查主体、限定用途、专用环境、不可转授，并在扩大范围前完成真实场景评测和独立复核。"
+      ],
+      "sources": [
+        {
+          "name": "Office of Senator Josh Hawley — Senators Hawley, Murphy Announce Bipartisan AI Agent Accountability Act",
+          "date": "2026-10-01",
+          "url": "https://www.hawley.senate.gov/senators-hawley-murphy-announce-bipartisan-ai-agent-accountability-act/",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Office of Senator Chris Murphy — Murphy, Hawley Announce Bipartisan Legislation on AI Agent Liability",
+          "date": "2026-10-01",
+          "url": "https://www.murphy.senate.gov/newsroom/press-releases/murphy-hawley-announce-breakthrough-bipartisan-legislation-to-force-ai-developers-to-prioritize-safety-or-face-prison-time",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Office of Senator Josh Hawley — Senate Hearing on Rogue AI Attacks",
+          "date": "2026-10-01",
+          "url": "https://www.hawley.senate.gov/icymi-hawley-convenes-first-senate-hearing-on-rogue-ai-attacks/",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Google — Gemini 4 Argon: our next era of frontier intelligence",
+          "date": "2026-09-30",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Google DeepMind — Fairwind Program",
+          "date": "2026-09-30",
+          "url": "https://deepmind.google/fairwind-program/",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-10-04T00:15:37.000Z"
+    },
     {
       "id": "frontier-regulation:2026-10-03",
       "radarKey": "frontier-regulation",
