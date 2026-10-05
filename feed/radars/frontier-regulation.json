@@ -2,8 +2,65 @@
   "schemaVersion": 1,
   "radarKey": "frontier-regulation",
   "radarTitle": "前沿 AI 监管",
-  "updatedAt": "2026-10-04T00:15:37.000Z",
+  "updatedAt": "2026-10-05T00:13:39.000Z",
   "reports": [
+    {
+      "id": "frontier-regulation:2026-10-05",
+      "radarKey": "frontier-regulation",
+      "radarTitle": "前沿 AI 监管",
+      "reportDate": "2026-10-05",
+      "headline": "白宫已成立由国家情报总监牵头的“Super Intelligence Force”，要求 120 天内评估 AI 风险、事件报告与联邦职责；美国治理路线由倡议升级为跨部门机制，但尚未形成许可或强制评测制度。",
+      "conclusion": "2026 年 10 月 4 日，美国总统正式宣布成立 Super Intelligence Force（SIF），任命国家情报总监 Jay Clayton 兼任 AI 事务负责人并领导该机构。SIF 将协调联邦政府与消费者、公共利益及宗教团体、关键基础设施和超级智能企业的互动，并在 120 天内评估 AI 风险与机会、现有事故报告机制、针对入侵与数据泄露的联邦响应能力、现行法律和可能的国会行动。该机构把白宫此前的术语与产业倡议推进为跨部门政策协调，但目前未见行政命令或制定法赋予其模型许可、训练审批、强制评测或独立执法权。其制度基线之一是 9 月 29 日由 Google、Anthropic、Meta、OpenAI、xAI 和 Nvidia 签署的自愿承诺：在训练与部署中实行能力监测、内部控制、独立外部评估和董事会监督。现阶段仍是“政府协调 + 企业自律”，真正可能改变企业义务的节点是 120 天报告及其后续立法或行政行动。",
+      "currentStatus": "Super Intelligence Force 已由总统正式宣布，属于白宫跨部门协调与政策评估机制；目前未发现成立它的行政命令、制定法授权或独立执法、许可与训练审批权。120 天报告尚待形成，当前企业义务仍主要来自既有法律、调查和自愿承诺。Joint Commitment on Frontier Responsibilities 属于签署企业的自愿承诺，无处罚或政府验证机制。Ban Artificial Superintelligence Act 的 S.5493 与 H.R.10538 仍在委员会，未发现新的审议、修订或表决；AI Agent Accountability Act 仍未见正式编号或提交记录。",
+      "items": [
+        {
+          "title": "白宫成立 Super Intelligence Force，并启动 120 天联邦治理评估",
+          "what": "白宫宣布由国家情报总监 Jay Clayton 领导跨部门 SIF；成员包括联邦贸易委员会、国防部和人事管理局高层。该机构将协调利益相关方参与，并在 120 天内就 AI 风险、机会与联邦政府职责提交报告。",
+          "evidence": "公开报道援引任务章程称，SIF 将审查针对入侵和数据泄露的 AI 事故报告机制、现有联邦响应能力、现行法律以及可能需要国会采取的行动；Clayton 表示将研究现行法律并提出政府角色建议。",
+          "why_it_matters": "美国此前分散在情报、竞争、国防和人事系统中的 AI 治理开始进入总统直属的协调框架。虽然尚非监管机构，但它可能成为统一事故报告、跨机构响应和后续立法建议的政策入口。",
+          "impact": "企业级 Agent 应提前建立可供多机构审查的事故资料包，统一保存模型与工具版本、权限、运行轨迹、数据泄露或入侵影响、处置决定和外部通知，并将安全事件、网络事件与模型控制失败进行映射。"
+        },
+        {
+          "title": "六家前沿 AI 企业的四层控制承诺成为潜在政策基线",
+          "what": "Google、Anthropic、Meta、OpenAI、xAI 和 Nvidia 在白宫框架下承诺：监测训练与部署中的网络、生物、化学及越权访问风险；设置有权介入的内部控制团队；接受独立外部审计或评估；由独立董事会委员会监督报告和整改。",
+          "evidence": "签署文本要求参与企业定期会面以形成标准和最佳实践，并明确表示这些措施未来可能被写入法律或监管规则；承诺本身目前仍为自愿性质。",
+          "why_it_matters": "四层结构虽未产生强制义务，却为未来联邦法或行政规则提供了可直接转化的制度模板，也可能迅速演变为采购、保险、合作伙伴尽调和董事会责任的事实标准。",
+          "impact": "高风险 Agent 治理应至少具备运行时能力监测、独立于业务线的内部控制、外部独立评估和董事会或高级管理层监督四层机制，并让每一层都能形成可验证证据。"
+        }
+      ],
+      "recommendations": [
+        "对高风险 Agent 建立四层保证体系：运行时监测、独立内部控制、外部评估以及董事会或高级管理层监督，并赋予明确暂停权。",
+        "按潜在联邦事故报告要求预建标准资料包，确保 Agent 入侵、数据泄露、越权工具调用和控制失效可快速分类、取证、上报与复盘。",
+        "把 SIF 视为政策形成信号而非现行合规义务；重点跟踪 120 天报告是否提出强制事故报告、发布前审查、许可或开发者责任方案。"
+      ],
+      "sources": [
+        {
+          "name": "Reuters — Jay Clayton to lead Trump AI task force and deliver report in 120 days",
+          "date": "2026-10-04",
+          "url": "https://www.reuters.com/world/us/jay-clayton-lead-trumps-ai-task-force-deliver-report-120-days-wsj-reports-2026-10-03/",
+          "evidence_strength": "中"
+        },
+        {
+          "name": "ABC News — President announces creation of Super Intelligence Force",
+          "date": "2026-10-04",
+          "url": "https://abcnews.com/Politics/president-donald-trump-announces-creation-super-intelligence-force/story?id=136986122",
+          "evidence_strength": "中"
+        },
+        {
+          "name": "The Wall Street Journal — New AI task force to report on risks and federal role",
+          "date": "2026-10-03",
+          "url": "https://www.wsj.com/tech/ai/new-ai-task-force-to-report-on-risks-of-technology-after-public-and-industry-concerns-b6308bef",
+          "evidence_strength": "中"
+        },
+        {
+          "name": "The American Presidency Project — White House Accord on Super Intelligence",
+          "date": "2026-09-29",
+          "url": "https://www.presidency.ucsb.edu/documents/white-house-accord-super-intelligence",
+          "evidence_strength": "中"
+        }
+      ],
+      "updatedAt": "2026-10-05T00:13:39.000Z"
+    },
     {
       "id": "frontier-regulation:2026-10-04",
       "radarKey": "frontier-regulation",
