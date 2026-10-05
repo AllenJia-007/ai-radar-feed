@@ -2,8 +2,59 @@
   "schemaVersion": 1,
   "radarKey": "ai-work-system",
   "radarTitle": "AI 工作系统",
-  "updatedAt": "2026-10-03T08:19:46+08:00",
+  "updatedAt": "2026-10-05T08:22:22+08:00",
   "reports": [
+    {
+      "id": "ai-work-system:2026-10-05",
+      "radarKey": "ai-work-system",
+      "radarTitle": "AI 工作系统",
+      "reportDate": "2026-10-05",
+      "headline": "OpenAI 将组织级 Marketplace 变成插件治理单元",
+      "conclusion": "OpenAI 已把企业插件治理从“逐个启停插件”提升为组织级能力供应链：管理员可从公有或私有 GitHub 仓库导入并每日同步 Marketplace，同时把插件安装、应用访问、动作范围、审批策略、供应商授权和同步数据源拆成独立控制面。对 EurekaX Claw 的直接影响是：专家、Skill 与 MCP 不能只按“能力商店”设计，必须建设可追溯来源、角色分发、权限解耦和持续更新的组织能力目录。",
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "组织级 Marketplace 成为能力分发与更新单元",
+          "what": "OpenAI 在 2026 年 10 月 1 日将 Plugins 与 Marketplaces 纳入 Enterprise 管理控制台；管理员可从公有或私有 GitHub 仓库导入 Marketplace。Marketplace 是列出可导入插件的 JSON 目录，并按日同步，也可手动触发同步。",
+          "evidence": "Enterprise/Edu 新插件和应用原则上默认关闭；管理员可按工作区或角色设置插件为 Available（成员可安装）或 Installed（默认安装），并分别控制上传、共享、发布到工作区目录以及创建含 MCP 的插件。",
+          "why_it_matters": "组织不再只是审核单个扩展，而是可以维护自己的能力来源、目录、分发策略和更新通道。Skill/MCP 由零散文件转为具有供应链属性的组织资产。",
+          "impact": "EurekaX Claw 应把“专家 + Skill + Connector/MCP”抽象为组织能力目录：支持受信来源、版本与依赖、角色可见性、默认安装、灰度同步、冻结和回滚；专家界面只是该目录的消费入口。"
+        },
+        {
+          "title": "安装权与运行权被拆成独立控制面",
+          "what": "OpenAI 明确插件安装与底层应用访问是两项独立控制。插件可组合 Skill、应用和应用模板，但安装并不会自动获得账户连接、数据、动作或同步权限。",
+          "evidence": "应用访问、读写动作、未来新增动作策略、逐次审批、供应商 OAuth、同步来源限制分别判断；禁用应用可能只阻断依赖该应用的能力，纯 Skill 仍可继续。Workspace Agent 另由构建者设置每个 Agent 可用动作和终端用户审批。",
+          "why_it_matters": "能力分发与数据/动作授权正式解耦，治理粒度从“能否安装”下沉到“谁以什么身份、对什么数据、执行哪些动作、何时需要批准”。",
+          "impact": "Claw 的权限模型不能绑定在专家或 Skill 开关上。应独立建模能力包、连接身份、数据范围、动作级读写权、审批策略与执行环境，并在运行时计算最终有效权限。"
+        }
+      ],
+      "recommendations": [
+        "应吸收｜优先建设私有组织能力目录：受信来源、签名/版本、角色分发、默认安装、同步审计、紧急冻结与回滚应成为 Claw 1—2 年主线。",
+        "应吸收｜建立“分发权—连接权—数据权—动作权—审批权”五层模型；安装能力包不应隐式授权 OAuth、MCP、写操作或同步索引。",
+        "暂不跟进｜现阶段不必建设面向公众的插件交易市场；先把企业内部目录、权限与生命周期做实，再评估外部生态。"
+      ],
+      "sources": [
+        {
+          "name": "OpenAI｜ChatGPT Enterprise and Edu release notes",
+          "date": "2026-10-01",
+          "url": "https://help.openai.com/en/articles/10128477-chatgpt-enterprise-and-edu-release-notes",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "OpenAI｜Admin controls, security, and compliance for plugins and apps",
+          "date": "2026-10-04（更新）",
+          "url": "https://help.openai.com/en/articles/11509118-admin-controls-security-and-compliance-for-plugins-and-apps",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "OpenAI｜Plugins in ChatGPT",
+          "date": "2026-10-04（更新）",
+          "url": "https://help.openai.com/en/articles/20001256-plugins-in-chatgpt",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-10-05T08:22:22+08:00"
+    },
     {
       "id": "ai-work-system:2026-10-03",
       "radarKey": "ai-work-system",
