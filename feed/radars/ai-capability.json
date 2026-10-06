@@ -2,8 +2,59 @@
   "schemaVersion": 1,
   "radarKey": "ai-capability",
   "radarTitle": "AI 能力",
-  "updatedAt": "2026-10-03T09:11:27+08:00",
+  "updatedAt": "2026-10-06T08:39:27+08:00",
   "reports": [
+    {
+      "id": "ai-capability:2026-10-06",
+      "radarKey": "ai-capability",
+      "radarTitle": "AI 能力",
+      "reportDate": "2026-10-06",
+      "headline": "OpenAI把文本来源标记从研究推进为生成链能力：API客户全球可选开启，欧盟ChatGPT与Codex文本将默认加入不可见水印，企业Agent输出治理需从事后日志前移到生成时标记与后续验证。",
+      "conclusion": "OpenAI把文本来源标记从研究推进为生成链能力：API客户全球可选开启，欧盟ChatGPT与Codex文本将默认加入不可见水印。企业Agent的输出治理因此需要从“事后查日志”前移到“生成时标记＋流转中保留＋使用时验证”；但水印只能提供来源信号，不能证明内容真实、未编辑或归属正确。",
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "输出来源治理进入生成运行时",
+          "what": "OpenAI发布textGrain，API客户可在项目或组织设置中为部分模型开启文本水印；未来数周将在欧盟ChatGPT与Codex的合格文本输出中默认启用。",
+          "evidence": "textGrain通过调整模型词语或词片采样嵌入不可见统计信号，不依赖隐藏字符、空格或特殊标点；检测只需文本与密钥，不需要原始提示词。",
+          "why_it_matters": "来源标记不再只是文档平台的后处理元数据，而成为模型生成过程的一部分。",
+          "impact": "企业Agent底座应把是否标记、按地区或场景启用、输出携带状态、下游验证结果纳入模型路由和任务审计；对外发布、监管报送、客户沟通等场景应高于内部草稿。"
+        },
+        {
+          "title": "来源标记必须与证据链分层",
+          "what": "OpenAI同时明确，水印只能表明存在与其模型相关的来源信号，不能证明文本准确、未被修改、合法归属或上下文正确；大幅改写、翻译可能使信号消失，文本检测器初期也仅向获批研究和专业机构开放。",
+          "evidence": "官方明确存在误报和漏报风险，API默认关闭；技术报告用熵损失预算在可检测性与生成随机性之间做权衡。",
+          "why_it_matters": "水印不能替代事实核验、引用、审批和不可篡改日志，也不适合作为员工问责或自动拒绝的单一依据。",
+          "impact": "治理架构应区分来源、真实性、授权、责任四类证据；水印作为弱到中等强度的来源信号，与模型和版本、提示、工具调用、引用、审批人和最终发布记录共同形成证据链。"
+        }
+      ],
+      "recommendations": [
+        "应吸收｜在企业Agent输出对象中增加provenance字段与区域策略；高风险外发内容采用生成时标记、引用证据、人工审批、发布留档四层控制。",
+        "应吸收｜检测结果只能作为风险信号，不得单独触发处罚、拒绝入库或事实判定；必须配置人工复核与其他证据。",
+        "应观察｜API当前仅支持部分模型、默认关闭，文本检测访问受限；在独立误报、漏报和跨语言鲁棒性数据出现前，不建设重资产自有检测平台。"
+      ],
+      "sources": [
+        {
+          "name": "OpenAI｜Our approach to EU text provenance rules",
+          "date": "2026-10-05",
+          "url": "https://openai.com/index/eu-text-provenance/",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "OpenAI｜textGrain: Entropy-Calibrated Watermarking for Language Model Text",
+          "date": "2026-10-05",
+          "url": "https://cdn.openai.com/pdf/e9508624-d767-41b6-a26d-e34ca798ada6/textgrain-entropy-calibrated-watermarking-for-language-model-text.pdf",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "OpenAI Help Center｜Provenance signals in OpenAI-generated content",
+          "date": "2026-10-05",
+          "url": "https://help.openai.com/en/articles/8912793-provenance-signals-in-openai-generated-content",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-10-06T08:39:27+08:00"
+    },
     {
       "id": "ai-capability:2026-10-03",
       "radarKey": "ai-capability",
