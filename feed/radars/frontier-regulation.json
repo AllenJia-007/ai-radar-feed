@@ -2,8 +2,58 @@
   "schemaVersion": 1,
   "radarKey": "frontier-regulation",
   "radarTitle": "前沿 AI 监管",
-  "updatedAt": "2026-10-05T00:13:39.000Z",
+  "updatedAt": "2026-10-06T00:22:53.000Z",
   "reports": [
+    {
+      "id": "frontier-regulation:2026-10-06",
+      "radarKey": "frontier-regulation",
+      "radarTitle": "前沿 AI 监管",
+      "reportDate": "2026-10-06",
+      "headline": "加拿大已把“前沿AI时代网络安全”转化为联邦部门必须执行的控制要求：AI Agent被纳入非人员身份治理，关键系统须默认禁止出站联网、限制权限并保留可取证日志。",
+      "conclusion": "加拿大政府自2026年10月1日起实施《前沿人工智能时代加拿大政府网络安全准备方向》安全政策实施通知。该通知适用于《政府安全政策》覆盖的联邦机构，要求在“假设已被攻破”的前提下保护政府信息系统，并把AI Agent明确列入非人员身份：必须登记所有者和业务目的、实施生命周期管理、定期复核权限、减少长期权限与静态凭据。承载关键服务的环境还须默认阻断出站互联网，仅允许批准目的地，集中保存防篡改日志，并准备预先批准的隔离与取证流程；加拿大财政委员会秘书处将主动验证外部暴露面并监督机构执行。该措施不是面向模型开发商的许可、训练审批或发布前评测制度，也不直接约束一般私营企业，但它将Agent身份、联网边界、日志和紧急处置由建议提升为联邦系统的可监测执行要求，为政府采购和受监管行业提供了较强的治理基线。",
+      "currentStatus": "该安全政策实施通知已于2026-10-01生效，对《政府安全政策》适用的加拿大联邦部门和机构构成正式实施方向；各部门仍依据既有政府安全与数字服务政策承担责任，财政委员会秘书处负责进度监督和主动网络验证。它不是面向社会的一般制定法，不建立前沿模型许可、训练暂停、强制模型评测或发布前审批制度；对第三方供应商的影响主要通过联邦采购合同和持续合同管理传导。美国Ban Artificial Superintelligence Act的S.5493与H.R.10538仍处委员会阶段，未发现新的审议、修订或表决。",
+      "items": [
+        {
+          "title": "加拿大把AI Agent身份、联网和应急控制纳入联邦强制实施方向",
+          "what": "加拿大联邦部门必须把AI Agent等非人员身份纳入明确所有权、业务目的、生命周期和定期权限复核；关键服务环境默认禁止出站互联网，只允许批准连接，并实施集中防篡改日志、分区隔离、预授权处置和恢复演练。",
+          "evidence": "正式通知明确要求最小权限、减少常驻权限和静态凭据、对非人员身份实施治理；要求关键系统环境执行default-deny出站策略，并由财政委员会秘书处主动验证政府外部暴露面、监控部门进展和升级未执行事项。",
+          "why_it_matters": "这不是一般原则，而是带适用范围、执行清单、指标和监督机制的政府实施方向。它把Agent治理从“应用是否获批”推进到机器身份、网络出口、证据链、爆炸半径和恢复能力的基础设施级控制。",
+          "impact": "EurekaX/Claw及企业Agent平台应把Agent视为独立机器身份：每个Agent绑定所有者、目的、权限期限和凭据轮换；高风险环境默认断网或白名单联网，日志集中防篡改，并预置隔离、停用和取证流程。"
+        }
+      ],
+      "recommendations": [
+        "建立Agent机器身份总账，强制记录所有者、业务目的、权限范围、凭据轮换、到期时间和定期复核结果，禁止长期共享凭据。",
+        "对高风险Agent采用默认禁止出站联网和目标白名单机制，把网络访问从运行参数升级为可审批、可审计的治理控制。",
+        "把集中防篡改日志、预授权隔离动作、事件取证和恢复演练纳入Agent上线门禁，并要求第三方供应商通过合同承担相同控制义务。"
+      ],
+      "sources": [
+        {
+          "name": "Government of Canada — Direction on Government Cyber Security Readiness in the Frontier Artificial Intelligence Era",
+          "date": "2026-10-01",
+          "url": "https://www.canada.ca/en/government/system/digital-government/policies-standards/spin/direction-government-canada-cyber-security-readiness-frontier-artificial-intelligence-era.html",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Canadian Centre for Cyber Security — Frontier artificial intelligence (ITSAP.10.050)",
+          "date": "2026-05-29",
+          "url": "https://www.cyber.gc.ca/en/guidance/frontier-artificial-intelligence-itsap10050",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Canadian Centre for Cyber Security — Top 10 artificial intelligence security actions (ITSAP.10.049)",
+          "date": "2026-05-29",
+          "url": "https://www.cyber.gc.ca/en/guidance/top-10-artificial-intelligence-security-actions-primer-itsap10049",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "U.S. Government Publishing Office — S.5493 Ban Artificial Superintelligence Act",
+          "date": "2026-09-23",
+          "url": "https://www.govinfo.gov/app/details/BILLS-119s5493is",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-10-06T00:22:53.000Z"
+    },
     {
       "id": "frontier-regulation:2026-10-05",
       "radarKey": "frontier-regulation",
