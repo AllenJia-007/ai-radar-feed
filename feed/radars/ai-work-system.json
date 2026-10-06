@@ -2,8 +2,59 @@
   "schemaVersion": 1,
   "radarKey": "ai-work-system",
   "radarTitle": "AI 工作系统",
-  "updatedAt": "2026-10-05T08:22:22+08:00",
+  "updatedAt": "2026-10-06T08:00:36+08:00",
   "reports": [
+    {
+      "id": "ai-work-system:2026-10-06",
+      "radarKey": "ai-work-system",
+      "radarTitle": "AI 工作系统",
+      "reportDate": "2026-10-06",
+      "headline": "Agent 生成开始形成“构建—评测—生产反馈—Skill 沉淀”闭环",
+      "conclusion": "Anthropic 10 月 5 日披露的 Cresta Conductor 案例显示，企业级“应用生成”已不再是自然语言生成提示词，而是由元 Agent 从业务上下文形成可审阅蓝图，生成提示、子 Agent、配置、工具和代码，再以业务评测、生产反馈和根因分析持续修正；成功经验还能沉淀为团队共享 Skill。对 EurekaX Claw 的启示是：如承担 Agent 构建入口，应定位为受控的 Agent 工程工作台，而不是通用低代码应用平台。",
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "元 Agent 开始覆盖 Agent 的完整工程对象",
+          "what": "Cresta 将 Conductor 定义为“构建其他 Agent 的 Agent”。它从知识库、SOP、API 要求、升级规则和历史会话提炼上下文，先生成可审阅蓝图，再生成完整 Agent。",
+          "evidence": "生成对象不止提示词，还包括子 Agent 编排、配置、工具、集成和定制代码；蓝图明确目标、范围、会话流程、测试用例与知识引用，并在开发者批准后进入构建。底层 Claude Agent SDK 只承担上下文收集、工具调用与代码执行，领域控制面由 Cresta 提供。",
+          "why_it_matters": "“应用生成”的最小交付物正在从一段提示词或一个专家，升级为可审阅、可测试、可部署的 Agent 工程包；通用执行框架与领域构建知识也形成清晰分工。",
+          "impact": "EurekaX Claw 若承担构建入口，应输出结构化蓝图与 Agent Manifest，覆盖专家画像、Skill、子 Agent、MCP、规则、代码和测试，而不是只生成专家或 Skill。EurekaX 继续提供运行、资产与治理底座。"
+        },
+        {
+          "title": "评测与生产反馈成为构建主循环",
+          "what": "同一蓝图同时驱动构建和评测。测试失败后，Conductor 跨蓝图、会话、提示、工具、配置、知识和代码做根因分析，应用修复并立即复测；生产会话继续补充失败样本。",
+          "evidence": "其构建器按结果、执行路径、质量和资源消耗评价构建任务；业务规则和边界案例被转成测试，成功经验保存为可复用记忆资产并以 Skill 在团队共享。Cresta 报告早期部署周期约减半，定制函数从一周缩短至 1—2 天，但数据为厂商自述。",
+          "why_it_matters": "竞争壁垒从“一次生成得快”转向“能否把真实失败转成回归测试、把专家判断沉淀为组织能力，并在模型或框架升级后持续验证”。",
+          "impact": "Claw 的应用生成必须内置“生成—评测—诊断—修复—回归—沉淀”闭环，支持确定性检查与模型评审并存；生产数据只作为受控反馈信号，不应未经审核自动改写组织 Agent。"
+        }
+      ],
+      "recommendations": [
+        "应吸收｜把 Claw 的应用生成定位为 Agent 工程工作台：先形成可审阅蓝图，再生成完整能力包，并把开发者审批设为发布前必经节点。",
+        "应吸收｜以同一蓝图贯通需求、生成、评测和回归；将生产失败转成候选测试与候选 Skill，经审核后进入组织资产。",
+        "应观察｜部署周期减半仍是厂商自述且场景集中于客服；先验证该闭环对财经桌面任务和组织专家构建是否同样成立。"
+      ],
+      "sources": [
+        {
+          "name": "Anthropic｜How Cresta turned CX expertise into an agent builder on the Claude Agent SDK",
+          "date": "2026-10-05",
+          "url": "https://claude.com/blog/how-cresta-turned-cx-expertise-into-an-agent-builder-on-the-claude-agent-sdk",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Cresta｜Cresta Conductor: The Agent for AI Agent Development",
+          "date": "2026-06-11",
+          "url": "https://cresta.com/blog/cresta-conductor-the-agent-for-ai-agent-development",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Cresta｜Enterprise AI Agent Testing and Deployment with Cresta",
+          "date": "2026-10-06（检索）",
+          "url": "https://cresta.com/ai-agent-test-and-deploy",
+          "evidence_strength": "中"
+        }
+      ],
+      "updatedAt": "2026-10-06T08:00:36+08:00"
+    },
     {
       "id": "ai-work-system:2026-10-05",
       "radarKey": "ai-work-system",
