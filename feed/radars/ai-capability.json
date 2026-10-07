@@ -2,8 +2,71 @@
   "schemaVersion": 1,
   "radarKey": "ai-capability",
   "radarTitle": "AI 能力",
-  "updatedAt": "2026-10-06T08:39:27+08:00",
+  "updatedAt": "2026-10-07T09:29:56+08:00",
   "reports": [
+    {
+      "id": "ai-capability:2026-10-07",
+      "radarKey": "ai-capability",
+      "radarTitle": "AI 能力",
+      "reportDate": "2026-10-07",
+      "headline": "高风险模型能力正从“开放/封禁”转向按任务、身份与控制环境分级授权；同时，端侧多模态检索已下移到不足1B参数和数百MB内存，企业Agent架构应同时升级能力准入与端云分工。",
+      "conclusion": "企业模型正在出现两类值得改变架构判断的变化：Anthropic把同一前沿模型的实际能力边界改造成由任务风险、组织验证与控制环境共同决定的分级授权；Google则把跨文本、代码、图片、音频和视频的统一检索压缩到可在个人设备离线运行。企业Agent底座需要从模型白名单升级为任务级能力策略，个人工作端则可以承担更多隐私敏感的本地语义检索。",
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "高风险能力形成“能力×用途×控制环境”分级授权",
+          "what": "Anthropic将Cyber Verification Program从单一特许访问升级为Defense、Red Team、Specialized三层；层级同时决定允许任务、安全分类器、验证要求、监控与数据控制。",
+          "evidence": "在CyScenarioBench的50次试验中，Defense层46次被中途阻断；Red Team层不触发阻断并完成34次，与无安全限制的67.6%成功率基本一致。Specialized层仅面向经深度验证、可测试电网、电信、银行转账等关键系统的组织。",
+          "why_it_matters": "前沿能力的产品单位正从模型版本变成模型、安全策略、授权用途与组织控制条件的组合；同一模型可因控制环境不同呈现完全不同的实际能力边界。",
+          "impact": "企业Agent底座不能只配置模型白名单，应建立分级能力目录，把用户和组织身份、业务对象、授权证明、工具范围、运行环境、日志保留与人工复核绑定到具体能力档位；高风险Skill和MCP也应采用相同机制。"
+        },
+        {
+          "title": "本地多模态检索成为现实能力",
+          "what": "Google发布EmbeddingGemma 2，用一个740M参数开放模型把文本、代码、图片、音频和视频映射到统一向量空间，可在端侧完全离线运行。",
+          "evidence": "文本模式可缩至270M参数，完整多模态模型量化后在Pixel 11 Pro约占567MB活动内存；向量可从768维压缩到128维，官方称本地向量库和内存占用最多减少6倍；许可证为Apache 2.0。",
+          "why_it_matters": "个人工作端的知识检索边界从本地文档文本索引扩展到本地多模态语义层，且不必先把敏感文件上传云端。",
+          "impact": "EurekaX Claw可采用“本地多模态索引与召回＋云端推理与组织知识”的双层架构：本地负责个人文件、录音、截图、视频与代码的隐私检索；云端负责复杂推理、组织权限和共享知识。"
+        }
+      ],
+      "recommendations": [
+        "应吸收｜将能力准入从模型级升级为任务级：建立模型、用途、身份、数据、工具、运行时与审计要求的组合策略。",
+        "应吸收｜把端侧检索器列为Claw独立能力层，优先验证本地Excel、PDF、截图和会议录音的统一索引、增量更新、删除同步与来源回链。",
+        "应观察｜Anthropic的网络安全效果及Google的端侧基准主要来自厂商数据；生产采用前需验证误阻断率、中文跨模态召回率、能耗和索引更新成本。"
+      ],
+      "sources": [
+        {
+          "name": "Anthropic｜Expanding the Cyber Verification Program",
+          "date": "2026-10-06",
+          "url": "https://www.anthropic.com/news/cyber-verification-program",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Claude Help Center｜Cyber Verification Program",
+          "date": "2026-10-06",
+          "url": "https://support.claude.com/en/articles/14604842-cyber-verification-program",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Anthropic｜Developing Enterprise Frontier Safeguards with our customers",
+          "date": "2026-09-01",
+          "url": "https://www.anthropic.com/news/enterprise-frontier-safeguards",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Google｜EmbeddingGemma 2: an open, lightweight multimodal embedding model",
+          "date": "2026-10-06",
+          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2/",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Google AI for Developers｜EmbeddingGemma 2 model card",
+          "date": "2026-10-06",
+          "url": "https://ai.google.dev/gemma/docs/embeddinggemma/model_card_2",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-10-07T09:29:56+08:00"
+    },
     {
       "id": "ai-capability:2026-10-06",
       "radarKey": "ai-capability",
