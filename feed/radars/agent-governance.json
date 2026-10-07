@@ -2,8 +2,65 @@
   "schemaVersion": 1,
   "radarKey": "agent-governance",
   "radarTitle": "Agent 治理",
-  "updatedAt": "2026-10-07T08:12:42+08:00",
+  "updatedAt": "2026-10-08T07:50:11+08:00",
   "reports": [
+    {
+      "id": "agent-governance:2026-10-08",
+      "radarKey": "agent-governance",
+      "radarTitle": "Agent 治理",
+      "reportDate": "2026-10-08",
+      "headline": "治理边界下沉到桌面容器与 API 字段级",
+      "conclusion": "企业 Agent 治理边界继续向执行底层下沉：Microsoft 将本地/桌面 Agent 的文件、网络、界面与进程访问纳入操作系统级运行时容器并正式 GA；Apollo 则在 API 层用不依赖 LLM 判断的字段级策略，把敏感数据挡在 Agent 上下文之外。治理框架需同时覆盖终端执行边界和数据进入上下文前的最小化控制。",
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "桌面 Agent 进入操作系统级执行边界",
+          "what": "Microsoft Execution Containers（MXC）正式 GA，可包裹模型生成代码、插件、工具、Harness 或整个 Agent，由 Agent 外部策略限定文件、网络、界面和进程权限。",
+          "evidence": "策略由操作系统或容器运行时强制，Agent 不能自行扩权；支持进程、会话、WSL 和 MicroVM 等隔离级别，并提供 Permissive、Learning、Enforcement 三种策略编制与上线模式。Agent 级 Entra 归因和 Intune 集中管理仍标注为即将提供。",
+          "why_it_matters": "治理从云端 Agent 控制面扩展到个人电脑上的本地执行面；同一用户权限下运行不再等于 Agent 可继承用户全部文件、网络和桌面能力。",
+          "impact": "“1 个资产总账”增加终端、容器类型、策略版本、文件/网络/UI 边界；“1 条生命周期”增加宽松观测、学习阻断、正式强制、异常处置和回滚；“4 类评价”增加越界尝试、误拦截、隔离强度与终端影响；“1 套资源机制”补充本地执行资源和容器等级分配。"
+        },
+        {
+          "title": "API 治理下沉到字段级确定性门禁",
+          "what": "Apollo 发布 GraphOS Agent Services 公测，用统一领域模型管理 Agent 对企业 API 的搜索、身份、策略和审计。",
+          "evidence": "每次请求由平台代理凭据并按具体字段执行允许、拒绝或脱敏；由策略引擎而非 LLM 作决定，可携带用户身份或使用独立 Agent 身份。Intuit 正在公测中试点。",
+          "why_it_matters": "传统 API 授权常一次返回整条记录；字段级控制可在敏感数据进入提示词、日志和模型上下文前完成最小化，从源头降低过度取数和泄漏。",
+          "impact": "“1 个资产总账”补充 API—实体—字段—敏感级别—策略映射；“1 条生命周期”增加领域模型和字段策略的发布、回归及审计；“4 类评价”增加过度取数、脱敏/拒绝、往返次数与 Token 成本；“1 套资源机制”把 API 调用和上下文成本归集到 Agent 与任务。"
+        }
+      ],
+      "recommendations": [
+        "应吸收：Claw 等桌面 Agent 应把“本地执行容器 + 组织策略”设为企业准入条件，至少覆盖文件、网络、桌面交互和凭据，不依赖 Agent 自律。",
+        "应吸收：数据治理从“系统/接口能否访问”下沉到“哪些字段可进入上下文、可执行哪些动作”，确定性规则优先于语义判断。",
+        "应观察：MXC 的 Agent 级身份归因和 Intune 管理尚未正式可用；GraphOS Agent Services 仍为公测和单一客户试点，暂不视作成熟规模化方案。"
+      ],
+      "sources": [
+        {
+          "name": "Microsoft：Building Windows for hybrid intelligence",
+          "date": "2026-10-07",
+          "url": "https://blogs.windows.com/windowsexperience/2026/10/07/building-windows-for-hybrid-intelligence/",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Microsoft：Microsoft Execution Containers",
+          "date": "2026-10-07",
+          "url": "https://blogs.windows.com/windowsdeveloper/2026/10/07/microsoft-execution-containers-policy-driven-containment-for-ai-agents/",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Apollo GraphQL：GraphOS Agent Services 新闻稿",
+          "date": "2026-10-07",
+          "url": "https://www.apollographql.com/newsroom/press-releases/apollo-graphql-introduces-graphos-agent-services",
+          "evidence_strength": "中"
+        },
+        {
+          "name": "Apollo GraphQL：Apollo Summit 2026 Product Highlights",
+          "date": "2026-10-07",
+          "url": "https://www.apollographql.com/blog/announcement/apollo-summit-2026-product-highlights",
+          "evidence_strength": "中"
+        }
+      ],
+      "updatedAt": "2026-10-08T07:50:11+08:00"
+    },
     {
       "id": "agent-governance:2026-10-07",
       "radarKey": "agent-governance",
