@@ -2,8 +2,59 @@
   "schemaVersion": 1,
   "radarKey": "agent-governance",
   "radarTitle": "Agent 治理",
-  "updatedAt": "2026-10-02T08:16:57+08:00",
+  "updatedAt": "2026-10-07T08:12:42+08:00",
   "reports": [
+    {
+      "id": "agent-governance:2026-10-07",
+      "radarKey": "agent-governance",
+      "radarTitle": "Agent 治理",
+      "reportDate": "2026-10-07",
+      "headline": "Agent 身份治理进入自动处置闭环，数据负载开始独立管控",
+      "conclusion": "SailPoint 将 Agent 身份治理从“发现与告警”推进到持续发现、运行时授权与零常驻权限、权限收敛、撤权/停用/补责任人和自动执行；GoodData 则把高并发 Agent 数据请求作为独立资源对象，提供逐 Agent 用量控制、工作负载隔离和细粒度授权。治理资源机制需要从模型与额度，扩展到权限时效、数据查询和并发容量。",
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "Agent 身份治理形成自动处置闭环",
+          "what": "SailPoint 发布 Agentic Fabric、Autonomous Agents 与 A-ISPM 新能力，治理覆盖影子 Agent、运行时授权、即时 kill switch、权限收敛和自动修复。",
+          "evidence": "官方披露可发现 MCP Server、工具、凭据与数据存储；以带条件的 JIT 授权替代常驻权限；处置动作包括撤权、停用 Agent、补责任人或自动执行策略。相关能力自 Navigate 2026 起滚动上线，A-ISPM 预计 Q4 FY27。",
+          "why_it_matters": "治理不再停在资产登记、季度复核和风险告警，而是进入机器速度的持续发现、授权和可执行处置；但部分能力仍为发布路线而非成熟客户验证。",
+          "impact": "“1 个资产总账”增加 Agent 身份、凭据链、责任人、MCP/工具和数据依赖；“1 条生命周期”补充发现、认领、临时授权、运行监控、权限收敛、撤权/停用与审计取证；“4 类评价”增加常驻权限、孤儿身份、处置时长和审计证据完备度；“1 套资源机制”默认零常驻权限与条件 JIT。"
+        },
+        {
+          "title": "Agent 数据负载成为独立资源治理对象",
+          "what": "GoodData 发布 Agentic Serving Plane，将机器生成的连续、高并发数据查询与人工分析负载分开治理。",
+          "evidence": "产品支持逐用户和逐 Agent 用量控制、工作负载隔离、字段/行级授权、租户隔离，并记录数据、上下文和执行路径。官方指出一个 Agent 任务可产生数十至数百次短时数据操作，但未公开客户规模、治理阈值和量化收益。",
+          "why_it_matters": "成本与扩容治理不应只看模型 Token；Agent 的数据查询可能挤占底层数仓、语义服务和生产负载，需成为单独容量与成本对象。",
+          "impact": "“1 个资产总账”增加数据服务、语义指标和授权边界；“4 类评价”增加任务级数据调用次数、单位有效结果成本、资源争用和越权拒绝；“1 套资源机制”增加 Agent 查询额度、并发上限、数据服务隔离和容量保护。"
+        }
+      ],
+      "recommendations": [
+        "应吸收：把“零常驻权限 + 条件 JIT + 自动收敛/撤权”写入高风险 Agent 的默认授权模式，人工审批保留在异常提权和规则变更节点。",
+        "应吸收：资源治理从模型额度扩展为“模型算力 + 工具调用 + 数据查询 + 并发容量”，全部按 Agent、任务和业务结果归集。",
+        "应观察：SailPoint 多项能力仍在滚动上线，GoodData 尚无客户规模和量化成效；暂不把厂商声明当作成熟案例。"
+      ],
+      "sources": [
+        {
+          "name": "SailPoint：From Chaos to Control",
+          "date": "2026-10-06",
+          "url": "https://investor.sailpoint.com/news-releases/news-release-details/chaos-control-sailpoint-unlocks-secure-agentic-era-autonomous",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "SailPoint：Horizons of Identity Security 2026 findings",
+          "date": "2026-10-06",
+          "url": "https://investor.sailpoint.com/news-releases/news-release-details/sailpoint-report-finds-79-enterprises-run-ai-agents-production",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "GoodData.AI：Agentic Serving Plane",
+          "date": "2026-10-06",
+          "url": "https://www.gooddata.ai/press-releases/gooddata-ai-launches-the-agentic-serving-plane-a-new-category-of-enterprise-data-infrastructure-for-ai-agents/",
+          "evidence_strength": "中"
+        }
+      ],
+      "updatedAt": "2026-10-07T08:12:42+08:00"
+    },
     {
       "id": "agent-governance:2026-10-02",
       "radarKey": "agent-governance",
