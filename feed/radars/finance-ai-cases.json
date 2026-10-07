@@ -2,8 +2,52 @@
   "schemaVersion": 1,
   "radarKey": "finance-ai-cases",
   "radarTitle": "财经 AI 案例",
-  "updatedAt": "2026-10-03T07:40:35+08:00",
+  "updatedAt": "2026-10-07T08:29:38+08:00",
   "reports": [
+    {
+      "id": "finance-ai-cases:2026-10-07",
+      "radarKey": "finance-ai-cases",
+      "radarTitle": "财经 AI 案例",
+      "reportDate": "2026-10-07",
+      "headline": "PwC 的 Billing Assistant 显示，财经 Agent 的近期高价值形态可能不是替代专业判断，而是嵌入 ERP 消除高频操作摩擦；早测单笔开票由 35 分钟降至约 5 分钟。",
+      "conclusion": "PwC 正将 SAP AI Billing Assistant 直接建设在自身 SAP 环境中，指导员工完成计费、减少多菜单多步骤操作，并提前识别潜在问题。基于早期测试，单笔开票时间由 35 分钟降至约 5 分钟，约减少 86%；PwC 估算全面部署后可释放约 15 万小时/年、产生最高 3,000 万美元价值。真正值得改变判断的是：财经 Agent 的规模价值可以先来自 ERP 内高频、标准化作业的操作压缩和用户采用改善，而非替代专业判断。但当前仍是 early adopter/design partner 阶段，年度价值属于预测，尚未证明全面生产覆盖、差错率或 DSO 实际改善。",
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "PwC：Billing Assistant 嵌入 SAP 计费流程，早测单笔耗时减少约 86%",
+          "what": "PwC 正在自身 SAP 环境中实施 SAP AI Billing Assistant。助手引导员工完成计费流程，减少在 ERP 菜单和多步骤之间的操作，并帮助更早发现潜在计费问题；人员继续负责业务处理、复核和结果责任。",
+          "evidence": "PwC 是 SAP 最大型 Cloud ERP 客户之一，已完成端到端财务转型、两次升级及一次年结。基于早期测试，单笔开票时间从 35 分钟降至约 5 分钟。PwC 估算全面部署后可释放约 15 万小时/年，并通过直接成本节约和把产能重新投入可计费工作产生最高 3,000 万美元价值。以上年度价值是客户预测；公开口径仍为 early adopter/design partner、正在实施，未披露全面生产覆盖人数、差错率、返工率和 DSO 实际改善，证据强度为中。",
+          "why_it_matters": "它把财经 Agent 的价值焦点从通用问答转向 ERP 内高频任务的操作压缩，并说明在成熟财务系统中，用户采用和流程摩擦可能比开放式推理更早形成规模价值。该案例也强化了“助手嵌入核心系统、人员保留责任”的产品形态。",
+          "impact": "企业财经 AI 应优先选择任务频率高、步骤标准、系统记录完整且人工可复核的作业点；建立从单笔耗时到年化产能的可复算价值模型，同时跟踪一次通过率、修正率、采用率、人工接管和 DSO 等业务结果。清洁核心、统一流程、可信主数据与既有权限体系是前置条件。"
+        }
+      ],
+      "recommendations": [
+        "应吸收｜用“嵌入作业点的任务助手”替代独立问答入口，并从单笔作业时间建立可复算价值模型。",
+        "应吸收｜先完成流程、主数据和权限标准化；Agent 不应成为绕开 ERP 治理的旁路。",
+        "应观察｜35→5 分钟来自早期测试，15 万小时和 3,000 万美元均为预测；全面投产后再验证覆盖率、差错率、返工、DSO 与真实价值。"
+      ],
+      "sources": [
+        {
+          "name": "PwC：PwC Deepens Strategic Alliance with SAP",
+          "date": "2026-10-06",
+          "url": "https://www.pwc.com/us/en/technology/alliances/library/pwc-sap-autonomous-enterprise.html",
+          "evidence_strength": "中"
+        },
+        {
+          "name": "SAP News：SAP Puts the Autonomous Enterprise to Work",
+          "date": "2026-10-06",
+          "url": "https://news.sap.com/2026/10/sap-connect-sap-puts-autonomous-enterprise-to-work/",
+          "evidence_strength": "中"
+        },
+        {
+          "name": "SAP：SAP Connect 2026 Innovation News Guide",
+          "date": "2026-10-06",
+          "url": "https://www.sap.com/topics/events/connect/innovation-news-guide-2026",
+          "evidence_strength": "中"
+        }
+      ],
+      "updatedAt": "2026-10-07T08:29:38+08:00"
+    },
     {
       "id": "finance-ai-cases:2026-10-03",
       "radarKey": "finance-ai-cases",
