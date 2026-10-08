@@ -2,8 +2,59 @@
   "schemaVersion": 1,
   "radarKey": "agent-governance",
   "radarTitle": "Agent 治理",
-  "updatedAt": "2026-10-08T07:50:11+08:00",
+  "updatedAt": "2026-10-09T07:45:03+08:00",
   "reports": [
+    {
+      "id": "agent-governance:2026-10-09",
+      "radarKey": "agent-governance",
+      "radarTitle": "Agent 治理",
+      "reportDate": "2026-10-09",
+      "headline": "治理开始出现可直接落表的退出阈值与身份分型：Microsoft 用 60 天不活跃触发清理，Google 把临时子 Agent 与持久同事 Agent 分成独立身份资产。",
+      "conclusion": "企业 Agent 治理从原则进一步落到可执行规则：Microsoft 公开按能力和风险划分建设路径、风险责任与发布审查，并以 60 天不活跃触发提醒和自动清理；Google 则将临时任务子 Agent 与持久“同事 Agent”设计为各自拥有身份的不同资产类型。治理框架应补上分层准入、量化退出阈值，以及父 Agent—临时子 Agent—持久 Agent 的关系和身份生命周期。",
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "Microsoft 给出分层准入与 60 天退出阈值",
+          "what": "Microsoft 公开其内部 Agent 建设分层：轻量检索使用 Agent Builder，跨系统行动使用 Copilot Studio，复杂编排与企业级自动化使用 Foundry；能力越强，治理与风险责任越向管理员和业务组织上移。",
+          "evidence": "官方将三条路径分别定义为“轻治理/低风险”“高级治理/较高风险”“高级治理/最高风险”；企业级发布由安全、隐私等专业团队审查。对长期不活跃 Agent，Microsoft 使用 60 天阈值触发提醒和自动清理。证据强。",
+          "why_it_matters": "此前行业普遍强调风险分级，但很少公开可操作的建设路径和退出阈值。此次把“谁能用什么工具、谁承担风险、何时清理”连成了一条治理规则；60 天是可校准的参考点，不应直接照搬为通用标准。",
+          "impact": "“1 个资产总账”增加建设路径、风险责任人、发布范围、最后活跃日；“1 条生命周期”按轻量检索/业务行动/专业自治分层门禁，并加入不活跃提醒—确认—清理；“4 类评价”将技术效果、安全合规、运营健康、业务价值按风险层级设不同门槛；“1 套资源机制”坚持先用满足需求的最轻平台，高风险 Agent 才配置专业评审、持续监控和更高运行资源。"
+        },
+        {
+          "title": "Google 将临时子 Agent 与持久同事 Agent 分成不同身份资产",
+          "what": "Google 发布的 Gemini agent 可动态创建临时、任务专用子 Agent；也可作为持续跨天工作的 coworker agent。两者都不再只是父 Agent 内部步骤，而是具有独立身份的治理对象。",
+          "evidence": "临时子 Agent 各自拥有身份；持久 coworker agent 拥有独立的 @agents.company.com 邮箱、持久存储和限定上下文。每个 Agent 身份可加密证明、映射并传播到外部系统，动作写入归属于 Agent 的审计日志；运行在独立网络边界的 Sandbox 内。证据强，但具体可用范围仍需产品文档确认。",
+          "why_it_matters": "仅登记“一个主 Agent”会漏掉动态生成的执行主体，也无法区分短时任务身份与长期岗位身份。身份、权限、日志和退出机制必须覆盖层级关系，而不是只覆盖入口应用。",
+          "impact": "“1 个资产总账”增加父子关系、临时/持久类型、身份、邮箱、存储、上下文边界；“1 条生命周期”拆分临时子 Agent 的任务终止/自动过期与持久 Agent 的入职、调岗、休眠、下线；“4 类评价”需要按实际执行身份归集质量、安全、运营和价值；“1 套资源机制”按子任务和持久岗位分别分配模型、并发、存储与预算。"
+        }
+      ],
+      "recommendations": [
+        "应吸收｜将 Agent 建设准入明确拆成“检索—行动—自治”三级；每一级绑定可用平台、数据/工具范围、风险责任人、发布审批和评价门槛。",
+        "应吸收｜在资产总账中区分父 Agent、临时子 Agent、持久岗位 Agent；临时身份默认随任务到期，持久身份按员工式生命周期治理。",
+        "应观察｜60 天不活跃可作为本企业校准起点，但应结合关键性、替代关系和合规留存决定提醒、冻结与删除阈值；Google 新身份模型的正式可用范围和跨系统撤权能力仍需验证。"
+      ],
+      "sources": [
+        {
+          "name": "Microsoft Inside Track：Our Customer Zero guide: Enabling agent creation across Microsoft 365 Copilot, Copilot Studio, and Foundry",
+          "date": "2026-10-08",
+          "url": "https://www.microsoft.com/insidetrack/blog/our-customer-zero-guide-enabling-agent-creation-across-microsoft-365-copilot-copilot-studio-and-foundry/",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Google Cloud：Welcome to Gemini at Work 2026: Introducing the Gemini agent",
+          "date": "2026-10-08",
+          "url": "https://cloud.google.com/blog/products/ai-machine-learning/welcome-to-gemini-at-work-2026",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Microsoft Inside Track：Implementing Agent 365: How we’re governing and managing AI agents at Microsoft",
+          "date": "2026-08-06",
+          "url": "https://www.microsoft.com/insidetrack/blog/implementing-agent-365-how-were-governing-and-managing-ai-agents-at-microsoft/",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-10-09T07:45:03+08:00"
+    },
     {
       "id": "agent-governance:2026-10-08",
       "radarKey": "agent-governance",
