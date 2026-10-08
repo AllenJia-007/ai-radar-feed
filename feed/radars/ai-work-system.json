@@ -2,8 +2,65 @@
   "schemaVersion": 1,
   "radarKey": "ai-work-system",
   "radarTitle": "AI 工作系统",
-  "updatedAt": "2026-10-06T08:00:36+08:00",
+  "updatedAt": "2026-10-09T07:36:48+08:00",
   "reports": [
+    {
+      "id": "ai-work-system:2026-10-09",
+      "radarKey": "ai-work-system",
+      "radarTitle": "AI 工作系统",
+      "reportDate": "2026-10-09",
+      "headline": "Claude 将插件确立为跨端专业能力包，Runtime 决定执行深度",
+      "conclusion": "Claude 在 10 月 8 日正式明确：Plugin 是保存到账户、跨 Chat、Cowork 与 Claude Code 复用的专业能力包，可统一封装 Skill、命令、MCP 连接器、Sub-agent 与 Hooks；但不同 Runtime 只加载其支持的组件。专业能力资产由此与客户端解耦，桌面端的差异化不再是自建另一套 Skill，而是提供本地文件、桌面应用、Hooks、Sub-agent、MCP 与受控代码执行。对 EurekaX Claw 的直接判断是：应定位为组织统一专业能力资产的高执行力桌面 Runtime，而非独立能力生态。",
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "Plugin 成为账户级、跨端专业能力包",
+          "what": "Claude Plugin 可统一封装 Skill、命令、MCP 连接器、Sub-agent 与 Hooks。用户在 Web、桌面或 Cowork 添加后，插件保存到账户，并在使用同一账户登录 Claude Code 时单向同步。",
+          "evidence": "官方明确 Skill、命令和连接器可跨 Chat、Cowork、Claude Code 使用；Claude Code v2.1.273 及以上会在启动时同步账户插件，组织设为 Required 的插件在终端也强制加载。插件安装与连接器认证仍分离。",
+          "why_it_matters": "专业能力的主资产不再隶属于某个客户端，而成为账户/组织级能力包；Web 与桌面端的关系从“两套能力”变为“同一资产、不同执行深度”。",
+          "impact": "Claw 不应复制独立 Skill 资产库，应消费 EurekaX 统一专业能力包，并承担高执行力桌面 Runtime：本地文件、桌面应用、Hooks、Sub-agent、MCP 与受控代码执行。"
+        },
+        {
+          "title": "同一能力包由 Runtime 选择性加载",
+          "what": "同一 Plugin 在不同运行面只加载支持的组件：Chat 忽略 Agent 与 Hooks，Cowork 和 Claude Code 才运行 Agent/Hooks；Claude Code 可完整加载本地 MCP 等组件。",
+          "evidence": "官方组件矩阵明确 Skills 在三端加载，Agents/Hooks 仅在 Cowork 与 Claude Code 加载；Claude Code 同步插件时会加载 Skills、Agents、Hooks、MCP 与 LSP，但同步受登录方式、客户端版本和本地/组织设置约束。",
+          "why_it_matters": "能力包格式可以统一，但执行权限不能统一；Runtime 本身成为安全、体验和产品定位的分界线。",
+          "impact": "Claw 应建立组件级能力清单与权限模型，按 Runtime 决定加载、审批和隔离；实现统一资产格式，但不统一信任等级。"
+        }
+      ],
+      "recommendations": [
+        "应吸收｜把“专家画像 + Skill + Connector/MCP + Sub-agent + Hooks/运行时扩展”抽象成统一专业能力包，由 EurekaX 管资产与分发，Claw 按权限执行。",
+        "应吸收｜Claw 定位为组织统一能力资产的高执行力桌面 Runtime；Web 面向低权限、跨端消费，Claw 面向本地和高权限动作。",
+        "应观察｜账户同步仍依赖登录方式、客户端版本与本地设置；Claw 需把同步状态、版本锁定和降级路径做成显式机制。"
+      ],
+      "sources": [
+        {
+          "name": "Anthropic｜Use plugins in Claude",
+          "date": "2026-10-08（更新）",
+          "url": "https://support.claude.com/en/articles/13837440-use-plugins-in-claude",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Anthropic｜Plugins - Claude.ai Documentation",
+          "date": "2026-10-09（检索）",
+          "url": "https://claude.com/docs/plugins/overview",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Anthropic｜Plugin feature support across platforms",
+          "date": "2026-10-09（检索）",
+          "url": "https://claude.com/docs/plugins/platform-support",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Anthropic｜Plugin loading reference",
+          "date": "2026-10-09（检索）",
+          "url": "https://code.claude.com/docs/en/plugins/loading",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-10-09T07:36:48+08:00"
+    },
     {
       "id": "ai-work-system:2026-10-06",
       "radarKey": "ai-work-system",
