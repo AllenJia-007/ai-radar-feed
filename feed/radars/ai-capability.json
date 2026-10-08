@@ -2,8 +2,71 @@
   "schemaVersion": 1,
   "radarKey": "ai-capability",
   "radarTitle": "AI 能力",
-  "updatedAt": "2026-10-07T09:29:56+08:00",
+  "updatedAt": "2026-10-08T08:33:57+08:00",
   "reports": [
+    {
+      "id": "ai-capability:2026-10-08",
+      "radarKey": "ai-capability",
+      "radarTitle": "AI 能力",
+      "reportDate": "2026-10-08",
+      "headline": "AI工作系统的两个关键层正在重构：GPT‑6把固定聊天框推进为按任务实时生成的交互界面；Windows则把Agent隔离、身份与治理下沉为操作系统级执行能力。",
+      "conclusion": "AI工作系统的两个关键层正在重构：GPT‑6把固定聊天框推进为按任务实时生成的交互界面；Windows则把Agent隔离、身份与治理下沉为操作系统级执行能力。对EurekaX/Claw而言，前端应从固定页面转向受控组件运行时，执行侧应从应用内沙箱升级为独立于Agent的系统强制边界。",
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "模型开始实时编译任务界面",
+          "what": "OpenAI在GPT‑6 Chat中上线Intelligent UI，模型可根据问题组合文本、图形、按钮、表单、图表和交互工具，并在推理或调用工具尚未结束时持续补充答案。",
+          "evidence": "官方披露其采用原生、可流式组件库和生成期编译器，界面可随模型输出渐进呈现；在需联网搜索的任务中，GPT‑6 Instant平均比GPT‑5.6 Instant早44%开始回答。企业版仍受工作区和角色权限控制。",
+          "why_it_matters": "这不是回答里多一张图，而是模型开始承担内容、布局和交互方式的联合规划；固定聊天界面不再是AI产品唯一容器。",
+          "impact": "EurekaX应把前端能力抽象为受控组件协议：允许Agent选择卡片、表格、图表、表单和操作按钮，但由平台限定组件、数据绑定、权限、审计和可访问性；复杂业务仍由专业应用承接，避免任意前端代码执行。"
+        },
+        {
+          "title": "Agent隔离与治理进入操作系统",
+          "what": "Microsoft Execution Containers（MXC）在Windows 11正式可用；NVIDIA与Microsoft同时发布面向本地常驻Agent的Windows硬件与运行栈。",
+          "evidence": "MXC可封装模型生成代码、插件、工具、Harness或整个Agent；文件、网络和界面权限由Agent外部策略强制执行，工作负载不能自行扩权。它提供进程、独立桌面会话、WSL和实验性MicroVM等隔离级别，以及Enforcement、Learning、Permissive三种策略模式。Codex与NVIDIA OpenShell已接入；Claude Code等宣布后续支持。",
+          "why_it_matters": "企业Agent的安全边界正从应用自建沙箱下沉为通用操作系统原语，并与独立Agent身份、IT策略和活动监控衔接。",
+          "impact": "Claw应把模型/Harness和执行容器解耦，定义跨环境的任务权限清单：可读写目录、网络目的地、桌面交互、工具、凭据和审计要求；个人端与云端复用同一策略模型，由操作系统或云沙箱负责不可绕过的执行。"
+        }
+      ],
+      "recommendations": [
+        "应吸收｜把EurekaX交互架构升级为“模型选择受控组件＋平台编译呈现”，优先在分析结论、对比、参数试算和审批确认中试点。",
+        "应吸收｜将Claw安全底座明确拆成Harness决策层、策略层、执行容器层和Agent身份/审计层；策略必须位于Agent控制之外。",
+        "应观察｜GPT‑6界面质量和MXC企业管理能力仍以厂商数据与分阶段上线为主；试点重点验证错误交互、权限误配、策略调试成本和人工接管。"
+      ],
+      "sources": [
+        {
+          "name": "OpenAI｜GPT‑6 and Intelligent UI for everyone",
+          "date": "2026-10-07",
+          "url": "https://openai.com/index/gpt-6-for-everyone/",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "OpenAI Deployment Safety Hub｜GPT‑6 Sol and GPT‑6 Luna: October 2026 update",
+          "date": "2026-10-07",
+          "url": "https://deploymentsafety.openai.com/gpt-6-october/obeying-restrictions",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "OpenAI Help Center｜ChatGPT Enterprise and Edu release notes",
+          "date": "2026-10-07",
+          "url": "https://help.openai.com/en/articles/10128477-chatgpt-enterprise-and-edu-release-notes",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "NVIDIA Blog｜NVIDIA, Microsoft Kick Off a New Beginning for Windows PCs with RTX Spark and AI Agents",
+          "date": "2026-10-07",
+          "url": "https://blogs.nvidia.com/blog/local-ai-rtx-spark-microsoft-windows-event/",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Windows Developer Blog｜Microsoft Execution Containers: Policy-driven containment for AI agents",
+          "date": "2026-10-07",
+          "url": "https://blogs.windows.com/windowsdeveloper/2026/10/07/microsoft-execution-containers-policy-driven-containment-for-ai-agents/",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-10-08T08:33:57+08:00"
+    },
     {
       "id": "ai-capability:2026-10-07",
       "radarKey": "ai-capability",
