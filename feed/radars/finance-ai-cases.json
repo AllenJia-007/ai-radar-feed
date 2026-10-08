@@ -2,8 +2,65 @@
   "schemaVersion": 1,
   "radarKey": "finance-ai-cases",
   "radarTitle": "财经 AI 案例",
-  "updatedAt": "2026-10-07T08:29:38+08:00",
+  "updatedAt": "2026-10-08T08:08:23+08:00",
   "reports": [
+    {
+      "id": "finance-ai-cases:2026-10-08",
+      "radarKey": "finance-ai-cases",
+      "radarTitle": "财经 AI 案例",
+      "reportDate": "2026-10-08",
+      "headline": "两个案例把财经 Agent 的成熟度推进到“受控执行”：Pamarco 已让 Agent 自动完成约 40% 的月结任务并对非 PO 发票自动过账；BNY 则用“双模型一致即继续、分歧即转人工”控制核心基金运营。",
+      "conclusion": "本期值得改变判断的不是新增了多少 Copilot 功能，而是两种可复制的生产机制已经出现：一是把有边界权限的 Agent 接入 ERP 任务、依赖关系和过账动作，由人保留判断与复核；二是在高准确性要求的基金运营中，让不同模型独立处理同一任务，以一致性作为自动继续的门槛、把分歧交给人工。Pamarco 与 BNY 的公开数字均为企业或厂商自报，尚缺少差错率、回滚量和长期控制失效数据，但已足以把产品规划重点从“问答体验”转向“动作权限、验证机制和例外运营”。",
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "Pamarco：月结 Agent 进入 ERP 核心流程，非 PO 发票已开启自动过账",
+          "what": "Pamarco 将 Copilot Studio Agent 通过 Dynamics 365 ERP MCP Server 接入月结、发票编码和定期经营报告。月结任务按负责人、到期日和依赖关系运行；系统每小时检查可执行任务，Agent 完成后更新状态并邮件通知。非 PO 发票 Agent 读取单据、匹配 ERP 数据、拆分税码与会计行并自动过账；需要判断或复核的工作仍由人负责。",
+          "evidence": "Microsoft 客户案例披露：公司约 225 人、7 个法人实体，Dynamics 365 是共同数据与作业底座；约 40% 的月结任务已由自治 Agent 执行。Pamarco 称货运类非 PO 发票编码成功率约 95%，因此已对全部非 PO 发票开启自动过账；管理报告也按日、周、月自动生成。以上为客户与厂商口径，未披露样本量、差错/冲销率、控制例外或实际缩短的关账天数，证据强度为中。",
+          "why_it_matters": "这比“生成分录建议”更进一步：Agent 已读写 ERP、遵循任务依赖并提交过账结果。可规模化形态是受限角色、明确任务边界、动作留痕与人工例外处理，而不是给通用助手开放宽泛财务权限。",
+          "impact": "财经 AI 产品应把自治单元设计成“任务类型 × 数据范围 × 可执行动作 × 金额/风险阈值”，并原生接入关账日历、审批、凭证状态和异常队列。上线指标要增加自动过账后的冲销率、误码率、人工接管率、控制例外和关账周期改善。"
+        },
+        {
+          "title": "BNY：核心基金运营采用一致性闸门，Agent 从建议走向受控执行",
+          "what": "BNY 在基金运营中将 AI 用于对账数据摄取、清洗、标准化、交易匹配、异常根因分析和优先级排序，并在 NAV 计算中做动态基准与异常检测。对财务报表验证等高准确性任务，Agentic 模型与另一类大模型独立分析；结果一致则流程继续，分歧则转人工复核。",
+          "evidence": "BNY 官方材料称，Eliza 已有 300 多个企业 AI 方案投入生产，其中资产服务领域超过 40 个；动态基金基准将 NAV 计算中的误报率从 90% 降至不足 20%，智能 NAV 已用于若干基金。所有 AI 工具上线前经过治理，并覆盖持续监控、变更管理、遥测、血缘、审批、权限再认证、事件分析和周期性重测。另据 Microsoft 客户案例，BNY 的数字员工已处理全球超过 10% 的付款修复问题。数据均为企业或合作厂商自报，证据强度为中。",
+          "why_it_matters": "BNY 给出了高风险财经 Agent 的具体验证机制：不依赖单一模型的自信分，而是用独立模型的一致性决定是否直通，把人工集中到真正分歧和异常。核心运营的产品边界由验证架构决定，而不只是模型能力。",
+          "impact": "对 NAV、对账、报表验证、税务申报和资金指令等高风险场景，应建设独立复核路径、分歧阈值、自动阻断和完整审计轨迹；验证需按交易/基金/实体分层，持续监控漂移，并将模型、规则和人工修改统一纳入血缘。"
+        }
+      ],
+      "recommendations": [
+        "应吸收｜自治权限按“任务/交易类型 × 数据范围 × 动作 × 阈值”授予，并以系统内状态、审批和可回滚记录为控制底座。",
+        "应吸收｜高风险流程采用异构模型独立复核：一致才自动继续，分歧转人工；同时记录证据、版本、人工修改和最终动作。",
+        "应观察｜两案量化结果仍为企业或厂商自报；规模化前必须补测差错、冲销、人工接管、控制例外及关账/NAV 时效的长期变化。"
+      ],
+      "sources": [
+        {
+          "name": "BNY：AI in Fund Operations – The Next Chapter",
+          "date": "2026-10-05",
+          "url": "https://www.bny.com/corporate/global/en/insights/ai-fund-operations.html",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Microsoft Customer Stories：Pamarco accelerates finance operations with autonomous agents",
+          "date": "2026-09-18",
+          "url": "https://www.microsoft.com/en/customers/story/27289-pamarco-technologies-dynamics-365-finance",
+          "evidence_strength": "中"
+        },
+        {
+          "name": "Microsoft Customer Stories：BNY resolves client inquiries 80% faster with Eliza",
+          "date": "2026-09-24",
+          "url": "https://www.microsoft.com/en/customers/story/27322-bny-microsoft-365-copilot",
+          "evidence_strength": "中"
+        },
+        {
+          "name": "BNY Annual Report 2025：Eliza 生产规模与治理基线",
+          "date": "2026-02-09",
+          "url": "https://www.bny.com/corporate/global/en/investor-relations/annual-report-2025.html",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-10-08T08:08:23+08:00"
+    },
     {
       "id": "finance-ai-cases:2026-10-07",
       "radarKey": "finance-ai-cases",
