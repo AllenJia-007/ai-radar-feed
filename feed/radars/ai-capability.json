@@ -2,8 +2,72 @@
   "schemaVersion": 1,
   "radarKey": "ai-capability",
   "radarTitle": "AI 能力",
-  "updatedAt": "2026-10-08T08:33:57+08:00",
+  "updatedAt": "2026-10-09T09:06:21+08:00",
   "reports": [
+    {
+      "id": "ai-capability:2026-10-09",
+      "radarKey": "ai-capability",
+      "radarTitle": "AI 能力",
+      "reportDate": "2026-10-09",
+      "headline": "Google把企业Agent从可调用的助手推进为拥有独立身份、长期记忆、跨渠道持续执行和预算约束的组织成员，并明确把Agent资产与底层模型解耦；Anthropic则把高风险能力落地扩展为模型、现场工程师与可信服务商共同承担的交付网络。",
+      "conclusion": "Google把企业Agent从可调用的助手推进为拥有独立身份、长期记忆、跨渠道持续执行和预算约束的组织成员，并明确把Agent资产与底层模型解耦。Anthropic则把高风险能力落地扩展为“模型＋现场工程师＋可信服务商/设备商”的交付网络。企业Agent平台的核心对象应从模型实例转向可治理、可替换模型的数字岗位。",
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "Agent开始成为独立组织身份",
+          "what": "Google发布Gemini agent，可作为个人助理、团队成员或特定岗位工作；能跨Web、桌面、Workspace、Microsoft 365、Slack及无界面渠道持续运行。",
+          "evidence": "Coworker agent拥有独立邮箱、日历、Drive、企业目录身份和持久存储；长达数小时或数天的任务在用户关机后继续执行。Gemini还能动态创建具有独立身份的临时子Agent，串并行协作。",
+          "why_it_matters": "Agent不再只是某个用户会话里的工具，而成为具有身份、职责、工作空间、历史记录和协作关系的组织行动者。",
+          "impact": "EurekaX应建立Agent岗位对象，至少包含Owner、服务对象、职责、独立身份、可见范围、上下文、工作空间、任务队列、交接与停用机制；不能继续只用提示词、模型和工具定义Agent。"
+        },
+        {
+          "title": "Agent资产与模型解耦，治理和成本进入统一控制面",
+          "what": "Google明确提出Gemini是Agent、模型是独立选择；同一Agent可在Gemini、Claude及未来其他模型间动态路由，同时保留上下文、Skill和数据。",
+          "evidence": "平台将工具注册、Skill注册和会话、语义、程序性、情景四类记忆作为Agent资产；每个Agent有加密证明身份、最小权限和独立审计。任务运行于Agent Sandbox，全部进出及Agent间流量通过Agent Gateway执行统一策略；项目达到实时预算上限时自动暂停。",
+          "why_it_matters": "模型供应商不再等于Agent产品；真正需要长期沉淀的是身份、Context、Skill、工具、策略、轨迹和成本归属。",
+          "impact": "结合集团IT与财经IT双层关系，集团级IT更适合建设身份、网关、沙箱、模型路由、计费与审计等通用控制面；财经IT应掌握财经Agent岗位、Skill、语义与知识、上下文策略、业务评价和运营。EurekaX Foundation应支持模型可替换。"
+        },
+        {
+          "title": "高风险核心场景采用可信交付网络",
+          "what": "Anthropic启动Cyber Mission，以Critical Infrastructure Defense Program把前沿模型、现场工程师和威胁研究交给运营技术领域既有可信服务商、安全厂商与设备制造商；同时上线免费的周期性OSS Scanner。",
+          "evidence": "首批伙伴包括Accenture、Booz Allen、CrowdStrike、Deloitte、Dragos、Hitachi、Palo Alto Networks、PwC和Rockwell Automation等。OSS Scanner通过离线强化沙箱运行扫描Agent，执行漏洞复核、补丁建议和根因分析；但未经人工验证的报告明确保留误报风险。",
+          "why_it_matters": "进入关键生产流程的不是模型直销，而是模型能力、领域专家、交付工程师、系统厂商和人工验证共同形成的责任链。",
+          "impact": "财经高风险Agent也应采用同类机制：财经IT定义业务控制和验收，集团IT提供受控运行底座，专业产品团队或实施方承担系统集成，业务Owner批准高影响动作；模型厂商不能成为唯一责任主体。"
+        }
+      ],
+      "recommendations": [
+        "应吸收｜将Agent资产模型升级为数字岗位：身份、职责、上下文、Skill、工具、策略、预算、轨迹、Owner和生命周期缺一不可。",
+        "应吸收｜明确集团IT与财经IT边界：集团IT建设通用控制面，财经IT建设财经语义、Agent岗位与业务评价；模型通过统一路由可替换。",
+        "应观察｜Google的Coworker Agent和Anthropic关键基础设施项目仍属厂商发布与早期合作；生产规划前重点验证身份隔离、跨渠道上下文一致性、子Agent权限继承、成本归集和人工复核负荷。"
+      ],
+      "sources": [
+        {
+          "name": "Google Cloud｜Welcome to Gemini at Work 2026: Introducing the Gemini agent",
+          "date": "2026-10-08",
+          "url": "https://cloud.google.com/blog/products/ai-machine-learning/welcome-to-gemini-at-work-2026",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Google Cloud｜Empowering SMBs to do more with Gemini",
+          "date": "2026-10-08",
+          "url": "https://cloud.google.com/blog/topics/startups/how-to-grow-your-small-business-using-google-gemini",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Anthropic｜Introducing the Anthropic Cyber Mission",
+          "date": "2026-10-08",
+          "url": "https://www.anthropic.com/news/anthropic-cyber-mission",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Anthropic Frontier Red Team｜OSS Scanner",
+          "date": "2026-10-08",
+          "url": "https://red.anthropic.com/oss-scanner/",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-10-09T09:06:21+08:00"
+    },
     {
       "id": "ai-capability:2026-10-08",
       "radarKey": "ai-capability",
