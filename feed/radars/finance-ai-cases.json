@@ -2,8 +2,52 @@
   "schemaVersion": 1,
   "radarKey": "finance-ai-cases",
   "radarTitle": "财经 AI 案例",
-  "updatedAt": "2026-10-08T08:08:23+08:00",
+  "updatedAt": "2026-10-09T08:15:05+08:00",
   "reports": [
+    {
+      "id": "finance-ai-cases:2026-10-09",
+      "radarKey": "finance-ai-cases",
+      "radarTitle": "财经 AI 案例",
+      "reportDate": "2026-10-09",
+      "headline": "Workday 把月度人员成本预测从 8 天压缩到 1 天：AI 在数分钟内生成基线模型，财经人员转向业务权衡，说明 FP&A 的近期成熟形态是“模型起草、人负责判断”。",
+      "conclusion": "Workday 10 月 8 日发布的 Customer Zero 案例显示，月度 headcount forecast 已从 8 天的数据核对与往返沟通压缩到 1 天；清理底层计划数据后，AI 在数分钟内运行初始基线模型，财经人员把时间用于战略权衡。该案例改变的不是“AI 能否预测”，而是 FP&A 的任务边界：AI 可以先承担数据对齐、规则化基线和模型初稿，人保留假设调整、业务挑战、情景选择与最终承诺。效果为 Workday 自报，尚未披露预测准确率、人工修正幅度、覆盖部门或连续运行周期，因此应视为流程嵌入型 AI 的强信号，而不是自主预测已成熟。",
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "Workday：AI 生成 headcount 基线，月度预测周期由 8 天缩短至 1 天",
+          "what": "Workday 财经团队把 AI 嵌入月度计划与预测。过去人员预测需要跨数据源核对和多轮沟通；现在先清理并统一底层计划数据，由 AI 在数分钟内运行初始基线模型。财经人员不再把一周用于拼数，而是审视假设、讨论资源取舍并完成最终业务判断。",
+          "evidence": "Workday 官方 Customer Zero 材料于 2026 年 10 月 8 日发布，并称该流程使用真实数据、安全规则和日常工作流运行；月度人员预测周期从 8 天降至 1 天，缩短约 87.5%。同一材料称 94% 员工每周使用其定制 AI 助手，但该比例是企业整体采用率，不能等同 FP&A 场景覆盖率。Workday 另披露已有 5,500 多家客户使用至少一种自有 Agent；该数字说明平台采用规模，不是本案例成效。所有数据均为 Workday 自报，未提供预测准确率、修正率、样本周期和独立验证，证据强度为中。",
+          "why_it_matters": "它把 FP&A 的可落地边界从“问数据、写分析”推进到“生成可工作的预测基线”。更成熟的产品形态不是让 Agent 独立承诺预算，而是让 AI 先完成数据对齐和规则化建模，把人从模型装配者转为假设挑战者和资源决策者。",
+          "impact": "企业财经 AI 可优先选择人员成本、费用和收入等规则较稳定的月度基线预测，产品需原生支持数据版本、假设来源、模型运行记录、人工调整、情景对比与审批。前置条件是 HR 与财务口径一致、计划数据可追溯、权限边界清晰；验证应同时看周期、准确率、人工改动率和决策采纳率。"
+        }
+      ],
+      "recommendations": [
+        "应吸收｜优先建设“AI 生成基线—业务人员挑战假设—财经确认承诺”的 FP&A 工作流，不把自主预测等同于无人负责。",
+        "应吸收｜把数据清理与口径统一作为产品前置门槛，并对每次基线、假设、人工调整和审批保存完整版本链。",
+        "应观察｜8 天到 1 天是单一企业自报；规模化前必须验证预测准确率、人工修正幅度、覆盖组织和连续月份稳定性。"
+      ],
+      "sources": [
+        {
+          "name": "Workday Customer Zero：How Workday Scales Trusted Enterprise AI",
+          "date": "2026-10-08",
+          "url": "https://www.workday.com/en-us/customer-stories/q-z/workday-runs-own-enterprise-ai.html",
+          "evidence_strength": "中"
+        },
+        {
+          "name": "Workday：Fiscal 2027 Q2 Results（Agent 客户采用规模）",
+          "date": "2026-08-27",
+          "url": "https://newsroom.workday.com/2026-08-27-Workday-Announces-Fiscal-2027-Second-Quarter-Financial-Results",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Workday：Data Readiness Is the Secret Weapon for Successful AI Agents",
+          "date": "2025-10-16",
+          "url": "https://blog.workday.com/en-us/clean-data-is-the-key-to-every-successful-ai-initiative.html",
+          "evidence_strength": "中"
+        }
+      ],
+      "updatedAt": "2026-10-09T08:15:05+08:00"
+    },
     {
       "id": "finance-ai-cases:2026-10-08",
       "radarKey": "finance-ai-cases",
