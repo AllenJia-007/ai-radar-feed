@@ -2,8 +2,58 @@
   "schemaVersion": 1,
   "radarKey": "frontier-regulation",
   "radarTitle": "前沿 AI 监管",
-  "updatedAt": "2026-10-07T00:44:20.000Z",
+  "updatedAt": "2026-10-09T00:44:35.000Z",
   "reports": [
+    {
+      "id": "frontier-regulation:2026-10-09",
+      "radarKey": "frontier-regulation",
+      "radarTitle": "前沿 AI 监管",
+      "reportDate": "2026-10-09",
+      "headline": "澳大利亚已正式承诺为前沿AI立法：监管模式将从自愿准则转向由开发者持续发现、测试、报告和管理风险，并证明整套安全体系有效。",
+      "conclusion": "2026年10月8日，澳大利亚科学、技术与数字经济助理部长Andrew Charlton代表政府明确表示，将为前沿AI制定并立法实施National AI Standards。拟议方向不是按技术细节逐项禁止，而是借鉴银行审慎监管、航空安全和工作场所安全的“系统监管”：政府设定安全过程必须达到的标准，前沿模型开发者负责建立持续发现、测试、报告和管理风险的体系，并对该体系是否实际有效承担责任。澳大利亚广播公司报道，国家标准预计于2026年底完成，政府计划在2027年推进立法。该方向把澳大利亚从事故审查和自愿准则进一步推向可执行的开发者安全管理义务，但目前尚无正式法案文本、能力阈值、发布前批准机制、监管权限或处罚条款。",
+      "currentStatus": "澳大利亚政府已在部长正式讲话中承诺对前沿AI的National AI Standards进行立法，并确定以系统性、结果导向的开发者责任为主要方向；国家标准预计于2026年底完成，立法计划在2027年推进。当前仍属于政府政策承诺和制度设计阶段，尚未提交法案，也未形成已生效的前沿模型许可、训练前审批、部署前批准、强制下线或销毁制度。OpenAI Agent事件快速审查和议会人工智能调查仍在进行，其结论预计影响标准细节。美国Ban Artificial Superintelligence Act的S.5493与H.R.10538仍处委员会阶段，未发现新的审议、修订、表决或行政部门明确立场。",
+      "items": [
+        {
+          "title": "澳大利亚确定以“系统监管”立法约束前沿AI开发者",
+          "what": "政府将要求高风险前沿模型开发者建立并运行严格的风险发现、测试、报告和管理流程，由政府设定流程标准，并追究企业对该体系是否有效的责任；这取代单纯依赖自愿准则或容易过时的逐项技术规定。",
+          "evidence": "Andrew Charlton于2026年10月8日的政府官网讲话明确称，政府正在制定AI标准立法，并已承诺对前沿AI的National AI Standards进行立法；讲话把系统监管定义为持续发现、测试、报告和管理风险并验证过程有效。ABC进一步报道，标准预计于2026年底完成，立法计划在2027年推进。",
+          "why_it_matters": "澳大利亚监管方向由“是否需要强制规则”进入“强制安全管理体系如何设计”的阶段。其核心不是一次性模型检测，而是把开发生命周期、持续测试、事故报告和控制有效性证明组合为可监管、可追责的制度。",
+          "impact": "EurekaX／Claw及企业Agent平台应把高风险Agent治理建设成可审计的安全管理体系：明确风险所有者、持续测试、工具与网络边界、事件报告、控制有效性证据和整改闭环；不能仅靠上线前审批或原则性安全承诺。"
+        }
+      ],
+      "recommendations": [
+        "为高风险Agent建立贯穿开发、评测、发布和运行的安全管理体系，并让每项控制都有责任人、测试频率、证据和整改闭环。",
+        "将控制有效性而非制度文件完整性作为上线门禁，重点验证隔离、权限、监控、暂停和事故报告机制在真实场景下能否工作。",
+        "持续跟踪澳大利亚2026年底National AI Standards是否引入能力阈值、独立评估、强制报告、发布条件及监管处罚，并评估对跨境模型供应商和企业部署者的传导。"
+      ],
+      "sources": [
+        {
+          "name": "Australian Department of Industry, Science and Resources — Speech at the Sydney Trust and Safety Festival",
+          "date": "2026-10-08",
+          "url": "https://www.minister.industry.gov.au/charlton/media/speech-the-sydney-trust-and-safety-festival",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "ABC News — Australia outlines plans to make AI companies prove their safety systems work",
+          "date": "2026-10-08",
+          "url": "https://www.abc.net.au/news/2026-10-08/federal-politics-ai-regulation-andrew-charlton-speech/107241674",
+          "evidence_strength": "中"
+        },
+        {
+          "name": "Australian Department of the Prime Minister and Cabinet — Rapid review into Australian Government arrangements for an AI-driven cyber incident",
+          "date": "2026-09-24",
+          "url": "https://www.pmc.gov.au/domestic-policy/rapid-review-australian-government-arrangements-ai-driven-cyber-incident",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Parliament of Australia — Joint Select Committee on Artificial Intelligence",
+          "date": "2026-08-20",
+          "url": "https://www.aph.gov.au/Parliamentary_Business/Committees/Joint/Artificial_Intelligence/ArtificialIntelligence",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-10-09T00:44:35.000Z"
+    },
     {
       "id": "frontier-regulation:2026-10-07",
       "radarKey": "frontier-regulation",
