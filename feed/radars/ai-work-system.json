@@ -2,8 +2,59 @@
   "schemaVersion": 1,
   "radarKey": "ai-work-system",
   "radarTitle": "AI 工作系统",
-  "updatedAt": "2026-10-09T07:36:48+08:00",
+  "updatedAt": "2026-10-10T07:43:22+08:00",
   "reports": [
+    {
+      "id": "ai-work-system:2026-10-10",
+      "radarKey": "ai-work-system",
+      "radarTitle": "AI 工作系统",
+      "reportDate": "2026-10-10",
+      "headline": "Claude 让 Agent 动态生成多 Agent 工作流，专家团从预置编排转向运行时生成",
+      "conclusion": "Claude Managed Agents 已允许主 Agent 根据任务动态编写多阶段工作流程序，在后台并行调度并组合大量 Agent；这不是再加一个子 Agent，而是把多 Agent 编排本身交给 Agent。对 EurekaX Claw 的判断应从“建设固定专家团”转向“受控的动态编排 Runtime”，但领域 Agent 白名单、预算、工具权限、阶段可观测与回归验证必须由平台固化。",
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "编排从预置拓扑升级为 Agent 生成的程序",
+          "what": "Agent 可在运行时编写工作流程序，按阶段并行展开、传递结果、重复/复核并处理失败；工作流在服务器后台运行，主会话可继续交互。",
+          "evidence": "动态工作流支持预定义 Agent 与临时生成的 inline Agent；单次工作流最多 64 个并发线程、生命周期内启动 1,000 个 Agent，默认最长 24 小时。目前为 beta。",
+          "why_it_matters": "专家团不再必须是预先配置的固定拓扑；“把任务编译成协作结构”本身成为 Runtime 能力。",
+          "impact": "EurekaX Claw 应把专家、Skill、MCP 作为可调用资源目录，由规划器按任务生成受控工作流；界面重点转向阶段、依赖、预算、证据与人工接管，而不是预建大量专家团。"
+        },
+        {
+          "title": "动态不等于无治理",
+          "what": "动态工作流可共享沙箱和文件，但各 Agent 上下文隔离，并可配置各自工具、Skill 与 MCP；会话预算、权限策略、事件和线程仍由平台控制。",
+          "evidence": "官方明确“工作流完成”不代表所有子任务成功，必须检查线程；预算耗尽会暂停。管理员可只允许预定义 Agent、关闭 inline Agent，并按 Agent 限制工具和 MCP。",
+          "why_it_matters": "动态生成提高适应性，也同步放大成本、权限和“局部失败被汇总掩盖”的风险；治理必须进入编排 Runtime，不能只靠系统提示词。",
+          "impact": "Claw 应固化四个控制面：Agent 白名单/inline 开关、逐 Agent 工具与 MCP 权限、预算/并发/时限、阶段与线程级证据及独立验证。财经写操作默认只用版本化预定义 Agent。"
+        }
+      ],
+      "recommendations": [
+        "应吸收｜把“专家团”定义为运行时编译能力：专家/Skill/MCP 是资源，工作流是按任务生成、可审计的执行计划。",
+        "应吸收｜先在可拆分的批量研究、跨文档核对和表格分片任务试点；每个阶段设预算、失败判定和最终验证器。",
+        "暂不跟进｜不开放高权限任务自由生成 inline Agent；先采用组织批准、版本化的预定义 Agent，inline 仅限沙箱和低风险只读场景。"
+      ],
+      "sources": [
+        {
+          "name": "Anthropic｜Claude Platform release notes",
+          "date": "2026-10-09",
+          "url": "https://platform.claude.com/docs/en/release-notes/overview",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Anthropic｜Multiagent orchestration",
+          "date": "2026-10-10（检索）",
+          "url": "https://platform.claude.com/docs/en/managed-agents/multiagent-orchestration",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Anthropic｜Workflow runs",
+          "date": "2026-10-10（检索）",
+          "url": "https://platform.claude.com/docs/en/managed-agents/workflow-runs",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-10-10T07:43:22+08:00"
+    },
     {
       "id": "ai-work-system:2026-10-09",
       "radarKey": "ai-work-system",
