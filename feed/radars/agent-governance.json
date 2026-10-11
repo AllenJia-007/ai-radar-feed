@@ -2,8 +2,52 @@
   "schemaVersion": 1,
   "radarKey": "agent-governance",
   "radarTitle": "Agent 治理",
-  "updatedAt": "2026-10-10T08:29:24+08:00",
+  "updatedAt": "2026-10-11T08:05:22+08:00",
   "reports": [
+    {
+      "id": "agent-governance:2026-10-11",
+      "radarKey": "agent-governance",
+      "radarTitle": "Agent 治理",
+      "reportDate": "2026-10-11",
+      "headline": "Agent 成本治理首次出现清晰的“存续费 + 执行费”双计量：阿里云 STAROps 自 10 月 10 日起对自定义数字员工按 19 元/个/日收取值守费，创建即计费、删除才停止，任务执行仍另耗 AI 积分。",
+      "conclusion": "阿里云 STAROps 的 Agent_Day 正式生效，把企业 Agent 的成本对象从模型调用扩展为“持续存在的数字员工 + 每次任务执行”两层：自定义数字员工自创建起按自然日计费，只有删除明确停止值守费，同时问答、根因分析等任务继续按 AI 积分计量。由此，闲置、重复、无责任人的 Agent 不再只是资产治理问题，而会持续产生固定成本；成本治理必须与准入数量、活跃度评价和下线动作直接联动。",
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "数字员工形成“存续费 + 执行费”双成本模型",
+          "what": "阿里云 STAROps 的自定义数字员工值守服务于 2026 年 10 月 10 日正式计费；除任务消耗外，Agent 只要存续即产生按日费用。",
+          "evidence": "自定义数字员工按 19 元/个/自然日计费，不足一天按一天；创建后开始、删除后停止，多 Agent 分别累计。任务执行仍按 AI_Credit 计费，参考单次问答约 30 积分、根因分析约 200 积分，按量单价为 0.0016 美元/积分。系统内置 Agent 免值守费。证据强。",
+          "why_it_matters": "这改变了“Agent 不调用就几乎无成本”的判断。成本治理需同时管理存续规模和执行强度；官方只明确“删除后停止计费”，因此闲置 Agent 的退役动作成为直接 FinOps 控制。月度积分上限仅约束任务消耗，不能替代存续资产治理。",
+          "impact": "“1 个资产总账”增加创建日、计费状态、Agent_Day、累计值守费、任务积分和责任人；“1 条生命周期”增加创建即启费、活跃度复核、冻结/删除与成本停表核验；“4 类评价”在运营健康和业务价值中加入闲置天数、单位任务全成本及固定成本覆盖率；“1 套资源机制”拆成 Agent 数量预算与任务额度，并按部门/场景进行双重归集和扩缩容。"
+        }
+      ],
+      "recommendations": [
+        "应吸收｜成本总账至少拆成“存续固定成本、执行变动成本、下游工具/数据成本”，不能只统计 Token 或调用量。",
+        "应吸收｜将无责任人、长期低活跃、重复功能与价值不足 Agent 纳入定期停用/删除流程；删除后必须核验计费是否真正停止。",
+        "应观察｜19 元/日是特定运维产品定价，不宜直接作为企业内部淘汰阈值；应按本企业固定成本、任务量和业务价值重新校准。"
+      ],
+      "sources": [
+        {
+          "name": "阿里云 STAROps 产品公告：数字员工值守服务正式计费",
+          "date": "2026-09-04（2026-10-10 生效）",
+          "url": "https://help.aliyun.com/zh/starops/product-overview/announcement",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Alibaba Cloud STAROps：Pay-as-you-go billing",
+          "date": "2026-09-18",
+          "url": "https://www.alibabacloud.com/help/en/starops/product-overview/pay-as-you-go-instructions",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Alibaba Cloud STAROps：Digital Employee management",
+          "date": "2026-06-23",
+          "url": "https://www.alibabacloud.com/help/en/starops/user-guide/digital-employee/",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-10-11T08:05:22+08:00"
+    },
     {
       "id": "agent-governance:2026-10-10",
       "radarKey": "agent-governance",
