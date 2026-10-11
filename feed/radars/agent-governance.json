@@ -2,8 +2,59 @@
   "schemaVersion": 1,
   "radarKey": "agent-governance",
   "radarTitle": "Agent 治理",
-  "updatedAt": "2026-10-11T08:05:22+08:00",
+  "updatedAt": "2026-10-12T07:48:26+08:00",
   "reports": [
+    {
+      "id": "agent-governance:2026-10-12",
+      "radarKey": "agent-governance",
+      "radarTitle": "Agent 治理",
+      "reportDate": "2026-10-12",
+      "headline": "正式监管开始把 Agent 治理从原则变成可执行闭环：新加坡金管局要求把 Agent 身份、可访问工具、组件和护栏纳入资产清单，以风险偏好决定上线；第三方 AI 的残余风险若无法降至可接受水平，应限制、暂停或替换。",
+      "conclusion": "新加坡金管局最终《人工智能风险管理指引》明确将 AI Agent（含多 Agent 系统）纳入金融机构治理范围，并把资产清单、风险偏好、独立控制职能、第三方责任、人工回退、kill switch 与正式退役连成完整闭环。治理判断应从“识别 Agent 并分级管理”进一步升级为：部署前证明残余风险在风险偏好内，运行中持续监测单一供应商依赖与性能越界，无法控制时能够限用、暂停、替换或安全退役。",
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "资产总账与准入门槛被监管化",
+          "what": "MAS 发布最终《人工智能风险管理指引》，将 AI Agent（含多 Agent 系统）明确纳入范围；监督、识别、资产清单和风险重要性评估要求自 2027 年 10 月 7 日起实施，生命周期控制与能力建设要求自 2028 年 10 月 7 日起实施。",
+          "evidence": "资产清单应覆盖用途、批准范围、模型、数据、依赖、生命周期状态、风险等级、复核状态与责任人；对 Agent 还应记录专属标识、可访问工具/系统、组件和护栏。每个用例须评估影响、复杂性、依赖程度、自治程度与人工监督，部署前残余风险必须落在风险偏好内。董事会可设置 AI 事件数量/财务影响、单一供应商依赖数量、性能阈值突破数量等量化指标。证据强。",
+          "why_it_matters": "这把“1 个资产总账 + 风险分级准入”从最佳实践推进为监管可检查对象，并要求独立控制职能对 AI 识别、入册和风险等级保留最终裁定权。",
+          "impact": "“1 个资产总账”补充 Agent ID、可访问工具/系统、组件、护栏、依赖、风险等级及残余风险；“1 条生命周期”增加风险偏好门禁和独立控制职能复核；“4 类评价”增加事件、单一供应商集中度和性能越界指标；“1 套资源机制”按风险等级配置评审、监控和审计资源。"
+        },
+        {
+          "title": "第三方 Agent 必须预置限用、替换与正式退役路径",
+          "what": "金融机构对第三方 AI 仍承担主要责任；风险无法降至风险偏好内时，应限制、暂停或替换服务。高风险用例需准备替代系统或人工流程，并测试 kill switch 和应急启动协议。",
+          "evidence": "第三方 AI 准入需取得风险相称的变更可见性，以本机构数据测试并用补偿性测试弥补信息缺口；评估透明度、供应链与集中度。AI 不再需要或超过风险容忍度时，应结合依赖、数据留存、生产环境安全移除和利益相关方通知完成退役。证据强。",
+          "why_it_matters": "厂商通过一次准入不再意味着长期可用；替代方案、降级路径和退出能力必须在上线前准备，而不是发生事故后补建。",
+          "impact": "“1 条生命周期”补充第三方准入、补偿性控制、集中度复核、限用/暂停/替换、回退演练和正式退役；“4 类评价”增加切换时间、kill switch 成功率及供应商集中度；“1 套资源机制”预留人工接管与替代能力，并按风险水平配置独立验证。"
+        }
+      ],
+      "recommendations": [
+        "应吸收｜把风险偏好从原则语句改成可观测阈值，并明确业务一线、独立控制职能和内部审计的三道防线。",
+        "应吸收｜所有外部模型、Agent、MCP、插件和 API 都按第三方依赖治理；高风险场景上线前必须有人工回退、替代供应商或停机方案。",
+        "应观察｜该指引直接适用于新加坡金融机构，且分 2027/2028 两阶段生效；可立即作为企业级基准，但不应外推为所有行业的法定义务。"
+      ],
+      "sources": [
+        {
+          "name": "MAS：Guidelines on Artificial Intelligence Risk Management",
+          "date": "2026-10-07",
+          "url": "https://www.mas.gov.sg/-/media/mas-media-library/regulation/guidelines/bd/guidelines-on-artificial-intelligence-risk-management-for-financial-institutions/guidelines-on-artificial-intelligence-risk-management.pdf",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "MAS：Sets Out Supervisory Expectations on Responsible AI Adoption by Financial Institutions",
+          "date": "2026-10-07",
+          "url": "https://www.mas.gov.sg/news/media-releases/2026/mas-sets-out-supervisory-expectations-on-responsible-ai-adoption-by-financial-institutions",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "MAS：Response to Feedback Received on Guidelines on Artificial Intelligence Risk Management",
+          "date": "2026-10-07",
+          "url": "https://www.mas.gov.sg/-/media/mas-media-library/publications/consultations/bd/2025/response-to-feedback-received-on-guidelines-on-artificial-intelligence-risk-management.pdf",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-10-12T07:48:26+08:00"
+    },
     {
       "id": "agent-governance:2026-10-11",
       "radarKey": "agent-governance",
