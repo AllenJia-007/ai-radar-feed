@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": null,
+  "updatedAt": "2026-10-12T01:21:52.871Z",
   "radars": [
     {
       "key": "ai-capability",
@@ -26,6 +26,11 @@
       "key": "frontier-regulation",
       "title": "前沿 AI 监管",
       "path": "feed/radars/frontier-regulation.json"
+    },
+    {
+      "key": "ai-key-people",
+      "title": "AI 关键人物观点",
+      "path": "feed/radars/ai-key-people.json"
     }
   ]
 }
