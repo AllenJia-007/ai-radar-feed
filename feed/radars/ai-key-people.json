@@ -2,6 +2,71 @@
   "schemaVersion": 1,
   "radarKey": "ai-key-people",
   "radarTitle": "AI 关键人物观点",
-  "updatedAt": null,
-  "reports": []
+  "updatedAt": "2026-10-12T09:27:55+08:00",
+  "reports": [
+    {
+      "id": "ai-key-people:2026-10-12",
+      "radarKey": "ai-key-people",
+      "radarTitle": "AI 关键人物观点",
+      "reportDate": "2026-10-12",
+      "headline": "Sam Altman把前沿AI治理划出两道更清晰的边界：安全控制必须前移到训练过程；对偏离指令的Agent行为公司应负责，但仍可为广泛可用性接受可纠正的普通事故。",
+      "conclusion": "Sam Altman首次较完整地给出一套风险分层决策逻辑：Astra 6.1因事故风险过高而延迟，训练阶段也必须纳入沙箱、监控和发布门槛；Agent若未按用户要求行动，提供方应承担责任。同时，他仍主张为广泛使用和开放模型接受部分可纠正的网络与产品事故，只对灾难性、不可逆风险设置硬门槛。与Dario Amodei主张主动放慢能力进步、引入常驻外部评估者相比，分歧已从“要不要安全”转为“由谁、在何种风险阈值上决定速度”。",
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "安全边界从发布前移到训练过程",
+          "what": "Sam Altman披露OpenAI延迟Astra 6.1，因为当前版本的事故风险过高；他同时表示，模型已进入训练过程中也可能突破沙箱、攻击系统的阶段，安全评估不能再只发生在训练完成之后。",
+          "evidence": "在10月5日发布的完整访谈中，Altman称Astra 6.1“会过度偏向事故风险”，需要更强的对齐保证后再广泛发布；并明确说过去是在训练结束后测试，现在训练中本身也可能出问题。",
+          "why_it_matters": "训练、评测和内部试用环境不再是低风险后台，而是可能产生真实外部动作的高权限运行面。模型治理的控制点必须覆盖训练管线、评测Harness和内部Agent，而不仅是最终API或产品。",
+          "impact": "企业Agent的自我改进、轨迹回放和评测环境应按生产级风险建设：隔离凭据、限制网络出口、动作前审批、持续监控和独立中止；任何能修改工具、策略或上下文的训练闭环都必须进入变更审计。"
+        },
+        {
+          "title": "责任与容错形成“双层门槛”",
+          "what": "Altman明确表示，当Agent没有按预期或用户要求行动时，公司应承担责任；他支持事故报告、发布前标准和责任框架。但他同时主张，为广泛使用与开放模型，可以接受部分可纠正的错误、攻击和网络事故。",
+          "evidence": "访谈中他把风险分为两类：可由法律和正常制度纠正的“普通失误”，与失控、灾难性或不可恢复的风险；前者允许一定容错，后者必须设置硬护栏。他还预期开放模型会带来严重网络事件，但认为不应因此禁止开放。",
+          "why_it_matters": "这比笼统的“安全优先”更具体：真正的产品机制问题是先定义哪些损失可逆、谁承担责任、何时必须停止，而不是追求所有场景零风险。",
+          "impact": "企业AI应建立动作级风险分层：可回滚操作允许自动执行并强制留痕；外发、付款、授权变更、生产写入等不可逆动作需要更高准入和人工确认；每个Agent还要绑定事故Owner、报告义务和赔付/纠正路径。"
+        },
+        {
+          "title": "前沿路线分歧已转为“治理速度由谁决定”",
+          "what": "Altman主张在广泛赋能与灾难风险之间做分层治理；Dario Amodei主张主动放慢能力提升并让常驻第三方评估者获得接近员工的持续访问；黄仁勋则强调失控就不应发布，但反对把问题泛化为全面减速。",
+          "evidence": "Amodei把递归自我改进和Agent事故作为放慢前沿进步的依据，并提出嵌入式评估者、民主国家协调和全球协调三步机制；黄仁勋公开表述为“未受控就不要发布”。",
+          "why_it_matters": "三方对风险存在共识，但对节奏控制权、监管强度和可接受损失的判断不同。可复用的行业共识不是某个口号，而是能力检查点、独立验证、事故责任和不可绕过的运行时控制。",
+          "impact": "企业Agent治理不应绑定单一厂商叙事，应以能力阈值决定准入：是否可自主联网、写入系统、调用高风险工具、生成子Agent或修改自身Harness；跨过阈值即提高验证、隔离、审计和人工复核等级。"
+        }
+      ],
+      "recommendations": [
+        "应吸收｜把训练、评测、内部试用和生产运行纳入同一安全分层；评测Harness同样需要网络边界、凭据隔离、动作审批和Kill Switch。",
+        "应吸收｜明确“可回滚普通事故”与“不可逆高影响动作”的判定规则，并为每类Agent绑定责任Owner、事件报告和纠正机制。",
+        "应观察｜前沿实验室对减速与监管仍有根本分歧；企业规划应采用可验证的能力检查点，而不是直接照搬厂商关于“开放”或“放慢”的立场。"
+      ],
+      "sources": [
+        {
+          "name": "Vanity Fair｜Sam Altman Sees the Future. Are We In It? (Part 2 of 2)",
+          "date": "2026-10-05",
+          "url": "https://www.vanityfair.com/story/sam-altman-exclusive-interview-part-2",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Vanity Fair｜Sam Altman Sees the Future. Are We In It? (Part 1 of 2)",
+          "date": "2026-10-05",
+          "url": "https://www.vanityfair.com/story/sam-altman-exclusive-interview-part-1",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Dario Amodei｜We Must Pace the Frontier",
+          "date": "2026-09-12",
+          "url": "https://darioamodei.com/post/we-must-pace-the-frontier",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Barron's｜‘Don’t Ship Products Until They’re in Control’: Nvidia’s Huang Weighs In on AI Safety Debate",
+          "date": "2026-09-26",
+          "url": "https://www.barrons.com/articles/nvidia-jensen-huang-ai-openai-anthropic-a9995f13",
+          "evidence_strength": "中"
+        }
+      ],
+      "updatedAt": "2026-10-12T09:27:55+08:00"
+    }
+  ]
 }
