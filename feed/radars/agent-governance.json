@@ -2,8 +2,59 @@
   "schemaVersion": 1,
   "radarKey": "agent-governance",
   "radarTitle": "Agent 治理",
-  "updatedAt": "2026-10-12T07:48:26+08:00",
+  "updatedAt": "2026-10-13T08:05:57+08:00",
   "reports": [
+    {
+      "id": "agent-governance:2026-10-13",
+      "radarKey": "agent-governance",
+      "radarTitle": "Agent 治理",
+      "reportDate": "2026-10-13",
+      "headline": "Agent 运营开始进入受控自优化：Kore.ai 将生产失败自动回流为根因定位和局部修复，但只有通过七维联合回归门禁才保留；无法验证的变更自动回滚并转人工。",
+      "conclusion": "Kore.ai 将 Agent 生命周期从“发布—监控—人工改版”推进为“生产证据—根因诊断—定向修复—七维回归—保留/回滚/转人工”闭环。值得改变治理判断之处不在自动调参本身，而在于把自动优化也作为受控变更：每次修改都必须同时守住任务完成、准确性与依据、业务规则、成本效率、体验、鲁棒性和安全，不能用单项提升交换另一项退化。",
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "生产运行与评测闭成同一条优化生命周期",
+          "what": "Kore.ai 发布 Autoloop，从开发到生产持续按业务目标评价 Agent；真实交互会触发新一轮诊断和优化，系统沿跨 Agent 的交接、状态、工具调用与上下文定位根因，再把修复映射到具体结构，而不是统一改提示词。",
+          "evidence": "七个联合目标为任务完成、准确性与依据、业务规则遵从、Token/成本效率、终端体验、鲁棒性、护栏与安全。每个变更在应用前验证，并对七维共同回归；执行路径中的交接、状态变化、工具调用和上下文均可追踪。证据强。",
+          "why_it_matters": "评测不再只是发布前打分或运行后看板，而成为生产变更的入口和发布门禁；优化对象也从提示词扩展到路由、工具契约、测试夹具和状态传递。",
+          "impact": "“1 个资产总账”补充目标集、测试覆盖、执行轨迹、变更对象和版本；“1 条生命周期”增加发现—诊断—修复—回归—晋级/回滚；“4 类评价”采用联合门禁；“1 套资源机制”为回归测试、诊断和人工复核配置预算。"
+        },
+        {
+          "title": "自动改进本身进入发布、降级与人工接管门禁",
+          "what": "Kore.ai 把自动优化分为 Autopilot、Copilot、Advisor 三档；通过门禁的变更可自动保留、人工批准后生效，或只生成建议。",
+          "evidence": "不能验证的变更最多重试两次，随后回滚并转人工；若变更没有改善或在其他目标引入退化，则拒绝，项目保持不变。Agent 定义部署为不可变、版本化 IR，进行中的会话继续使用原版本，新会话才切换新版本。证据强。",
+          "why_it_matters": "自优化 Agent 不应直接修改线上行为；“变更建议权、批准权、生效权”可以按场景风险拆开，并用版本与会话边界保证可逆。",
+          "impact": "“1 条生命周期”拆分提议版本与生效版本，增加自动/人工批准、会话级切换、回滚与升级人工；“1 个资产总账”记录授权模式、版本和回滚证据；“4 类评价”加入跨目标退化否决；“1 套资源机制”按风险决定授权档位和人工接管比例。"
+        }
+      ],
+      "recommendations": [
+        "应吸收｜把生产轨迹纳入评测样本回流，但自动修复不能直接等于自动发布；至少经过多目标回归、版本留痕和可逆回滚。",
+        "应吸收｜四类评价应作为联合门禁，任何单项提升不得掩盖安全、规则、体验或成本退化。",
+        "应观察｜目前证据来自厂商机制说明，尚未公开客户生产规模、误修率、回滚率和人工接管比例；宜先试点，不视为成熟自治运营。"
+      ],
+      "sources": [
+        {
+          "name": "Kore.ai：Introducing Autoloop: the agent optimization engine that keeps agents performing at production scale",
+          "date": "2026-10-07",
+          "url": "https://www.kore.ai/blog/autoloop-continuous-ai-agent-optimization-for-production",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Kore.ai：Why AI agents need an Agent Development Lifecycle",
+          "date": "2026-10-07",
+          "url": "https://www.kore.ai/blog/why-ai-agents-need-an-agent-development-lifecycle",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Kore.ai：Introducing Dual-Brain Architecture: Reasoning and Control, Together",
+          "date": "2026-10-07",
+          "url": "https://www.kore.ai/blog/what-is-dual-brain-architecture",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-10-13T08:05:57+08:00"
+    },
     {
       "id": "agent-governance:2026-10-12",
       "radarKey": "agent-governance",
