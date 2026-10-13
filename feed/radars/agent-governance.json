@@ -2,8 +2,59 @@
   "schemaVersion": 1,
   "radarKey": "agent-governance",
   "radarTitle": "Agent 治理",
-  "updatedAt": "2026-10-13T08:05:57+08:00",
+  "updatedAt": "2026-10-14T07:37:35+08:00",
   "reports": [
+    {
+      "id": "agent-governance:2026-10-14",
+      "radarKey": "agent-governance",
+      "radarTitle": "Agent 治理",
+      "reportDate": "2026-10-14",
+      "headline": "Oracle 将 Agent 自治治理从“一个 Agent 一个等级”推进到动作级：同一 Agent 的不同动作可使用不同自治级别，并由 IT、业务和跨职能委员会分层承担不可互相替代的责任。",
+      "conclusion": "Oracle 将自治治理的颗粒度从 Agent 整体下沉到具体活动：同一客户服务 Agent 内，检索与草拟可全自动，符合已知模式的低风险回复可条件自动，边缘或低置信度情形需人工批准，账户或计费动作则始终转人工。同时，平台负责不可绕过的身份、访问、数据安全、护栏与审计，业务负责启用范围、审批门和结果责任，跨职能委员会负责新 Agent 准入、阈值、监测和异常升级。已验证的用例模式可进入快速复用通道，治理资源由重复审批转向识别新风险与偏差。",
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "自治等级从 Agent 级下沉到动作级",
+          "what": "Oracle 明确同一 Agent 可以并存四类自治：检索和草拟全自动；已知模式下的低风险回复自动发送；边缘或低置信度情形转人工批准；账户或计费动作始终转人工。",
+          "evidence": "平台强制的身份、角色访问、数据安全、护栏扫描和完整审计由所有 Agent 自动继承，业务不得覆盖；业务决定哪些 Agent 启用、审批门位置及结果责任；跨职能委员会批准新 Agent、监测结果并拥有异常升级路径。证据强。",
+          "why_it_matters": "风险和自治不应只在 Agent 总体层级标注。同一 Agent 内部不同动作的风险差异可能远大于不同 Agent 之间的差异，准入、审批与监控需要落到动作级。",
+          "impact": "“1 个资产总账”增加 Agent×动作×自治级别×审批门×责任人；“1 条生命周期”将动作授权、升降级与撤权作为独立状态；“4 类评价”按动作统计正确性、越界、人工接管和业务价值；“1 套资源机制”按动作风险配置人工复核和监控资源。"
+        },
+        {
+          "title": "已验证治理模式可形成快速准入通道",
+          "what": "Oracle 将治理模式复用设计为扩展机制：治理委员会先用低风险场景形成可复用模式；相同用例类型的后续 Agent 可走加速审查，委员会聚焦新风险。",
+          "evidence": "0—30 天确定委员会、计分卡、审批阈值和首个低风险用例；30—60 天端到端验证自治级别及审批门并固化模式；60—90 天用该模式评估更复杂流程并公布需求受理节奏。AI Agent Studio 的可复用审批流程可配置审批层级、审批人、经理链、通知和条件路由；运行时暂停 Agent 流程，收到审批结果后再继续。证据强。",
+          "why_it_matters": "规模化治理不应让每个 Agent 从零审批，也不能因“同类”而无条件复制。应把已验证控制组合沉淀为治理模式，只对新风险和偏差做增量审查。",
+          "impact": "“1 个资产总账”增加用例模式、控制基线和偏差项；“1 条生命周期”增加标准通道与例外通道；“4 类评价”增加模式适配度、复用覆盖率和例外风险；“1 套资源机制”让治理委员会把精力集中到新动作、新数据、新权限和高风险偏差。"
+        }
+      ],
+      "recommendations": [
+        "应吸收｜将现有“检索—行动—自治”三级从 Agent 标签升级为动作级矩阵；同一 Agent 可以并存自动、条件自动、人工审批和禁止四类动作。",
+        "应吸收｜明确三层责任：IT 管不可绕过的底线控制，业务管业务结果与自治范围，跨职能委员会管准入阈值、例外和升级；不能把最终责任笼统写成“平台负责”。",
+        "应观察｜“已验证模式快速准入”只适用于控制基线和业务语义实质相同的场景；需先定义差异触发条件，避免模板复用演变成审批豁免。"
+      ],
+      "sources": [
+        {
+          "name": "Oracle Fusion Development：Who owns AI governance?",
+          "date": "2026-10-13",
+          "url": "https://blogs.oracle.com/fusioninsider/who-owns-ai-governance",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Oracle Fusion Cloud：Use the Approval Process Channel for Human Approval Nodes in AI Agent Studio",
+          "date": "2026-06-23（2026-08-20 更新）",
+          "url": "https://docs.oracle.com/en/cloud/saas/readiness/common/26c/common26c/26C-common-wn-f50152.htm",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Oracle Fusion Development：Workflow agents—where business rules meet AI reasoning",
+          "date": "2026-09-17",
+          "url": "https://blogs.oracle.com/fusioninsider/workflow-agents-where-business-rules-meet-ai-reasoning",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-10-14T07:37:35+08:00"
+    },
     {
       "id": "agent-governance:2026-10-13",
       "radarKey": "agent-governance",
