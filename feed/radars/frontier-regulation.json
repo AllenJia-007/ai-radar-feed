@@ -2,8 +2,65 @@
   "schemaVersion": 1,
   "radarKey": "frontier-regulation",
   "radarTitle": "前沿 AI 监管",
-  "updatedAt": "2026-10-10T00:35:42.000Z",
+  "updatedAt": "2026-10-13T00:27:36.524Z",
   "reports": [
+    {
+      "id": "frontier-regulation:2026-10-13",
+      "radarKey": "frontier-regulation",
+      "radarTitle": "前沿 AI 监管",
+      "reportDate": "2026-10-13",
+      "headline": "英国已正式恢复并确认对最新一代前沿模型的发布前独立评测，同时启动自治Agent重大事故响应能力，并考虑把AI失控与近失事件报告纳入在审网络安全法案。",
+      "conclusion": "2026年10月12日，英国政府向议会提交书面部长声明，确认AI Security Institute（AISI）在与美国政府及主要实验室协调后，已对最新一代最强模型开展严格评测，其中包括Gemini 4 Argon；政府说明其目标是保留模型发布前访问权，以便提前识别风险并检验防护措施。政府同时宣布由NCSC、数字部门与AISI共同建设自治Agent重大事故响应能力，并在《Cyber Security and Resilience Bill》审议过程中研究加入AI网络风险、失控风险、近失事件识别与报告等要求。这是英国从依赖实验室自评进一步转向政府独立验证和Agent事故治理的实质推进，但模型访问目前仍基于自愿安排，法案中的AI条款尚未形成正式修正案或生效义务。",
+      "currentStatus": "英国AISI已在执行对最新一代前沿模型的独立评测，并明确包括Gemini 4 Argon；政府称正在与实验室及美国政府合作，保留最强模型发布前访问。自治Agent重大事故响应能力处于政府跨部门方案开发阶段。将AI网络风险、失控风险及近失事件报告纳入《Cyber Security and Resilience Bill》或其监管体系目前仍是政府正式提出的审议方向，具体措施将与议员、技术专家和运营方共同制定，尚无公布的修正案文本、适用阈值、报告时限或处罚。Ban Artificial Superintelligence Act的S.5493与H.R.10538仍处委员会阶段，未发现新的委员会审议、修订、表决或行政部门明确立场。",
+      "items": [
+        {
+          "title": "英国确认恢复前沿模型发布前独立评测",
+          "what": "英国政府确认AISI已对最新一代先进模型开展严格评测，包括Gemini 4 Argon；过去数周政府与美国政府及主要实验室协调，以保留AISI对最强模型发布前的访问。",
+          "evidence": "2026年10月12日的正式书面部长声明明确称AISI正在评测Gemini 4 Argon，以提前识别风险、检验安全措施；政府新闻稿同时确认评测覆盖最新一代模型。路透社补充说明该访问依据开发者与英国AISI的自愿协议。",
+          "why_it_matters": "此前外界担忧美国实验室可能限制英国评测机构取得未发布模型；正式确认表明英国的政府级发布前评测通道仍在运行。虽然尚非强制许可制度，但它恢复了外部独立验证在前沿模型发布治理中的实际位置。",
+          "impact": "企业在采购或部署前沿模型时，应要求供应商提供可验证的第三方或政府评测证据，并把高风险能力、工具使用、联网行为和缓解措施纳入上线门禁；不能只依赖模型厂商自我声明。"
+        },
+        {
+          "title": "英国启动Agent重大事故响应，并研究法定近失事件报告",
+          "what": "英国政府已着手建立针对自治AI Agent严重事故的专业响应能力，并正式提出在正在审议的网络安全法案及监管体系中处理AI网络风险、失控风险、跨组织风险和近失事件报告。",
+          "evidence": "部长声明要求政府在Agent造成严重伤害时能够迅速查明原因、遏制风险并支持受影响方，并称将继续向议会更新法案审议情况；GOV.UK新闻稿明确列出AI loss-of-control risk和near-miss reporting。",
+          "why_it_matters": "治理对象从传统网络事件扩展到Agent越权、失控和未遂事件，政策方向也从事后补救走向专门响应能力与潜在法定报告义务。若形成修正案，关键基础设施和服务运营者可能成为模型开发商之外的直接义务主体。",
+          "impact": "企业级Agent需要预先定义越权、控制绕过、异常自主行动和近失事件的报告阈值，并具备立即隔离、停止工具调用、保全轨迹、跨组织通知和根因复盘能力；相关记录应能支持监管或独立验证。"
+        }
+      ],
+      "recommendations": [
+        "把外部独立评测证据纳入高风险模型供应商准入，重点核验网络、自治、规避控制和失控能力，而不只看通用性能评测。",
+        "建立Agent重大事故与近失事件双轨台账：对未造成损害但暴露控制缺陷的行为同样启动升级、证据保全和整改验证。",
+        "持续跟踪英国网络安全法案是否出现正式AI修正案，尤其是适用主体、报告阈值、时限、监管机构和处罚；在文本公布前不要把政策意向误当成现行法定义务。"
+      ],
+      "sources": [
+        {
+          "name": "UK Parliament — Written Ministerial Statement: Strengthening the UK's resilience against risks from increasingly powerful AI",
+          "date": "2026-10-12",
+          "url": "https://questions-statements.parliament.uk/written-statements/detail/2026-10-12/hlws365",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "GOV.UK — Britain steps up national defences against growing AI risks",
+          "date": "2026-10-12",
+          "url": "https://www.gov.uk/government/news/britain-steps-up-national-defences-against-growing-ai-risks",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "UK Parliament — Cyber Security and Resilience (Network and Information Systems) Bill explanatory notes",
+          "date": "2026-06-17",
+          "url": "https://bills.parliament.uk/publications/66773/documents/8426",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Reuters — UK given access to safety-test latest AI models, minister says",
+          "date": "2026-10-12",
+          "url": "https://www.reuters.com/legal/litigation/uk-given-access-safety-test-latest-ai-models-minister-says-2026-10-12/",
+          "evidence_strength": "中"
+        }
+      ],
+      "updatedAt": "2026-10-13T00:27:36.524Z"
+    },
     {
       "id": "frontier-regulation:2026-10-10",
       "radarKey": "frontier-regulation",
