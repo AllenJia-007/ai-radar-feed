@@ -2,14 +2,14 @@
   "schemaVersion": 1,
   "radarKey": "frontier-regulation",
   "radarTitle": "前沿 AI 监管",
-  "updatedAt": "2026-10-13T00:27:36.524Z",
+  "updatedAt": "2026-10-13T00:28:06.167Z",
   "reports": [
     {
       "id": "frontier-regulation:2026-10-13",
       "radarKey": "frontier-regulation",
       "radarTitle": "前沿 AI 监管",
       "reportDate": "2026-10-13",
-      "headline": "英国已正式恢复并确认对最新一代前沿模型的发布前独立评测，同时启动自治Agent重大事故响应能力，并考虑把AI失控与近失事件报告纳入在审网络安全法案。",
+      "headline": "英国已正式确认对最新一代前沿模型保持发布前独立评测通道，同时启动自治Agent重大事故响应能力，并考虑把AI失控与近失事件报告纳入在审网络安全法案。",
       "conclusion": "2026年10月12日，英国政府向议会提交书面部长声明，确认AI Security Institute（AISI）在与美国政府及主要实验室协调后，已对最新一代最强模型开展严格评测，其中包括Gemini 4 Argon；政府说明其目标是保留模型发布前访问权，以便提前识别风险并检验防护措施。政府同时宣布由NCSC、数字部门与AISI共同建设自治Agent重大事故响应能力，并在《Cyber Security and Resilience Bill》审议过程中研究加入AI网络风险、失控风险、近失事件识别与报告等要求。这是英国从依赖实验室自评进一步转向政府独立验证和Agent事故治理的实质推进，但模型访问目前仍基于自愿安排，法案中的AI条款尚未形成正式修正案或生效义务。",
       "currentStatus": "英国AISI已在执行对最新一代前沿模型的独立评测，并明确包括Gemini 4 Argon；政府称正在与实验室及美国政府合作，保留最强模型发布前访问。自治Agent重大事故响应能力处于政府跨部门方案开发阶段。将AI网络风险、失控风险及近失事件报告纳入《Cyber Security and Resilience Bill》或其监管体系目前仍是政府正式提出的审议方向，具体措施将与议员、技术专家和运营方共同制定，尚无公布的修正案文本、适用阈值、报告时限或处罚。Ban Artificial Superintelligence Act的S.5493与H.R.10538仍处委员会阶段，未发现新的委员会审议、修订、表决或行政部门明确立场。",
       "items": [
@@ -59,7 +59,7 @@
           "evidence_strength": "中"
         }
       ],
-      "updatedAt": "2026-10-13T00:27:36.524Z"
+      "updatedAt": "2026-10-13T00:28:06.167Z"
     },
     {
       "id": "frontier-regulation:2026-10-10",
