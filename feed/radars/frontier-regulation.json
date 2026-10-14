@@ -2,8 +2,71 @@
   "schemaVersion": 1,
   "radarKey": "frontier-regulation",
   "radarTitle": "前沿 AI 监管",
-  "updatedAt": "2026-10-13T00:28:06.167Z",
+  "updatedAt": "2026-10-14T00:22:53.018Z",
   "reports": [
+    {
+      "id": "frontier-regulation:2026-10-14",
+      "radarKey": "frontier-regulation",
+      "radarTitle": "前沿 AI 监管",
+      "reportDate": "2026-10-14",
+      "headline": "Google已将无法排除达到生物、网络严重风险阈值及失控相关阈值的Gemini 4 Argon从可信防御者试用扩展至全球通用产品与API，前沿模型治理由“触线即不发布”转向“Safety Case证明缓解后可发布”。",
+      "conclusion": "2026年10月13日，Google把此前仅向Fairwind可信网络防御机构开放的Gemini 4 Argon广泛推向全球开发者、企业和订阅用户。Google官方模型卡明确称，无法排除该模型已达到生物信息风险和网络攻击领域的Critical Capability Level（CCL），也无法排除达到与隐蔽性、情境感知和削弱人类控制有关的Tracked Capability Level（TCL）；Google依据Safety Case、残余风险评估和运行时防护，判断缓解后的风险低于相应阈值并批准广泛部署。同期英国议会正式听证中，OpenAI与Anthropic支持把前沿AI安全要求法定化，而英国AISI当前仍不能强制企业提供模型或阻止发布。两项进展共同表明，能力阈值正在成为发布决策与监管争论的中心，但当前仍主要依赖企业自行评测和自行接受风险，尚无政府发布许可或否决机制。",
+      "currentStatus": "Gemini 4 Argon已于2026-10-13面向全球开发者和企业通过API、AI Studio、Gemini平台开放，并向Google AI Pro/Ultra用户进入Gemini应用和搜索AI Mode；去除网络安全护栏的版本仍仅通过Fairwind计划向经审查的网络防御机构提供。Google依据其自愿Frontier Safety Framework完成Safety Case、残余风险评估和内部发布审批，这不属于政府许可或法定预审批。英国方面，AISI的模型访问与评测仍依赖企业和外国政府合作，无权强制交付模型或阻止发布；OpenAI与Anthropic已向议会支持具有法律约束力、按能力分级的前沿AI要求，但政府尚未提交专门法案或相关修正案。Ban Artificial Superintelligence Act的S.5493与H.R.10538仍处委员会阶段，未发现新的委员会审议、修订、表决或行政部门明确立场。",
+      "items": [
+        {
+          "title": "Gemini 4 Argon越过关键能力阈值后仍获全球广泛发布",
+          "what": "Google将Gemini 4 Argon从可信网络防御者有限试用扩展到全球API、企业产品、Gemini应用和搜索AI Mode。官方评测无法排除其达到生物与网络CCL，也无法排除其达到隐蔽性和情境感知TCL。",
+          "evidence": "Google称Argon完成全部12个端到端模拟网络攻击场景，未设护栏的版本在生物实验故障排查中提供显著能力提升，并在15项隐蔽性/情境感知挑战中通过14项。Google因此为生物和网络风险建立Safety Case，并对失控相关风险进行残余风险评估；其判断运行时缓解措施已把风险降到阈值以下。",
+          "why_it_matters": "这标志着前沿模型能力阈值的实际含义发生变化：触及或无法排除触及严重风险阈值，并不自动导致停止发布，而是触发Safety Case、缓解措施验证和治理机构风险接受。发布边界因此取决于谁评估控制是否有效、证据是否独立，以及发布后能否持续阻断。",
+          "impact": "企业不能把供应商“已通过Safety Case”直接等同于低风险。引入高能力模型时应独立验证自身部署环境中的网络、生物、工具调用、情境感知和边界绕过风险，并限制可用工具、权限、数据和网络范围；企业责任不能外包给模型厂商。"
+        },
+        {
+          "title": "英国议会记录前沿实验室对强制监管的分裂及AISI权力缺口",
+          "what": "OpenAI和Anthropic在英国议会材料及听证中支持法定、具有约束力的前沿AI安全要求；Google DeepMind和Meta未支持新增专门立法。英国AISI和内阁官员同时确认，现行体系依赖企业自愿合作，AISI不能强制取得模型或阻止危险模型发布。",
+          "evidence": "OpenAI书面证据支持英国建立持久、强制、按能力分级的前沿AI要求，重点覆盖高级网络、生物和失控风险；Anthropic主张大型前沿开发者必须公布安全框架、系统卡和定期风险报告，接受独立评估并保护开发环境。议会听证议程明确聚焦AISI是否应获得强制披露、问题报告和停止发布的权力。",
+          "why_it_matters": "英国的政策问题已从是否继续自愿合作，收敛到是否赋予公共机构模型访问权、强制报告权和发布干预权。两家大型实验室支持法定化提高了制度推进的可行性，但行业分裂和跨境模型供给仍是关键阻力。",
+          "impact": "企业应为潜在的外部独立评测和强制报告准备可移交证据包，包括能力阈值、Safety Case、评测数据、缓解有效性、残余风险、发布批准和事故记录；同时将监管机构可能拥有暂停或限制部署权纳入退出设计。"
+        }
+      ],
+      "recommendations": [
+        "把能力阈值与控制措施拆开管理：模型触及高风险能力时，不因供应商存在护栏而自动批准，必须在本企业场景中重新验证残余风险。",
+        "为高风险Agent建立可审计Safety Case，明确评测证据、缓解措施、独立复核、风险接受人和发布后监控；控制失效时自动降权、断网或停用。",
+        "持续跟踪英国是否把AISI模型访问、强制事故报告或发布干预权写入正式法案，并关注Google公开Safety Case能否接受真正独立审查。"
+      ],
+      "sources": [
+        {
+          "name": "Google DeepMind — Gemini 4 Argon Model Card",
+          "date": "2026-10-13",
+          "url": "https://deepmind.google/models/model-cards/gemini-4-argon/",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Google — Developing Gemini 4 Argon responsibly and safely",
+          "date": "2026-10-13",
+          "url": "https://blog.google/innovation-and-ai/technology/safety-security/gemini-4-model-safety-security/",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "UK Parliament — AI adoption, safety and governance oral evidence session",
+          "date": "2026-10-13",
+          "url": "https://committees.parliament.uk/event/28282/formal-meeting-oral-evidence-session/",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "UK Parliament — OpenAI written evidence AIS0003",
+          "date": "2026-10-05",
+          "url": "https://committees.parliament.uk/writtenevidence/169983/default/",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "UK Parliament — Anthropic written evidence AIS0004",
+          "date": "2026-10-09",
+          "url": "https://committees.parliament.uk/writtenevidence/170037/default/",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-10-14T00:22:53.018Z"
+    },
     {
       "id": "frontier-regulation:2026-10-13",
       "radarKey": "frontier-regulation",
