@@ -2,8 +2,52 @@
   "schemaVersion": 1,
   "radarKey": "finance-ai-cases",
   "radarTitle": "财经 AI 案例",
-  "updatedAt": "2026-10-09T08:15:05+08:00",
+  "updatedAt": "2026-10-14T08:07:22+08:00",
   "reports": [
+    {
+      "id": "finance-ai-cases:2026-10-14",
+      "radarKey": "finance-ai-cases",
+      "radarTitle": "财经 AI 案例",
+      "reportDate": "2026-10-14",
+      "headline": "Freehand 与 Unilever 的公开案例显示，AP Agent 已从发票审计与异常建议推进到受控付款、对账的端到端执行；产品分水岭正在变成能否在阈值、合规检查和审计链下安全移动资金。",
+      "conclusion": "Freehand 于 2026 年 10 月 13 日发布 Freehand Pay，将 AI Teams 从数据连接、合同与费率审计、供应商异常处理和总账分配，延伸到已批准发票的付款与对账；Unilever 表示其使用 Freehand AI Agents 处理最复杂供应商的发票付款。该案例把 AP Agent 的边界从辅助判断推进到受控执行。值得改变产品判断的不是“全自治”口号，而是可执行范围、审批阈值、合规筛查、越界转人工、全程留痕与对账闭环已被组合成生产机制。Freehand 称部分共同开发的 Fortune 50 客户将 AP 周期缩短 80–90%，AI 处理 99% 的底层决策；这些数字是厂商汇总自报，并非 Unilever 单体数据，也无独立验证，因此证据强度为中。",
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "Unilever：复杂供应商付款进入 Agent 执行闭环",
+          "what": "Freehand Pay 把 AI Teams 的工作链从 ERP/TMS/采购/EDI/邮件、合同与供应商沟通的数据连接，延伸到审计收费、处理供应商异常、分配总账、执行已批准付款和对账。Unilever 表示，其使用 Freehand AI Agents 处理最复杂供应商的发票付款。",
+          "evidence": "Freehand 2026 年 10 月 13 日新闻稿称，部分共同开发的 Fortune 50 客户已使用该方案；这些客户的应付周期缩短 80–90%，AI 处理 99% 的底层决策，付款网络覆盖 150 多个国家、60 多种币种。人负责设定审批阈值、政策和品类规则；越界交易转人工，每项决定留痕，并叠加 KYC/KYB、AML 与制裁筛查。Unilever 2024 年年报披露其全年处理超过 690 万张发票、约 7.6 万家供应商，可作为场景规模背景，但不能证明 Freehand 的覆盖规模。量化结果为厂商汇总自报，未披露 Unilever 单体覆盖量、差错率或独立验证，证据强度为中。",
+          "why_it_matters": "这不是“付款建议”，而是 Agent 在控制边界内推动资金动作并完成对账，说明 AP Agent 已从辅助型进入流程嵌入型/任务委托型。成熟度判断应从模型是否能识别异常，升级为能否在可配置权限、合规闸门、人工接管和审计证据下安全执行。",
+          "impact": "企业财经 AI 产品应把可执行范围、动作权限、审批闸门、支付轨道、异常队列、职责分离、完整审计证据和对账闭环作为一体化设计。优先从运输、仓储等合同与费率规则密集品类落地；目标是“边界内自治、越界即人工”，并以错误/重复付款、付款成功率、对账闭环率、人工接管率和异常回退为核心验证指标。"
+        }
+      ],
+      "recommendations": [
+        "应吸收｜把“可执行范围”设计成一等产品对象：供应商、品类、金额、币种、账户、审批等级和例外条件均可配置，越界自动阻断并转人工。",
+        "应吸收｜评价指标从抽取准确率升级到付款结果：错误/重复付款、付款成功率、对账闭环率、人工接管率、异常回退和审计可追溯。",
+        "应观察｜先在运输、仓储等合同与费率规则密集品类验证；不能把厂商汇总的 80–90% 和 99% 当作通用基准。"
+      ],
+      "sources": [
+        {
+          "name": "GlobeNewswire / Freehand：Freehand Pay 发布",
+          "date": "2026-10-13",
+          "url": "https://www.globenewswire.com/news-release/2026/10/13/3379529/0/en/freehand-launches-freehand-pay-expanding-ai-teams-from-invoice-audit-to-payment.html",
+          "evidence_strength": "中"
+        },
+        {
+          "name": "Freehand 官网：产品流程、客户与审计机制",
+          "date": "2026-10-14",
+          "url": "https://www.freehand.ai/",
+          "evidence_strength": "中"
+        },
+        {
+          "name": "Unilever Annual Report and Accounts 2024（应付业务规模背景）",
+          "date": "2025-03-13",
+          "url": "https://www.unilever.com/files/unilever-annual-report-and-accounts-2024.pdf",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-10-14T08:07:22+08:00"
+    },
     {
       "id": "finance-ai-cases:2026-10-09",
       "radarKey": "finance-ai-cases",
