@@ -2,8 +2,65 @@
   "schemaVersion": 1,
   "radarKey": "agent-governance",
   "radarTitle": "Agent 治理",
-  "updatedAt": "2026-10-14T07:37:35+08:00",
+  "updatedAt": "2026-10-15T07:45:18+08:00",
   "reports": [
+    {
+      "id": "agent-governance:2026-10-15",
+      "radarKey": "agent-governance",
+      "radarTitle": "Agent 治理",
+      "reportDate": "2026-10-15",
+      "headline": "MongoDB 将 Agent 资源治理推进为逐次执行的硬门禁：组织与项目策略合并时白名单取交集、预算取更低值，项目只能收紧不能放宽；每次运行可限制工具调用、模型调用、Token 和执行时长。",
+      "conclusion": "MongoDB Atlas Agent Engine 把“集团底线 + 领域自治 + 运行时预算”产品化：组织级和项目级策略合并为每个项目的有效配置，工具与模型白名单取交集，数值预算取更低值，下级项目不能放宽上级约束；执行引擎在每次工具或模型调用前校验工具、模型、调用次数、Token 和时长，越界即停止。治理判断应从月度用量看板升级为“单次硬上限 + 会话上限 + 月度预算”，并在资产总账保留最终有效策略及继承来源。",
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "集团基线与项目策略形成只可收紧的继承规则",
+          "what": "Atlas Agent Engine 允许组织级和项目级同时配置工具、模型与执行预算；控制面把两层策略合成为每个项目的有效配置，并在每次执行中强制。",
+          "evidence": "白名单取组织与项目的交集；数值上限取两者较低值。项目若提交比组织更宽松的策略会被拒绝；若要放宽，必须先由组织管理员修改组织策略。工具在每次调用前校验，未授权即停止执行并返回 policy_denied。证据强。",
+          "why_it_matters": "这把“集团统一底线与领域差异化治理”从职责原则变成确定性继承规则，避免下级项目以本地配置绕过集团控制。",
+          "impact": "“1 个资产总账”增加组织基线、项目策略、有效策略及继承来源；“1 条生命周期”增加策略预览、发布、传播、有效性核验与回滚；“4 类评价”增加策略覆盖率、拒绝原因与异常放宽；“1 套资源机制”明确集团设上限、财经领域只能在其内收紧。"
+        },
+        {
+          "title": "资源预算从月度看板下沉到单次执行阻断",
+          "what": "资源预算可限制每次运行的工具调用数、模型调用数、执行时长、单次 Token 和会话 Token，并在工具或模型调用前校验。",
+          "evidence": "策略失败立即终止并返回明确原因。策略约一分钟传播；每次执行启动时取得有效策略快照，运行中的任务不随策略修改；配置下发失败时继续执行最后成功配置。证据强。",
+          "why_it_matters": "Agent 的循环、重试与多工具调用可能在一个任务内失控，月度额度只能事后发现。单次执行预算提供可预测的止损、降级和容量保护机制。",
+          "impact": "资产总账增加执行预算档位和适用场景；生命周期增加预算命中后的停止、转人工、降级模型或缩短流程；四类评价增加预算命中率、有效完成/调用、成本方差和误终止；资源机制从“部门月额度”拆为“单次硬上限 + 会话上限 + 月度预算”。"
+        }
+      ],
+      "recommendations": [
+        "应吸收｜建立“集团基线不可放宽、领域项目可进一步收紧”的策略继承规则，并保留最终有效配置、版本及来源，避免只登记各层配置而无法证明实际生效值。",
+        "应吸收｜高风险或高成本 Agent 应同时配置工具数、模型调用数、Token 和时长硬上限；触发后必须定义停止、降级或人工接管，不把 policy_denied 当普通技术报错。",
+        "应观察｜平台仍为 Public Preview，不建议承载生产任务且无 SLA；数值上限可能超出一次调用，会话 Token 也可能因并发超限，记忆提取 Token 和网络出口另行治理，不能把预算配置视为绝对成本封顶。"
+      ],
+      "sources": [
+        {
+          "name": "MongoDB：Atlas Agent Engine 发布公告",
+          "date": "2026-09-29",
+          "url": "https://www.mongodb.com/company/newsroom/press-releases/mongodb-launches-atlas-agent-engine-to-put-ai-agents-in-production-without-a-new-stack",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "MongoDB Docs：Policy Engine",
+          "date": "持续更新文档（2026-10-15 核验）",
+          "url": "https://www.mongodb.com/docs/agentengine/manage/governance/policy-engine/",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "MongoDB Docs：Atlas Agent Engine",
+          "date": "持续更新文档（2026-10-15 核验）",
+          "url": "https://www.mongodb.com/docs/agentengine/",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "MongoDB Docs：Inspect Agent Execution Traces",
+          "date": "持续更新文档（2026-10-15 核验）",
+          "url": "https://www.mongodb.com/docs/agentengine/manage/inspect-traces/",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-10-15T07:45:18+08:00"
+    },
     {
       "id": "agent-governance:2026-10-14",
       "radarKey": "agent-governance",
