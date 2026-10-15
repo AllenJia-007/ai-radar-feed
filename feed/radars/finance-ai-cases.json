@@ -2,8 +2,52 @@
   "schemaVersion": 1,
   "radarKey": "finance-ai-cases",
   "radarTitle": "财经 AI 案例",
-  "updatedAt": "2026-10-14T08:07:22+08:00",
+  "updatedAt": "2026-10-16T07:48:22+08:00",
   "reports": [
+    {
+      "id": "finance-ai-cases:2026-10-16",
+      "radarKey": "finance-ai-cases",
+      "radarTitle": "财经 AI 案例",
+      "reportDate": "2026-10-16",
+      "headline": "FIS 与 Amalgamated Bank 的公开案例显示，AML Agent 已从概念验证进入具名银行部署；高风险流程的成熟形态不是自动关案，而是 Agent 负责跨系统取证和调查准备，分析师保留最终判断、关案与申报责任。",
+      "conclusion": "FIS AML Investigations Agent 正在 Amalgamated Bank 部署。Agent 汇集核心银行、支付和交易数据，结合客户类型、历史行为与预期行为解释告警，形成有证据支撑的调查摘要，并辅助 Level 1 告警初审、Level 2 深度调查和可疑活动报告叙述准备。每项陈述回链源记录，任何案件均须分析师明确确认后才能关案，建议、理由和人工最终决定全程留痕。该案例把高风险财经/合规 Agent 从通用辅助推进到核心流程中的任务委托，但明确限制在“证据装配和判断准备”，没有把受监管的最终责任交给模型。银行预计三类环节分别节省超过 90%、约 98%和超过 80%的时间；这些是部署前预测，不是生产实测，因此证据强度为中。",
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "Amalgamated Bank：AML Agent 承担取证与调查准备，分析师保留最终处置权",
+          "what": "FIS AML Investigations Agent 正在 Amalgamated Bank 部署。Agent 汇集核心银行、支付和交易数据，结合客户类型、历史行为与预期行为解释告警，形成有证据支撑的调查摘要，并辅助 Level 1 告警初审、Level 2 深度调查和可疑活动报告（SAR）叙述准备。",
+          "evidence": "Amalgamated Bank 是具名设计伙伴，双方于 2026 年 10 月 15 日确认进入部署。银行基于现有流程与 Agent 能力分析，预计 Level 1 审查时间减少超过 90%、Level 2 调查时间减少约 98%、SAR 叙述准备时间减少超过 80%。这些是部署前预测，不是生产实测。Agent 的所有输出都是建议；每项陈述回链源记录，任何案件均须分析师明确确认后才能关案，建议、理由和人工最终决定全程留痕。各机构的规则、阈值和调查程序通过治理层隔离，系统原生接入 FIS Horizon 与 Systematics 核心银行平台。证据强度为中。",
+          "why_it_matters": "该案例明确了高风险财经/合规 Agent 的合理自治边界：可以端到端承担“证据装配和判断准备”，但不能替代受监管人员完成最终处置。它比通用 Copilot 更深地嵌入核心作业，又没有把责任错误地交给模型。",
+          "impact": "风险、审计、税务、资金等场景应拆成“Agent 取证与预判—人确认结论—系统执行/申报”。产品必须原生支持来源回链、组织规则隔离、动作闸门、人工确认和最终决定留痕；验收应覆盖漏报/误报、人工改写率、建议采纳率、升级准确率与监管检查表现，而不能只看耗时。"
+        }
+      ],
+      "recommendations": [
+        "应吸收｜把“证据装配”作为高风险 Agent 的核心产品单元：跨系统取数、按客户或交易上下文比对、形成证据包和建议。",
+        "应吸收｜规则、阈值、权限和调查程序按机构或组织隔离；任何关案、申报或资金动作必须设置显式人工闸门。",
+        "应观察｜90%–98% 均为部署前预测；正式验收应增加漏报/误报、人工改写率、建议采纳率、升级准确率及监管检查表现。"
+      ],
+      "sources": [
+        {
+          "name": "Amalgamated Bank：AML Agent 部署及人机分工公告",
+          "date": "2026-10-15",
+          "url": "https://www.amalgamatedbank.com/news/amalgamated-bank-helps-pioneer-ai-powered-financial-crime-investigations-bringing-new",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "FIS：AML Investigations Agent 商业可用及部署机制",
+          "date": "2026-10-15",
+          "url": "https://www.fisglobal.com/about-us/media-room/press-release/2026/fis-aml-investigations-agent-now-commercially-available",
+          "evidence_strength": "中"
+        },
+        {
+          "name": "FIS：与 Anthropic 联合开发的初始公告",
+          "date": "2026-05-04",
+          "url": "https://www.fisglobal.com/about-us/media-room/press-release/2026/fis-brings-agentic-ai-to-banking-with-anthropic-starting-with-financial-crimes",
+          "evidence_strength": "中"
+        }
+      ],
+      "updatedAt": "2026-10-16T07:48:22+08:00"
+    },
     {
       "id": "finance-ai-cases:2026-10-14",
       "radarKey": "finance-ai-cases",
