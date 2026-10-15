@@ -2,8 +2,59 @@
   "schemaVersion": 1,
   "radarKey": "agent-governance",
   "radarTitle": "Agent 治理",
-  "updatedAt": "2026-10-15T07:45:18+08:00",
+  "updatedAt": "2026-10-16T07:32:34+08:00",
   "reports": [
+    {
+      "id": "agent-governance:2026-10-16",
+      "radarKey": "agent-governance",
+      "radarTitle": "Agent 治理",
+      "reportDate": "2026-10-16",
+      "headline": "ServiceNow 把 Agent 治理从事后审计推进为跨厂商运行时授权：每个 Agent 用加密凭证证明“此刻可做什么”，越界可被重定向、限制或机器速度停机；同一控制面开始联结资产发现、成本与业务价值。",
+      "conclusion": "ServiceNow 新公布 AI Passport：为第一方和第三方 Agent 分配可加密验证的授权凭证，在多 Agent 工作流的每一步核验范围，并支持逐步收窄委托、精确撤权及从重定向、限制到 kill switch 的分级处置。更值得改变治理判断的是，运行时授权与影子 Agent 发现、实际权限映射、执行轨迹、按用户/部门/运行时归集成本、以及消费—成本—质量—用户价值联动，被放在同一数据模型中。需要同时保留成熟度判断：AI Passport、影子 AI 检测和 AI Cost Management 仍为预计 2026 年第四季度提供，尚无公开阈值、生产成效或开放规范细节。",
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "跨厂商 Agent 获得逐次执行的可验证授权凭证",
+          "what": "ServiceNow 发布 AI Passport，第一方与第三方 Agent、MCP Server 在多 Agent 工作流每一步都用加密签名凭证证明获准范围；授权由 CMDB、GRC 政策、实际权限和流程审批共同落地。",
+          "evidence": "每个 Agent 独立持证；第三方委托可逐步收窄并精确撤权。越界时可重定向、限制、补充上下文或以机器速度停机，完整动作与合规签名进入审计记录。能力预计 2026 年第四季度提供；机制证据强，成熟度证据中。",
+          "why_it_matters": "治理从“Agent 是否有账号/角色”和事后追责，升级为每一步执行前都能验证的动作授权；跨平台 Agent 不能仅凭自身声明权限，且撤权可精确到单个 Agent 与委托链。",
+          "impact": "“1 个资产总账”增加独立身份、Passport 版本、授权范围、委托链、签发/撤销者与执行点；“1 条生命周期”增加签发、逐步收窄、运行时核验、分级处置、精确撤权和停机；“4 类评价”增加越界、误拦、撤权时延和审计证据完整性；“1 套资源机制”按动作风险配置限制、重定向、人工接管或停机。"
+        },
+        {
+          "title": "资产、运行控制、成本与价值开始共用一套治理数据模型",
+          "what": "Super Intelligence Control Tower 扩展为从发现到价值衡量的闭环：发现影子 Agent，映射实际权限，连续记录轨迹，并把成本与质量、消费和用户价值关联。",
+          "evidence": "官方公布 400+ 连接器；成本按用户、部门和运行时跟踪，AI Cost Management 汇集前沿模型、嵌入式 SaaS AI、超大规模云与数据中心 GPU 成本；政策处置链为 alert—throttle—block。LTM 公布已部署 1,500 个 Agent，并为每个 Agent 指定 employee ID 与 manager，但未披露治理成效数据。机制证据强，案例效果证据中。",
+          "why_it_matters": "资产总账、运行时控制和成本价值若分散在不同系统，就无法在越界、超预算或低价值时自动降级。统一数据模型使“谁在运行、能做什么、花了多少、产生何种结果”成为同一治理对象。",
+          "impact": "“1 个资产总账”统一 Agent、责任人、权限、轨迹、成本与价值字段；“1 条生命周期”把发现、认领、预算告警、限流、阻断和下线连起来；“4 类评价”按 Agent/部门/运行时同时看质量、风险、成本和价值；“1 套资源机制”增加从告警到限流再到阻断的预算处置梯度。"
+        }
+      ],
+      "recommendations": [
+        "应吸收｜高风险 Agent 的准入凭证应是机器可验证、可逐步收窄、可独立撤销的执行授权，不能只登记角色或依赖 Agent 自报权限。",
+        "应吸收｜把资产、权限、执行轨迹、成本和价值放在同一主键下；预算处置明确为告警—限流—阻断，并与人工接管和下线状态联动。",
+        "应观察｜AI Passport、影子 AI 检测和 AI Cost Management 尚为第四季度预告，且未公开阈值、开放规范全文和量化客户成效；先吸收机制，不按成熟产品照搬。"
+      ],
+      "sources": [
+        {
+          "name": "ServiceNow：AI Passport 与扩展治理能力公告",
+          "date": "2026-10-15",
+          "url": "https://newsroom.servicenow.com/press-releases/details/2026/ServiceNow-advances-its-operational-harness-for-enterprise-AI-with-AI-Passport-and-expanded-governance-capabilities/default.aspx",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "NVIDIA：Open Agent Safety Platform 官方公告",
+          "date": "2026-09-28",
+          "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Launches-Open-Agent-Safety-Platform-to-Secure-Agents-From-Testing-to-Deployment/default.aspx",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "ServiceNow：与 NVIDIA 扩展 Agent 治理至桌面和数据中心",
+          "date": "2026-05-05",
+          "url": "https://newsroom.servicenow.com/press-releases/details/2026/ServiceNow-extends-agentic-AI-governance-from-desktops-to-data-centers-with-NVIDIA/default.aspx",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-10-16T07:32:34+08:00"
+    },
     {
       "id": "agent-governance:2026-10-15",
       "radarKey": "agent-governance",
