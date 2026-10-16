@@ -2,8 +2,37 @@
   "schemaVersion": 1,
   "radarKey": "ai-key-people",
   "radarTitle": "AI 关键人物观点",
-  "updatedAt": "2026-10-16T04:11:08.485Z",
+  "updatedAt": "2026-10-16T06:13:53.850Z",
   "reports": [
+    {
+      "id": "ai-key-people:2026-10-16",
+      "radarKey": "ai-key-people",
+      "radarTitle": "AI 关键人物观点",
+      "reportDate": "2026-10-16",
+      "headline": "David Silver押注无预训练的经验学习路线",
+      "conclusion": "",
+      "briefVersion": 2,
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "David Silver押注无预训练的经验学习路线",
+          "what": "David Silver称Ineffable将用强化学习构建不依赖人类预训练数据的“超级学习者”，让系统从模拟环境直接发现语言、数学和科学；他预计一年内看到强证据、三年内达到超级智能。",
+          "why_it_matters": "这把前沿路线之争从“继续扩大语言模型”推向“从经验自生知识”，并给出可检验期限。",
+          "evidence": "目前只有团队路线与个人预测，尚无公开模型、基准或实验结果；三年判断缺乏独立验证。",
+          "impact": ""
+        }
+      ],
+      "recommendations": [],
+      "sources": [
+        {
+          "name": "Sequoia Capital｜David Silver and Lasse Espeholt: A Superlearner for the Age of Experience",
+          "date": "2026-10-13",
+          "url": "https://sequoiacap.com/podcast/david-silver-and-lasse-espeholt-of-ineffable-intelligence-a-superlearner-for-the-age-of-experience",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-10-16T06:13:53.850Z"
+    },
     {
       "id": "ai-key-people:2026-10-12",
       "radarKey": "ai-key-people",
