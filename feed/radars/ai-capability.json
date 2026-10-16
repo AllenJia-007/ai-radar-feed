@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "radarKey": "ai-capability",
   "radarTitle": "AI 能力",
-  "updatedAt": "2026-10-11T08:55:19+08:00",
+  "updatedAt": "2026-10-16T04:10:22.701Z",
   "reports": [
     {
       "id": "ai-capability:2026-10-11",
@@ -43,37 +43,31 @@
         }
       ],
       "updatedAt": "2026-10-11T08:55:19+08:00",
-      "briefVersion": 2
+      "briefVersion": 2,
+      "editorialUpdatedAt": "2026-10-16T04:10:22.700Z"
     },
     {
       "id": "ai-capability:2026-10-09",
       "radarKey": "ai-capability",
       "radarTitle": "AI 能力",
       "reportDate": "2026-10-09",
-      "headline": "Google把企业Agent从可调用的助手推进为拥有独立身份、长期记忆、跨渠道持续执行和预算约束的组织成员，并明确把Agent资产与底层模型解耦；Anthropic则把高风险能力落地扩展为模型、现场工程师与可信服务商共同承担的交付网络。",
-      "conclusion": "Google把企业Agent从可调用的助手推进为拥有独立身份、长期记忆、跨渠道持续执行和预算约束的组织成员，并明确把Agent资产与底层模型解耦。Anthropic则把高风险能力落地扩展为“模型＋现场工程师＋可信服务商/设备商”的交付网络。企业Agent平台的核心对象应从模型实例转向可治理、可替换模型的数字岗位。",
+      "headline": "Agent资产开始与模型选择解耦",
+      "conclusion": "",
       "currentStatus": null,
       "items": [
         {
-          "title": "Agent开始成为独立组织身份",
-          "what": "Google发布Gemini agent，可作为个人助理、团队成员或特定岗位工作；能跨Web、桌面、Workspace、Microsoft 365、Slack及无界面渠道持续运行。",
-          "evidence": "Coworker agent拥有独立邮箱、日历、Drive、企业目录身份和持久存储；长达数小时或数天的任务在用户关机后继续执行。Gemini还能动态创建具有独立身份的临时子Agent，串并行协作。",
-          "why_it_matters": "Agent不再只是某个用户会话里的工具，而成为具有身份、职责、工作空间、历史记录和协作关系的组织行动者。",
-          "impact": "Agent不再只是某个用户会话里的工具，而成为具有身份、职责、工作空间、历史记录和协作关系的组织行动者。"
+          "title": "Google为长期Agent配置独立身份与记忆",
+          "what": "Gemini agent可跨工作渠道持续执行，持有身份、存储与多类记忆；模型可动态路由而保留Skill和上下文。",
+          "why_it_matters": "Agent开始成为可持续维护、可更换模型的工作资产。",
+          "evidence": "机制来自官方披露，任务仍受沙箱、网关和预算约束。",
+          "impact": ""
         },
         {
-          "title": "Agent资产与模型解耦，治理和成本进入统一控制面",
-          "what": "Google明确提出Gemini是Agent、模型是独立选择；同一Agent可在Gemini、Claude及未来其他模型间动态路由，同时保留上下文、Skill和数据。",
-          "evidence": "平台将工具注册、Skill注册和会话、语义、程序性、情景四类记忆作为Agent资产；每个Agent有加密证明身份、最小权限和独立审计。任务运行于Agent Sandbox，全部进出及Agent间流量通过Agent Gateway执行统一策略；项目达到实时预算上限时自动暂停。",
-          "why_it_matters": "模型供应商不再等于Agent产品；真正需要长期沉淀的是身份、Context、Skill、工具、策略、轨迹和成本归属。",
-          "impact": "模型供应商不再等于Agent产品；真正需要长期沉淀的是身份、Context、Skill、工具、策略、轨迹和成本归属。"
-        },
-        {
-          "title": "高风险核心场景采用可信交付网络",
-          "what": "Anthropic启动Cyber Mission，以Critical Infrastructure Defense Program把前沿模型、现场工程师和威胁研究交给运营技术领域既有可信服务商、安全厂商与设备制造商；同时上线免费的周期性OSS Scanner。",
-          "evidence": "首批伙伴包括Accenture、Booz Allen、CrowdStrike、Deloitte、Dragos、Hitachi、Palo Alto Networks、PwC和Rockwell Automation等。OSS Scanner通过离线强化沙箱运行扫描Agent，执行漏洞复核、补丁建议和根因分析；但未经人工验证的报告明确保留误报风险。",
-          "why_it_matters": "进入关键生产流程的不是模型直销，而是模型能力、领域专家、交付工程师、系统厂商和人工验证共同形成的责任链。",
-          "impact": "进入关键生产流程的不是模型直销，而是模型能力、领域专家、交付工程师、系统厂商和人工验证共同形成的责任链。"
+          "title": "Anthropic把高风险部署交给可信交付网络",
+          "what": "Cyber Mission联合现场工程师和既有安全服务商进入关键基础设施；OSS Scanner在强化沙箱内扫描并复核漏洞。",
+          "why_it_matters": "前沿能力落地开始同时依赖模型、现场工程和行业服务网络。",
+          "evidence": "未经人工验证的漏洞报告仍有误报风险，不能直接当作已确认事故。",
+          "impact": ""
         }
       ],
       "recommendations": [],
@@ -103,30 +97,32 @@
           "evidence_strength": "强"
         }
       ],
-      "updatedAt": "2026-10-09T09:06:21+08:00"
+      "updatedAt": "2026-10-09T09:06:21+08:00",
+      "briefVersion": 2,
+      "editorialUpdatedAt": "2026-10-16T04:10:22.701Z"
     },
     {
       "id": "ai-capability:2026-10-08",
       "radarKey": "ai-capability",
       "radarTitle": "AI 能力",
       "reportDate": "2026-10-08",
-      "headline": "AI工作系统的两个关键层正在重构：GPT‑6把固定聊天框推进为按任务实时生成的交互界面；Windows则把Agent隔离、身份与治理下沉为操作系统级执行能力。",
-      "conclusion": "OpenAI在GPT‑6 Chat中上线Intelligent UI，模型可根据问题组合文本、图形、按钮、表单、图表和交互工具，并在推理或调用工具尚未结束时持续补充答案。 这不是回答里多一张图，而是模型开始承担内容、布局和交互方式的联合规划；固定聊天界面不再是AI产品唯一容器。",
+      "headline": "AI界面动态生成，执行隔离下沉到操作系统",
+      "conclusion": "",
       "currentStatus": null,
       "items": [
         {
-          "title": "模型开始实时编译任务界面",
-          "what": "OpenAI在GPT‑6 Chat中上线Intelligent UI，模型可根据问题组合文本、图形、按钮、表单、图表和交互工具，并在推理或调用工具尚未结束时持续补充答案。",
-          "evidence": "官方披露其采用原生、可流式组件库和生成期编译器，界面可随模型输出渐进呈现；在需联网搜索的任务中，GPT‑6 Instant平均比GPT‑5.6 Instant早44%开始回答。企业版仍受工作区和角色权限控制。",
-          "why_it_matters": "这不是回答里多一张图，而是模型开始承担内容、布局和交互方式的联合规划；固定聊天界面不再是AI产品唯一容器。",
-          "impact": "这不是回答里多一张图，而是模型开始承担内容、布局和交互方式的联合规划；固定聊天界面不再是AI产品唯一容器。"
+          "title": "GPT-6按任务动态生成交互界面",
+          "what": "Intelligent UI可在生成过程中组合图表、表单和按钮；官方称部分联网任务比前代更早开始呈现答案。",
+          "why_it_matters": "模型开始同时决定内容与交互方式。",
+          "evidence": "更早开始呈现不等于任务更早完成，企业使用仍受权限控制。",
+          "impact": ""
         },
         {
-          "title": "Agent隔离与治理进入操作系统",
-          "what": "Microsoft Execution Containers（MXC）在Windows 11正式可用；NVIDIA与Microsoft同时发布面向本地常驻Agent的Windows硬件与运行栈。",
-          "evidence": "MXC可封装模型生成代码、插件、工具、Harness或整个Agent；文件、网络和界面权限由Agent外部策略强制执行，工作负载不能自行扩权。它提供进程、独立桌面会话、WSL和实验性MicroVM等隔离级别，以及Enforcement、Learning、Permissive三种策略模式。Codex与NVIDIA OpenShell已接入；Claude Code等宣布后续支持。",
-          "why_it_matters": "企业Agent的安全边界正从应用自建沙箱下沉为通用操作系统原语，并与独立Agent身份、IT策略和活动监控衔接。",
-          "impact": "企业Agent的安全边界正从应用自建沙箱下沉为通用操作系统原语，并与独立Agent身份、IT策略和活动监控衔接。"
+          "title": "Windows为Agent提供外部执行边界",
+          "what": "Microsoft Execution Containers正式可用，可在Agent之外限制文件、网络与界面权限，并支持多种隔离级别。",
+          "why_it_matters": "执行隔离开始成为通用操作系统能力。",
+          "evidence": "不同隔离级别成熟度不同，MicroVM当时仍属实验能力。",
+          "impact": ""
         }
       ],
       "recommendations": [],
@@ -162,30 +158,32 @@
           "evidence_strength": "强"
         }
       ],
-      "updatedAt": "2026-10-08T08:33:57+08:00"
+      "updatedAt": "2026-10-08T08:33:57+08:00",
+      "briefVersion": 2,
+      "editorialUpdatedAt": "2026-10-16T04:10:22.701Z"
     },
     {
       "id": "ai-capability:2026-10-07",
       "radarKey": "ai-capability",
       "radarTitle": "AI 能力",
       "reportDate": "2026-10-07",
-      "headline": "高风险模型能力正从“开放/封禁”转向按任务、身份与控制环境分级授权；同时，端侧多模态检索已下移到不足1B参数和数百MB内存，企业Agent架构应同时升级能力准入与端云分工。",
-      "conclusion": "企业模型正在出现两类值得改变架构判断的变化：Anthropic把同一前沿模型的实际能力边界改造成由任务风险、组织验证与控制环境共同决定的分级授权；Google则把跨文本、代码、图片、音频和视频的统一检索压缩到可在个人设备离线运行。企业Agent底座需要从模型白名单升级为任务级能力策略，个人工作端则可以承担更多隐私敏感的本地语义检索。",
+      "headline": "前沿能力分级开放，本地多模态检索继续下沉",
+      "conclusion": "",
       "currentStatus": null,
       "items": [
         {
-          "title": "高风险能力形成“能力×用途×控制环境”分级授权",
-          "what": "Anthropic将Cyber Verification Program从单一特许访问升级为Defense、Red Team、Specialized三层；层级同时决定允许任务、安全分类器、验证要求、监控与数据控制。",
-          "evidence": "在CyScenarioBench的50次试验中，Defense层46次被中途阻断；Red Team层不触发阻断并完成34次，与无安全限制的67.6%成功率基本一致。Specialized层仅面向经深度验证、可测试电网、电信、银行转账等关键系统的组织。",
-          "why_it_matters": "前沿能力的产品单位正从模型版本变成模型、安全策略、授权用途与组织控制条件的组合；同一模型可因控制环境不同呈现完全不同的实际能力边界。",
-          "impact": "前沿能力的产品单位正从模型版本变成模型、安全策略、授权用途与组织控制条件的组合；同一模型可因控制环境不同呈现完全不同的实际能力边界。"
+          "title": "Anthropic按用途和控制条件分层开放网络能力",
+          "what": "Cyber Verification Program设置Defense、Red Team和Specialized层，分别限定任务、验证要求、监控与数据控制。",
+          "why_it_matters": "同一模型的实际能力边界开始由授权环境共同决定。",
+          "evidence": "效果来自特定评测；较宽能力层只向经过验证的组织开放。",
+          "impact": ""
         },
         {
-          "title": "本地多模态检索成为现实能力",
-          "what": "Google发布EmbeddingGemma 2，用一个740M参数开放模型把文本、代码、图片、音频和视频映射到统一向量空间，可在端侧完全离线运行。",
-          "evidence": "文本模式可缩至270M参数，完整多模态模型量化后在Pixel 11 Pro约占567MB活动内存；向量可从768维压缩到128维，官方称本地向量库和内存占用最多减少6倍；许可证为Apache 2.0。",
-          "why_it_matters": "个人工作端的知识检索边界从本地文档文本索引扩展到本地多模态语义层，且不必先把敏感文件上传云端。",
-          "impact": "个人工作端的知识检索边界从本地文档文本索引扩展到本地多模态语义层，且不必先把敏感文件上传云端。"
+          "title": "EmbeddingGemma 2支持本地多模态检索",
+          "what": "Google发布740M参数EmbeddingGemma 2，将文本、代码、图像、音频和视频映射到统一空间，并支持端侧离线运行。",
+          "why_it_matters": "本地知识检索开始超出纯文本索引。",
+          "evidence": "内存和压缩效果来自官方指定设备测试，实际表现依配置与数据而异。",
+          "impact": ""
         }
       ],
       "recommendations": [],
@@ -221,30 +219,25 @@
           "evidence_strength": "强"
         }
       ],
-      "updatedAt": "2026-10-07T09:29:56+08:00"
+      "updatedAt": "2026-10-07T09:29:56+08:00",
+      "briefVersion": 2,
+      "editorialUpdatedAt": "2026-10-16T04:10:22.701Z"
     },
     {
       "id": "ai-capability:2026-10-06",
       "radarKey": "ai-capability",
       "radarTitle": "AI 能力",
       "reportDate": "2026-10-06",
-      "headline": "OpenAI把文本来源标记从研究推进为生成链能力：API客户全球可选开启，欧盟ChatGPT与Codex文本将默认加入不可见水印，企业Agent输出治理需从事后日志前移到生成时标记与后续验证。",
-      "conclusion": "OpenAI把文本来源标记从研究推进为生成链能力：API客户全球可选开启，欧盟ChatGPT与Codex文本将默认加入不可见水印。企业Agent的输出治理因此需要从“事后查日志”前移到“生成时标记＋流转中保留＋使用时验证”；但水印只能提供来源信号，不能证明内容真实、未编辑或归属正确。",
+      "headline": "OpenAI把文本来源水印嵌入生成过程",
+      "conclusion": "",
       "currentStatus": null,
       "items": [
         {
-          "title": "输出来源治理进入生成运行时",
-          "what": "OpenAI发布textGrain，API客户可在项目或组织设置中为部分模型开启文本水印；未来数周将在欧盟ChatGPT与Codex的合格文本输出中默认启用。",
-          "evidence": "textGrain通过调整模型词语或词片采样嵌入不可见统计信号，不依赖隐藏字符、空格或特殊标点；检测只需文本与密钥，不需要原始提示词。",
-          "why_it_matters": "来源标记不再只是文档平台的后处理元数据，而成为模型生成过程的一部分。",
-          "impact": "来源标记不再只是文档平台的后处理元数据，而成为模型生成过程的一部分。"
-        },
-        {
-          "title": "来源标记必须与证据链分层",
-          "what": "OpenAI同时明确，水印只能表明存在与其模型相关的来源信号，不能证明文本准确、未被修改、合法归属或上下文正确；大幅改写、翻译可能使信号消失，文本检测器初期也仅向获批研究和专业机构开放。",
-          "evidence": "官方明确存在误报和漏报风险，API默认关闭；技术报告用熵损失预算在可检测性与生成随机性之间做权衡。",
-          "why_it_matters": "水印不能替代事实核验、引用、审批和不可篡改日志，也不适合作为员工问责或自动拒绝的单一依据。",
-          "impact": "水印不能替代事实核验、引用、审批和不可篡改日志，也不适合作为员工问责或自动拒绝的单一依据。"
+          "title": "OpenAI把文本来源水印嵌入生成过程",
+          "what": "OpenAI发布textGrain，为部分模型输出嵌入不可见统计信号；API客户可选开启，欧盟部分产品拟默认使用。",
+          "why_it_matters": "来源标记开始进入模型生成链，而非只依赖文档后处理。",
+          "evidence": "水印不能证明内容准确或未改写，存在误报漏报，检测开放范围有限。",
+          "impact": ""
         }
       ],
       "recommendations": [],
@@ -268,37 +261,25 @@
           "evidence_strength": "强"
         }
       ],
-      "updatedAt": "2026-10-06T08:39:27+08:00"
+      "updatedAt": "2026-10-06T08:39:27+08:00",
+      "briefVersion": 2,
+      "editorialUpdatedAt": "2026-10-16T04:10:22.701Z"
     },
     {
       "id": "ai-capability:2026-10-03",
       "radarKey": "ai-capability",
       "radarTitle": "AI 能力",
       "reportDate": "2026-10-03",
-      "headline": "Anthropic把企业AI的核心瓶颈从模型和平台不足进一步定义为缺少能把AI带进真实业务并交付生产结果的人，并用前沿部署工程师的选拔、驻留和考核机制将这一角色正式化。",
-      "conclusion": "Anthropic把企业AI的核心瓶颈从“模型和平台不足”进一步定义为“缺少能把AI带进真实业务并交付生产结果的人”。它投入1亿美元培养1万名前沿部署工程师，采用选拔、模拟部署、安全评审、真实项目驻留和最终考核的完整机制；这意味着企业AI COE需要建立一种介于平台工程师、领域产品经理和变革顾问之间的新型交付角色，而不是继续依赖普及式培训。",
+      "headline": "Anthropic用真实项目交付培养前沿部署工程师",
+      "conclusion": "",
       "currentStatus": null,
       "items": [
         {
-          "title": "企业AI出现独立的前沿部署工程师角色",
-          "what": "Anthropic推出Claude Frontier Academy，计划在2027年底前培养1万名Frontier Deployed Engineers，首批来自头部咨询机构、银行和生命科学企业。",
-          "evidence": "项目投入1亿美元；参与者必须具备扎实工程基础、能够推动他人采用AI，并由所在组织提名。",
-          "why_it_matters": "厂商不再假设开放模型加通识培训即可形成生产力，而是把从业务问题到生产交付的跨界人才视为独立能力资产。",
-          "impact": "厂商不再假设开放模型加通识培训即可形成生产力，而是把从业务问题到生产交付的跨界人才视为独立能力资产。"
-        },
-        {
-          "title": "培养机制从课程认证升级为真实项目交付闭环",
-          "what": "FDE培养采用四天强化训练、十二周真实项目驻留和两次实操考核。",
-          "evidence": "前三天完成模拟企业部署，从客户需求和方案设计做到测试、安全评审、合规和生产交付；第四天新场景考核。通过者随后在本组织领导真实项目，十二周后再考核。澳大利亚联邦银行确认首批20名工程师参与。",
-          "why_it_matters": "评价对象不再是会不会使用模型，而是能否在真实组织约束下把Agent系统交付、治理并移交运营。",
-          "impact": "评价对象不再是会不会使用模型，而是能否在真实组织约束下把Agent系统交付、治理并移交运营。"
-        },
-        {
-          "title": "TOB竞争延伸到可验证的交付网络",
-          "what": "Frontier Academy建立在Claude Partner Network之上，但把普遍认证与能够领导最难项目的少数骨干分层。",
-          "evidence": "Anthropic披露已有46,000家机构的专业人员获得超过175,000项认证、近4,000人完成Basecamp；伙伴等级按活跃认证人员、生产客户和公开客户案例核验，而非只看培训人数。",
-          "why_it_matters": "企业AI厂商开始把实施方法、交付人才、生产案例和伙伴评级一起产品化；TOB壁垒不再只是模型与Agent平台。",
-          "impact": "企业AI厂商开始把实施方法、交付人才、生产案例和伙伴评级一起产品化；TOB壁垒不再只是模型与Agent平台。"
+          "title": "Anthropic用真实项目交付培养前沿部署工程师",
+          "what": "Claude Frontier Academy计划培养前沿部署工程师，采用强化训练、十二周真实项目驻留及两次实操考核。",
+          "why_it_matters": "企业AI人才评价开始围绕业务问题到生产交付的完整能力。",
+          "evidence": "培养规模是项目目标，归档未提供毕业后交付成效的独立验证。",
+          "impact": ""
         }
       ],
       "recommendations": [],
@@ -328,37 +309,32 @@
           "evidence_strength": "强"
         }
       ],
-      "updatedAt": "2026-10-03T09:11:27+08:00"
+      "updatedAt": "2026-10-03T09:11:27+08:00",
+      "briefVersion": 2,
+      "editorialUpdatedAt": "2026-10-16T04:10:22.701Z"
     },
     {
       "id": "ai-capability:2026-10-02",
       "radarKey": "ai-capability",
       "radarTitle": "AI 能力",
       "reportDate": "2026-10-02",
-      "headline": "Gemini 4 Argon把前沿模型推进到百万级输出预算和真实企业专业任务；更关键的是，Google同步把行为监控、执行中止、密封沙箱与分级准入纳入发布机制。",
-      "conclusion": "Gemini 4 Argon把前沿模型推进到百万级输出预算和真实企业专业任务；更值得改变判断的是，Google同步把行为监控、执行中止、密封沙箱与分级准入纳入发布机制。长任务Agent的控制面必须成为独立系统能力，不能依赖模型自律。",
+      "headline": "Gemini Argon扩展长任务能力并收紧初期准入",
+      "conclusion": "",
       "currentStatus": null,
       "items": [
         {
-          "title": "能力单位从短回答转向长轨迹专业任务",
-          "what": "Gemini 4 Argon把单次输出上限从64K提升到100万token，定位于持续多步的软件工程、财经、法律和安全任务。",
-          "evidence": "官方公布AutomationBench 51.3%、Vals Finance Agent v2 65.4%、DeepSWE v1.1 77.9%；Google内部Agent已处理最高80万行代码迁移，并识别和实施数据中心内存优化，已释放超过300 TiB。",
-          "why_it_matters": "能力边界从“更长上下文”推进为“可在一条轨迹中持续研究、实验、修改和验证”，Harness的重要性随轨迹长度放大。",
-          "impact": "能力边界从“更长上下文”推进为“可在一条轨迹中持续研究、实验、修改和验证”，Harness的重要性随轨迹长度放大。"
+          "title": "Argon把单次输出预算扩至百万Token",
+          "what": "Google公布Gemini 4 Argon，面向持续多步专业任务，单次输出上限从64K提升至100万Token，并公布相关评测。",
+          "why_it_matters": "模型能力开始按持续执行、实验与验证的长轨迹衡量。",
+          "evidence": "输出额度不等于任务完成质量，相关表现主要来自官方评测。",
+          "impact": ""
         },
         {
-          "title": "行为监控与中止机制进入前沿Agent发布栈",
-          "what": "Google明确披露将监控Argon的推理过程和动作，必要时停止执行；高风险训练或评测前先隔离并密封沙箱。",
-          "evidence": "训练运行使用相似监控并向专门事件响应团队告警；监控发现不直接回灌训练，以降低模型学习规避监控的风险。",
-          "why_it_matters": "这把安全评测从上线前测试推进为运行时独立控制，并要求监督器与被监督模型保持目标和数据隔离。",
-          "impact": "这把安全评测从上线前测试推进为运行时独立控制，并要求监督器与被监督模型保持目标和数据隔离。"
-        },
-        {
-          "title": "前沿能力按信任级别与用途分层开放",
-          "what": "Argon首先只向受信任的安全防御机构开放；开发者、企业和消费者的广泛开放仍在后续。",
-          "evidence": "Fairwind已有650多个合作伙伴；要求用户级身份、抗钓鱼多因素认证、访问控制和员工使用追踪，禁止转售或共享访问；通过Gemini Enterprise访问支持零数据保留。",
-          "why_it_matters": "模型发布不再只是开放或不开放，而是能力版本、用途、组织身份、数据保留与审计要求的组合授权。",
-          "impact": "模型发布不再只是开放或不开放，而是能力版本、用途、组织身份、数据保留与审计要求的组合授权。"
+          "title": "初期发布配套监控、隔离与用途限制",
+          "what": "Argon初期仅向可信网络防御机构开放，训练和执行配套行为监控、必要时中止以及密封沙箱。",
+          "why_it_matters": "模型发布开始同时规定能力、使用主体与控制条件。",
+          "evidence": "这反映当时的分阶段开放策略，并非广泛可用或政府许可。",
+          "impact": ""
         }
       ],
       "recommendations": [],
@@ -388,37 +364,25 @@
           "evidence_strength": "强"
         }
       ],
-      "updatedAt": "2026-10-02T08:36:45+08:00"
+      "updatedAt": "2026-10-02T08:36:45+08:00",
+      "briefVersion": 2,
+      "editorialUpdatedAt": "2026-10-16T04:10:22.701Z"
     },
     {
       "id": "ai-capability:2026-10-01",
       "radarKey": "ai-capability",
       "radarTitle": "AI 能力",
       "reportDate": "2026-10-01",
-      "headline": "Anthropic把AI劳动力的判断从“能否完成任务”推进到“环境适配＋单位经济性”：机器人虽可覆盖74%的体力任务，但仅0.3%的任务具备成本竞争力。",
-      "conclusion": "Anthropic把AI劳动力的判断从“能否完成任务”推进到“环境适配＋单位经济性”：机器人虽可覆盖74%的体力任务（占全部工时34%），但仅0.3%的任务具备成本竞争力。企业AI规划不应再把技术暴露度直接等同于可替代性。",
+      "headline": "机器人任务覆盖率与采用经济性存在明显差距",
+      "conclusion": "",
       "currentStatus": null,
       "items": [
         {
-          "title": "AI劳动力评价出现可复用的“四道门”",
-          "what": "Anthropic发布任务级机器人暴露指数，把当前能力、工作环境、成本、偏好与监管分开衡量。",
-          "evidence": "当前机器人可执行74%的体力任务；机器人与大模型合计暴露81%的工作；但机器人只在0.3%的任务上比人力便宜。",
-          "why_it_matters": "它量化证明“能做”与“会被企业采用”之间存在巨大断层，改变了仅凭能力榜单估算自动化价值的做法。",
-          "impact": "它量化证明“能做”与“会被企业采用”之间存在巨大断层，改变了仅凭能力榜单估算自动化价值的做法。"
-        },
-        {
-          "title": "环境工程本身成为Agent能力的一部分",
-          "what": "研究用E0—E3区分机器人只能在专用环境、结构化人类场所或非结构化环境完成任务。",
-          "evidence": "约50%的体力任务只能在专门改造的环境中完成；22%可在结构化人类场所完成；仅2%可在非结构化环境完成。",
-          "why_it_matters": "近期落地上，重构环境往往比等待通用自主能力提升更可控、更快形成价值。",
-          "impact": "近期落地上，重构环境往往比等待通用自主能力提升更可控、更快形成价值。"
-        },
-        {
-          "title": "替代节奏应按任务与经济性规划，而非按岗位整包判断",
-          "what": "研究用50年历史数据回测暴露度与就业、工资变化，并估算成本竞争力扩散速度。",
-          "evidence": "完全暴露职业约20年后，相对同产业未暴露职业工资低7.1%、就业低34.2%；按历史约3%的价格下降速度，成本可竞争任务从0.3%升到10%仍需约40年。",
-          "why_it_matters": "AI劳动力更可能先改变高暴露、环境可控且经济性成立的任务组合，而非整类岗位同步消失。",
-          "impact": "AI劳动力更可能先改变高暴露、环境可控且经济性成立的任务组合，而非整类岗位同步消失。"
+          "title": "机器人任务覆盖率与采用经济性存在明显差距",
+          "what": "Anthropic研究估算机器人可执行74%的体力任务，但只有0.3%的任务具备人力成本竞争力；大量任务还需专门改造环境。",
+          "why_it_matters": "评估AI劳动力时，能力、环境和成本需分别验证。",
+          "evidence": "属于任务暴露与成本估算，不能直接等同于实际就业替代比例。",
+          "impact": ""
         }
       ],
       "recommendations": [],
@@ -442,37 +406,39 @@
           "evidence_strength": "强"
         }
       ],
-      "updatedAt": "2026-10-01T09:18:42+08:00"
+      "updatedAt": "2026-10-01T09:18:42+08:00",
+      "briefVersion": 2,
+      "editorialUpdatedAt": "2026-10-16T04:10:22.701Z"
     },
     {
       "id": "ai-capability:2026-09-30",
       "radarKey": "ai-capability",
       "radarTitle": "AI 能力",
       "reportDate": "2026-09-30",
-      "headline": "OpenAI 将 Agent 从单次任务推进为持续承担责任的工作角色，并把共享空间、团队任务、组织连接与云端执行环境组合成团队级 Agent 工作系统。",
-      "conclusion": "OpenAI 在 DevDay 2026 将 Agent 从“用户发起一次任务”推进到“持续承担责任的工作角色”：Dots 可长期在线、主动检查连接信息、运行周期任务并跨 ChatGPT、Slack、短信等渠道跟进；与此同时，Enterprise 把共享空间、团队任务、组织连接和云端执行环境组合成团队级工作系统。GPT-6.1 Sol 又以约五分之一的 Astra 价格接近其 Agent、Computer Use 与专业工作能力，使持续运行的经济性明显改善。",
+      "headline": "长期Agent与团队工作空间形成组合",
+      "conclusion": "",
       "currentStatus": null,
       "items": [
         {
-          "title": "Agent 从单次任务升级为持续责任",
-          "what": "OpenAI 发布 Dots。每个 Dot 拥有独立云端电脑和浏览器，可使用连接工具、处理周期任务、在多渠道持续跟进，并可调用子 Agent。",
-          "evidence": "官方帮助文档明确，Dot 可在没有新消息时主动审阅连接信息、形成记忆、后台研究和执行计划任务；本地电脑接入默认关闭，可单独授权与撤销。",
-          "why_it_matters": "产品单位从“对话/任务”变成“长期角色”。真正的竞争点转向目标持续性、状态管理、主动触发、长期记忆和授权边界。",
-          "impact": "产品单位从“对话/任务”变成“长期角色”。真正的竞争点转向目标持续性、状态管理、主动触发、长期记忆和授权边界。"
+          "title": "Dots开始作为长期工作角色运行",
+          "what": "OpenAI Dots拥有云电脑，可执行周期任务、主动研究并调用子Agent，在多渠道持续跟进工作。",
+          "why_it_matters": "Agent任务单位开始从单次委托延伸为持续责任。",
+          "evidence": "主动读取和外部动作依赖授权，本地电脑接入默认关闭。",
+          "impact": ""
         },
         {
-          "title": "团队 Agent 工作系统开始成型",
-          "what": "ChatGPT Enterprise 同时上线共享 Spaces/Pages、团队周期任务、团队级批准工具连接、共享 Codex Cloud 环境，以及 Slack/Teams 中的 @ChatGPT。",
-          "evidence": "团队成员可共同维护任务说明和查看结果；管理员批准组织连接，团队负责人启用；任务继承连接账户的实际权限；每个云端任务保持独立工作区并可持续运行。",
-          "why_it_matters": "这不是“多人共用聊天”，而是把入口、上下文、工具、调度、执行环境和权限组织成团队作业单元。",
-          "impact": "这不是“多人共用聊天”，而是把入口、上下文、工具、调度、执行环境和权限组织成团队作业单元。"
+          "title": "团队共享任务、连接与执行环境",
+          "what": "ChatGPT Enterprise组合共享空间、团队周期任务、组织批准连接及独立云工作区，成员可共同维护指令与查看结果。",
+          "why_it_matters": "团队作业开始共享上下文、调度与执行环境。",
+          "evidence": "任务仍继承连接账户的实际权限，不能因共享自动扩大访问。",
+          "impact": ""
         },
         {
-          "title": "高能力 Agent 的单位成本再次下移",
-          "what": "GPT-6.1 Sol 面向 Work、Codex 和 API 发布，官方定位为接近 GPT-6 Astra 的 Agent、Computer Use 和专业工作能力，但标准输入/输出价格约为 Astra 的五分之一。",
-          "evidence": "缓存输入为每百万 token 0.10 美元，较标准输入低 95%；AutomationBench 比 Opus 5.5 高 2.2 个百分点、成本约三分之一；OSWorld 2.0 距 Astra 2.1 个百分点、单任务成本约七分之一。",
-          "why_it_matters": "持续在线 Agent 的成本瓶颈正在从模型调用价格转向上下文复用率、调度频率、工具执行成本和失败重试。",
-          "impact": "持续在线 Agent 的成本瓶颈正在从模型调用价格转向上下文复用率、调度频率、工具执行成本和失败重试。"
+          "title": "GPT-6.1 Sol下调高能力Agent调用成本",
+          "what": "OpenAI发布GPT-6.1 Sol，官方定位接近Astra的专业工作能力，标准输入输出价格约为其五分之一。",
+          "why_it_matters": "持续Agent的经济性开始更依赖上下文复用和执行成本。",
+          "evidence": "性能与价格比较针对官方所列版本、任务和计费条件。",
+          "impact": ""
         }
       ],
       "recommendations": [],
@@ -502,37 +468,25 @@
           "evidence_strength": "强"
         }
       ],
-      "updatedAt": "2026-09-30T09:16:04+08:00"
+      "updatedAt": "2026-09-30T09:16:04+08:00",
+      "briefVersion": 2,
+      "editorialUpdatedAt": "2026-10-16T04:10:22.701Z"
     },
     {
       "id": "ai-capability:2026-09-29",
       "radarKey": "ai-capability",
       "radarTitle": "AI 能力",
       "reportDate": "2026-09-29",
-      "headline": "NVIDIA 将企业 Agent 安全控制面下沉到独立运行时和硬件隔离层，形成“业务授权—运行时强制执行—独立监督”的分层架构。",
-      "conclusion": "NVIDIA 发布 Open Agent Safety Platform，标志企业 Agent 的安全控制面正从模型与 Agent Harness 内部，下沉到独立运行时和硬件隔离层。重要变化不是新增一个安全产品，而是“业务授权—运行时强制执行—独立监督”开始形成可落地的分层架构。",
+      "headline": "NVIDIA把Agent控制放到模型与主机之外",
+      "conclusion": "",
       "currentStatus": null,
       "items": [
         {
-          "title": "独立运行时成为强制控制面",
-          "what": "OpenShell 作为位于模型和 Agent Harness 之外的开源安全运行时，追踪动作并执行策略。",
-          "evidence": "官方称其对文件访问、系统调用和网络连接实施运行时策略检查；真实凭据不向 Agent 暴露，仅在获准端点请求时注入。",
-          "why_it_matters": "企业 Agent 的安全边界不再主要依赖提示词、模型自律或工具白名单，而是依赖 Agent 无法绕过的外部执行层。",
-          "impact": "企业 Agent 的安全边界不再主要依赖提示词、模型自律或工具白名单，而是依赖 Agent 无法绕过的外部执行层。"
-        },
-        {
-          "title": "监督进一步下沉到独立硬件域",
-          "what": "Sentry 运行在 BlueField-4 DPU 的带外信任域，持续监测 Agent 行为，并可在毫秒级隔离越界 Agent。",
-          "evidence": "该控制域独立于 Agent 与主机软件，提供身份校验、零信任访问策略和可证明遥测。",
-          "why_it_matters": "即使 Agent 或主机环境被攻破，仍保留一层不可由 Agent 控制的监督与阻断能力。",
-          "impact": "即使 Agent 或主机环境被攻破，仍保留一层不可由 Agent 控制的监督与阻断能力。"
-        },
-        {
-          "title": "企业架构开始出现分层收敛",
-          "what": "Anthropic、SAP、Salesforce、IBM 等围绕该平台公开了集成方式。",
-          "evidence": "Anthropic 将 Agent Loop 与执行 Sandbox 分离；SAP 将业务授权、角色与流程上下文置于执行层之上，再由 OpenShell 实施运行时隔离；Salesforce 支持在 Slack 中审批权限提升。",
-          "why_it_matters": "行业正在从“单一 Agent 平台包办一切”转向业务治理层、Agent Harness、执行运行时、基础设施监督的分层协作。",
-          "impact": "行业正在从“单一 Agent 平台包办一切”转向业务治理层、Agent Harness、执行运行时、基础设施监督的分层协作。"
+          "title": "NVIDIA把Agent控制放到模型与主机之外",
+          "what": "OpenShell在模型和Harness之外检查文件、系统调用与网络策略；Sentry在独立硬件域监测行为，并可隔离越界Agent。",
+          "why_it_matters": "业务授权、执行约束和独立监督开始分层部署。",
+          "evidence": "机制主要来自官方平台说明，隔离效果仍取决于实际集成与策略配置。",
+          "impact": ""
         }
       ],
       "recommendations": [],
@@ -562,7 +516,9 @@
           "evidence_strength": "强"
         }
       ],
-      "updatedAt": "2026-09-29T20:35:17+08:00"
+      "updatedAt": "2026-09-29T20:35:17+08:00",
+      "briefVersion": 2,
+      "editorialUpdatedAt": "2026-10-16T04:10:22.701Z"
     }
   ]
 }
