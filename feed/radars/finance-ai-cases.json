@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "radarKey": "finance-ai-cases",
   "radarTitle": "财经 AI 案例",
-  "updatedAt": "2026-10-16T07:48:22+08:00",
+  "updatedAt": "2026-10-16T04:10:49.753Z",
   "reports": [
     {
       "id": "finance-ai-cases:2026-10-16",
@@ -43,23 +43,24 @@
         }
       ],
       "updatedAt": "2026-10-16T07:48:22+08:00",
-      "briefVersion": 2
+      "briefVersion": 2,
+      "editorialUpdatedAt": "2026-10-16T04:10:49.753Z"
     },
     {
       "id": "finance-ai-cases:2026-10-14",
       "radarKey": "finance-ai-cases",
       "radarTitle": "财经 AI 案例",
       "reportDate": "2026-10-14",
-      "headline": "Freehand 与 Unilever 的公开案例显示，AP Agent 已从发票审计与异常建议推进到受控付款、对账的端到端执行；产品分水岭正在变成能否在阈值、合规检查和审计链下安全移动资金。",
-      "conclusion": "Freehand 于 2026 年 10 月 13 日发布 Freehand Pay，将 AI Teams 从数据连接、合同与费率审计、供应商异常处理和总账分配，延伸到已批准发票的付款与对账；Unilever 表示其使用 Freehand AI Agents 处理最复杂供应商的发票付款。该案例把 AP Agent 的边界从辅助判断推进到受控执行。值得改变产品判断的不是“全自治”口号，而是可执行范围、审批阈值、合规筛查、越界转人工、全程留痕与对账闭环已被组合成生产机制。Freehand 称部分共同开发的 Fortune 50 客户将 AP 周期缩短 80–90%，AI 处理 99% 的底层决策；这些数字是厂商汇总自报，并非 Unilever 单体数据，也无独立验证，因此证据强度为中。",
+      "headline": "Unilever将应付Agent延伸至受控付款",
+      "conclusion": "",
       "currentStatus": null,
       "items": [
         {
-          "title": "Unilever：复杂供应商付款进入 Agent 执行闭环",
-          "what": "Freehand Pay 把 AI Teams 的工作链从 ERP/TMS/采购/EDI/邮件、合同与供应商沟通的数据连接，延伸到审计收费、处理供应商异常、分配总账、执行已批准付款和对账。Unilever 表示，其使用 Freehand AI Agents 处理最复杂供应商的发票付款。",
-          "evidence": "Freehand 2026 年 10 月 13 日新闻稿称，部分共同开发的 Fortune 50 客户已使用该方案；这些客户的应付周期缩短 80–90%，AI 处理 99% 的底层决策，付款网络覆盖 150 多个国家、60 多种币种。人负责设定审批阈值、政策和品类规则；越界交易转人工，每项决定留痕，并叠加 KYC/KYB、AML 与制裁筛查。Unilever 2024 年年报披露其全年处理超过 690 万张发票、约 7.6 万家供应商，可作为场景规模背景，但不能证明 Freehand 的覆盖规模。量化结果为厂商汇总自报，未披露 Unilever 单体覆盖量、差错率或独立验证，证据强度为中。",
-          "why_it_matters": "这不是“付款建议”，而是 Agent 在控制边界内推动资金动作并完成对账，说明 AP Agent 已从辅助型进入流程嵌入型/任务委托型。成熟度判断应从模型是否能识别异常，升级为能否在可配置权限、合规闸门、人工接管和审计证据下安全执行。",
-          "impact": "这不是“付款建议”，而是 Agent 在控制边界内推动资金动作并完成对账，说明 AP Agent 已从辅助型进入流程嵌入型/任务委托型。成熟度判断应从模型是否能识别异常，升级为能否在可配置权限、合规闸门、人工接管和审计证据下安全执行。"
+          "title": "Unilever将应付Agent延伸至受控付款",
+          "what": "Unilever使用Freehand处理复杂供应商发票；Freehand Pay进一步覆盖已批准付款和对账，超阈值交易转人工。",
+          "why_it_matters": "应付Agent开始承担有权限与合规闸门的资金动作。",
+          "evidence": "周期缩短80%—90%为厂商客户汇总自报，未披露Unilever单体成效。",
+          "impact": ""
         }
       ],
       "recommendations": [],
@@ -83,23 +84,25 @@
           "evidence_strength": "强"
         }
       ],
-      "updatedAt": "2026-10-14T08:07:22+08:00"
+      "updatedAt": "2026-10-14T08:07:22+08:00",
+      "briefVersion": 2,
+      "editorialUpdatedAt": "2026-10-16T04:10:49.753Z"
     },
     {
       "id": "finance-ai-cases:2026-10-09",
       "radarKey": "finance-ai-cases",
       "radarTitle": "财经 AI 案例",
       "reportDate": "2026-10-09",
-      "headline": "Workday 把月度人员成本预测从 8 天压缩到 1 天：AI 在数分钟内生成基线模型，财经人员转向业务权衡，说明 FP&A 的近期成熟形态是“模型起草、人负责判断”。",
-      "conclusion": "Workday 10 月 8 日发布的 Customer Zero 案例显示，月度 headcount forecast 已从 8 天的数据核对与往返沟通压缩到 1 天；清理底层计划数据后，AI 在数分钟内运行初始基线模型，财经人员把时间用于战略权衡。该案例改变的不是“AI 能否预测”，而是 FP&A 的任务边界：AI 可以先承担数据对齐、规则化基线和模型初稿，人保留假设调整、业务挑战、情景选择与最终承诺。效果为 Workday 自报，尚未披露预测准确率、人工修正幅度、覆盖部门或连续运行周期，因此应视为流程嵌入型 AI 的强信号，而不是自主预测已成熟。",
+      "headline": "Workday用AI起草预测，人员成本周期缩至1天",
+      "conclusion": "",
       "currentStatus": null,
       "items": [
         {
-          "title": "Workday：AI 生成 headcount 基线，月度预测周期由 8 天缩短至 1 天",
-          "what": "Workday 财经团队把 AI 嵌入月度计划与预测。过去人员预测需要跨数据源核对和多轮沟通；现在先清理并统一底层计划数据，由 AI 在数分钟内运行初始基线模型。财经人员不再把一周用于拼数，而是审视假设、讨论资源取舍并完成最终业务判断。",
-          "evidence": "Workday 官方 Customer Zero 材料于 2026 年 10 月 8 日发布，并称该流程使用真实数据、安全规则和日常工作流运行；月度人员预测周期从 8 天降至 1 天，缩短约 87.5%。同一材料称 94% 员工每周使用其定制 AI 助手，但该比例是企业整体采用率，不能等同 FP&A 场景覆盖率。Workday 另披露已有 5,500 多家客户使用至少一种自有 Agent；该数字说明平台采用规模，不是本案例成效。所有数据均为 Workday 自报，未提供预测准确率、修正率、样本周期和独立验证，证据强度为中。",
-          "why_it_matters": "它把 FP&A 的可落地边界从“问数据、写分析”推进到“生成可工作的预测基线”。更成熟的产品形态不是让 Agent 独立承诺预算，而是让 AI 先完成数据对齐和规则化建模，把人从模型装配者转为假设挑战者和资源决策者。",
-          "impact": "它把 FP&A 的可落地边界从“问数据、写分析”推进到“生成可工作的预测基线”。更成熟的产品形态不是让 Agent 独立承诺预算，而是让 AI 先完成数据对齐和规则化建模，把人从模型装配者转为假设挑战者和资源决策者。"
+          "title": "Workday用AI起草预测，人员成本周期缩至1天",
+          "what": "Workday自报，统一计划数据后由AI生成初始人员预测模型，月度流程从8天降至1天；财经人员审视假设与资源取舍。",
+          "why_it_matters": "FP&A的可委托任务开始覆盖预测基线生成。",
+          "evidence": "来自企业自身案例，未提供预测准确率、样本周期或独立验证。",
+          "impact": ""
         }
       ],
       "recommendations": [],
@@ -123,30 +126,32 @@
           "evidence_strength": "中"
         }
       ],
-      "updatedAt": "2026-10-09T08:15:05+08:00"
+      "updatedAt": "2026-10-09T08:15:05+08:00",
+      "briefVersion": 2,
+      "editorialUpdatedAt": "2026-10-16T04:10:49.753Z"
     },
     {
       "id": "finance-ai-cases:2026-10-08",
       "radarKey": "finance-ai-cases",
       "radarTitle": "财经 AI 案例",
       "reportDate": "2026-10-08",
-      "headline": "两个案例把财经 Agent 的成熟度推进到“受控执行”：Pamarco 已让 Agent 自动完成约 40% 的月结任务并对非 PO 发票自动过账；BNY 则用“双模型一致即继续、分歧即转人工”控制核心基金运营。",
-      "conclusion": "本期值得改变判断的不是新增了多少 Copilot 功能，而是两种可复制的生产机制已经出现：一是把有边界权限的 Agent 接入 ERP 任务、依赖关系和过账动作，由人保留判断与复核；二是在高准确性要求的基金运营中，让不同模型独立处理同一任务，以一致性作为自动继续的门槛、把分歧交给人工。Pamarco 与 BNY 的公开数字均为企业或厂商自报，尚缺少差错率、回滚量和长期控制失效数据，但已足以把产品规划重点从“问答体验”转向“动作权限、验证机制和例外运营”。",
+      "headline": "月结与基金运营Agent开始受控执行",
+      "conclusion": "",
       "currentStatus": null,
       "items": [
         {
-          "title": "Pamarco：月结 Agent 进入 ERP 核心流程，非 PO 发票已开启自动过账",
-          "what": "Pamarco 将 Copilot Studio Agent 通过 Dynamics 365 ERP MCP Server 接入月结、发票编码和定期经营报告。月结任务按负责人、到期日和依赖关系运行；系统每小时检查可执行任务，Agent 完成后更新状态并邮件通知。非 PO 发票 Agent 读取单据、匹配 ERP 数据、拆分税码与会计行并自动过账；需要判断或复核的工作仍由人负责。",
-          "evidence": "Microsoft 客户案例披露：公司约 225 人、7 个法人实体，Dynamics 365 是共同数据与作业底座；约 40% 的月结任务已由自治 Agent 执行。Pamarco 称货运类非 PO 发票编码成功率约 95%，因此已对全部非 PO 发票开启自动过账；管理报告也按日、周、月自动生成。以上为客户与厂商口径，未披露样本量、差错/冲销率、控制例外或实际缩短的关账天数，证据强度为中。",
-          "why_it_matters": "这比“生成分录建议”更进一步：Agent 已读写 ERP、遵循任务依赖并提交过账结果。可规模化形态是受限角色、明确任务边界、动作留痕与人工例外处理，而不是给通用助手开放宽泛财务权限。",
-          "impact": "这比“生成分录建议”更进一步：Agent 已读写 ERP、遵循任务依赖并提交过账结果。可规模化形态是受限角色、明确任务边界、动作留痕与人工例外处理，而不是给通用助手开放宽泛财务权限。"
+          "title": "Pamarco让Agent执行部分月结与发票过账",
+          "what": "Pamarco称约40%的月结任务已交给Agent，并开启非PO发票自动过账；需要判断和复核的任务仍由人承担。",
+          "why_it_matters": "Agent开始直接读写ERP并交付作业结果。",
+          "evidence": "为客户与厂商自报，未披露样本量、差错冲销率或实际关账提速。",
+          "impact": ""
         },
         {
-          "title": "BNY：核心基金运营采用一致性闸门，Agent 从建议走向受控执行",
-          "what": "BNY 在基金运营中将 AI 用于对账数据摄取、清洗、标准化、交易匹配、异常根因分析和优先级排序，并在 NAV 计算中做动态基准与异常检测。对财务报表验证等高准确性任务，Agentic 模型与另一类大模型独立分析；结果一致则流程继续，分歧则转人工复核。",
-          "evidence": "BNY 官方材料称，Eliza 已有 300 多个企业 AI 方案投入生产，其中资产服务领域超过 40 个；动态基金基准将 NAV 计算中的误报率从 90% 降至不足 20%，智能 NAV 已用于若干基金。所有 AI 工具上线前经过治理，并覆盖持续监控、变更管理、遥测、血缘、审批、权限再认证、事件分析和周期性重测。另据 Microsoft 客户案例，BNY 的数字员工已处理全球超过 10% 的付款修复问题。数据均为企业或合作厂商自报，证据强度为中。",
-          "why_it_matters": "BNY 给出了高风险财经 Agent 的具体验证机制：不依赖单一模型的自信分，而是用独立模型的一致性决定是否直通，把人工集中到真正分歧和异常。核心运营的产品边界由验证架构决定，而不只是模型能力。",
-          "impact": "BNY 给出了高风险财经 Agent 的具体验证机制：不依赖单一模型的自信分，而是用独立模型的一致性决定是否直通，把人工集中到真正分歧和异常。核心运营的产品边界由验证架构决定，而不只是模型能力。"
+          "title": "BNY用双模型分歧触发人工复核",
+          "what": "BNY在基金运营中使用AI对账和检查异常；高准确性任务由两个模型独立分析，结果一致则继续，分歧转人工。",
+          "why_it_matters": "验证机制开始决定高风险任务能够自动走到哪一步。",
+          "evidence": "成效来自企业及合作厂商口径，不能把模型一致等同于结果必然正确。",
+          "impact": ""
         }
       ],
       "recommendations": [],
@@ -176,23 +181,25 @@
           "evidence_strength": "强"
         }
       ],
-      "updatedAt": "2026-10-08T08:08:23+08:00"
+      "updatedAt": "2026-10-08T08:08:23+08:00",
+      "briefVersion": 2,
+      "editorialUpdatedAt": "2026-10-16T04:10:49.753Z"
     },
     {
       "id": "finance-ai-cases:2026-10-07",
       "radarKey": "finance-ai-cases",
       "radarTitle": "财经 AI 案例",
       "reportDate": "2026-10-07",
-      "headline": "PwC 的 Billing Assistant 显示，财经 Agent 的近期高价值形态可能不是替代专业判断，而是嵌入 ERP 消除高频操作摩擦；早测单笔开票由 35 分钟降至约 5 分钟。",
-      "conclusion": "PwC 正将 SAP AI Billing Assistant 直接建设在自身 SAP 环境中，指导员工完成计费、减少多菜单多步骤操作，并提前识别潜在问题。基于早期测试，单笔开票时间由 35 分钟降至约 5 分钟，约减少 86%；PwC 估算全面部署后可释放约 15 万小时/年、产生最高 3,000 万美元价值。真正值得改变判断的是：财经 Agent 的规模价值可以先来自 ERP 内高频、标准化作业的操作压缩和用户采用改善，而非替代专业判断。但当前仍是 early adopter/design partner 阶段，年度价值属于预测，尚未证明全面生产覆盖、差错率或 DSO 实际改善。",
+      "headline": "PwC早测开票助手：单笔35分钟降至5分钟",
+      "conclusion": "",
       "currentStatus": null,
       "items": [
         {
-          "title": "PwC：Billing Assistant 嵌入 SAP 计费流程，早测单笔耗时减少约 86%",
-          "what": "PwC 正在自身 SAP 环境中实施 SAP AI Billing Assistant。助手引导员工完成计费流程，减少在 ERP 菜单和多步骤之间的操作，并帮助更早发现潜在计费问题；人员继续负责业务处理、复核和结果责任。",
-          "evidence": "PwC 是 SAP 最大型 Cloud ERP 客户之一，已完成端到端财务转型、两次升级及一次年结。基于早期测试，单笔开票时间从 35 分钟降至约 5 分钟。PwC 估算全面部署后可释放约 15 万小时/年，并通过直接成本节约和把产能重新投入可计费工作产生最高 3,000 万美元价值。以上年度价值是客户预测；公开口径仍为 early adopter/design partner、正在实施，未披露全面生产覆盖人数、差错率、返工率和 DSO 实际改善，证据强度为中。",
-          "why_it_matters": "它把财经 Agent 的价值焦点从通用问答转向 ERP 内高频任务的操作压缩，并说明在成熟财务系统中，用户采用和流程摩擦可能比开放式推理更早形成规模价值。该案例也强化了“助手嵌入核心系统、人员保留责任”的产品形态。",
-          "impact": "它把财经 Agent 的价值焦点从通用问答转向 ERP 内高频任务的操作压缩，并说明在成熟财务系统中，用户采用和流程摩擦可能比开放式推理更早形成规模价值。该案例也强化了“助手嵌入核心系统、人员保留责任”的产品形态。"
+          "title": "PwC早测开票助手：单笔35分钟降至5分钟",
+          "what": "PwC在自身SAP环境实施Billing Assistant，帮助员工完成计费步骤并提前发现问题；早测单笔耗时约由35分钟降至5分钟。",
+          "why_it_matters": "核心系统内高频操作压缩，已出现可量化的早期价值。",
+          "evidence": "仍在实施和早测阶段；年度节省及价值为预测，非全面生产实绩。",
+          "impact": ""
         }
       ],
       "recommendations": [],
@@ -216,23 +223,25 @@
           "evidence_strength": "中"
         }
       ],
-      "updatedAt": "2026-10-07T08:29:38+08:00"
+      "updatedAt": "2026-10-07T08:29:38+08:00",
+      "briefVersion": 2,
+      "editorialUpdatedAt": "2026-10-16T04:10:49.753Z"
     },
     {
       "id": "finance-ai-cases:2026-10-03",
       "radarKey": "finance-ai-cases",
       "radarTitle": "财经 AI 案例",
       "reportDate": "2026-10-03",
-      "headline": "经营分析 Agent 的产品形态正在从单一问答，转向“专业子 Agent 分工、受控工具取证、统一归因、业务专家决策”的分析系统。",
-      "conclusion": "AW Rostamani Group 在汽车备件丢单分析试点中，以 5 个专业子 Agent 调查客户、库存、价格、经销商、平行进口和汇率等因素，并通过 20 多个受治理工具连接数据湖、业务系统与外部市场数据。厂商估算每次调查可节省约 10 小时；业务用户正在测试和完善，业务专家负责解释结果与决定行动。真正值得改变判断的是多 Agent 经营分析已出现可拆解的真实作业模式，但该案例仍是试点，时间节省为估算值，不能等同生产成熟。",
+      "headline": "AW Rostamani用多Agent调查备件丢单",
+      "conclusion": "",
       "currentStatus": null,
       "items": [
         {
-          "title": "AW Rostamani：5 个子 Agent 协同调查备件丢单原因",
-          "what": "AW Rostamani Group 的汽车备件业务建设 Spare Parts Loss of Sales Agent。5 个专业子 Agent 分别分析客户购买、零件表现、库存、竞品价格、经销商行为、平行进口与汇率等因素；平台比较各 Agent 发现并汇总为统一解释，在转化率下降时主动调查并提醒业务团队。",
-          "evidence": "案例披露 5 个专业子 Agent、20 多个受治理工具，连接集团数据湖、业务系统和外部市场数据；厂商估算每次调查平均节省约 10 小时。该方案已作为试点启动，业务用户在实际场景中测试和完善。数据与 AI 团队负责工具和集成，业务专家测试回答、校准语义定义并补充黄金问题；Agent 输出发现和预警，业务人员解释分析并决定行动。节省时间为估算值，尚无生产覆盖量、准确率、业务增益和长期稳定性数据，证据强度为中。",
-          "why_it_matters": "它把经营分析 Agent 从“自然语言问数”推进到“围绕业务事件进行多因子归因”。有效形态不是一个万能 Agent，而是围绕因果假设配置专业分工、证据工具和汇总机制，并把业务判断留给最接近问题的人。",
-          "impact": "它把经营分析 Agent 从“自然语言问数”推进到“围绕业务事件进行多因子归因”。有效形态不是一个万能 Agent，而是围绕因果假设配置专业分工、证据工具和汇总机制，并把业务判断留给最接近问题的人。"
+          "title": "AW Rostamani用多Agent调查备件丢单",
+          "what": "AW Rostamani试点由5个子Agent分析备件丢单原因，调用受治理工具汇总证据，业务专家复核解释并决定行动。",
+          "why_it_matters": "经营分析开始从问数走向围绕业务事件的多因子调查。",
+          "evidence": "每次节省约10小时为厂商估算，尚无生产覆盖量或业务增益验证。",
+          "impact": ""
         }
       ],
       "recommendations": [],
@@ -256,23 +265,25 @@
           "evidence_strength": "弱"
         }
       ],
-      "updatedAt": "2026-10-03T07:40:35+08:00"
+      "updatedAt": "2026-10-03T07:40:35+08:00",
+      "briefVersion": 2,
+      "editorialUpdatedAt": "2026-10-16T04:10:49.753Z"
     },
     {
       "id": "finance-ai-cases:2026-10-02",
       "radarKey": "finance-ai-cases",
       "radarTitle": "财经 AI 案例",
       "reportDate": "2026-10-02",
-      "headline": "具名试点显示，催收 Agent 已从通话辅助推进到可直接完成付款处置的任务级自治。",
-      "conclusion": "Indiana Finance Company 的催收 Agent 已在试点中承担外呼与来电、身份核验、账户信息查询、收款或约定付款、承诺还款记录和转人工等任务。单次外呼活动中，Agent 一小时完成的呼叫量相当于约 28 名支持人员，90% 目标账户获得语音留言或付款链接、完成实时通话，或被转交人工。真正值得改变判断的是：催收 Agent 已开始嵌入支付平台并闭环执行交易动作；但当前证据仍是厂商与客户自报的单次试点，尚未披露回款率、履约率、合规差错和长期稳定性。",
+      "headline": "Indiana Finance试点可办理付款的催收Agent",
+      "conclusion": "",
       "currentStatus": null,
       "items": [
         {
-          "title": "Indiana Finance：催收 Agent 从外呼辅助推进到付款闭环",
-          "what": "PayNearMe 的 AI Servicing & Collections Agent 在 Indiana Finance Company 试点中处理主动催收和来电服务。Agent 可基于支付数据、业务规则与工作流识别意图、核验客户、提供账户信息、接受或安排付款、记录承诺还款、管理退订，并在需要判断或个性化协助时转人工。",
-          "evidence": "PayNearMe 与客户披露：一次外呼活动中，Agent 一小时完成的呼叫量相当于约 28 名支持人员；90% 目标账户收到语音留言或 Smart Link、完成实时通话，或被转交人工。系统直接嵌入 PayXM，现已向客户开放。证据为厂商新闻稿及客户高管引语，未披露活动账户数、实际回款率、承诺履约率、投诉率、差错率和持续运行周期，因此证据强度为中。",
-          "why_it_matters": "这把 Agent 的边界从“回答问题或辅助坐席”推进到“受规则约束地执行付款动作并形成结果”。成熟产品形态不再是独立聊天入口，而是嵌入交易系统、具备动作权限、能在异常处干净转人工的任务型 Agent。",
-          "impact": "这把 Agent 的边界从“回答问题或辅助坐席”推进到“受规则约束地执行付款动作并形成结果”。成熟产品形态不再是独立聊天入口，而是嵌入交易系统、具备动作权限、能在异常处干净转人工的任务型 Agent。"
+          "title": "Indiana Finance试点可办理付款的催收Agent",
+          "what": "Indiana Finance试点PayNearMe Agent，完成客户核验、催收沟通、接受或安排付款；复杂判断转人工。",
+          "why_it_matters": "催收Agent从辅助通话进入受规则约束的付款闭环。",
+          "evidence": "呼叫量表现来自单次活动，未披露回款率、投诉率和持续运行效果。",
+          "impact": ""
         }
       ],
       "recommendations": [],
@@ -296,23 +307,25 @@
           "evidence_strength": "中"
         }
       ],
-      "updatedAt": "2026-10-02T07:41:23+08:00"
+      "updatedAt": "2026-10-02T07:41:23+08:00",
+      "briefVersion": 2,
+      "editorialUpdatedAt": "2026-10-16T04:10:49.753Z"
     },
     {
       "id": "finance-ai-cases:2026-09-30",
       "radarKey": "finance-ai-cases",
       "radarTitle": "财经 AI 案例",
       "reportDate": "2026-09-30",
-      "headline": "审计 Agent 的能力边界正在从“单点抽取与核对”推进到“完整程序执行”，产品核心转向可复核的证据链与工作底稿。",
-      "conclusion": "CROP Accountants & Advisers 的现金测试由 Agent 完成证据收集、验证、报告和工作底稿准备，厂商及客户自报流程提速约 80%，随后由专业人员复核。真正值得改变判断的是：审计类 Agent 已开始交付完整、可回溯的作业包，而不只是回答或单点自动化；但目前仍属于设计伙伴验证，不能等同规模化生产。",
+      "headline": "CROP试测让Agent执行完整现金审计程序",
+      "conclusion": "",
       "currentStatus": null,
       "items": [
         {
-          "title": "CROP：Agent 执行完整现金测试程序，实测提速约 80%",
-          "what": "DataSnipper 的 Alwin 在 CROP Accountants & Advisers 执行完整现金测试程序，跨数百份材料完成证据收集、验证、报告及工作底稿准备；Agent 返回完成的底稿和异常，审计人员复核并保留判断与签署责任。",
-          "evidence": "CROP 设计伙伴测试中，现金测试流程约提速 80%，从数小时缩短为数分钟 Agent 运行加人工复核。BDO Czech Republic 已开发数十个 Agent 测试不同审计程序证据；Rehmann 测试收入交易与存货成本程序。每项结论回链源证据，并记录 Agent 与人工修改。上述效果为厂商及客户自报，尚未披露生产覆盖规模、差错率或独立审计结果。",
-          "why_it_matters": "这不是聊天问答或单字段抽取，而是把审计程序作为可委托任务交给 Agent，并直接交付可复核工作底稿。成熟产品的核心不只是模型能力，而是证据链、过程留痕、权限与复核工作流。",
-          "impact": "这不是聊天问答或单字段抽取，而是把审计程序作为可委托任务交给 Agent，并直接交付可复核工作底稿。成熟产品的核心不只是模型能力，而是证据链、过程留痕、权限与复核工作流。"
+          "title": "CROP试测让Agent执行完整现金审计程序",
+          "what": "CROP测试DataSnipper Alwin，由Agent跨材料取证、核验并准备现金测试底稿；审计人员保留复核与签署责任。",
+          "why_it_matters": "审计程序开始作为完整任务委托，交付物是可追溯底稿。",
+          "evidence": "约80%提速为厂商及客户测试口径，未披露生产规模与独立审计结果。",
+          "impact": ""
         }
       ],
       "recommendations": [],
@@ -336,23 +349,25 @@
           "evidence_strength": "中"
         }
       ],
-      "updatedAt": "2026-09-30T07:54:26+08:00"
+      "updatedAt": "2026-09-30T07:54:26+08:00",
+      "briefVersion": 2,
+      "editorialUpdatedAt": "2026-10-16T04:10:49.753Z"
     },
     {
       "id": "finance-ai-cases:2026-09-29",
       "radarKey": "finance-ai-cases",
       "radarTitle": "财经 AI 案例",
       "reportDate": "2026-09-29",
-      "headline": "房贷承保 AI 的成熟度证明开始从“准确率/提效”升级为“生产规模 + 独立认证 + 可保险的责任承担”。",
-      "conclusion": "Gateless Smart Underwrite 已处理超过 23 万笔贷款且供应方称无索赔；AZP 将治理、控制、可审计性和运营成熟度纳入最高级认证，并为符合条件的交易提供保险化风险保障路径。真正值得改变判断的是：高风险 AI 的落地机制开始把技术能力证明与经济责任、风险转移连接起来。",
+      "headline": "房贷承保AI将技术认证与保险责任连接",
+      "conclusion": "",
       "currentStatus": null,
       "items": [
         {
-          "title": "房贷承保 AI 首次形成“生产规模—独立认证—保险承保”闭环",
-          "what": "AZP 对 Gateless Smart Underwrite 授予 AI 房贷技术认证最高级 Platinum。系统分析借款人信用、资产、收入和就业资料，自动验证材料并清除满足规则的贷款条件；异常和需要判断的项目转交承保人员，贷款机构保留最终合规与贷款决策责任。",
-          "evidence": "AZP/供应方披露，使用该系统的贷款机构已生产并出售超过 230,000 笔贷款，未发生索赔。认证覆盖治理、控制、可审计性、运营成熟度和风险管理；符合条件的客户及交易可另行获得 Lloyd's 保单、Munich Re 承保的陈述与保证风险保障。规模与“无索赔”为厂商/认证方自报，尚非监管或审计机构独立验证。",
-          "why_it_matters": "过去通常用准确率、人工复核和日志证明高风险 AI“可用”；本案例进一步把技术认证与经济责任、保险承保连接起来，使剩余风险开始可识别、可定价、可转移。",
-          "impact": "过去通常用准确率、人工复核和日志证明高风险 AI“可用”；本案例进一步把技术认证与经济责任、保险承保连接起来，使剩余风险开始可识别、可定价、可转移。"
+          "title": "房贷承保AI将技术认证与保险责任连接",
+          "what": "Gateless Smart Underwrite获AZP最高级认证，自动核验贷款材料并将异常交人工；符合条件的交易可另行获得保险保障。",
+          "why_it_matters": "高风险AI开始同时用技术控制和经济责任证明可用性。",
+          "evidence": "23万笔贷款及无索赔为供应方和认证方自报，保险另有适用条件。",
+          "impact": ""
         }
       ],
       "recommendations": [],
@@ -376,7 +391,9 @@
           "evidence_strength": "中"
         }
       ],
-      "updatedAt": "2026-09-29T20:35:16+08:00"
+      "updatedAt": "2026-09-29T20:35:16+08:00",
+      "briefVersion": 2,
+      "editorialUpdatedAt": "2026-10-16T04:10:49.753Z"
     }
   ]
 }
