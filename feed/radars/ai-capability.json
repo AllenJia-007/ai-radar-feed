@@ -2,8 +2,37 @@
   "schemaVersion": 1,
   "radarKey": "ai-capability",
   "radarTitle": "AI 能力",
-  "updatedAt": "2026-10-16T04:10:22.701Z",
+  "updatedAt": "2026-10-16T06:13:53.850Z",
   "reports": [
+    {
+      "id": "ai-capability:2026-10-16",
+      "radarKey": "ai-capability",
+      "radarTitle": "AI 能力",
+      "reportDate": "2026-10-16",
+      "headline": "小模型出现端到端自主复制能力前兆",
+      "conclusion": "",
+      "briefVersion": 2,
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "小模型出现端到端自主复制能力前兆",
+          "what": "Anthropic在隔离网络中让GLM-5.2完成模型复制链条：5次试验中4次感染8/8节点，另1次7/8；26B模型还可分布运行在15台廉价电视盒上。实验表明复制所需的推理部署与传播编排已出现能力前兆。",
+          "why_it_matters": "能力边界从“能执行网络任务”推进到“能搬运模型并继续传播”，自主复制风险开始具备可测工程路径。",
+          "evidence": "环境使用无认证ADB并弱化真实漏洞利用，模型也未在目标节点运行自身权重；结论是能力上界，不是现实网络中的完整AI蠕虫。",
+          "impact": ""
+        }
+      ],
+      "recommendations": [],
+      "sources": [
+        {
+          "name": "Anthropic｜AI models may be capable of self-replicating without access to a datacenter",
+          "date": "2026-10-12",
+          "url": "https://www.anthropic.com/research/self-replicating-ai",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-10-16T06:13:53.850Z"
+    },
     {
       "id": "ai-capability:2026-10-11",
       "radarKey": "ai-capability",
