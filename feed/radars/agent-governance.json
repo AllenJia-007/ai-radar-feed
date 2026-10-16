@@ -2,8 +2,50 @@
   "schemaVersion": 1,
   "radarKey": "agent-governance",
   "radarTitle": "Agent 治理",
-  "updatedAt": "2026-10-16T07:31:29.717Z",
+  "updatedAt": "2026-10-17T07:42:57+08:00",
   "reports": [
+    {
+      "id": "agent-governance:2026-10-17",
+      "radarKey": "agent-governance",
+      "radarTitle": "Agent 治理",
+      "reportDate": "2026-10-17",
+      "headline": "Oracle把用户权限、Agent服务禁区和临时授权分开控制",
+      "conclusion": "",
+      "briefVersion": 2,
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "Oracle把用户权限、Agent服务禁区和临时授权分开控制",
+          "what": "Oracle披露其内部为 Enterprise ChatGPT、Codex、运维 Agent 和自动代码扫描器建立了分层授权。员工先批准 MCP 访问范围，后端仍按员工原有权限校验；“允许读取”不等于允许发消息或改记录，也不能授予员工本来没有的权限。涉及生产环境时，Codex 和运维 Agent 只能在获批任务与限定时间内取得即时权限，受保护的删除操作仍需人工批准。Oracle 还为 Console AI 设置按调用服务识别的 IAM 拒绝策略：即使用户本人拥有更高权限、也完成了人工批准，Agent 仍可被禁止删除自治数据库等高风险资源；自动扫描器则以工作负载身份换取短期模型访问令牌，不再保存长期 API 密钥。",
+          "why_it_matters": "这说明“Agent继承用户权限”仍不够安全。企业需要把用户可做什么、Agent渠道可做什么、何时临时提权以及跨Agent委托能否继续收窄分开决策；其中管理员设置的服务级禁区应高于用户授权和人工批准。",
+          "evidence": "Oracle称 Enterprise ChatGPT、Codex、运维 Agent 和扫描器已采用这些控制，但未披露覆盖规模、事故率或效果数据。Console AI仍是有限的预生产试点；其拒绝策略只约束由该服务直接发起的请求，后续由其他服务执行的链式调用必须另设限制。",
+          "supporting_details": "多Agent委托使用令牌交换保留原始用户与当前Agent身份，每一步只获得面向目标系统、任务和期限的授权；数据库查询令牌不会作为生成PDF或写入对象存储的通用凭据传递。Oracle文档同时说明，默认身份域的Administrators不受Console AI拒绝策略约束。",
+          "impact": ""
+        }
+      ],
+      "recommendations": [],
+      "sources": [
+        {
+          "name": "Oracle：IAM Enables AI Transformation at Oracle",
+          "date": "2026-10-16",
+          "url": "https://blogs.oracle.com/cloud-infrastructure/iam-enables-ai-transformation-at-oracle",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Oracle：Managing Access to MCP Servers with OCI IAM",
+          "date": "2026-10-09",
+          "url": "https://blogs.oracle.com/cloud-infrastructure/securing-mcp-servers-with-oci-iam",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Oracle Docs：Console AI Experience Preview治理说明",
+          "date": "2026-08-25",
+          "url": "https://docs.oracle.com/en-us/iaas/releasenotes/console/consoleai-preview-oc1-aug-2026.htm",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-10-17T07:42:57+08:00"
+    },
     {
       "id": "agent-governance:2026-10-16",
       "radarKey": "agent-governance",
