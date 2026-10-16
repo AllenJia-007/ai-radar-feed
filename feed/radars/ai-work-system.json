@@ -2,24 +2,23 @@
   "schemaVersion": 1,
   "radarKey": "ai-work-system",
   "radarTitle": "AI 工作系统",
-  "updatedAt": "2026-10-16T14:09:57+08:00",
+  "updatedAt": "2026-10-16T07:31:20.835Z",
   "reports": [
     {
       "id": "ai-work-system:2026-10-16",
       "radarKey": "ai-work-system",
       "radarTitle": "AI 工作系统",
       "reportDate": "2026-10-16",
-      "headline": "Google让Workspace Studio进入条件编排",
+      "headline": "Google让Workspace流程按多层条件分支，并查找最新文档",
       "conclusion": "",
       "briefVersion": 2,
       "currentStatus": null,
       "items": [
         {
-          "title": "Google让Workspace Studio进入条件编排",
-          "what": "Google为Workspace Studio加入嵌套条件与动态文档搜索，业务用户可在无代码流程中按多层规则分支，并在运行时检索最新Drive文档，而非只串联固定步骤。",
-          "why_it_matters": "企业AI工作入口正吸收传统流程编排能力，但当前仍是显式规则流，并非自主规划或多Agent协作。",
-          "evidence": "官方于10月9日发布，10月13日起渐进上线，最长15天；未披露规模化生产成效。",
-          "impact": ""
+          "title": "Google让Workspace流程按多层条件分支，并查找最新文档",
+          "what": "Google为Workspace Studio加入嵌套条件和动态文档搜索。业务用户可在无代码流程中设置多层判断，让不同情况进入不同处理步骤，并在运行时搜索最新Drive文档作为输入。这使流程能处理更复杂的规则和更新中的资料，执行路径仍由用户明确设定。",
+          "why_it_matters": "条件判断与实时资料检索结合，可减少固定步骤对变化场景的限制；它扩展的是规则流程能力，尚未体现自主规划或多Agent协作。",
+          "evidence": "官方于10月9日发布，10月13日起渐进上线，最长15天；未披露规模化生产成效。"
         }
       ],
       "recommendations": [],
@@ -31,23 +30,24 @@
           "evidence_strength": "强"
         }
       ],
-      "updatedAt": "2026-10-16T14:09:57+08:00"
+      "updatedAt": "2026-10-16T14:09:57+08:00",
+      "editorialUpdatedAt": "2026-10-16T07:30:25.421Z"
     },
     {
       "id": "ai-work-system:2026-10-10",
       "radarKey": "ai-work-system",
       "radarTitle": "AI 工作系统",
       "reportDate": "2026-10-10",
-      "headline": "Claude支持在运行时生成多Agent工作流",
+      "headline": "Claude可按任务生成并运行多Agent协作流程",
       "conclusion": "",
       "currentStatus": null,
       "items": [
         {
-          "title": "Claude支持在运行时生成多Agent工作流",
-          "what": "Claude可按任务编写并运行多Agent工作流，动态组织并行执行、复核和失败处理，主会话可继续交互。",
-          "why_it_matters": "协作结构本身开始由Agent按任务生成。",
-          "evidence": "仍为Beta；工作流结束不代表全部子任务成功，预算与权限仍需控制。",
-          "impact": ""
+          "title": "Claude可按任务生成并运行多Agent协作流程",
+          "what": "Claude可在运行时编写工作流程序，安排子Agent并行处理、传递结果、重复核验和处理失败；程序在服务器后台运行，主会话可继续交互。各Agent上下文隔离，可分别配置工具和Skill，同时共享任务沙箱与文件；管理员可以禁止临时生成的Agent。",
+          "why_it_matters": "协作结构能随任务变化，而不必全部事先配置；独立上下文、权限和预算也让分工边界更清晰。",
+          "evidence": "目前仍为Beta。“工作流结束”不保证所有子任务成功，需要检查线程结果；预算耗尽也可能导致暂停。",
+          "supporting_details": "Beta单次工作流上限为64个并发线程、生命周期内启动1000个Agent，默认最长24小时。额度是资源边界，不保证这些子任务都成功完成。"
         }
       ],
       "recommendations": [],
@@ -73,23 +73,23 @@
       ],
       "updatedAt": "2026-10-10T07:43:22+08:00",
       "briefVersion": 2,
-      "editorialUpdatedAt": "2026-10-16T04:10:31.004Z"
+      "editorialUpdatedAt": "2026-10-16T07:30:25.421Z"
     },
     {
       "id": "ai-work-system:2026-10-09",
       "radarKey": "ai-work-system",
       "radarTitle": "AI 工作系统",
       "reportDate": "2026-10-09",
-      "headline": "Claude插件成为跨端能力包，执行范围仍有差异",
+      "headline": "Claude插件可跨端复用，组件按各端能力加载",
       "conclusion": "",
       "currentStatus": null,
       "items": [
         {
-          "title": "Claude插件成为跨端能力包，执行范围仍有差异",
-          "what": "Claude Plugin统一封装Skill、命令、连接器等组件，可从账户同步到符合条件的Claude Code；不同端按支持范围加载。",
-          "why_it_matters": "专业能力开始跨工作入口复用。",
+          "title": "Claude插件可跨端复用，组件按各端能力加载",
+          "what": "Claude Plugin可封装Skill、命令、工具连接器、子Agent和事件钩子，添加后保存到账户，并单向同步到符合版本要求的Claude Code。同一插件在不同端只加载支持的组件：Chat使用Skill等能力，Cowork和Code还可运行子Agent和事件钩子；连接器仍需单独认证。",
+          "why_it_matters": "专业能力可以统一维护和分发，但实际执行深度仍随客户端变化，迁移时需要确认组件是否被加载、账户是否已授权。",
           "evidence": "Chat不运行Agent与Hooks；安装同步也不等于连接器已认证。",
-          "impact": ""
+          "supporting_details": "Claude Code v2.1.273及以上在启动时同步账户插件；组织设为必需的插件在终端也强制加载。Code还能加载本地工具连接及语言服务组件，同步受登录方式和组织设置影响。"
         }
       ],
       "recommendations": [],
@@ -121,23 +121,23 @@
       ],
       "updatedAt": "2026-10-09T07:36:48+08:00",
       "briefVersion": 2,
-      "editorialUpdatedAt": "2026-10-16T04:10:31.004Z"
+      "editorialUpdatedAt": "2026-10-16T07:30:25.421Z"
     },
     {
       "id": "ai-work-system:2026-10-06",
       "radarKey": "ai-work-system",
       "radarTitle": "AI 工作系统",
       "reportDate": "2026-10-06",
-      "headline": "Cresta把Agent构建与生产反馈连成闭环",
+      "headline": "Cresta先生成可审阅蓝图，再构建和修复Agent",
       "conclusion": "",
       "currentStatus": null,
       "items": [
         {
-          "title": "Cresta把Agent构建与生产反馈连成闭环",
-          "what": "Conductor先从知识和流程生成可审阅蓝图，再构建Agent、工具及代码；测试和生产失败继续驱动修复与复测。",
-          "why_it_matters": "Agent构建开始复用业务规则、失败样本和团队Skill。",
+          "title": "Cresta先生成可审阅蓝图，再构建和修复Agent",
+          "what": "Cresta Conductor从知识库、业务流程、接口要求和历史会话提炼任务，先生成包含范围、流程、测试用例和知识引用的蓝图，经开发者批准后构建Agent、工具与代码。测试或生产交互失败后，系统定位到具体配置、工具或代码，提出修复并复测，成功经验可保存为团队Skill。",
+          "why_it_matters": "业务规则和失败样本可以持续进入构建过程，让团队检查的不只是生成结果，也包括依据、测试覆盖与后续修复。",
           "evidence": "部署周期减半等效果为厂商自述，不能视为普遍可复现收益。",
-          "impact": ""
+          "supporting_details": "Cresta自报早期部署周期约减半，定制函数开发由一周缩至1—2天。蓝图和测试会保留业务规则、边界案例及知识引用，用于后续回归。"
         }
       ],
       "recommendations": [],
@@ -163,23 +163,23 @@
       ],
       "updatedAt": "2026-10-06T08:00:36+08:00",
       "briefVersion": 2,
-      "editorialUpdatedAt": "2026-10-16T04:10:31.004Z"
+      "editorialUpdatedAt": "2026-10-16T07:30:25.421Z"
     },
     {
       "id": "ai-work-system:2026-10-05",
       "radarKey": "ai-work-system",
       "radarTitle": "AI 工作系统",
       "reportDate": "2026-10-05",
-      "headline": "OpenAI拆分插件分发与底层应用访问权限",
+      "headline": "OpenAI支持企业分发插件，应用权限仍需单独授权",
       "conclusion": "",
       "currentStatus": null,
       "items": [
         {
-          "title": "OpenAI拆分插件分发与底层应用访问权限",
-          "what": "企业管理员可导入插件目录并控制可用或默认安装状态；底层应用认证、数据与动作权限仍单独判断。",
-          "why_it_matters": "能力包可以统一分发，访问授权继续按组织与账户控制。",
+          "title": "OpenAI支持企业分发插件，应用权限仍需单独授权",
+          "what": "OpenAI允许企业管理员从公有或私有GitHub仓库导入插件目录，按日或手动同步，并按工作区和角色设为可安装或默认安装。插件提供Skill及应用能力，但供应商账户认证、数据范围、读写动作和逐次审批仍单独判断，安装本身不会扩大访问权限。",
+          "why_it_matters": "组织可以集中维护能力来源和更新，同时按运行身份控制真实数据与动作，避免把插件分发误当成访问授权。",
           "evidence": "安装插件不会自动取得供应商账户连接、读写或同步权限。",
-          "impact": ""
+          "supporting_details": "Enterprise和Edu的新插件与应用原则上默认关闭。管理员还可分别控制上传、共享、发布到工作区目录，以及能否创建带外部工具连接的插件。"
         }
       ],
       "recommendations": [],
@@ -205,23 +205,22 @@
       ],
       "updatedAt": "2026-10-05T08:22:22+08:00",
       "briefVersion": 2,
-      "editorialUpdatedAt": "2026-10-16T04:10:31.004Z"
+      "editorialUpdatedAt": "2026-10-16T07:30:25.421Z"
     },
     {
       "id": "ai-work-system:2026-10-03",
       "radarKey": "ai-work-system",
       "radarTitle": "AI 工作系统",
       "reportDate": "2026-10-03",
-      "headline": "Claude Code Mods可扩展运行流程，也扩大权限面",
+      "headline": "Claude Code Mods可直接改变工具调用和界面流程",
       "conclusion": "",
       "currentStatus": null,
       "items": [
         {
-          "title": "Claude Code Mods可扩展运行流程，也扩大权限面",
-          "what": "Claude Code Mods以插件分发事件处理代码，可改写提示、干预工具调用和界面，并由Claude Code生成、安装及热加载。",
-          "why_it_matters": "插件开始扩展Agent的运行机制。",
-          "evidence": "Mod不受沙箱保护，拥有用户级文件、进程、网络和环境变量访问权。",
-          "impact": ""
+          "title": "Claude Code Mods可直接改变工具调用和界面流程",
+          "what": "Claude Code Mods是随插件分发、运行于Claude Code进程内的JavaScript或TypeScript代码。它们可以改写提示、拦截或替代工具调用、修改界面，也可由Claude Code生成、安装和热加载；与普通任务说明相比，Mod能改变执行程序本身。",
+          "why_it_matters": "团队可以扩展Agent的工作方式和交互，但扩展代码拥有用户级权限，来源与代码行为会直接影响运行安全。",
+          "evidence": "Mod不受沙箱保护，拥有用户级文件、进程、网络和环境变量访问权。"
         }
       ],
       "recommendations": [],
@@ -247,30 +246,28 @@
       ],
       "updatedAt": "2026-10-03T08:19:46+08:00",
       "briefVersion": 2,
-      "editorialUpdatedAt": "2026-10-16T04:10:31.004Z"
+      "editorialUpdatedAt": "2026-10-16T07:30:25.421Z"
     },
     {
       "id": "ai-work-system:2026-10-02",
       "radarKey": "ai-work-system",
       "radarTitle": "AI 工作系统",
       "reportDate": "2026-10-02",
-      "headline": "常驻Agent与云端执行成为产品重点",
+      "headline": "Dots持续积累项目上下文，Cowork新任务转为云端执行",
       "conclusion": "",
       "currentStatus": null,
       "items": [
         {
-          "title": "Dots以长期角色持续处理任务",
-          "what": "OpenAI Dots配有独立云电脑，可跨渠道持续跟进项目、积累上下文，并在授权范围内主动研究和执行。",
-          "why_it_matters": "产品对象开始从单次会话延伸为持续承担任务的角色。",
-          "evidence": "当时仍为测试开放；记忆尚不能逐条查看、修改或删除。",
-          "impact": ""
+          "title": "Dots作为长期工作角色，积累上下文并主动研究",
+          "what": "OpenAI Dots测试版为每个Agent配置独立云电脑，使其可跨ChatGPT、Slack和Teams持续处理多个项目，并积累自己的上下文。它能对授权连接做只读主动研究，外部动作则受自动审查、自定义规则和接管要求限制；记忆当时尚不能逐条查看或修改。",
+          "why_it_matters": "持续记忆和跨渠道工作能减少重复交代背景，但也使上下文维护、行动审查和撤销授权成为长期使用的一部分。",
+          "evidence": "当时仍为测试开放；记忆尚不能逐条查看、修改或删除。"
         },
         {
-          "title": "Cowork新任务转向云端运行",
-          "what": "Anthropic宣布10月6日起Pro/Max新Cowork任务全部在云端执行，设备离线后任务仍可继续，已有本地任务保留。",
-          "why_it_matters": "持续任务开始以云端为执行中心。",
-          "evidence": "访问本地文件、浏览器或本地MCP时，仍需桌面在线并已授权。",
-          "impact": ""
+          "title": "Cowork新任务默认在云端继续运行",
+          "what": "Anthropic宣布自10月6日起，Pro和Max的新Cowork任务全部在云端执行，设备离线后也能继续运行，状态和文件可跨端同步。已有本地任务可继续；涉及本地文件、浏览器、电脑控制或本地工具连接时，仍需在线桌面在已授权范围内代理访问。",
+          "why_it_matters": "任务执行开始独立于个人电脑的开关机状态，本地桌面则承担云任务访问本地资源的受控入口。",
+          "evidence": "访问本地文件、浏览器或本地MCP时，仍需桌面在线并已授权。"
         }
       ],
       "recommendations": [],
@@ -302,23 +299,23 @@
       ],
       "updatedAt": "2026-10-02T07:51:23+08:00",
       "briefVersion": 2,
-      "editorialUpdatedAt": "2026-10-16T04:10:31.004Z"
+      "editorialUpdatedAt": "2026-10-16T07:30:25.421Z"
     },
     {
       "id": "ai-work-system:2026-10-01",
       "radarKey": "ai-work-system",
       "radarTitle": "AI 工作系统",
       "reportDate": "2026-10-01",
-      "headline": "Google用可组合Skill替代Gems",
+      "headline": "Google以可组合Skill替代Gems，并要求迁移后复核",
       "conclusion": "",
       "currentStatus": null,
       "items": [
         {
-          "title": "Google用可组合Skill替代Gems",
-          "what": "Google公布Gems迁移计划，Skills可组合指令、脚本和资料，并在任务中按意图调用；旧Gem可转换为待审核草稿。",
-          "why_it_matters": "能力对象从单个专家配置走向可组合任务包。",
+          "title": "Google以可组合Skill替代Gems，并要求迁移后复核",
+          "what": "Google计划分批推出Workspace和Gemini App Skills，企业Gems最早于2027年3月1日停用。Skill可携带指令、脚本和参考资料，并在同一任务中组合使用；旧Gem迁移后保留配置与共享权限，但以停用草稿进入列表，需创建者审核启用，相关流程引用也要替换。",
+          "why_it_matters": "能力从单个专家配置变为可组合任务包；迁移还涉及运行验证和流程改动，不能只把导入成功当作已经可用。",
           "evidence": "产品分批上线；迁移草稿需审核启用，Gemini App与Workspace当时不同步。",
-          "impact": ""
+          "supporting_details": "Workspace Skills从10月5日、Gemini App Skills从10月13日分批上线；两端当时仍不同步。Workspace Studio不再允许新增Ask a Gem步骤，现有流程需转为Ask Gemini并选择Skill。"
         }
       ],
       "recommendations": [],
@@ -350,30 +347,28 @@
       ],
       "updatedAt": "2026-10-01T07:56:00+08:00",
       "briefVersion": 2,
-      "editorialUpdatedAt": "2026-10-16T04:10:31.004Z"
+      "editorialUpdatedAt": "2026-10-16T07:30:25.421Z"
     },
     {
       "id": "ai-work-system:2026-09-30",
       "radarKey": "ai-work-system",
       "radarTitle": "AI 工作系统",
       "reportDate": "2026-09-30",
-      "headline": "共享Agent任务开始以团队身份持续运行",
+      "headline": "团队共同维护Agent任务，Codex支持跨设备续接",
       "conclusion": "",
       "currentStatus": null,
       "items": [
         {
-          "title": "团队服务账户承担共享任务",
-          "what": "ChatGPT团队可共享任务说明、连接与结果，周期任务以团队服务账户运行，不再绑定最初创建人。",
-          "why_it_matters": "团队成为可共同维护Agent作业的责任单元。",
-          "evidence": "共享插件不等于共享应用权限；任务也不自动继承个人记忆和历史。",
-          "impact": ""
+          "title": "团队服务账户运行共享任务，成员共同维护",
+          "what": "ChatGPT Business和Enterprise的团队可共享任务说明、Pages、Spaces、插件和周期任务，获权成员共同修改指令、查看结果。任务在云端以团队服务账户和团队配置的连接运行，不绑定最初创建人，也不会自动继承其个人记忆、指令或聊天历史。",
+          "why_it_matters": "持续任务的维护责任可以由团队接续；任务依据什么背景、以谁的权限执行，也变得更容易明确。",
+          "evidence": "共享插件不等于共享应用权限；任务也不自动继承个人记忆和历史。"
         },
         {
-          "title": "Codex Cloud支持跨端续接工作",
-          "what": "Codex Cloud可在桌面、Web和移动端启动或续接任务，使用可复用环境和隔离工作区，电脑休眠后仍可继续。",
-          "why_it_matters": "项目执行环境开始独立于个人设备保持运行。",
-          "evidence": "云访问与可用环境仍受组织策略及项目配置约束。",
-          "impact": ""
+          "title": "Codex Cloud支持跨设备续接同一项目任务",
+          "what": "Codex Cloud允许从桌面、Web和移动端启动或续接任务，云环境保留项目仓库、工具和依赖，每项任务使用隔离工作区。个人电脑休眠后任务仍能继续，成员可以换入口查看进度或接续工作，具体云访问范围受组织策略控制。",
+          "why_it_matters": "执行环境可以持续保留，减少换设备和恢复上下文的成本；项目配置与组织权限仍决定任务实际可用的资源。",
+          "evidence": "云访问与可用环境仍受组织策略及项目配置约束。"
         }
       ],
       "recommendations": [],
@@ -405,7 +400,7 @@
       ],
       "updatedAt": "2026-09-30T08:16:00+08:00",
       "briefVersion": 2,
-      "editorialUpdatedAt": "2026-10-16T04:10:31.004Z"
+      "editorialUpdatedAt": "2026-10-16T07:30:25.421Z"
     }
   ]
 }
