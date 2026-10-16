@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "radarKey": "ai-key-people",
   "radarTitle": "AI 关键人物观点",
-  "updatedAt": "2026-10-12T09:27:55+08:00",
+  "updatedAt": "2026-10-16T04:11:08.485Z",
   "reports": [
     {
       "id": "ai-key-people:2026-10-12",
@@ -56,7 +56,8 @@
         }
       ],
       "updatedAt": "2026-10-12T09:27:55+08:00",
-      "briefVersion": 2
+      "briefVersion": 2,
+      "editorialUpdatedAt": "2026-10-16T04:11:08.485Z"
     }
   ]
 }
