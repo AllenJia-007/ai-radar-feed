@@ -2,23 +2,23 @@
   "schemaVersion": 1,
   "radarKey": "finance-ai-cases",
   "radarTitle": "财经 AI 案例",
-  "updatedAt": "2026-10-16T04:10:49.753Z",
+  "updatedAt": "2026-10-16T07:31:37.298Z",
   "reports": [
     {
       "id": "finance-ai-cases:2026-10-16",
       "radarKey": "finance-ai-cases",
       "radarTitle": "财经 AI 案例",
       "reportDate": "2026-10-16",
-      "headline": "银行AML Agent进入具名部署，人工保留处置权",
+      "headline": "Amalgamated Bank部署AI协助反洗钱调查，结案仍需人工批准",
       "conclusion": "",
       "currentStatus": null,
       "items": [
         {
-          "title": "银行AML Agent进入具名部署，人工保留处置权",
-          "what": "Amalgamated Bank正在部署FIS Agent，由它跨系统取证、整理调查材料并辅助告警审查；分析师确认后才能关案。",
-          "why_it_matters": "高风险流程开始委托完整任务，最终判断与责任仍由人承担。",
-          "evidence": "节时90%—98%等数据属于部署前预测，尚无生产实测。",
-          "impact": ""
+          "title": "Amalgamated Bank部署AI协助反洗钱调查，结案仍需人工批准",
+          "what": "Amalgamated Bank正在部署FIS反洗钱调查Agent，汇集核心银行、支付和交易数据，结合客户类型、历史与预期行为解释告警。它负责告警初审、深度调查准备和可疑活动报告草稿，每项判断关联来源记录；分析师复核后才能关闭案件。",
+          "why_it_matters": "AI承担跨系统取证和材料准备，使人工更集中于异常判断；它接手了调查中的具体工作，但最终处置责任仍在分析师。",
+          "evidence": "各阶段节时90%以上、约98%或80%以上属于FIS部署前预测；尚无该银行生产实测，不能据此判断已实现的调查提速或准确率。",
+          "supporting_details": "FIS披露Agent可直接接入Horizon或Systematics。对告警初审、深度调查和报告准备分别给出超过90%、约98%、超过80%的节时预测；这些估算不能合并成已经实测的统一节时比例。"
         }
       ],
       "recommendations": [],
@@ -44,23 +44,23 @@
       ],
       "updatedAt": "2026-10-16T07:48:22+08:00",
       "briefVersion": 2,
-      "editorialUpdatedAt": "2026-10-16T04:10:49.753Z"
+      "editorialUpdatedAt": "2026-10-16T07:30:25.423Z"
     },
     {
       "id": "finance-ai-cases:2026-10-14",
       "radarKey": "finance-ai-cases",
       "radarTitle": "财经 AI 案例",
       "reportDate": "2026-10-14",
-      "headline": "Unilever将应付Agent延伸至受控付款",
+      "headline": "Unilever用AI处理复杂供应商发票，并延伸到已批准付款",
       "conclusion": "",
       "currentStatus": null,
       "items": [
         {
-          "title": "Unilever将应付Agent延伸至受控付款",
-          "what": "Unilever使用Freehand处理复杂供应商发票；Freehand Pay进一步覆盖已批准付款和对账，超阈值交易转人工。",
-          "why_it_matters": "应付Agent开始承担有权限与合规闸门的资金动作。",
-          "evidence": "周期缩短80%—90%为厂商客户汇总自报，未披露Unilever单体成效。",
-          "impact": ""
+          "title": "Unilever用AI处理复杂供应商发票，并延伸到已批准付款",
+          "what": "Unilever使用Freehand Agent处理最复杂供应商的发票付款。Freehand Pay进一步连接财务、采购、合同和邮件资料，覆盖收费核验、供应商异常处理、总账分配、执行已批准付款及对账；人工设置审批阈值，超限交易与合规判断仍按规定转交处理。",
+          "why_it_matters": "应付流程的价值从识别发票延伸到异常处理和资金动作，但自动执行依赖事先批准、交易限额与合规控制。",
+          "evidence": "周期缩短80%—90%等数字来自Freehand客户群汇总，未披露Unilever单体的覆盖范围、差错或付款成效。",
+          "supporting_details": "Freehand对其客户群披露应付周期缩短80%—90%、约99%相关决策由AI处理，属于厂商汇总口径。Unilever年报中的690万张发票和7.6万供应商描述企业规模，不能当作Agent已覆盖的处理量。"
         }
       ],
       "recommendations": [],
@@ -86,23 +86,22 @@
       ],
       "updatedAt": "2026-10-14T08:07:22+08:00",
       "briefVersion": 2,
-      "editorialUpdatedAt": "2026-10-16T04:10:49.753Z"
+      "editorialUpdatedAt": "2026-10-16T07:30:25.423Z"
     },
     {
       "id": "finance-ai-cases:2026-10-09",
       "radarKey": "finance-ai-cases",
       "radarTitle": "财经 AI 案例",
       "reportDate": "2026-10-09",
-      "headline": "Workday用AI起草预测，人员成本周期缩至1天",
+      "headline": "Workday先统一计划数据，再用AI把人员预测周期缩至1天",
       "conclusion": "",
       "currentStatus": null,
       "items": [
         {
-          "title": "Workday用AI起草预测，人员成本周期缩至1天",
-          "what": "Workday自报，统一计划数据后由AI生成初始人员预测模型，月度流程从8天降至1天；财经人员审视假设与资源取舍。",
-          "why_it_matters": "FP&A的可委托任务开始覆盖预测基线生成。",
-          "evidence": "来自企业自身案例，未提供预测准确率、样本周期或独立验证。",
-          "impact": ""
+          "title": "Workday先统一计划数据，再用AI把人员预测周期缩至1天",
+          "what": "Workday财经团队先清理并统一计划数据，再由AI在数分钟内生成初始人员配置与成本预测，替代跨数据源拼数和多轮核对。公司自报月度预测流程由8天缩至1天；财经人员仍负责质疑假设、讨论资源取舍并作出最终业务判断。",
+          "why_it_matters": "AI缩短的是预测准备与基线生成过程，收益依赖前期数据治理；它并未替代管理层对预算与资源配置的判断。",
+          "evidence": "来自企业自身案例，未提供预测准确率、样本周期或独立验证。"
         }
       ],
       "recommendations": [],
@@ -128,30 +127,30 @@
       ],
       "updatedAt": "2026-10-09T08:15:05+08:00",
       "briefVersion": 2,
-      "editorialUpdatedAt": "2026-10-16T04:10:49.753Z"
+      "editorialUpdatedAt": "2026-10-16T07:30:25.423Z"
     },
     {
       "id": "finance-ai-cases:2026-10-08",
       "radarKey": "finance-ai-cases",
       "radarTitle": "财经 AI 案例",
       "reportDate": "2026-10-08",
-      "headline": "月结与基金运营Agent开始受控执行",
+      "headline": "Pamarco自动执行部分月结，BNY用双模型核验基金运营任务",
       "conclusion": "",
       "currentStatus": null,
       "items": [
         {
-          "title": "Pamarco让Agent执行部分月结与发票过账",
-          "what": "Pamarco称约40%的月结任务已交给Agent，并开启非PO发票自动过账；需要判断和复核的任务仍由人承担。",
-          "why_it_matters": "Agent开始直接读写ERP并交付作业结果。",
+          "title": "Pamarco让Agent执行月结任务和非采购订单发票过账",
+          "what": "Pamarco把Agent接入Dynamics 365，按负责人、到期日和依赖关系管理月结，系统每小时检查可执行任务，完成后更新状态并通知。公司称约40%的月结任务已交给Agent；非采购订单发票也可自动读取、匹配、拆分税码与会计行并过账，需要判断或复核的事项仍由人处理。",
+          "why_it_matters": "Agent已直接更新核心财务系统，效果因此需要同时看任务节省、过账准确性和异常处理，而不仅是回答质量。",
           "evidence": "为客户与厂商自报，未披露样本量、差错冲销率或实际关账提速。",
-          "impact": ""
+          "supporting_details": "Pamarco约有225名员工、7个实体。非采购订单发票自动过账是在运费编码测试约95%正确的基础上启用；该局部测试不是整体财务流程的准确率。"
         },
         {
-          "title": "BNY用双模型分歧触发人工复核",
-          "what": "BNY在基金运营中使用AI对账和检查异常；高准确性任务由两个模型独立分析，结果一致则继续，分歧转人工。",
-          "why_it_matters": "验证机制开始决定高风险任务能够自动走到哪一步。",
+          "title": "BNY用两个模型独立核验，分歧时转人工",
+          "what": "BNY将AI用于基金运营的数据清洗、交易匹配、异常分析及净值检查。在财务报表验证等高准确性任务中，两个不同模型独立分析，一致则继续、分歧则转人工；公司与合作方称部分异常识别的误报率由约90%降至20%以下。",
+          "why_it_matters": "独立核验结果决定流程能否继续，为高风险自动执行设置具体检查点；但模型一致仍可能共同出错，不能取代责任与抽查。",
           "evidence": "成效来自企业及合作厂商口径，不能把模型一致等同于结果必然正确。",
-          "impact": ""
+          "supporting_details": "BNY披露全企业已有300多个应用，资产服务约40个，但这些数量不能证明每个应用均采用双模型核验，也不能等同于该项对账效果的覆盖范围。"
         }
       ],
       "recommendations": [],
@@ -183,23 +182,22 @@
       ],
       "updatedAt": "2026-10-08T08:08:23+08:00",
       "briefVersion": 2,
-      "editorialUpdatedAt": "2026-10-16T04:10:49.753Z"
+      "editorialUpdatedAt": "2026-10-16T07:30:25.423Z"
     },
     {
       "id": "finance-ai-cases:2026-10-07",
       "radarKey": "finance-ai-cases",
       "radarTitle": "财经 AI 案例",
       "reportDate": "2026-10-07",
-      "headline": "PwC早测开票助手：单笔35分钟降至5分钟",
+      "headline": "PwC早测开票助手：单笔由35分钟缩至约5分钟",
       "conclusion": "",
       "currentStatus": null,
       "items": [
         {
-          "title": "PwC早测开票助手：单笔35分钟降至5分钟",
-          "what": "PwC在自身SAP环境实施Billing Assistant，帮助员工完成计费步骤并提前发现问题；早测单笔耗时约由35分钟降至5分钟。",
-          "why_it_matters": "核心系统内高频操作压缩，已出现可量化的早期价值。",
-          "evidence": "仍在实施和早测阶段；年度节省及价值为预测，非全面生产实绩。",
-          "impact": ""
+          "title": "PwC早测开票助手：单笔由35分钟缩至约5分钟",
+          "what": "PwC正在自身SAP环境实施Billing Assistant，由助手引导计费步骤、减少菜单切换，并更早提示潜在问题，人员继续负责业务处理和复核。早期测试显示单笔开票由35分钟降至约5分钟；全面部署后每年释放15万小时、最高3000万美元价值，仍是客户估算。",
+          "why_it_matters": "嵌入核心系统的高频操作可以先形成可测价值，但单笔早测节时与全年规模收益需要分开判断。",
+          "evidence": "仍在实施和早测阶段；年度节省及价值为预测，非全面生产实绩。"
         }
       ],
       "recommendations": [],
@@ -225,23 +223,22 @@
       ],
       "updatedAt": "2026-10-07T08:29:38+08:00",
       "briefVersion": 2,
-      "editorialUpdatedAt": "2026-10-16T04:10:49.753Z"
+      "editorialUpdatedAt": "2026-10-16T07:30:25.423Z"
     },
     {
       "id": "finance-ai-cases:2026-10-03",
       "radarKey": "finance-ai-cases",
       "radarTitle": "财经 AI 案例",
       "reportDate": "2026-10-03",
-      "headline": "AW Rostamani用多Agent调查备件丢单",
+      "headline": "AW Rostamani用5个子Agent调查备件丢单原因",
       "conclusion": "",
       "currentStatus": null,
       "items": [
         {
-          "title": "AW Rostamani用多Agent调查备件丢单",
-          "what": "AW Rostamani试点由5个子Agent分析备件丢单原因，调用受治理工具汇总证据，业务专家复核解释并决定行动。",
-          "why_it_matters": "经营分析开始从问数走向围绕业务事件的多因子调查。",
-          "evidence": "每次节省约10小时为厂商估算，尚无生产覆盖量或业务增益验证。",
-          "impact": ""
+          "title": "AW Rostamani用5个子Agent调查备件丢单原因",
+          "what": "AW Rostamani在汽车备件业务试点5个专业子Agent，结合客户购买、库存、竞品价格、经销商、平行进口和汇率信息调查丢单。系统调用20多个受治理工具，比较各方发现并汇总解释；数据与AI团队负责集成，业务专家测试回答、校准定义并决定后续行动。",
+          "why_it_matters": "分析从回答一个数据问题，推进到围绕经营事件收集多方证据；业务专家仍决定哪些解释成立、是否调整经营动作。",
+          "evidence": "每次节省约10小时为厂商估算，尚无生产覆盖量或业务增益验证。"
         }
       ],
       "recommendations": [],
@@ -267,23 +264,23 @@
       ],
       "updatedAt": "2026-10-03T07:40:35+08:00",
       "briefVersion": 2,
-      "editorialUpdatedAt": "2026-10-16T04:10:49.753Z"
+      "editorialUpdatedAt": "2026-10-16T07:30:25.423Z"
     },
     {
       "id": "finance-ai-cases:2026-10-02",
       "radarKey": "finance-ai-cases",
       "radarTitle": "财经 AI 案例",
       "reportDate": "2026-10-02",
-      "headline": "Indiana Finance试点可办理付款的催收Agent",
+      "headline": "Indiana Finance试点催收Agent，可核验客户并安排付款",
       "conclusion": "",
       "currentStatus": null,
       "items": [
         {
-          "title": "Indiana Finance试点可办理付款的催收Agent",
-          "what": "Indiana Finance试点PayNearMe Agent，完成客户核验、催收沟通、接受或安排付款；复杂判断转人工。",
-          "why_it_matters": "催收Agent从辅助通话进入受规则约束的付款闭环。",
+          "title": "Indiana Finance试点催收Agent，可核验客户并安排付款",
+          "what": "Indiana Finance试点PayNearMe催收与服务Agent，按支付数据和业务规则识别意图、核验身份、提供账户信息、接受或安排付款，并记录承诺还款和退订。需要判断或个性化协助时转人工；一次活动的每小时呼叫量相当于约28名人员，但这并非回款效果指标。",
+          "why_it_matters": "Agent已能在交易系统中执行具体服务动作，评估时既要看处理量，也要看实际回款、客户体验与转人工质量。",
           "evidence": "呼叫量表现来自单次活动，未披露回款率、投诉率和持续运行效果。",
-          "impact": ""
+          "supporting_details": "“90%目标账户触达”包括收到语音留言或Smart Link、完成通话及转交人工等多种结果，不能解释成90%成功回款。"
         }
       ],
       "recommendations": [],
@@ -309,23 +306,23 @@
       ],
       "updatedAt": "2026-10-02T07:41:23+08:00",
       "briefVersion": 2,
-      "editorialUpdatedAt": "2026-10-16T04:10:49.753Z"
+      "editorialUpdatedAt": "2026-10-16T07:30:25.423Z"
     },
     {
       "id": "finance-ai-cases:2026-09-30",
       "radarKey": "finance-ai-cases",
       "radarTitle": "财经 AI 案例",
       "reportDate": "2026-09-30",
-      "headline": "CROP试测让Agent执行完整现金审计程序",
+      "headline": "CROP试测AI执行完整现金审计程序，审计人员复核签署",
       "conclusion": "",
       "currentStatus": null,
       "items": [
         {
-          "title": "CROP试测让Agent执行完整现金审计程序",
-          "what": "CROP测试DataSnipper Alwin，由Agent跨材料取证、核验并准备现金测试底稿；审计人员保留复核与签署责任。",
-          "why_it_matters": "审计程序开始作为完整任务委托，交付物是可追溯底稿。",
+          "title": "CROP试测AI执行完整现金审计程序，审计人员复核签署",
+          "what": "CROP测试DataSnipper Alwin，让Agent跨数百份材料收集证据、核验并准备现金测试底稿，交回完成稿与异常。结论回链源材料，Agent和人工修改均留记录；客户与厂商称测试流程约提速80%，审计人员仍保留专业判断、复核和签署责任。",
+          "why_it_matters": "可委托的对象从单项信息提取扩展为完整审计程序，可追溯底稿与复核记录是其进入专业流程的关键。",
           "evidence": "约80%提速为厂商及客户测试口径，未披露生产规模与独立审计结果。",
-          "impact": ""
+          "supporting_details": "同一产品的其他设计伙伴还在测试收入交易、存货成本等程序。这说明测试场景在扩展，不等于所有程序都已获得相同提速或进入规模生产。"
         }
       ],
       "recommendations": [],
@@ -351,23 +348,23 @@
       ],
       "updatedAt": "2026-09-30T07:54:26+08:00",
       "briefVersion": 2,
-      "editorialUpdatedAt": "2026-10-16T04:10:49.753Z"
+      "editorialUpdatedAt": "2026-10-16T07:30:25.423Z"
     },
     {
       "id": "finance-ai-cases:2026-09-29",
       "radarKey": "finance-ai-cases",
       "radarTitle": "财经 AI 案例",
       "reportDate": "2026-09-29",
-      "headline": "房贷承保AI将技术认证与保险责任连接",
+      "headline": "房贷承保AI获得技术认证，部分交易可另行投保",
       "conclusion": "",
       "currentStatus": null,
       "items": [
         {
-          "title": "房贷承保AI将技术认证与保险责任连接",
-          "what": "Gateless Smart Underwrite获AZP最高级认证，自动核验贷款材料并将异常交人工；符合条件的交易可另行获得保险保障。",
-          "why_it_matters": "高风险AI开始同时用技术控制和经济责任证明可用性。",
+          "title": "房贷承保AI获得技术认证，部分交易可另行投保",
+          "what": "Gateless Smart Underwrite获AZP最高级Platinum认证，自动核验借款人的信用、资产、收入和就业材料，并清除满足规则的贷款条件。异常交承保人员，贷款机构保留最终决策责任；符合条件的客户和交易可另行获得保险，不能把认证理解为所有贷款自动受保。",
+          "why_it_matters": "技术控制、运营认证与经济责任开始结合，为剩余风险提供定价和转移方式；保险范围仍需看具体交易与保单条件。",
           "evidence": "23万笔贷款及无索赔为供应方和认证方自报，保险另有适用条件。",
-          "impact": ""
+          "supporting_details": "供应方和认证方称，使用该系统的机构已生产并出售超过23万笔贷款且未发生索赔。认证覆盖治理、控制、可审计性与运营成熟度，符合条件的风险可由Lloyd's保单及Munich Re承保安排保障。"
         }
       ],
       "recommendations": [],
@@ -393,7 +390,7 @@
       ],
       "updatedAt": "2026-09-29T20:35:16+08:00",
       "briefVersion": 2,
-      "editorialUpdatedAt": "2026-10-16T04:10:49.753Z"
+      "editorialUpdatedAt": "2026-10-16T07:30:25.423Z"
     }
   ]
 }
