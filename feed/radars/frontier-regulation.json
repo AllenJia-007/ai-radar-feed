@@ -2,8 +2,78 @@
   "schemaVersion": 1,
   "radarKey": "frontier-regulation",
   "radarTitle": "前沿 AI 监管",
-  "updatedAt": "2026-10-14T23:57:16.000Z",
+  "updatedAt": "2026-10-16T00:48:40.000Z",
   "reports": [
+    {
+      "id": "frontier-regulation:2026-10-16",
+      "radarKey": "frontier-regulation",
+      "radarTitle": "前沿 AI 监管",
+      "reportDate": "2026-10-16",
+      "headline": "前沿AI治理正由自愿承诺进入“外部可验证＋监管可强制取证”阶段：Anthropic向独立评测者开放近员工级访问，FTC已向OpenAI和Anthropic发出民事调查要求，FSB则把Agent确定性控制写入最终治理准则。",
+      "conclusion": "2026年10月15日，Anthropic宣布已让METR六名评测人员使用公司设备、办公空间及与内部风险评估团队大体相当的系统和信息访问，并允许其在无需Anthropic批准的情况下发布风险结论，仅对客户数据、律师保密材料和模型架构等明确类别实施删除要求。这使独立评测从发布前黑盒测试升级为对训练、安全措施和内部证据的持续深度验证。同日，多家可靠媒体确认美国FTC已向OpenAI和Anthropic发出民事调查要求，强制索取安全事故、保障措施、营销与隐私材料，并计划要求高管作证；该动作把9月底启动的调查从拟议取证升级为正式强制取证，但尚未形成违法认定或诉讼。金融稳定理事会同时发布最终报告，首次系统要求金融机构为Agent配置身份标识、确定性控制、隔离或渐进联网、人类审批、子Agent编排监督、交易审计轨迹以及关闭或降级机制。三项进展共同表明，前沿模型与企业Agent治理的有效性将越来越依赖监管者和独立第三方能否取得内部证据，并验证控制是否真正运行。",
+      "currentStatus": "Anthropic：METR六名人员的近员工级访问已开始实施，属于企业自愿安排；METR可独立确定方法并发布结论，Anthropic仅可要求删除预先界定的敏感类别，并须接受评测方公开评价删除是否合理。美国FTC：据Reuters、Axios等确认，已于2026-10-14向OpenAI和Anthropic发出民事调查要求；该要求具有强制取证性质，但仍处调查阶段，尚无行政起诉、和解、纠正命令或法院判决，FTC尚未公开完整要求文本。FSB：2026-10-15发布的是面向金融机构的最终“sound practices”，供董事会和高级管理层采用，不是直接具有法律约束力的全球规则；各成员监管机构是否转化为监管指引、检查标准或强制要求仍待观察。Ban Artificial Superintelligence Act的H.R.10538与S.5493仍处委员会阶段，未发现新的委员会审议、修订、表决或行政部门明确立场。",
+      "items": [
+        {
+          "title": "Anthropic把独立评测升级为近员工级持续访问",
+          "what": "Anthropic已向METR六名人员提供公司硬件、办公空间及与内部风险评估团队大体相当的工具和系统访问；评测者可查看模型训练方式、安全措施及内部风险证据，并拥有不经公司批准发布结论的权利。",
+          "evidence": "Anthropic明确把合作划分为三级，最高级为近员工级访问；除客户数据、律师保密信息和模型架构等少数类别外，员工被鼓励像对待内部对齐风险同事一样共享信息。METR不接受模型公司付费，并公开其方法、利益冲突和信息删除情况。",
+          "why_it_matters": "第三方评测长期受限于黑盒API、有限模型版本和公司编辑权。近员工级访问加独立发布权，开始补足外部机构无法验证训练过程、控制有效性和隐瞒事故的结构性缺口，并可能成为未来政府认可的独立保证范式。",
+          "impact": "企业采购高风险模型时，不应只索取厂商系统卡；应要求可信第三方能够访问评测环境、控制设计、事故记录与训练证据，并明确评测方法自主权、发表权、敏感信息边界和利益冲突。"
+        },
+        {
+          "title": "FTC调查从准备取证升级为正式民事调查要求",
+          "what": "FTC已向OpenAI和Anthropic发出民事调查要求，索取安全事故、保障措施、营销和隐私材料，并计划要求相关高管及第三方评测机构人员作证。",
+          "evidence": "Reuters与Axios确认调查要求已于10月14日发出；这是具有法律强制力的调查取证工具，可用于决定是否提起消费者保护执法，但目前尚未公开完整文件或作出违法认定。",
+          "why_it_matters": "监管焦点不再只是事故是否发生，而是企业如何描述安全性、掌握哪些内部风险证据、是否采取合理防护以及是否及时披露。模型安全声明、事故调查和外部评测记录将同时进入执法证据链。",
+          "impact": "企业级Agent项目需要把安全主张与可验证证据绑定，统一保留事故轨迹、控制测试、风险接受、供应商声明和用户告知材料；市场宣传、采购文件和实际控制能力之间不得出现不可解释差异。"
+        },
+        {
+          "title": "FSB最终准则把Agent控制平面具体化",
+          "what": "FSB发布面向金融机构的12项最终实践，对Agent额外提出独立身份标识、禁止动作、隔离或渐进开放外部环境、人类批准触发器、子Agent与多Agent监督、交易双重授权、审计轨迹以及关闭或降级机制。",
+          "evidence": "最终报告明确要求将人类监督与写入控制平面的确定性技术控制结合；即使主要由机器持续监控，机构和个人仍承担最终责任，并须分析人类是否只是机械批准Agent建议。",
+          "why_it_matters": "这把“human in the loop”从抽象原则转化为可检查的工程和运营机制，并首次由全球金融稳定标准制定机构形成完整Agent治理基线，可能被各国金融监管者转化为检查与采购标准。",
+          "impact": "财经Agent应建立独立机器身份和责任矩阵，在控制平面编码禁用动作、金额阈值、审批与双签、联网白名单、子Agent委派规则、完整审计轨迹，以及从自治运行切换至人工、降级或停机的机制。"
+        }
+      ],
+      "recommendations": [
+        "把独立评测从一次性模型测试升级为持续保证机制，合同中明确访问深度、方法自主、发布权、敏感信息删除边界及利益冲突。",
+        "按潜在监管取证标准保存Agent全生命周期证据：安全主张、评测、事故、控制测试、风险接受、外部通知和版本血缘。",
+        "在财经Agent控制平面固化身份、权限、联网、审批、子Agent委派、交易双签、审计轨迹及降级停机规则，并验证人工监督不是形式化盖章。"
+      ],
+      "sources": [
+        {
+          "name": "Anthropic — An update on independent evaluators",
+          "date": "2026-10-15",
+          "url": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "METR — Our approach to working with AI companies",
+          "date": "2026-10-14",
+          "url": "https://metr.org/blog/2026-10-14-our-approach-to-risk-assessment/",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Financial Stability Board — Sound Practices for Responsible Adoption of AI: Final report",
+          "date": "2026-10-15",
+          "url": "https://www.fsb.org/2026/10/sound-practices-for-responsible-adoption-of-artificial-intelligence-ai-final-report/",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Reuters — US FTC subpoenas OpenAI and Anthropic over consumer harms",
+          "date": "2026-10-15",
+          "url": "https://www.reuters.com/business/us-ftc-subpoenas-openai-anthropic-over-consumer-harms-axios-reports-2026-10-15/",
+          "evidence_strength": "中"
+        },
+        {
+          "name": "U.S. Government Publishing Office — H.R.10538 status",
+          "date": "2026-09-24",
+          "url": "https://www.govinfo.gov/app/details/BILLS-119hr10538ih",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-10-16T00:48:40.000Z"
+    },
     {
       "id": "frontier-regulation:2026-10-15",
       "radarKey": "frontier-regulation",
