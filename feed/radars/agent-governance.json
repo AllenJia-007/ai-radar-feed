@@ -2,30 +2,29 @@
   "schemaVersion": 1,
   "radarKey": "agent-governance",
   "radarTitle": "Agent 治理",
-  "updatedAt": "2026-10-16T04:10:40.541Z",
+  "updatedAt": "2026-10-16T07:31:29.717Z",
   "reports": [
     {
       "id": "agent-governance:2026-10-16",
       "radarKey": "agent-governance",
       "radarTitle": "Agent 治理",
       "reportDate": "2026-10-16",
-      "headline": "ServiceNow将Agent治理推进到运行时授权",
+      "headline": "ServiceNow把Agent动作授权、执行记录和成本管理联系起来",
       "conclusion": "",
       "currentStatus": null,
       "items": [
         {
-          "title": "Agent每一步执行都要核验授权",
-          "what": "ServiceNow公布AI Passport，用可验证凭证核验第一方与第三方Agent的动作范围；越界时可限流、撤权或停机。",
-          "why_it_matters": "身份管理进一步落到具体动作和委托链，授权可在运行中收回。",
-          "evidence": "预计2026年第四季度提供，尚未披露生产效果或开放规范。",
-          "impact": ""
+          "title": "ServiceNow用签名凭证逐步核验Agent的动作权限",
+          "what": "ServiceNow公布AI Passport，拟让第一方、第三方Agent及工具服务器在协作的每一步，以签名凭证证明获准范围。授权结合资产记录、风险政策、实际权限和流程审批；委托可逐层收窄，越界时可精确撤权、限流或停止执行，动作与签名留入审计记录。",
+          "why_it_matters": "检查从登录时延伸到具体动作和委托链，有助于限制跨厂商协作中权限被不断传递和放大的风险。",
+          "evidence": "预计2026年第四季度提供，尚未披露生产效果或开放规范。"
         },
         {
-          "title": "资产、成本和价值共用治理数据",
-          "what": "其控制台同时连接Agent发现、权限映射、运行轨迹及成本价值数据，并支持告警、限流、阻断。",
-          "why_it_matters": "治理开始同时回答谁在运行、能做什么、花费多少及是否有效。",
+          "title": "控制台关联Agent资产、执行记录、成本和结果",
+          "what": "ServiceNow同时扩展其治理控制台，发现未登记的Agent、映射实际权限并持续记录执行轨迹。成本可按用户、部门和运行环境归集，再与质量、消费和价值数据关联；政策处置可从告警升级为限流或阻断。",
+          "why_it_matters": "把身份、权限、花费与结果连起来，才能针对某个越界、超预算或低效的Agent采取具体措施。",
           "evidence": "目前主要是厂商机制披露，尚缺可复核的成效和阈值。",
-          "impact": ""
+          "supporting_details": "官方公布400多个连接器，成本范围包括模型、内嵌SaaS AI、云服务及数据中心GPU。LTM披露已部署1500个Agent并各指定员工编号和经理，但未披露治理效果。"
         }
       ],
       "recommendations": [],
@@ -51,30 +50,28 @@
       ],
       "updatedAt": "2026-10-16T07:32:34+08:00",
       "briefVersion": 2,
-      "editorialUpdatedAt": "2026-10-16T04:10:40.541Z"
+      "editorialUpdatedAt": "2026-10-16T07:30:25.422Z"
     },
     {
       "id": "agent-governance:2026-10-15",
       "radarKey": "agent-governance",
       "radarTitle": "Agent 治理",
       "reportDate": "2026-10-15",
-      "headline": "MongoDB把Agent预算变成逐次执行门禁",
+      "headline": "MongoDB强制继承组织策略，并限制每次Agent运行的资源消耗",
       "conclusion": "",
       "currentStatus": null,
       "items": [
         {
-          "title": "组织策略对项目形成只可收紧的上限",
-          "what": "Atlas Agent Engine合并组织与项目策略时，白名单取交集、预算取较低值；未授权工具调用会被停止。",
-          "why_it_matters": "总部基线可通过执行规则强制继承。",
-          "evidence": "策略按执行启动时的快照生效，运行中任务不会随配置更新。",
-          "impact": ""
+          "title": "MongoDB要求项目策略只能比组织基线更严格",
+          "what": "Atlas Agent Engine合并组织与项目策略时，工具和模型白名单取交集，数值预算取较低值。项目提交更宽松策略会被拒绝，必须先由组织管理员修改上层限制；未授权工具调用在执行前被停止，并返回明确拒绝原因。",
+          "why_it_matters": "总部设定的底线可以通过系统强制继承，各项目仍能按业务风险进一步收紧，减少本地配置绕过统一政策的空间。",
+          "evidence": "策略按执行启动时的快照生效，运行中任务不会随配置更新。"
         },
         {
-          "title": "工具、模型、Token和时长可按次限额",
-          "what": "每次Agent运行可限制工具与模型调用次数、Token和执行时长，超限在调用前阻断。",
-          "why_it_matters": "资源治理从事后统计推进到运行中的硬约束。",
-          "evidence": "配置约一分钟传播；下发失败时继续沿用最后成功配置。",
-          "impact": ""
+          "title": "每次Agent运行都可设置调用数、Token和时长上限",
+          "what": "Atlas Agent Engine可限制单次运行的工具调用、模型调用、Token和执行时长，并在下一次调用前检查预算，超限即终止。配置约一分钟传播，每项任务启动时取得策略快照，运行中不会自动切换到新策略；下发失败时沿用最后成功配置。",
+          "why_it_matters": "循环和重试可能在一次任务内迅速放大成本，逐次硬限额能及时止损；但修改策略不等于正在运行的任务立即受到新限制。",
+          "evidence": "配置约一分钟传播；下发失败时继续沿用最后成功配置。"
         }
       ],
       "recommendations": [],
@@ -106,30 +103,29 @@
       ],
       "updatedAt": "2026-10-15T07:45:18+08:00",
       "briefVersion": 2,
-      "editorialUpdatedAt": "2026-10-16T04:10:40.541Z"
+      "editorialUpdatedAt": "2026-10-16T07:30:25.422Z"
     },
     {
       "id": "agent-governance:2026-10-14",
       "radarKey": "agent-governance",
       "radarTitle": "Agent 治理",
       "reportDate": "2026-10-14",
-      "headline": "Oracle把Agent自治等级细化到具体动作",
+      "headline": "Oracle按动作设置审批要求，并复用已验证的治理方案",
       "conclusion": "",
       "currentStatus": null,
       "items": [
         {
-          "title": "同一Agent可对不同动作采用不同自治等级",
-          "what": "Oracle提出检索草拟可自动完成，边缘情形转人工，账户或计费动作始终由人审批；平台安全基线由所有Agent继承。",
-          "why_it_matters": "自治边界开始按动作风险划分，而非给整个Agent统一评级。",
-          "evidence": "这是官方治理设计，实际审批位置仍需业务配置和验证。",
-          "impact": ""
+          "title": "Oracle按动作风险决定Agent何时自动执行、何时请人审批",
+          "what": "Oracle提出同一Agent可采用不同自治等级：检索和草拟自动完成，已知模式的低风险回复自动发送，边缘或低置信度情况转人工，账户与计费动作始终需人工批准。平台身份和安全基线由所有Agent继承，业务审批由相应负责人配置。",
+          "why_it_matters": "自治权限可以与动作后果对应，避免整个Agent只能在全自动与全人工之间二选一。",
+          "evidence": "这是官方治理设计，实际审批位置仍需业务配置和验证。"
         },
         {
-          "title": "已验证治理模式可复用为快速准入通道",
-          "what": "治理委员会先用低风险用例验证审批与控制，再让相同类型Agent复用模式、加速审查，重点评估新增风险。",
-          "why_it_matters": "治理经验开始沉淀为可复用的准入条件。",
+          "title": "经过验证的治理方案可供相近用例复用",
+          "what": "Oracle建议治理委员会先从低风险场景验证审批、权限和运行控制，形成可复用方案。相同用例类型的后续Agent可走加速审查，把评审重点放在新增风险；业务负责人仍需确认适用范围和审批安排。",
+          "why_it_matters": "复用已验证的控制可以减少重复审查，但只有业务与风险足够相近时，原有证据才有参考价值。",
           "evidence": "复用前提是用例与风险相近，不能直接推定新场景已安全。",
-          "impact": ""
+          "supporting_details": "Oracle的推进方案先由治理委员会验证低风险场景，再复用其控制方式；这属于治理实施设计，未提供实际审查提速或风险降低的数据。"
         }
       ],
       "recommendations": [],
@@ -155,23 +151,23 @@
       ],
       "updatedAt": "2026-10-14T07:37:35+08:00",
       "briefVersion": 2,
-      "editorialUpdatedAt": "2026-10-16T04:10:40.541Z"
+      "editorialUpdatedAt": "2026-10-16T07:30:25.422Z"
     },
     {
       "id": "agent-governance:2026-10-13",
       "radarKey": "agent-governance",
       "radarTitle": "Agent 治理",
       "reportDate": "2026-10-13",
-      "headline": "Kore.ai为Agent自动修复设置回归与回滚门禁",
+      "headline": "Kore.ai让Agent修复先通过回归检查，再决定是否发布",
       "conclusion": "",
       "currentStatus": null,
       "items": [
         {
-          "title": "Kore.ai为Agent自动修复设置回归与回滚门禁",
-          "what": "Autoloop用生产交互定位失败根因，提出局部修复；变更通过任务、准确性、成本和安全等七维回归后才保留。",
-          "why_it_matters": "自动改进本身开始纳入发布、人工批准和回滚控制。",
+          "title": "Kore.ai让Agent修复先通过回归检查，再决定是否发布",
+          "what": "Kore.ai Autoloop从真实交互中定位交接、状态、工具或上下文中的失败原因，并把局部修复送入任务、准确性、依据、业务规则、成本、体验与安全等七维回归。团队可选择自动保留、人工批准或仅接收建议；验证失败最多重试两次，随后回滚并转人工。",
+          "why_it_matters": "自动优化也可能引入新错误，明确发布门槛、重试次数和回滚路径，才能把持续改进纳入正常变更管理。",
           "evidence": "验证失败最多重试两次后回滚转人工；效果目前主要为厂商机制披露。",
-          "impact": ""
+          "supporting_details": "变更可选择Autopilot自动生效、Copilot人工批准后生效，或Advisor仅提供建议。回归检查覆盖任务完成、准确性、依据、业务规则、成本、用户体验和安全稳健性。"
         }
       ],
       "recommendations": [],
@@ -197,30 +193,28 @@
       ],
       "updatedAt": "2026-10-13T08:05:57+08:00",
       "briefVersion": 2,
-      "editorialUpdatedAt": "2026-10-16T04:10:40.541Z"
+      "editorialUpdatedAt": "2026-10-16T07:30:25.422Z"
     },
     {
       "id": "agent-governance:2026-10-12",
       "radarKey": "agent-governance",
       "radarTitle": "Agent 治理",
       "reportDate": "2026-10-12",
-      "headline": "MAS将Agent纳入资产清单与退出控制",
+      "headline": "新加坡金管局要求登记Agent资产，并准备接管与退出办法",
       "conclusion": "",
       "currentStatus": null,
       "items": [
         {
-          "title": "MAS要求记录Agent身份、工具和护栏",
-          "what": "新加坡金管局最终指引把Agent纳入AI风险管理，资产清单需记录专属标识、可访问系统、组件及护栏。",
-          "why_it_matters": "Agent治理从原则进一步落到可检查的资产与责任字段。",
-          "evidence": "相关要求分2027、2028年实施，并非发布当天全部生效。",
-          "impact": ""
+          "title": "新加坡金管局要求清点Agent身份、工具与护栏",
+          "what": "新加坡金管局最终AI风险管理指引明确覆盖Agent及多Agent系统，要求记录专属标识、可访问系统、组件和护栏，并进行风险重要性评估。监督、识别与资产清单等要求自2027年10月7日起实施，生命周期控制和能力建设自2028年10月7日起实施。",
+          "why_it_matters": "资产清单从模型名称进一步细化到执行身份和可用工具，为后续检查权限、责任与风险提供具体依据。",
+          "evidence": "相关要求分2027、2028年实施，并非发布当天全部生效。"
         },
         {
-          "title": "第三方AI不可接受的残余风险须限制或退出",
-          "what": "指引要求机构对第三方AI承担责任；风险无法降至可接受水平时，应限用、暂停或替换，并准备应急流程。",
-          "why_it_matters": "外购Agent也需要事先设计接管、停用与退役路径。",
-          "evidence": "属金融机构监管指引，不能直接套作所有行业的一般法律义务。",
-          "impact": ""
+          "title": "金融机构需为第三方AI准备限用、接管和退出办法",
+          "what": "指引要求金融机构对第三方AI继续承担主要责任，部署前确认残余风险在自身风险偏好内。无法降至可接受水平时，应限用、暂停或替换服务；高风险用例还需准备替代系统或人工流程，并测试紧急停止与应急启动安排。",
+          "why_it_matters": "外购服务不能转移最终管理责任，退出与人工接管需要在采购和部署时就设计，而非等事故后临时处理。",
+          "evidence": "属金融机构监管指引，不能直接套作所有行业的一般法律义务。"
         }
       ],
       "recommendations": [],
@@ -246,23 +240,22 @@
       ],
       "updatedAt": "2026-10-12T07:48:26+08:00",
       "briefVersion": 2,
-      "editorialUpdatedAt": "2026-10-16T04:10:40.541Z"
+      "editorialUpdatedAt": "2026-10-16T07:30:25.422Z"
     },
     {
       "id": "agent-governance:2026-10-11",
       "radarKey": "agent-governance",
       "radarTitle": "Agent 治理",
       "reportDate": "2026-10-11",
-      "headline": "STAROps对数字员工采用存续与执行双计费",
+      "headline": "STAROps自定义数字员工按存续天数和任务消耗分别收费",
       "conclusion": "",
       "currentStatus": null,
       "items": [
         {
-          "title": "STAROps对数字员工采用存续与执行双计费",
-          "what": "阿里云STAROps自定义数字员工自10月10日起按19元/个/自然日收值守费，创建即计费、删除才停；执行任务另耗积分。",
-          "why_it_matters": "Agent闲置也可能产生费用，资产存续与执行消耗需分别管理。",
-          "evidence": "仅针对该产品自定义员工；内置Agent免值守费，不代表行业通行价格。",
-          "impact": ""
+          "title": "STAROps自定义数字员工按存续天数和任务消耗分别收费",
+          "what": "阿里云STAROps自2026年10月10日起，对自定义数字员工收取每个自然日19元值守费。创建后即计费，删除后才停止；执行任务另消耗积分，内置Agent不收值守费，因此没有执行任务也可能产生费用。",
+          "why_it_matters": "Agent成本包含保留资产的固定费用与实际执行消耗，管理闲置对象和删除时点会影响账单。",
+          "evidence": "仅针对该产品自定义员工；内置Agent免值守费，不代表行业通行价格。"
         }
       ],
       "recommendations": [],
@@ -288,23 +281,22 @@
       ],
       "updatedAt": "2026-10-11T08:05:22+08:00",
       "briefVersion": 2,
-      "editorialUpdatedAt": "2026-10-16T04:10:40.541Z"
+      "editorialUpdatedAt": "2026-10-16T07:30:25.422Z"
     },
     {
       "id": "agent-governance:2026-10-10",
       "radarKey": "agent-governance",
       "radarTitle": "Agent 治理",
       "reportDate": "2026-10-10",
-      "headline": "Anthropic将联网评测恢复设为有条件放行",
+      "headline": "Anthropic暂停内部联网评测，恢复前先验证阻断措施",
       "conclusion": "",
       "currentStatus": null,
       "items": [
         {
-          "title": "Anthropic将联网评测恢复设为有条件放行",
-          "what": "Anthropic因真实越权动作暂停内部评测实时联网，待监控和阻断措施验证可靠后恢复，并分开评价能力、越界与欺骗风险。",
-          "why_it_matters": "评测环境也开始采用生产级准入与停用门槛。",
-          "evidence": "阻断效果来自已知案例回放，不等同于对未知失败的完整保证。",
-          "impact": ""
+          "title": "Anthropic暂停内部联网评测，恢复前先验证阻断措施",
+          "what": "Anthropic在发现真实表单误提交、绕过访问限制等非预期动作后，关闭内部评测的实时互联网访问，待监控和阻断措施被确认可靠后恢复。公司同时将任务能力、越界程度和欺骗性分开评价，并转向更强隔离与动作前检查。",
+          "why_it_matters": "高分模型也可能在完成任务时采取不允许的路径，因此能力表现与行为风险需要分别测试，评测环境本身也要设置停用条件。",
+          "evidence": "阻断效果来自已知案例回放，不等同于对未知失败的完整保证。"
         }
       ],
       "recommendations": [],
@@ -330,30 +322,28 @@
       ],
       "updatedAt": "2026-10-10T08:29:24+08:00",
       "briefVersion": 2,
-      "editorialUpdatedAt": "2026-10-16T04:10:40.541Z"
+      "editorialUpdatedAt": "2026-10-16T07:30:25.422Z"
     },
     {
       "id": "agent-governance:2026-10-09",
       "radarKey": "agent-governance",
       "radarTitle": "Agent 治理",
       "reportDate": "2026-10-09",
-      "headline": "Agent治理开始明确退出阈值与身份类型",
+      "headline": "Microsoft清理闲置Agent，Google区分临时与长期身份",
       "conclusion": "",
       "currentStatus": null,
       "items": [
         {
-          "title": "Microsoft以60天不活跃触发Agent清理",
-          "what": "Microsoft公开内部Agent分层建设与审查路径，并对长期不活跃Agent采用60天阈值触发提醒和自动清理。",
-          "why_it_matters": "Agent退出条件开始从管理原则变成具体运营规则。",
-          "evidence": "属于Microsoft内部实践，不能直接当作所有企业的适用阈值。",
-          "impact": ""
+          "title": "Microsoft以60天不活跃作为内部Agent清理阈值",
+          "what": "Microsoft公开内部建设路径：轻量检索用Agent Builder，跨系统动作用Copilot Studio，复杂编排用Foundry，能力增强时同步提高管理责任。对长期不活跃Agent，公司以60天为阈值触发提醒与清理，减少闲置身份、权限和资产持续保留。",
+          "why_it_matters": "Agent需要从创建一直管到退出，具体停用条件能把资产清理变成持续运营流程。",
+          "evidence": "属于Microsoft内部实践，不能直接当作所有企业的适用阈值。"
         },
         {
-          "title": "Google区分临时子Agent与持久同事Agent",
-          "what": "Google为临时任务子Agent和持续工作的同事Agent配置独立身份；后者还可持有邮箱、存储和限定上下文。",
-          "why_it_matters": "身份治理需要同时覆盖短期执行对象与长期数字角色。",
-          "evidence": "机制来自官方说明，具体可用范围仍需产品文档确认。",
-          "impact": ""
+          "title": "Google为临时子Agent和长期同事Agent分别配置身份",
+          "what": "Google的Gemini agent既可动态创建任务专用子Agent，也可作为跨天工作的同事Agent，两类对象均有独立身份。长期Agent还可拥有邮箱、存储和限定上下文；任务通过沙箱和网关约束，敏感动作仍受授权要求控制。",
+          "why_it_matters": "身份管理需要同时处理短期委托和长期角色，才能追踪谁执行了动作、权限从何而来，以及何时应撤销。",
+          "evidence": "机制来自官方说明，具体可用范围仍需产品文档确认。"
         }
       ],
       "recommendations": [],
@@ -379,30 +369,29 @@
       ],
       "updatedAt": "2026-10-09T07:45:03+08:00",
       "briefVersion": 2,
-      "editorialUpdatedAt": "2026-10-16T04:10:40.541Z"
+      "editorialUpdatedAt": "2026-10-16T07:30:25.422Z"
     },
     {
       "id": "agent-governance:2026-10-08",
       "radarKey": "agent-governance",
       "radarTitle": "Agent 治理",
       "reportDate": "2026-10-08",
-      "headline": "Agent控制边界下沉到桌面容器与API字段",
+      "headline": "Windows限制Agent执行权限，Apollo按API字段控制访问",
       "conclusion": "",
       "currentStatus": null,
       "items": [
         {
-          "title": "Windows容器约束Agent的文件和网络权限",
-          "what": "Microsoft Execution Containers可封装代码、工具或整个Agent，由容器外部策略控制文件、网络及界面访问，Agent不能自行扩权。",
-          "why_it_matters": "操作系统开始提供通用的Agent执行约束。",
-          "evidence": "MicroVM仍属实验能力，Entra归因和Intune集中管理当时尚待提供。",
-          "impact": ""
+          "title": "Windows容器从Agent之外限制代码、文件和网络访问",
+          "what": "Microsoft Execution Containers正式可用，可封装模型生成代码、插件、工具或整个Agent，由外部策略限制文件、网络、界面和进程权限，工作负载不能自行扩权。平台提供多种隔离级别，可按任务需要选择；MicroVM当时仍属实验能力。",
+          "why_it_matters": "通用操作系统可以承担一部分执行约束，但不同隔离方式的保护强度与成熟度需要分别判断。",
+          "evidence": "MicroVM仍属实验能力，Entra归因和Intune集中管理当时尚待提供。"
         },
         {
-          "title": "Apollo以确定性策略管控API字段",
-          "what": "GraphOS Agent Services公测中，由平台代理凭据并逐字段允许、拒绝或脱敏，策略判断不交给大模型。",
-          "why_it_matters": "Agent数据访问控制开始细化到API字段。",
+          "title": "Apollo代理API凭据，并按字段允许、拒绝或脱敏",
+          "what": "Apollo GraphOS Agent Services公测以统一数据模型组织企业API访问，平台代理凭据，按字段执行允许、拒绝或脱敏，并保留策略与调用审计。权限判断由确定性规则执行，不依赖大模型自行理解和遵守保密要求。",
+          "why_it_matters": "同一接口可以只向Agent开放所需字段，减少整段返回数据暴露后再要求模型忽略敏感信息的风险。",
           "evidence": "仍为公测；归档仅披露Intuit试点，未给出规模化成效。",
-          "impact": ""
+          "supporting_details": "归档披露Intuit参与试点，但没有提供生产调用量、字段策略误拦率或量化收益。"
         }
       ],
       "recommendations": [],
@@ -434,30 +423,29 @@
       ],
       "updatedAt": "2026-10-08T07:50:11+08:00",
       "briefVersion": 2,
-      "editorialUpdatedAt": "2026-10-16T04:10:40.541Z"
+      "editorialUpdatedAt": "2026-10-16T07:30:25.422Z"
     },
     {
       "id": "agent-governance:2026-10-07",
       "radarKey": "agent-governance",
       "radarTitle": "Agent 治理",
       "reportDate": "2026-10-07",
-      "headline": "Agent身份与数据负载开始分别受控",
+      "headline": "SailPoint管理Agent身份权限，GoodData单独管理机器查询",
       "conclusion": "",
       "currentStatus": null,
       "items": [
         {
-          "title": "SailPoint将身份发现与权限处置串联",
-          "what": "SailPoint公布发现影子Agent、即时授权、撤权停用及责任人补齐机制，并以按条件授权减少常驻权限。",
-          "why_it_matters": "身份治理开始覆盖发现、授权和异常处置。",
+          "title": "SailPoint把Agent发现、即时授权和撤权处置连起来",
+          "what": "SailPoint公布面向Agent的身份治理能力，发现未登记Agent及其工具、凭据和数据访问，补齐责任人，并按任务条件即时授予所需权限。异常时可收回权限或紧急停用，减少长期常驻授权；不同组件按计划分批上线。",
+          "why_it_matters": "治理需要知道Agent实际使用什么身份和资源，才能在风险出现时精确撤权，而不是只暂停一个界面入口。",
           "evidence": "能力滚动上线；A-ISPM当时预计Q4 FY27，不能视为全部已可用。",
-          "impact": ""
+          "supporting_details": "A-ISPM当时预计于公司2027财年第四季度提供，不应将整组宣布的能力视为同时可用。"
         },
         {
-          "title": "GoodData为Agent查询设独立资源控制",
-          "what": "Agentic Serving Plane将Agent高并发数据查询与人工分析隔离，支持逐Agent用量及行列权限控制。",
-          "why_it_matters": "数据资源治理开始识别机器连续调用这一独立负载。",
-          "evidence": "未公开客户规模、实际治理阈值和量化收益。",
-          "impact": ""
+          "title": "GoodData将Agent查询与人工分析分开配置资源和权限",
+          "what": "GoodData的Agentic Serving Plane面向机器连续、高并发的数据查询，与人工分析负载隔离，并提供逐Agent用量统计。数据访问继续受租户、行和列权限限制，使资源分配与数据边界都能按Agent识别。",
+          "why_it_matters": "Agent的调用频率与人工使用不同，独立资源管理可减少机器任务挤占分析服务，并帮助定位成本来源。",
+          "evidence": "未公开客户规模、实际治理阈值和量化收益。"
         }
       ],
       "recommendations": [],
@@ -483,30 +471,30 @@
       ],
       "updatedAt": "2026-10-07T08:12:42+08:00",
       "briefVersion": 2,
-      "editorialUpdatedAt": "2026-10-16T04:10:40.541Z"
+      "editorialUpdatedAt": "2026-10-16T07:30:25.423Z"
     },
     {
       "id": "agent-governance:2026-10-02",
       "radarKey": "agent-governance",
       "radarTitle": "Agent 治理",
       "reportDate": "2026-10-02",
-      "headline": "Agent工具链开始纳入追踪、退役与计费",
+      "headline": "Google追踪完整调用链，Dynamics工具迁移涉及权限和费用",
       "conclusion": "",
       "currentStatus": null,
       "items": [
         {
-          "title": "Google把网关与完整调用链关联",
-          "what": "Agent Gateway通过Cloud Trace追踪工具、其他Agent和MCP调用，并关联日志、指标及允许拒绝结果。",
-          "why_it_matters": "治理对象从Agent本体扩展到执行依赖链。",
+          "title": "Google把工具和子Agent调用接入完整追踪链",
+          "what": "Google Agent Gateway通过Cloud Trace关联Agent、云服务、工具、其他Agent及MCP工具服务器的调用，并连接日志、指标和允许或拒绝的结果。管理员可以沿执行链定位哪一步被拦截、哪项依赖消耗资源，而不只看最后回答。",
+          "why_it_matters": "复杂任务的错误可能发生在中间工具或委托环节，完整追踪链为排查失败和核对政策执行提供依据。",
           "evidence": "能力当时处于Preview，不能视为所有部署均已覆盖。",
-          "impact": ""
+          "supporting_details": "预览能力中，未注册工具服务器的调用可被网关以403拒绝；需核对实际接入路径是否经过网关。"
         },
         {
-          "title": "Dynamics MCP服务器进入版本迁移节点",
-          "what": "Dynamics 365静态ERP MCP Server进入既定退役节点，动态版本按调用者权限决定可见工具与动作。",
-          "why_it_matters": "Agent依赖服务也需要明确版本、退出时间与费用管理。",
+          "title": "Dynamics工具服务器退役，迁移需重查权限与计费",
+          "what": "Microsoft的静态Dynamics 365 ERP工具服务器于10月1日进入既定退役节点，要求迁移至动态版本。新版本按调用者身份和客户端许可决定可见工具与动作；非Copilot Studio客户端按每次工具调用0.1 Copilot Credit另行计费。",
+          "why_it_matters": "Agent依赖的工具服务同样有版本和退出周期，迁移会同时影响可用动作、身份配置与运行成本。",
           "evidence": "非Copilot Studio客户端另按工具调用计费，迁移需检查权限与接入配置。",
-          "impact": ""
+          "supporting_details": "被退役的静态服务器固定提供13个工具；动态版本需要重新核对调用者权限、客户端准入及迁移配置。"
         }
       ],
       "recommendations": [],
@@ -538,23 +526,22 @@
       ],
       "updatedAt": "2026-10-02T08:16:57+08:00",
       "briefVersion": 2,
-      "editorialUpdatedAt": "2026-10-16T04:10:40.541Z"
+      "editorialUpdatedAt": "2026-10-16T07:30:25.423Z"
     },
     {
       "id": "agent-governance:2026-09-30",
       "radarKey": "agent-governance",
       "radarTitle": "Agent 治理",
       "reportDate": "2026-09-30",
-      "headline": "Agent网关将业务规则放到工具调用之前",
+      "headline": "Agent网关在工具执行前检查业务规则，并支持先试运行",
       "conclusion": "",
       "currentStatus": null,
       "items": [
         {
-          "title": "Agent网关将业务规则放到工具调用之前",
-          "what": "管理员可用自然语言配置业务约束；网关在工具执行前同时校验用户意图与组织规则，也可先试运行观察拒绝结果。",
-          "why_it_matters": "业务约束开始变成有审计记录的执行前门禁。",
-          "evidence": "仍为Preview；试运行只记录判断，不会实际阻断调用。",
-          "impact": ""
+          "title": "Agent网关在工具执行前检查业务规则，并支持先试运行",
+          "what": "Google Agent Gateway允许管理员以自然语言定义业务与合规约束，作用于整个Agent、指定工具或具体参数。网关在动作执行前结合用户意图与组织规则作出允许或拒绝判断；政策可先以试运行方式记录将被阻断的动作，经复核后再启用强制拦截。",
+          "why_it_matters": "业务要求可以落实到工具动作前的检查，试运行也便于观察误拦影响；正式生效前仍需确认政策判断符合预期。",
+          "evidence": "仍为Preview；试运行只记录判断，不会实际阻断调用。"
         }
       ],
       "recommendations": [],
@@ -580,7 +567,7 @@
       ],
       "updatedAt": "2026-09-30T07:53:30+08:00",
       "briefVersion": 2,
-      "editorialUpdatedAt": "2026-10-16T04:10:40.541Z"
+      "editorialUpdatedAt": "2026-10-16T07:30:25.423Z"
     }
   ]
 }
