@@ -2,24 +2,23 @@
   "schemaVersion": 1,
   "radarKey": "ai-key-people",
   "radarTitle": "AI 关键人物观点",
-  "updatedAt": "2026-10-16T06:13:53.850Z",
+  "updatedAt": "2026-10-16T07:31:53.187Z",
   "reports": [
     {
       "id": "ai-key-people:2026-10-16",
       "radarKey": "ai-key-people",
       "radarTitle": "AI 关键人物观点",
       "reportDate": "2026-10-16",
-      "headline": "David Silver押注无预训练的经验学习路线",
+      "headline": "David Silver主张从环境经验学习，尚无公开结果验证",
       "conclusion": "",
       "briefVersion": 2,
       "currentStatus": null,
       "items": [
         {
-          "title": "David Silver押注无预训练的经验学习路线",
-          "what": "David Silver称Ineffable将用强化学习构建不依赖人类预训练数据的“超级学习者”，让系统从模拟环境直接发现语言、数学和科学；他预计一年内看到强证据、三年内达到超级智能。",
-          "why_it_matters": "这把前沿路线之争从“继续扩大语言模型”推向“从经验自生知识”，并给出可检验期限。",
-          "evidence": "目前只有团队路线与个人预测，尚无公开模型、基准或实验结果；三年判断缺乏独立验证。",
-          "impact": ""
+          "title": "David Silver主张从环境经验学习，尚无公开结果验证",
+          "what": "David Silver在访谈中称，Ineffable希望以强化学习构建不依赖人类预训练数据的“超级学习者”，让系统从模拟环境中的经验学习语言、数学和科学。他预计一年内出现有力证据、三年内达到超级智能；目前公开的是研究路线与个人判断，尚无模型、基准或实验结果支撑这些时间预测。",
+          "why_it_matters": "这条路线把学习来源从既有人类文本转向环境反馈，并给出可观察的时间节点；后续需要看公开实验能否证明跨领域学习有效。",
+          "evidence": "来源能确认Silver如何表述路线与期限，不能证明路线已成功；一年与三年的判断均应作为个人预测跟踪。"
         }
       ],
       "recommendations": [],
@@ -31,30 +30,29 @@
           "evidence_strength": "强"
         }
       ],
-      "updatedAt": "2026-10-16T06:13:53.850Z"
+      "updatedAt": "2026-10-16T06:13:53.850Z",
+      "editorialUpdatedAt": "2026-10-16T07:30:25.425Z"
     },
     {
       "id": "ai-key-people:2026-10-12",
       "radarKey": "ai-key-people",
       "radarTitle": "AI 关键人物观点",
       "reportDate": "2026-10-12",
-      "headline": "Altman主张把安全控制前移到训练阶段",
+      "headline": "Altman主张训练中就检查安全，并区分可纠正失误与灾难风险",
       "conclusion": "",
       "currentStatus": null,
       "items": [
         {
-          "title": "安全控制前移到训练过程",
-          "what": "Altman在访谈中称，Astra 6.1因事故风险延迟发布；训练阶段也需要沙箱、监控和更强的对齐保证。",
-          "why_it_matters": "安全门槛开始覆盖模型形成过程及内部试用。",
-          "evidence": "这是访谈披露，未提供可独立复核的事故率或放行阈值。",
-          "impact": ""
+          "title": "Altman称安全检查应覆盖训练过程，而不只在发布前进行",
+          "what": "Sam Altman在10月5日发布的访谈中称，Astra 6.1因事故风险过高而延迟，需要更强对齐保证后再广泛发布。他认为模型在训练时也可能突破沙箱并影响真实系统，因此监控、隔离和安全评估需要在训练过程中运行，不能只等模型完成后测试。",
+          "why_it_matters": "这一判断把安全责任扩展到训练管线、评测工具和内部试用，重点是发现风险后能否及时中止真实动作。",
+          "evidence": "访谈未提供可独立复核的事故率、具体沙箱失败细节或量化放行阈值。"
         },
         {
-          "title": "可逆损失与灾难风险采用不同门槛",
-          "what": "Altman主张对可纠正事故保留容错，对灾难性风险设硬约束；Amodei则更强调放慢进度和外部评测。",
-          "why_it_matters": "路线分歧集中在可接受风险、推进速度与决策权。",
-          "evidence": "属于个人治理立场；Amodei材料为既有背景，非当周新观点。",
-          "impact": ""
+          "title": "Altman区分可纠正失误与灾难风险，主张采用不同门槛",
+          "what": "Altman主张公司应为Agent偏离要求的行为承担责任，并支持事故报告与发布前标准；他同时认为，可由法律和正常制度纠正的错误可以保留一定容错，失控或不可恢复风险则须设硬约束。Amodei更强调放慢前沿进度和常驻外部评测，两者对推进速度与可接受损失的判断不同。",
+          "why_it_matters": "观点差异落在谁决定风险是否可接受、哪些情况必须停止，以及企业之外应有多大验证权；这些比笼统的安全立场更具体。",
+          "evidence": "这些是个人治理立场；Amodei的材料用于说明路线背景，并非该归档日的新观点。"
         }
       ],
       "recommendations": [],
@@ -86,7 +84,7 @@
       ],
       "updatedAt": "2026-10-12T09:27:55+08:00",
       "briefVersion": 2,
-      "editorialUpdatedAt": "2026-10-16T04:11:08.485Z"
+      "editorialUpdatedAt": "2026-10-16T07:30:25.425Z"
     }
   ]
 }
