@@ -2,8 +2,37 @@
   "schemaVersion": 1,
   "radarKey": "ai-work-system",
   "radarTitle": "AI 工作系统",
-  "updatedAt": "2026-10-16T04:10:31.004Z",
+  "updatedAt": "2026-10-16T14:09:57+08:00",
   "reports": [
+    {
+      "id": "ai-work-system:2026-10-16",
+      "radarKey": "ai-work-system",
+      "radarTitle": "AI 工作系统",
+      "reportDate": "2026-10-16",
+      "headline": "Google让Workspace Studio进入条件编排",
+      "conclusion": "",
+      "briefVersion": 2,
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "Google让Workspace Studio进入条件编排",
+          "what": "Google为Workspace Studio加入嵌套条件与动态文档搜索，业务用户可在无代码流程中按多层规则分支，并在运行时检索最新Drive文档，而非只串联固定步骤。",
+          "why_it_matters": "企业AI工作入口正吸收传统流程编排能力，但当前仍是显式规则流，并非自主规划或多Agent协作。",
+          "evidence": "官方于10月9日发布，10月13日起渐进上线，最长15天；未披露规模化生产成效。",
+          "impact": ""
+        }
+      ],
+      "recommendations": [],
+      "sources": [
+        {
+          "name": "Google Workspace Updates｜New logic and search steps in Workspace Studio help expand automation capabilities",
+          "date": "2026-10-09",
+          "url": "https://workspaceupdates.googleblog.com/2026/10/new-logic-and-search-steps-in-workspace-Studio-help-expand-automation-capabilities.html",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-10-16T14:09:57+08:00"
+    },
     {
       "id": "ai-work-system:2026-10-10",
       "radarKey": "ai-work-system",
