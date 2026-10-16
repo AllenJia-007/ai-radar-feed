@@ -9,23 +9,16 @@
       "radarKey": "ai-work-system",
       "radarTitle": "AI 工作系统",
       "reportDate": "2026-10-10",
-      "headline": "Claude 让 Agent 动态生成多 Agent 工作流，专家团从预置编排转向运行时生成",
-      "conclusion": "Agent 可在运行时编写工作流程序，按阶段并行展开、传递结果、重复/复核并处理失败；工作流在服务器后台运行，主会话可继续交互。 专家团不再必须是预先配置的固定拓扑；“把任务编译成协作结构”本身成为 Runtime 能力。",
+      "headline": "Claude支持在运行时生成多Agent工作流",
+      "conclusion": "",
       "currentStatus": null,
       "items": [
         {
-          "title": "编排从预置拓扑升级为 Agent 生成的程序",
-          "what": "Agent 可在运行时编写工作流程序，按阶段并行展开、传递结果、重复/复核并处理失败；工作流在服务器后台运行，主会话可继续交互。",
-          "evidence": "动态工作流支持预定义 Agent 与临时生成的 inline Agent；单次工作流最多 64 个并发线程、生命周期内启动 1,000 个 Agent，默认最长 24 小时。目前为 beta。",
-          "why_it_matters": "专家团不再必须是预先配置的固定拓扑；“把任务编译成协作结构”本身成为 Runtime 能力。",
-          "impact": "专家团不再必须是预先配置的固定拓扑；“把任务编译成协作结构”本身成为 Runtime 能力。"
-        },
-        {
-          "title": "动态不等于无治理",
-          "what": "动态工作流可共享沙箱和文件，但各 Agent 上下文隔离，并可配置各自工具、Skill 与 MCP；会话预算、权限策略、事件和线程仍由平台控制。",
-          "evidence": "官方明确“工作流完成”不代表所有子任务成功，必须检查线程；预算耗尽会暂停。管理员可只允许预定义 Agent、关闭 inline Agent，并按 Agent 限制工具和 MCP。",
-          "why_it_matters": "动态生成提高适应性，也同步放大成本、权限和“局部失败被汇总掩盖”的风险；治理必须进入编排 Runtime，不能只靠系统提示词。",
-          "impact": "动态生成提高适应性，也同步放大成本、权限和“局部失败被汇总掩盖”的风险；治理必须进入编排 Runtime，不能只靠系统提示词。"
+          "title": "Claude支持在运行时生成多Agent工作流",
+          "what": "Claude可按任务编写并运行多Agent工作流，动态组织并行执行、复核和失败处理，主会话可继续交互。",
+          "why_it_matters": "协作结构本身开始由Agent按任务生成。",
+          "evidence": "仍为Beta；工作流结束不代表全部子任务成功，预算与权限仍需控制。",
+          "impact": ""
         }
       ],
       "recommendations": [],
@@ -49,7 +42,8 @@
           "evidence_strength": "强"
         }
       ],
-      "updatedAt": "2026-10-10T07:43:22+08:00"
+      "updatedAt": "2026-10-10T07:43:22+08:00",
+      "briefVersion": 2
     },
     {
       "id": "ai-work-system:2026-10-09",
