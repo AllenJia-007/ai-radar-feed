@@ -10,7 +10,7 @@
       "radarTitle": "AI 工作系统",
       "reportDate": "2026-10-10",
       "headline": "Claude 让 Agent 动态生成多 Agent 工作流，专家团从预置编排转向运行时生成",
-      "conclusion": "Claude Managed Agents 已允许主 Agent 根据任务动态编写多阶段工作流程序，在后台并行调度并组合大量 Agent；这不是再加一个子 Agent，而是把多 Agent 编排本身交给 Agent。对 EurekaX Claw 的判断应从“建设固定专家团”转向“受控的动态编排 Runtime”，但领域 Agent 白名单、预算、工具权限、阶段可观测与回归验证必须由平台固化。",
+      "conclusion": "Agent 可在运行时编写工作流程序，按阶段并行展开、传递结果、重复/复核并处理失败；工作流在服务器后台运行，主会话可继续交互。 专家团不再必须是预先配置的固定拓扑；“把任务编译成协作结构”本身成为 Runtime 能力。",
       "currentStatus": null,
       "items": [
         {
@@ -18,21 +18,17 @@
           "what": "Agent 可在运行时编写工作流程序，按阶段并行展开、传递结果、重复/复核并处理失败；工作流在服务器后台运行，主会话可继续交互。",
           "evidence": "动态工作流支持预定义 Agent 与临时生成的 inline Agent；单次工作流最多 64 个并发线程、生命周期内启动 1,000 个 Agent，默认最长 24 小时。目前为 beta。",
           "why_it_matters": "专家团不再必须是预先配置的固定拓扑；“把任务编译成协作结构”本身成为 Runtime 能力。",
-          "impact": "EurekaX Claw 应把专家、Skill、MCP 作为可调用资源目录，由规划器按任务生成受控工作流；界面重点转向阶段、依赖、预算、证据与人工接管，而不是预建大量专家团。"
+          "impact": "专家团不再必须是预先配置的固定拓扑；“把任务编译成协作结构”本身成为 Runtime 能力。"
         },
         {
           "title": "动态不等于无治理",
           "what": "动态工作流可共享沙箱和文件，但各 Agent 上下文隔离，并可配置各自工具、Skill 与 MCP；会话预算、权限策略、事件和线程仍由平台控制。",
           "evidence": "官方明确“工作流完成”不代表所有子任务成功，必须检查线程；预算耗尽会暂停。管理员可只允许预定义 Agent、关闭 inline Agent，并按 Agent 限制工具和 MCP。",
           "why_it_matters": "动态生成提高适应性，也同步放大成本、权限和“局部失败被汇总掩盖”的风险；治理必须进入编排 Runtime，不能只靠系统提示词。",
-          "impact": "Claw 应固化四个控制面：Agent 白名单/inline 开关、逐 Agent 工具与 MCP 权限、预算/并发/时限、阶段与线程级证据及独立验证。财经写操作默认只用版本化预定义 Agent。"
+          "impact": "动态生成提高适应性，也同步放大成本、权限和“局部失败被汇总掩盖”的风险；治理必须进入编排 Runtime，不能只靠系统提示词。"
         }
       ],
-      "recommendations": [
-        "应吸收｜把“专家团”定义为运行时编译能力：专家/Skill/MCP 是资源，工作流是按任务生成、可审计的执行计划。",
-        "应吸收｜先在可拆分的批量研究、跨文档核对和表格分片任务试点；每个阶段设预算、失败判定和最终验证器。",
-        "暂不跟进｜不开放高权限任务自由生成 inline Agent；先采用组织批准、版本化的预定义 Agent，inline 仅限沙箱和低风险只读场景。"
-      ],
+      "recommendations": [],
       "sources": [
         {
           "name": "Anthropic｜Claude Platform release notes",
@@ -61,7 +57,7 @@
       "radarTitle": "AI 工作系统",
       "reportDate": "2026-10-09",
       "headline": "Claude 将插件确立为跨端专业能力包，Runtime 决定执行深度",
-      "conclusion": "Claude 在 10 月 8 日正式明确：Plugin 是保存到账户、跨 Chat、Cowork 与 Claude Code 复用的专业能力包，可统一封装 Skill、命令、MCP 连接器、Sub-agent 与 Hooks；但不同 Runtime 只加载其支持的组件。专业能力资产由此与客户端解耦，桌面端的差异化不再是自建另一套 Skill，而是提供本地文件、桌面应用、Hooks、Sub-agent、MCP 与受控代码执行。对 EurekaX Claw 的直接判断是：应定位为组织统一专业能力资产的高执行力桌面 Runtime，而非独立能力生态。",
+      "conclusion": "Claude Plugin 可统一封装 Skill、命令、MCP 连接器、Sub-agent 与 Hooks。用户在 Web、桌面或 Cowork 添加后，插件保存到账户，并在使用同一账户登录 Claude Code 时单向同步。 专业能力的主资产不再隶属于某个客户端，而成为账户/组织级能力包；Web 与桌面端的关系从“两套能力”变为“同一资产、不同执行深度”。",
       "currentStatus": null,
       "items": [
         {
@@ -69,21 +65,17 @@
           "what": "Claude Plugin 可统一封装 Skill、命令、MCP 连接器、Sub-agent 与 Hooks。用户在 Web、桌面或 Cowork 添加后，插件保存到账户，并在使用同一账户登录 Claude Code 时单向同步。",
           "evidence": "官方明确 Skill、命令和连接器可跨 Chat、Cowork、Claude Code 使用；Claude Code v2.1.273 及以上会在启动时同步账户插件，组织设为 Required 的插件在终端也强制加载。插件安装与连接器认证仍分离。",
           "why_it_matters": "专业能力的主资产不再隶属于某个客户端，而成为账户/组织级能力包；Web 与桌面端的关系从“两套能力”变为“同一资产、不同执行深度”。",
-          "impact": "Claw 不应复制独立 Skill 资产库，应消费 EurekaX 统一专业能力包，并承担高执行力桌面 Runtime：本地文件、桌面应用、Hooks、Sub-agent、MCP 与受控代码执行。"
+          "impact": "专业能力的主资产不再隶属于某个客户端，而成为账户/组织级能力包；Web 与桌面端的关系从“两套能力”变为“同一资产、不同执行深度”。"
         },
         {
           "title": "同一能力包由 Runtime 选择性加载",
           "what": "同一 Plugin 在不同运行面只加载支持的组件：Chat 忽略 Agent 与 Hooks，Cowork 和 Claude Code 才运行 Agent/Hooks；Claude Code 可完整加载本地 MCP 等组件。",
           "evidence": "官方组件矩阵明确 Skills 在三端加载，Agents/Hooks 仅在 Cowork 与 Claude Code 加载；Claude Code 同步插件时会加载 Skills、Agents、Hooks、MCP 与 LSP，但同步受登录方式、客户端版本和本地/组织设置约束。",
           "why_it_matters": "能力包格式可以统一，但执行权限不能统一；Runtime 本身成为安全、体验和产品定位的分界线。",
-          "impact": "Claw 应建立组件级能力清单与权限模型，按 Runtime 决定加载、审批和隔离；实现统一资产格式，但不统一信任等级。"
+          "impact": "能力包格式可以统一，但执行权限不能统一；Runtime 本身成为安全、体验和产品定位的分界线。"
         }
       ],
-      "recommendations": [
-        "应吸收｜把“专家画像 + Skill + Connector/MCP + Sub-agent + Hooks/运行时扩展”抽象成统一专业能力包，由 EurekaX 管资产与分发，Claw 按权限执行。",
-        "应吸收｜Claw 定位为组织统一能力资产的高执行力桌面 Runtime；Web 面向低权限、跨端消费，Claw 面向本地和高权限动作。",
-        "应观察｜账户同步仍依赖登录方式、客户端版本与本地设置；Claw 需把同步状态、版本锁定和降级路径做成显式机制。"
-      ],
+      "recommendations": [],
       "sources": [
         {
           "name": "Anthropic｜Use plugins in Claude",
@@ -118,7 +110,7 @@
       "radarTitle": "AI 工作系统",
       "reportDate": "2026-10-06",
       "headline": "Agent 生成开始形成“构建—评测—生产反馈—Skill 沉淀”闭环",
-      "conclusion": "Anthropic 10 月 5 日披露的 Cresta Conductor 案例显示，企业级“应用生成”已不再是自然语言生成提示词，而是由元 Agent 从业务上下文形成可审阅蓝图，生成提示、子 Agent、配置、工具和代码，再以业务评测、生产反馈和根因分析持续修正；成功经验还能沉淀为团队共享 Skill。对 EurekaX Claw 的启示是：如承担 Agent 构建入口，应定位为受控的 Agent 工程工作台，而不是通用低代码应用平台。",
+      "conclusion": "Cresta 将 Conductor 定义为“构建其他 Agent 的 Agent”。它从知识库、SOP、API 要求、升级规则和历史会话提炼上下文，先生成可审阅蓝图，再生成完整 Agent。 “应用生成”的最小交付物正在从一段提示词或一个专家，升级为可审阅、可测试、可部署的 Agent 工程包；通用执行框架与领域构建知识也形成清晰分工。",
       "currentStatus": null,
       "items": [
         {
@@ -126,21 +118,17 @@
           "what": "Cresta 将 Conductor 定义为“构建其他 Agent 的 Agent”。它从知识库、SOP、API 要求、升级规则和历史会话提炼上下文，先生成可审阅蓝图，再生成完整 Agent。",
           "evidence": "生成对象不止提示词，还包括子 Agent 编排、配置、工具、集成和定制代码；蓝图明确目标、范围、会话流程、测试用例与知识引用，并在开发者批准后进入构建。底层 Claude Agent SDK 只承担上下文收集、工具调用与代码执行，领域控制面由 Cresta 提供。",
           "why_it_matters": "“应用生成”的最小交付物正在从一段提示词或一个专家，升级为可审阅、可测试、可部署的 Agent 工程包；通用执行框架与领域构建知识也形成清晰分工。",
-          "impact": "EurekaX Claw 若承担构建入口，应输出结构化蓝图与 Agent Manifest，覆盖专家画像、Skill、子 Agent、MCP、规则、代码和测试，而不是只生成专家或 Skill。EurekaX 继续提供运行、资产与治理底座。"
+          "impact": "“应用生成”的最小交付物正在从一段提示词或一个专家，升级为可审阅、可测试、可部署的 Agent 工程包；通用执行框架与领域构建知识也形成清晰分工。"
         },
         {
           "title": "评测与生产反馈成为构建主循环",
           "what": "同一蓝图同时驱动构建和评测。测试失败后，Conductor 跨蓝图、会话、提示、工具、配置、知识和代码做根因分析，应用修复并立即复测；生产会话继续补充失败样本。",
           "evidence": "其构建器按结果、执行路径、质量和资源消耗评价构建任务；业务规则和边界案例被转成测试，成功经验保存为可复用记忆资产并以 Skill 在团队共享。Cresta 报告早期部署周期约减半，定制函数从一周缩短至 1—2 天，但数据为厂商自述。",
           "why_it_matters": "竞争壁垒从“一次生成得快”转向“能否把真实失败转成回归测试、把专家判断沉淀为组织能力，并在模型或框架升级后持续验证”。",
-          "impact": "Claw 的应用生成必须内置“生成—评测—诊断—修复—回归—沉淀”闭环，支持确定性检查与模型评审并存；生产数据只作为受控反馈信号，不应未经审核自动改写组织 Agent。"
+          "impact": "竞争壁垒从“一次生成得快”转向“能否把真实失败转成回归测试、把专家判断沉淀为组织能力，并在模型或框架升级后持续验证”。"
         }
       ],
-      "recommendations": [
-        "应吸收｜把 Claw 的应用生成定位为 Agent 工程工作台：先形成可审阅蓝图，再生成完整能力包，并把开发者审批设为发布前必经节点。",
-        "应吸收｜以同一蓝图贯通需求、生成、评测和回归；将生产失败转成候选测试与候选 Skill，经审核后进入组织资产。",
-        "应观察｜部署周期减半仍是厂商自述且场景集中于客服；先验证该闭环对财经桌面任务和组织专家构建是否同样成立。"
-      ],
+      "recommendations": [],
       "sources": [
         {
           "name": "Anthropic｜How Cresta turned CX expertise into an agent builder on the Claude Agent SDK",
@@ -169,7 +157,7 @@
       "radarTitle": "AI 工作系统",
       "reportDate": "2026-10-05",
       "headline": "OpenAI 将组织级 Marketplace 变成插件治理单元",
-      "conclusion": "OpenAI 已把企业插件治理从“逐个启停插件”提升为组织级能力供应链：管理员可从公有或私有 GitHub 仓库导入并每日同步 Marketplace，同时把插件安装、应用访问、动作范围、审批策略、供应商授权和同步数据源拆成独立控制面。对 EurekaX Claw 的直接影响是：专家、Skill 与 MCP 不能只按“能力商店”设计，必须建设可追溯来源、角色分发、权限解耦和持续更新的组织能力目录。",
+      "conclusion": "OpenAI 在 2026 年 10 月 1 日将 Plugins 与 Marketplaces 纳入 Enterprise 管理控制台；管理员可从公有或私有 GitHub 仓库导入 Marketplace。Marketplace 是列出可导入插件的 JSON 目录，并按日同步，也可手动触发同步。 组织不再只是审核单个扩展，而是可以维护自己的能力来源、目录、分发策略和更新通道。Skill/MCP 由零散文件转为具有供应链属性的组织资产。",
       "currentStatus": null,
       "items": [
         {
@@ -177,21 +165,17 @@
           "what": "OpenAI 在 2026 年 10 月 1 日将 Plugins 与 Marketplaces 纳入 Enterprise 管理控制台；管理员可从公有或私有 GitHub 仓库导入 Marketplace。Marketplace 是列出可导入插件的 JSON 目录，并按日同步，也可手动触发同步。",
           "evidence": "Enterprise/Edu 新插件和应用原则上默认关闭；管理员可按工作区或角色设置插件为 Available（成员可安装）或 Installed（默认安装），并分别控制上传、共享、发布到工作区目录以及创建含 MCP 的插件。",
           "why_it_matters": "组织不再只是审核单个扩展，而是可以维护自己的能力来源、目录、分发策略和更新通道。Skill/MCP 由零散文件转为具有供应链属性的组织资产。",
-          "impact": "EurekaX Claw 应把“专家 + Skill + Connector/MCP”抽象为组织能力目录：支持受信来源、版本与依赖、角色可见性、默认安装、灰度同步、冻结和回滚；专家界面只是该目录的消费入口。"
+          "impact": "组织不再只是审核单个扩展，而是可以维护自己的能力来源、目录、分发策略和更新通道。Skill/MCP 由零散文件转为具有供应链属性的组织资产。"
         },
         {
           "title": "安装权与运行权被拆成独立控制面",
           "what": "OpenAI 明确插件安装与底层应用访问是两项独立控制。插件可组合 Skill、应用和应用模板，但安装并不会自动获得账户连接、数据、动作或同步权限。",
           "evidence": "应用访问、读写动作、未来新增动作策略、逐次审批、供应商 OAuth、同步来源限制分别判断；禁用应用可能只阻断依赖该应用的能力，纯 Skill 仍可继续。Workspace Agent 另由构建者设置每个 Agent 可用动作和终端用户审批。",
           "why_it_matters": "能力分发与数据/动作授权正式解耦，治理粒度从“能否安装”下沉到“谁以什么身份、对什么数据、执行哪些动作、何时需要批准”。",
-          "impact": "Claw 的权限模型不能绑定在专家或 Skill 开关上。应独立建模能力包、连接身份、数据范围、动作级读写权、审批策略与执行环境，并在运行时计算最终有效权限。"
+          "impact": "能力分发与数据/动作授权正式解耦，治理粒度从“能否安装”下沉到“谁以什么身份、对什么数据、执行哪些动作、何时需要批准”。"
         }
       ],
-      "recommendations": [
-        "应吸收｜优先建设私有组织能力目录：受信来源、签名/版本、角色分发、默认安装、同步审计、紧急冻结与回滚应成为 Claw 1—2 年主线。",
-        "应吸收｜建立“分发权—连接权—数据权—动作权—审批权”五层模型；安装能力包不应隐式授权 OAuth、MCP、写操作或同步索引。",
-        "暂不跟进｜现阶段不必建设面向公众的插件交易市场；先把企业内部目录、权限与生命周期做实，再评估外部生态。"
-      ],
+      "recommendations": [],
       "sources": [
         {
           "name": "OpenAI｜ChatGPT Enterprise and Edu release notes",
@@ -220,7 +204,7 @@
       "radarTitle": "AI 工作系统",
       "reportDate": "2026-10-03",
       "headline": "Claude 将 Runtime 扩展纳入插件与治理体系",
-      "conclusion": "Claude Code 新增 Mods，使插件可以进入 Runtime 内部，重写提示与工具调用、改造界面、替换内置功能，并通过组织策略决定加载对象和顺序。对 EurekaX Claw 的直接影响是：除 Skill 与 MCP 外，需要单独设计“运行时扩展层”，但该层必须默认受控，不能与普通能力包共用同一信任级别。",
+      "conclusion": "Anthropic 2026 年 10 月 1 日发布 Claude Code Mods。Mod 是随插件分发的 JavaScript/TypeScript 事件处理器，运行于 Claude Code 进程内；可在事件前、后或替代默认流程执行，并可由 Claude Code 自己生成、安装和热加载。 这补齐了 Skill（方法）、MCP（工具）之外的第三类关键扩展——改变 Agent Runtime 自身行为和交互。专业能力包开始同时包含“教它怎么做、给…",
       "currentStatus": null,
       "items": [
         {
@@ -228,14 +212,10 @@
           "what": "Anthropic 2026 年 10 月 1 日发布 Claude Code Mods。Mod 是随插件分发的 JavaScript/TypeScript 事件处理器，运行于 Claude Code 进程内；可在事件前、后或替代默认流程执行，并可由 Claude Code 自己生成、安装和热加载。",
           "evidence": "Mod 可重写提交给模型的提示，阻断、改写、重试或批准工具调用，读取或修改界面，并替换内置功能；Anthropic 已把 /diff 等自身功能改造成内置 Mod，计划继续缩小核心、把更多能力移到 Mod。Mod 不受沙箱保护，拥有用户级文件、进程、网络、环境变量和会话访问权限。",
           "why_it_matters": "这补齐了 Skill（方法）、MCP（工具）之外的第三类关键扩展——改变 Agent Runtime 自身行为和交互。专业能力包开始同时包含“教它怎么做、给它什么工具、改变它如何运行”三种对象，扩展边界从任务能力进入产品内核。",
-          "impact": "EurekaX Claw 应把扩展体系分为 Skill、Connector/MCP、Runtime Mod 三层；专家只做角色与上下文入口。Runtime Mod 可承担权限前置检查、审计、专用界面和流程拦截，但必须采用独立高风险准入、组织签名、版本锁定、加载顺序和紧急停用机制，不能按普通 Skill 一键安装。"
+          "impact": "这补齐了 Skill（方法）、MCP（工具）之外的第三类关键扩展——改变 Agent Runtime 自身行为和交互。专业能力包开始同时包含“教它怎么做、给它什么工具、改变它如何运行”三种对象，扩展边界从任务能力进入产品内核。"
         }
       ],
-      "recommendations": [
-        "应吸收｜在 Claw 1—2 年架构中预留受控 Runtime 扩展点，用于界面、事件、权限、审计和任务编排定制；不要把所有定制继续堆入提示词或 Skill。",
-        "应吸收｜建立三级信任：Skill 可审阅、MCP 按工具与数据授权、Runtime Mod 按本地代码治理；安装同一“能力包”时必须分别展示并审批三类权限。",
-        "暂不跟进｜个人自由编写和热加载 Mod 不适合企业 Claw 首发。优先支持组织签名 Mod、禁止侧载、固定加载顺序及默认安全策略，再考虑个人扩展。"
-      ],
+      "recommendations": [],
       "sources": [
         {
           "name": "Anthropic｜Customize Claude Code with mods",
@@ -264,7 +244,7 @@
       "radarTitle": "AI 工作系统",
       "reportDate": "2026-10-02",
       "headline": "常驻代理与云端执行成为默认形态",
-      "conclusion": "OpenAI Dots 把“常驻、主动、会积累上下文的个人代理”变成一等产品对象；Claude 则将在 10 月 6 日把 Pro/Max 新 Cowork 任务统一迁至云端并移除本地-only选项。EurekaX Claw 应把云端持续任务与跨端状态作为默认底座，把电脑保留为按需连接、受控授权的高权限执行端。",
+      "conclusion": "OpenAI 推出 Dots，面向 Pro、Business Premium 和可由管理员启用的 Enterprise 测试开放。每个 Dot 拥有独立云电脑，可持续处理多个项目，并在 ChatGPT、Slack、Teams 间保持上下文。 这把 Agent 从“按次启动的任务执行器”升级为“长期承担责任、主动发现工作、跨入口延续关系”的主体，同时把持续记忆、委派、行动审查与身份边界绑定成一个系统对象。",
       "currentStatus": null,
       "items": [
         {
@@ -272,21 +252,17 @@
           "what": "OpenAI 推出 Dots，面向 Pro、Business Premium 和可由管理员启用的 Enterprise 测试开放。每个 Dot 拥有独立云电脑，可持续处理多个项目，并在 ChatGPT、Slack、Teams 间保持上下文。",
           "evidence": "Dots 可主动读取已授权连接做只读“主动研究”，并通过独立 Auto-review、Custom Rules 和强制接管规则约束外部动作；插件权限与 ChatGPT Work、Codex 共用。Dot 会长期积累自己的上下文，但目前不能逐条查看、修改或删除记忆，只能删除整个 Dot 上下文。",
           "why_it_matters": "这把 Agent 从“按次启动的任务执行器”升级为“长期承担责任、主动发现工作、跨入口延续关系”的主体，同时把持续记忆、委派、行动审查与身份边界绑定成一个系统对象。",
-          "impact": "EurekaX Claw 的目标形态应从“专家入口集合”进一步转向“可长期负责的个人/岗位 Agent”。每个 Agent 需具备独立身份、持续上下文、任务队列、主动观察范围、行动规则和可清理生命周期；专家与 Skill 只是其可调用能力，不应再等同于 Agent 本身。"
+          "impact": "这把 Agent 从“按次启动的任务执行器”升级为“长期承担责任、主动发现工作、跨入口延续关系”的主体，同时把持续记忆、委派、行动审查与身份边界绑定成一个系统对象。"
         },
         {
           "title": "云端成为持续工作的默认执行中心",
           "what": "Anthropic 明确自 2026 年 10 月 6 日起，Pro/Max 新 Cowork 任务全部在云端运行，并移除“Only on your computer”；已有本地任务可继续。若必须本地运行，用户需转到 Claude Code。",
           "evidence": "云端任务可在设备离线时继续和定时运行，状态与文件跨桌面、Web、移动端同步；访问本地文件、浏览器、电脑控制或本地 MCP 时，仍需桌面端在线并按已授权范围代理。云端取用本地文件时仅复制所需文件，删除会话后删除副本。",
           "why_it_matters": "这不是多一个运行选项，而是默认执行中心正式从电脑迁到云端；桌面客户端变成云端 Agent 访问本地资源和高权限动作的受控桥梁。",
-          "impact": "EurekaX Claw 不宜继续以“桌面本地运行时”为产品中心。应采用云端 Agent 控制面 + 隔离执行环境 + 本地能力代理的三层架构，并把数据出端提示、短时授权、文件副本生命周期、离线降级和本地-only替代路径列为核心边界。"
+          "impact": "这不是多一个运行选项，而是默认执行中心正式从电脑迁到云端；桌面客户端变成云端 Agent 访问本地资源和高权限动作的受控桥梁。"
         }
       ],
-      "recommendations": [
-        "应吸收｜把“Agent”定义为长期责任主体：独立身份、持续上下文、任务队列、主动研究范围、行动策略和审计记录必须一体设计；Skill 只负责“怎么做”。",
-        "应吸收｜默认采用云端持续执行，本地端只暴露最小必要能力，并通过会话级授权、明确连接状态和可追溯副本管理进入云任务。",
-        "应观察｜Dots 的逐条记忆治理仍不成熟，Cowork 云端仍为 beta；Claw 可吸收架构方向，但不应照搬“只能整体删除上下文”或把云端迁移视为已完成企业验证。"
-      ],
+      "recommendations": [],
       "sources": [
         {
           "name": "OpenAI｜Introducing dots",
@@ -321,7 +297,7 @@
       "radarTitle": "AI 工作系统",
       "reportDate": "2026-10-01",
       "headline": "Google 用 Skills 取代 Gems，专家形态开始退到表现层",
-      "conclusion": "Google 已明确将在 2027 年用 Skills 全面替代 Gems：专业角色不再作为独立对话容器存在，而被收敛为可组合、可自动调用、可跨入口复用的 SKILL.md 能力单元。对 EurekaX Claw 的直接含义是：不宜长期并行建设“专家资产”和“Skill 资产”两套体系；专家更适合作为面向用户的角色或任务入口，底层能力应统一沉淀为 Skill。",
+      "conclusion": "Google 9 月 30 日公布迁移计划。Workspace Skills 10 月 5 日开始分批上线，Gemini App Skills 10 月 13 日开始上线；企业版 Gems 最早于 2027 年 3 月 1 日停止使用。 这是产品对象的合并，不是普通功能迭代。独立“专家/Gem”正在退到表现层，真正可治理、可复用的资产变成 Skill。",
       "currentStatus": null,
       "items": [
         {
@@ -329,28 +305,24 @@
           "what": "Google 9 月 30 日公布迁移计划。Workspace Skills 10 月 5 日开始分批上线，Gemini App Skills 10 月 13 日开始上线；企业版 Gems 最早于 2027 年 3 月 1 日停止使用。",
           "evidence": "Workspace Studio 已禁止新增 Ask a Gem 步骤；现有流程需迁移为 Ask Gemini，并选择一个或多个 Skills。剩余 Gems 将被自动转换为待审核、未启用的 Skill 草稿。",
           "why_it_matters": "这是产品对象的合并，不是普通功能迭代。独立“专家/Gem”正在退到表现层，真正可治理、可复用的资产变成 Skill。",
-          "impact": "EurekaX Claw 的专家应定义为“角色画像 + 任务入口 + 上下文范围”的轻容器，其方法、规则、模板和作业步骤统一落入 Skill 生命周期，避免专家与 Skill 两套建设、测试、发布和运营机制。"
+          "impact": "这是产品对象的合并，不是普通功能迭代。独立“专家/Gem”正在退到表现层，真正可治理、可复用的资产变成 Skill。"
         },
         {
           "title": "Skill 从单一提示词升级为可组合能力包",
           "what": "Gemini Skills 支持在同一任务中组合多个 Skill，也可由系统根据意图自动选择；用户可上传、下载包含 SKILL.md、脚本和参考资料的能力包。",
           "evidence": "Google 将 Skill 定义为任务的“how”，与 Task（what）和 Schedule（when）分离；SKILL.md 支持跨工具转移，单个 Skill 可引用其他 Skills。",
           "why_it_matters": "专业能力开始从“选一个专家”转向“按任务动态组合多个能力”，执行编排将逐渐替代固定专家入口。",
-          "impact": "EurekaX Claw 应建设 Skill 选择、组合、依赖、优先级和冲突处理机制；专家团若保留，应体现为后台 Skill 或 Agent 编排结果，而不是预先固定的一组角色界面。"
+          "impact": "专业能力开始从“选一个专家”转向“按任务动态组合多个能力”，执行编排将逐渐替代固定专家入口。"
         },
         {
           "title": "迁移机制本身成为平台能力",
           "what": "自动迁移会保留 Gem 的名称、描述、指令、知识文件及共享权限，但以停用草稿进入 Skill 列表，必须由创建者审核后启用；Gemini App 与 Workspace Skills 当前仍不同步。",
           "evidence": "Google 要求高优先级 Gems 提前人工重建，流程引用也需逐步替换；迁移不是直接原样上线。",
           "why_it_matters": "能力资产迁移必须包含结构转换、权限继承、验证和重新发布，不能只做格式导入。",
-          "impact": "EurekaX Claw 未来若收敛专家与 Skill，需要设计“盘点—转换—测试—审批—发布—回滚”的迁移通道，并明确个人、团队、组织三类资产的继承规则。"
+          "impact": "能力资产迁移必须包含结构转换、权限继承、验证和重新发布，不能只做格式导入。"
         }
       ],
-      "recommendations": [
-        "应吸收｜将 Skill 确立为 Claw 唯一底层专业能力资产；专家保留为交互入口和上下文容器，不再复制一套方法与知识资产。",
-        "应吸收｜把多 Skill 组合与自动选取纳入 1—2 年主线，同时建立冲突、版本、依赖和可解释调用机制。",
-        "应观察｜Google 当前跨 Gemini App 与 Workspace 的 Skill 仍不同步，说明“统一标准”不等于“统一运行时”；Claw 应先统一资产格式，再逐步统一分发与执行。"
-      ],
+      "recommendations": [],
       "sources": [
         {
           "name": "Google｜About the transition from Gems to skills",
@@ -385,7 +357,7 @@
       "radarTitle": "AI 工作系统",
       "reportDate": "2026-09-30",
       "headline": "团队成为共享 Agent 的运行主体，Codex 延伸为云端持续工作区",
-      "conclusion": "OpenAI 将“团队”提升为 AI 工作系统中的一等运行主体：团队可共同拥有空间、插件和持续任务，任务以团队服务账户及组织批准的连接运行；同时 Codex Cloud 将执行环境从单台桌面延伸为可跨设备继续、电脑休眠后仍运行的云端工作区。EurekaX Claw 应从“个人助手 + 组织分发”补上“团队作业单元 + 云端持续执行”这一层。",
+      "conclusion": "ChatGPT Business/Enterprise 新增 Teams 与 Team Tasks。团队可共享 Pages、Spaces、插件和重复任务；获权成员能共同查看结果、修改指令和维护任务。 这不是简单共享会话，而是把任务所有权、运行身份、维护责任和历史记录从个人转移到团队。",
       "currentStatus": null,
       "items": [
         {
@@ -393,28 +365,24 @@
           "what": "ChatGPT Business/Enterprise 新增 Teams 与 Team Tasks。团队可共享 Pages、Spaces、插件和重复任务；获权成员能共同查看结果、修改指令和维护任务。",
           "evidence": "团队任务在云端以团队自己的服务账户运行，使用保存的任务指令和团队配置的连接；运行责任不再绑定最初创建人。",
           "why_it_matters": "这不是简单共享会话，而是把任务所有权、运行身份、维护责任和历史记录从个人转移到团队。",
-          "impact": "EurekaX Claw 应在“个人空间”和“组织资产”之间增加团队作业单元，承载团队工作区、共享任务、运行历史、共同维护和离岗可接续。"
+          "impact": "这不是简单共享会话，而是把任务所有权、运行身份、维护责任和历史记录从个人转移到团队。"
         },
         {
           "title": "能力包与访问身份正式解耦",
           "what": "工作区管理员配置组织批准的连接，团队负责人选择本团队可用连接；团队成员无需分别连接同一供应商账户。",
           "evidence": "官方明确“共享插件”与“授予应用连接访问权”是两项独立设置；插件提供工具或技能，指定服务账户决定可访问的数据与动作。团队任务不会自动继承创建人的个人记忆、自定义指令或聊天历史。",
           "why_it_matters": "企业 Agent 的核心治理对象不只是 Skill/MCP，还包括独立的执行身份、数据权限和显式上下文。",
-          "impact": "EurekaX Claw 需拆分管理专业能力包、连接凭据或服务身份、任务上下文与执行授权，避免把个人 OAuth 或个人记忆隐式带入团队任务。"
+          "impact": "企业 Agent 的核心治理对象不只是 Skill/MCP，还包括独立的执行身份、数据权限和显式上下文。"
         },
         {
           "title": "Codex 形成跨端云执行环境",
           "what": "Codex Cloud 支持在桌面、Web、移动端启动和续接任务；环境可复用，每个任务使用隔离工作区，电脑休眠后仍可继续。",
           "evidence": "云环境保留项目仓库、工具与依赖，并受组织的 Codex 云访问策略约束。",
           "why_it_matters": "桌面客户端不再等同于执行宿主，而更像任务发起、监督与本地高权限执行入口。",
-          "impact": "EurekaX Claw 应采用混合运行时：本地承担文件、桌面应用和高权限操作；云端承担长任务、定时任务和团队共享任务，并统一任务状态与审计。"
+          "impact": "桌面客户端不再等同于执行宿主，而更像任务发起、监督与本地高权限执行入口。"
         }
       ],
-      "recommendations": [
-        "应吸收｜在“个人—组织”之间增加团队层，优先定义团队工作区、团队任务所有权、共同维护、运行历史与交接机制。",
-        "应吸收｜建立“能力包—服务身份—数据权限—任务上下文—执行环境”五层解耦模型，Skill 安装不能等同于数据授权。",
-        "应观察｜云端持续执行应与 Claw 本地高权限执行形成明确分工；暂不把所有桌面任务云化。"
-      ],
+      "recommendations": [],
       "sources": [
         {
           "name": "OpenAI｜ChatGPT Business release notes",
