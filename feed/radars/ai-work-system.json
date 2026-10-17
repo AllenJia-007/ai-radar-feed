@@ -2,8 +2,50 @@
   "schemaVersion": 1,
   "radarKey": "ai-work-system",
   "radarTitle": "AI 工作系统",
-  "updatedAt": "2026-10-16T07:31:20.835Z",
+  "updatedAt": "2026-10-18T07:53:02+08:00",
   "reports": [
+    {
+      "id": "ai-work-system:2026-10-18",
+      "radarKey": "ai-work-system",
+      "radarTitle": "AI 工作系统",
+      "reportDate": "2026-10-18",
+      "headline": "OpenAI停用企业同步连接器，知识访问改为实时按用户取数",
+      "conclusion": "",
+      "briefVersion": 2,
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "OpenAI停用企业同步连接器，知识访问改为实时按用户取数",
+          "what": "OpenAI于10月16日停用ChatGPT Enterprise和Edu的管理员托管同步连接器。Google Drive、SharePoint和Microsoft Teams等企业内容不再由管理员预先建立统一同步索引，而是由用户连接的实时应用在任务运行时搜索和读取；用户只能访问自己在源系统已有权限范围内的内容。ChatGPT管理员还可按Google共享盘、Teams团队、SharePoint站点或Microsoft Purview敏感标签进一步排除内容。与过去“组织预先同步一份知识源”相比，连接方式转为“实时查询＋用户身份＋工作区二次策略”。",
+          "why_it_matters": "企业AI的知识入口从静态复制转向身份感知的运行时访问，资料时效和源系统权限更容易保持一致；代价是检索可用性更依赖每位用户的账号连接、OAuth授权、来源系统权限和工作区策略。",
+          "evidence": "这是已经生效的Enterprise/Edu产品调整，并非试点；细粒度内容控制只在已启用该能力的企业工作区开放。官方未披露实时访问与旧同步索引在召回率、延迟或覆盖范围上的等价性，各应用支持的读写动作也仍受套餐、地区和供应商权限限制。",
+          "supporting_details": "Google Drive可按共享盘及My Drive控制内容范围；Teams可按团队和敏感标签限制；Outlook邮件可按Purview敏感标签排除。上述限制与用户在Google或Microsoft系统中的既有权限叠加生效。",
+          "impact": ""
+        }
+      ],
+      "recommendations": [],
+      "sources": [
+        {
+          "name": "OpenAI｜ChatGPT Enterprise and Edu release notes",
+          "date": "2026-10-16",
+          "url": "https://help.openai.com/en/articles/10128477-chatgpt-enterprise-and-edu-release-notes",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "OpenAI｜Google Drive app and setup in ChatGPT",
+          "date": "2026-10-18（检索）",
+          "url": "https://help.openai.com/en/articles/10929079-google-drive-app-and-setup-in-chatgpt",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "OpenAI｜Microsoft Teams app and setup in ChatGPT",
+          "date": "2026-10-18（检索）",
+          "url": "https://help.openai.com/en/articles/12552368-microsoft-teams-app-and-setup-in-chatgpt",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-10-18T07:53:02+08:00"
+    },
     {
       "id": "ai-work-system:2026-10-16",
       "radarKey": "ai-work-system",
