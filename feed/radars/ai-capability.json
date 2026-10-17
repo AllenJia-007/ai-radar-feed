@@ -2,8 +2,38 @@
   "schemaVersion": 1,
   "radarKey": "ai-capability",
   "radarTitle": "AI 能力",
-  "updatedAt": "2026-10-16T07:31:11.385Z",
+  "updatedAt": "2026-10-17T00:53:42.948Z",
   "reports": [
+    {
+      "id": "ai-capability:2026-10-17",
+      "radarKey": "ai-capability",
+      "radarTitle": "AI 能力",
+      "reportDate": "2026-10-17",
+      "headline": "Anthropic内部Agent工时达到员工6倍，人类注意力成为瓶颈",
+      "conclusion": "",
+      "briefVersion": 2,
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "Anthropic内部Agent工时达到员工6倍，人类注意力成为瓶颈",
+          "what": "Anthropic根据内部Agent会话、产出、招聘、日历数据及17次员工访谈报告：2026年3月，Agent总工时首次超过人类；到8月，仅员工直接调用的交互式和自主Agent，活跃运行时间已相当于员工工时的6倍。工程师人均代码提交速度较6个月前增至5倍，合同、发票和销售等非技术产出也上升；但交互会话约80%的时间在等待人类输入，非技术岗位若读完Agent输出需占用半个工作周。",
+          "why_it_matters": "这份全量内部数据表明，AI劳动力的限制正从“能否完成任务”转向人类能否分配、检查和整合大量并行产出；岗位变化首先表现为执行工作减少、Agent管理和跨部门调配增加，而不是简单的整岗替代。",
+          "evidence": "这是单一前沿AI公司的内部研究，员工拥有更强模型、工具和采用激励，不能直接外推到普通企业。Agent工时也不等于等量人类产出；工具采用并非随机，业务快速增长会影响产出和招聘数据，因果强度有限。",
+          "supporting_details": "同期，初级技术岗位占比从2025年初的21%降至14%，初级技术新员工占比从27%降至9%；用于编写Agent说明、监控流程和让Agent互相复核的“元工作”，占员工交互会话的比例由2025年秋季的10%升至2026年春季的22%。",
+          "impact": ""
+        }
+      ],
+      "recommendations": [],
+      "sources": [
+        {
+          "name": "Anthropic｜How employment is changing at Anthropic",
+          "date": "2026-10-16",
+          "url": "https://www.anthropic.com/research/employment-at-anthropic",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-10-17T00:53:42.948Z"
+    },
     {
       "id": "ai-capability:2026-10-16",
       "radarKey": "ai-capability",
