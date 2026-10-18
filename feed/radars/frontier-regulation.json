@@ -2,8 +2,44 @@
   "schemaVersion": 1,
   "radarKey": "frontier-regulation",
   "radarTitle": "前沿 AI 监管",
-  "updatedAt": "2026-10-17T00:38:21.135Z",
+  "updatedAt": "2026-10-18T00:05:59.379Z",
   "reports": [
+    {
+      "id": "frontier-regulation:2026-10-18",
+      "radarKey": "frontier-regulation",
+      "radarTitle": "前沿 AI 监管",
+      "reportDate": "2026-10-18",
+      "headline": "中国对部分大模型与智能体技术实施出口前登记",
+      "conclusion": "",
+      "briefVersion": 2,
+      "currentStatus": "中国2026年第48号公告的出口前登记已生效；23项人工智能技术列管范围仍在征求意见，尚非最终禁限目录；H.R.10538与S.5493仍在委员会。",
+      "items": [
+        {
+          "title": "中国对部分大模型与智能体技术实施出口前登记",
+          "what": "中国商务部、科技部10月16日发布2026年第48号公告，拟将大模型、智能体、算力集群和信息处理领域23项关键技术纳入《中国禁止出口限制出口技术目录》，其中人工智能驱动的恶意代码生成与变异技术拟禁止出口，人工智能辅助漏洞挖掘技术拟限制出口。目录修订仍在11月15日前征求意见，但临时出口前登记已自公告日起生效，覆盖技术所有权转让、境内技术授权境外使用及实际控制人变更等，已经开始但尚未完成的出口也须登记。官方同时明确，受限制技术的海外本地化部署属于技术出口；API、APP或网页、SaaS及端侧轻量化部署原则上不属于大模型技术出口，已开源或通过论文进入公共领域的技术拟排除。",
+          "why_it_matters": "中国首次为大模型和智能体“出海”划出技术转移与服务调用的监管分界，并在最终目录出台前先取得出口信息，可能直接影响海外本地化、技术授权和控制权交易的合规节奏。",
+          "evidence": "即时生效的是出口前登记；23项人工智能技术的禁止或限制分类仍属征求意见稿，最终指标和许可安排可能调整。官方称绝大多数人工智能技术及一般API、SaaS服务不在拟议管制范围。",
+          "supporting_details": "对于海外自有云部署、境外自建自营算力中心、境外芯片流片、联合研发和参与国际标准等情形，拟适用自动许可等便利措施，官方称可基本实现“即报即出”。",
+          "impact": ""
+        }
+      ],
+      "recommendations": [],
+      "sources": [
+        {
+          "name": "中国商务部、科技部｜2026年第48号公告",
+          "date": "2026-10-16",
+          "url": "https://www.mofcom.gov.cn/zcfb/blgg/art/2026/art_1666fcaa24424766afe0683498ff0908.html",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "中国商务部｜修订《中国禁止出口限制出口技术目录》答记者问",
+          "date": "2026-10-16",
+          "url": "https://www.mofcom.gov.cn/zwgk/zcjd/art/2026/art_b11d5c1e9374421e93e85dc87eba6e38.html",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-10-18T00:05:59.379Z"
+    },
     {
       "id": "frontier-regulation:2026-10-17",
       "radarKey": "frontier-regulation",
