@@ -2,8 +2,50 @@
   "schemaVersion": 1,
   "radarKey": "ai-capability",
   "radarTitle": "AI 能力",
-  "updatedAt": "2026-10-17T00:53:42.948Z",
+  "updatedAt": "2026-10-18T01:06:43.755Z",
   "reports": [
+    {
+      "id": "ai-capability:2026-10-18",
+      "radarKey": "ai-capability",
+      "radarTitle": "AI 能力",
+      "reportDate": "2026-10-18",
+      "headline": "NVIDIA将开放Agent模型压进24GB显存，保留多模态与工具能力",
+      "conclusion": "",
+      "briefVersion": 2,
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "NVIDIA将开放Agent模型压进24GB显存，保留多模态与工具能力",
+          "what": "NVIDIA发布Nemotron 3.5 Bolt 74B-A9B 24GB，把120B参数、每个Token激活12B参数的父模型，经结构化压缩、知识蒸馏和2.0625位量化，缩成74B总参数、9B激活参数、22.1GB权重的开放模型。它保留图像理解、推理、工具调用、网页与终端操作；配套推测解码器在RTX Spark上达到84 Token/秒，权重及GGUF格式已经开放，可通过llama.cpp或vLLM本地运行。独立的PinchBench当前显示，24GB量化版在标准化OpenClaw任务上10次运行平均87.8%，略高于30B Lightning的86.4%。",
+          "why_it_matters": "变化不在于本地模型已经全面追平云端前沿模型，而在于具备多模态、工具调用和网页操作的一般Agent能力，开始能在单张24GB显存设备上以可交互速度运行。对隐私、离线和低延迟场景，本地Agent不再只能依赖能力明显更弱的小模型；同时，这也给出一条可复用路线：先训练较大的混合专家模型，再按部署预算压缩和蒸馏，可能优于直接训练同内存规模的小模型。",
+          "evidence": "模型、技术报告和权重已公开，24GB与84 Token/秒是在NVIDIA RTX Spark、批量为1等指定条件下测得。多数能力结果仍由NVIDIA自测；PinchBench只覆盖一组OpenClaw任务，并采用自动检查与模型裁判，不能证明模型已能稳定处理真实生产中的长任务。22.1GB权重也会给上下文缓存和其他应用留下有限余量。",
+          "supporting_details": "技术报告称，压缩把模型从148GB BF16降至22.1GB，体积减少85.1%；训练还在模拟MCP工具环境和软件工程环境中做端到端强化学习，并用LiLiCorr推测解码降低延迟。NVIDIA同时发布BF16与24GB量化检查点，便于区分完整精度评测和本地部署效果。",
+          "impact": ""
+        }
+      ],
+      "recommendations": [],
+      "sources": [
+        {
+          "name": "NVIDIA Research｜Nemotron 3.5 Bolt 74B-A9B 24GB技术报告",
+          "date": "2026-10-15",
+          "url": "https://research.nvidia.com/labs/nemotron/files/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-Technical-Report.pdf",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "NVIDIA Technical Blog｜Nemotron 3.5 Super VL Powers Specialized Agents",
+          "date": "2026-10-15",
+          "url": "https://developer.nvidia.com/blog/nvidia-nemotron-3-5-super-vl-powers-specialized-agents-with-multimodal-reasoning/",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "PinchBench｜OpenClaw模型基准榜单",
+          "date": "2026-10-18",
+          "url": "https://pinchbench.com/?slm=true",
+          "evidence_strength": "中"
+        }
+      ],
+      "updatedAt": "2026-10-18T01:06:43.755Z"
+    },
     {
       "id": "ai-capability:2026-10-17",
       "radarKey": "ai-capability",
