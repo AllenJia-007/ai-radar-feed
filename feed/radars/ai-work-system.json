@@ -2,8 +2,50 @@
   "schemaVersion": 1,
   "radarKey": "ai-work-system",
   "radarTitle": "AI 工作系统",
-  "updatedAt": "2026-10-19T08:29:59+08:00",
+  "updatedAt": "2026-10-20T07:40:48+08:00",
   "reports": [
+    {
+      "id": "ai-work-system:2026-10-20",
+      "radarKey": "ai-work-system",
+      "radarTitle": "AI 工作系统",
+      "reportDate": "2026-10-20",
+      "headline": "OpenAI与Gemini把连接器升级为可交互工作界面",
+      "conclusion": "",
+      "briefVersion": 2,
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "OpenAI与Gemini把连接器升级为可交互工作界面",
+          "what": "OpenAI于10月16日宣布，ChatGPT插件可在对话旁提供交互面板、侧边栏、表单，以及受支持文件的查看器或编辑器；用户可以先在界面中筛选或修改信息，再让ChatGPT继续处理。Google于10月19日公布Gemini Enterprise的MCP Apps实现：一个MCP工具同时携带后端动作和“ui://”HTML界面，组件可嵌入对话、侧栏或全屏；用户在组件内调整参数时不必再发起一次模型对话，助手与工作区状态仍保持同步。连接器因此不再只负责取数和执行，也开始直接承载任务专用的可视操作界面。",
+          "why_it_matters": "这意味着AI工作入口正从聊天框升级为可装载轻量业务应用的工作台。审批、参数调整、文件编辑等需要人判断的步骤可以留在交互界面，Agent则负责理解任务、调用工具并续办后续流程。",
+          "evidence": "OpenAI功能已经发布，但具体交互能力取决于插件、终端和工作区权限。Gemini方案仅面向Gemini Enterprise，企业须自建或托管MCP服务并由管理员登记；动作默认关闭，单个自定义MCP数据源建议最多同时启用100个动作，尚无规模化生产效果数据。",
+          "supporting_details": "Gemini以沙箱iframe承载界面，并通过Cloud Run服务身份与最终用户OAuth两层认证。MCP Apps的2026-01-26版规范已标记为稳定，但不同宿主对交互界面的支持范围仍不一致。",
+          "impact": ""
+        }
+      ],
+      "recommendations": [],
+      "sources": [
+        {
+          "name": "OpenAI：ChatGPT release notes—Work with interactive plugin extensions",
+          "date": "2026-10-16",
+          "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Google Cloud：Developer’s guide to implementing MCP apps in Gemini",
+          "date": "2026-10-19",
+          "url": "https://cloud.google.com/blog/topics/developers-practitioners/devs-guide-to-mcp-apps-in-gemini",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Model Context Protocol：MCP Apps specification and SDK",
+          "date": "2026-01-26",
+          "url": "https://github.com/modelcontextprotocol/ext-apps",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-10-20T07:40:48+08:00"
+    },
     {
       "id": "ai-work-system:2026-10-19",
       "radarKey": "ai-work-system",
