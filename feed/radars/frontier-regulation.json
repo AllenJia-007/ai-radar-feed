@@ -2,8 +2,56 @@
   "schemaVersion": 1,
   "radarKey": "frontier-regulation",
   "radarTitle": "前沿 AI 监管",
-  "updatedAt": "2026-10-18T00:05:59.379Z",
+  "updatedAt": "2026-10-19T00:51:30.000Z",
   "reports": [
+    {
+      "id": "frontier-regulation:2026-10-19",
+      "radarKey": "frontier-regulation",
+      "radarTitle": "前沿 AI 监管",
+      "reportDate": "2026-10-19",
+      "headline": "美国GSA开始执行大模型与Agent采购停用条款",
+      "conclusion": "",
+      "briefVersion": 2,
+      "currentStatus": "美国GSAR 552.239-7001自2026年10月19日起对GSA新采购生效；正式规则制定仍待后续；H.R.10538与S.5493仍在委员会。",
+      "items": [
+        {
+          "title": "美国GSA开始执行大模型与Agent采购停用条款",
+          "what": "美国总务管理局（GSA）的GSAR偏离条款552.239-7001于10月19日起适用于新的相关采购，覆盖政府购买的大模型、生成式助理、聊天机器人和Agent系统，只要大模型是实质功能且处理政府数据。主承包商须把相应义务下传至参与AI设计、开发、部署、运营和监控的分包商；更换模型或提供方等重大变化原则上需提前30天通知，安全护栏降低或性能恶化须在7日内报告。政府可随时用自有基准自动评测实际配置的生产系统并暂停使用；书面通知后仍未整改，可因违约终止合同，并要求承包商承担最高为受影响订单价值25%的合理退役费用。",
+          "why_it_matters": "这把美国联邦AI采购从一次性选型推进为持续评测、变更控制和可强制停用；模型更新、护栏削弱及未通过整改都可能直接影响政府环境中的继续部署。",
+          "evidence": "这是GSA采购合同义务，不是普遍适用法律，也不直接限制商业模型训练或发布。条款对新采购生效，MAS Refresh 34计划11月6日纳入；正式规则制定仍待后续。",
+          "supporting_details": "条款不适用于承包商未向政府交付或开放的内部系统，以及仅具附带性大模型功能的采购。合同结束时，政府可要求安全删除政府数据、定制模型权重、嵌入、索引和缓存。",
+          "impact": ""
+        }
+      ],
+      "recommendations": [],
+      "sources": [
+        {
+          "name": "GSA Acquisition.gov｜RGO-2026-01与GSAR 552.239-7001最终条款",
+          "date": "2026-10-13",
+          "url": "https://www.acquisition.gov/sites/default/files/page_file_uploads/RGO-2026-01.pdf",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Wiley｜GSA Releases Final Language of AI Contract Clause",
+          "date": "2026-10-13",
+          "url": "https://www.wiley.law/alert-GSA-Releases-Final-Language-of-AI-Contract-Clause",
+          "evidence_strength": "中"
+        },
+        {
+          "name": "GovInfo｜H.R.10538 Ban Artificial Superintelligence Act of 2026",
+          "date": "2026-09-24",
+          "url": "https://www.govinfo.gov/app/details/BILLS-119hr10538ih",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "GovInfo｜S.5493 Ban Artificial Superintelligence Act of 2026",
+          "date": "2026-09-23",
+          "url": "https://www.govinfo.gov/app/details/BILLS-119s5493is",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-10-19T00:51:30.000Z"
+    },
     {
       "id": "frontier-regulation:2026-10-18",
       "radarKey": "frontier-regulation",
