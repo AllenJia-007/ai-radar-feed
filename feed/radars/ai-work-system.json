@@ -2,8 +2,50 @@
   "schemaVersion": 1,
   "radarKey": "ai-work-system",
   "radarTitle": "AI 工作系统",
-  "updatedAt": "2026-10-18T07:53:02+08:00",
+  "updatedAt": "2026-10-19T08:29:59+08:00",
   "reports": [
+    {
+      "id": "ai-work-system:2026-10-19",
+      "radarKey": "ai-work-system",
+      "radarTitle": "AI 工作系统",
+      "reportDate": "2026-10-19",
+      "headline": "WorkBuddy进入企业微信通讯录，任务可跨聊天与桌面继续流转",
+      "conclusion": "",
+      "briefVersion": 2,
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "WorkBuddy进入企业微信通讯录，任务可跨聊天与桌面继续流转",
+          "what": "腾讯于10月14日发布企业微信5.0.12与WorkBuddy 5.8.0的联合版本。员工可从企业微信通讯录或侧边栏领取WorkBuddy机器人，直接在聊天中发起任务；需要更深处理时转入WorkBuddy，结果与后续协作再回到企业微信，参与同事无需离开原有消息场景。WorkBuddy还支持企业微信账号登录，并在企业授权范围内调用消息、文档、会议和微盘等工作上下文；管理员可统一配置机器人、分配账号与席位并查看用量。与过去单独打开桌面Agent相比，企业即时通讯开始承担工作入口，桌面端则承担更复杂的执行。",
+          "why_it_matters": "这把Agent从个人工具嵌入组织通讯录和既有协作链，身份、上下文、任务入口与协作关系开始共用；价值在于减少任务交接和应用切换，而不只是增加一个聊天机器人。",
+          "evidence": "联合版本已经发布，企业微信5.0.12与WorkBuddy 5.8.0可用；公开材料证明入口、登录和授权机制，但未披露企业生产采用规模、跨端任务完成率或权限误用情况，“十大能力”的完整技术清单也未公开。",
+          "supporting_details": "公开报道还称，员工离职后相关账号会随企业微信身份失效，管理员可统筹席位、用量与AI算力采购；这些治理细节来自厂商发布活动及媒体转述，尚缺独立验证。",
+          "impact": ""
+        }
+      ],
+      "recommendations": [],
+      "sources": [
+        {
+          "name": "WorkBuddy 产品更新日志",
+          "date": "2026-10-09",
+          "url": "https://www.workbuddy.cn/docs/workbuddy/Changelog",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "每日经济新闻：企业微信与WorkBuddy发布联合版本",
+          "date": "2026-10-14",
+          "url": "https://news.qq.com/rain/a/20261014A06UQN00",
+          "evidence_strength": "中"
+        },
+        {
+          "name": "时代财经：WorkBuddy进入企业微信通讯录",
+          "date": "2026-10-14",
+          "url": "https://news.qq.com/rain/a/20261014A0921U00",
+          "evidence_strength": "中"
+        }
+      ],
+      "updatedAt": "2026-10-19T08:29:59+08:00"
+    },
     {
       "id": "ai-work-system:2026-10-18",
       "radarKey": "ai-work-system",
