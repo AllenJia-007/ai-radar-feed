@@ -2,8 +2,50 @@
   "schemaVersion": 1,
   "radarKey": "agent-governance",
   "radarTitle": "Agent 治理",
-  "updatedAt": "2026-10-17T07:42:57+08:00",
+  "updatedAt": "2026-10-20T07:49:57+08:00",
   "reports": [
+    {
+      "id": "agent-governance:2026-10-20",
+      "radarKey": "agent-governance",
+      "radarTitle": "Agent 治理",
+      "reportDate": "2026-10-20",
+      "headline": "Microsoft按实时风险动态收缩Agent权限",
+      "conclusion": "",
+      "briefVersion": 2,
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "Microsoft按实时风险动态收缩Agent权限",
+          "what": "Microsoft在10月19日公布一套把企业Agent视作“内部人”持续管理的机制：Agent拥有独立身份，不直接继承员工的全部权限，初始无权访问资源；组织先设定政策、审批和委托边界，权限再按具体任务及期限授予。系统持续汇聚身份、数据、终端、云、网络、运行时和行为信号更新风险；风险上升时，可保留读取但禁止写入、收窄数据与网络范围、缩短或撤销授权、要求可验证的人工批准，最高可隔离运行环境或停止执行。人员保留目标和重大决定权，Playbook定义处置结果，独立的Guardian Agents调查风险变化并建议或执行遏制。",
+          "why_it_matters": "这把治理从上线时的一次性授权推进到运行中的连续决策：人决定规则和重大动作，独立于被监管模型的系统依据实时证据改变其权限，因此高风险处置不必只在“继续运行”和“一键停机”之间二选一。",
+          "evidence": "Project Perception官方页面明确标注仍处于预览。Microsoft未公开风险分数阈值、误报率、遏制时延或生产效果；“内部已运行数十万Agent”是整体资产规模，不能证明这套新控制已在同等规模验证。把思维链等模型信号纳入风险判断仍是后续方向。",
+          "supporting_details": "Microsoft将动态响应描述为分级而非二元：可先降权、禁止写入、限制数据或网络路径，再升级到人工批准、隔离或停止。其原则是让安全判断与执行边界独立于被保护的模型。",
+          "impact": ""
+        }
+      ],
+      "recommendations": [],
+      "sources": [
+        {
+          "name": "Microsoft Security：Agents are your newest insiders. Security must move at their speed.",
+          "date": "2026-10-19",
+          "url": "https://www.microsoft.com/en-us/security/blog/2026/10/19/agents-are-your-newest-insiders-security-must-move-at-their-speed/",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Microsoft官方博客：Securing the agentic insider",
+          "date": "2026-10-19",
+          "url": "https://blogs.microsoft.com/blog/2026/10/19/securing-the-agentic-insider/",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Microsoft Security：Project Perception产品页",
+          "date": "2026-10-20（核验）",
+          "url": "https://www.microsoft.com/en-us/security/business/ai-powered-cybersecurity/project-perception-agentic-system",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-10-20T07:49:57+08:00"
+    },
     {
       "id": "agent-governance:2026-10-17",
       "radarKey": "agent-governance",
