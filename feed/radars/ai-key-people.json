@@ -2,8 +2,44 @@
   "schemaVersion": 1,
   "radarKey": "ai-key-people",
   "radarTitle": "AI 关键人物观点",
-  "updatedAt": "2026-10-16T07:31:53.187Z",
+  "updatedAt": "2026-10-19T00:46:21Z",
   "reports": [
+    {
+      "id": "ai-key-people:2026-10-19",
+      "radarKey": "ai-key-people",
+      "radarTitle": "AI 关键人物观点",
+      "reportDate": "2026-10-19",
+      "headline": "Karpathy把AI能力认知差距重画成四层漏斗",
+      "conclusion": "",
+      "briefVersion": 2,
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "Karpathy把AI能力认知差距重画成四层漏斗",
+          "what": "Andrej Karpathy在10月11日回看自己4月关于“AI能力认知差距”的判断，称现在已不再是两群人各说各话，而是形成四层“尖锐漏斗”。他的粗略估计是：约60亿人几乎没接触大模型，10亿至20亿人只偶尔使用免费聊天产品，约2000万专业用户已看到智能体用一次提示完成过去需数周或数月的数字任务，而约5000名实验室内部人员能接触由数千个智能体连续协作数周的系统；他同时指出，人类对这些系统产出的审查与理解正在落后。",
+          "why_it_matters": "这一框架把“AI到底有没有被高估”的争论，从单一模型分数转向访问层级、任务规模和智能体运行系统：公众产品体验可能显著落后于少数专业用户和实验室内部看到的能力，而人类复核速度可能先于模型能力成为瓶颈。",
+          "evidence": "四层人数是Karpathy明确标注的粗略估计，并非调查数据；内部多智能体系统的规模、任务完成率和失败率没有公开文档或独立复现，且表现可能同时依赖模型、工具链和算力，不能据此认定相关能力已普遍可用。",
+          "supporting_details": "Karpathy把漏斗归因于三点：任务越大，模型带来的杠杆越明显；能力在代码、数学等可验证数字任务上高度集中；免费、付费与实验室内部系统之间存在显著访问差异。",
+          "impact": ""
+        }
+      ],
+      "recommendations": [],
+      "sources": [
+        {
+          "name": "Andrej Karpathy｜X原帖：AI能力认知差距的“尖锐漏斗”",
+          "date": "2026-10-11",
+          "url": "https://x.com/karpathy/status/2109361546505966046",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Business Insider｜Andrej Karpathy says this AI gap is widening",
+          "date": "2026-10-12",
+          "url": "https://www.businessinsider.com/andrej-karpathy-ai-gap-widening-usage-2026-10",
+          "evidence_strength": "中"
+        }
+      ],
+      "updatedAt": "2026-10-19T00:46:21Z"
+    },
     {
       "id": "ai-key-people:2026-10-16",
       "radarKey": "ai-key-people",
