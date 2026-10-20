@@ -2,8 +2,44 @@
   "schemaVersion": 1,
   "radarKey": "agent-governance",
   "radarTitle": "Agent 治理",
-  "updatedAt": "2026-10-20T07:49:57+08:00",
+  "updatedAt": "2026-10-21T07:41:29+08:00",
   "reports": [
+    {
+      "id": "agent-governance:2026-10-21",
+      "radarKey": "agent-governance",
+      "radarTitle": "Agent 治理",
+      "reportDate": "2026-10-21",
+      "headline": "ServiceNow以强制门禁和连续证据衡量Agent治理",
+      "conclusion": "",
+      "briefVersion": 2,
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "ServiceNow以强制门禁和连续证据衡量Agent治理",
+          "what": "ServiceNow在10月20日发布一项覆盖20个国家、3,766名副总裁级以上安全与技术负责人的研究。它不以“已经建立治理框架”的自评判断成熟度，而是从攻击面、问责、安全设计、可视性和审计就绪五个方面，将组织分为有限、起步、进阶和“可辩护”四档。达到较高水平的结构性条件包括：Agent自动登记，企业明确一名具名责任人，部署前必须经过自动安全门禁，未通过定义检查不得上线；审批、权限和动作持续留证，并能按需生成完整证据包。调查中只有20%设有单一责任人，32%执行强制自动上线门禁，47%能按需提供完整证据包，最终仅13%被归为“可辩护”。",
+          "why_it_matters": "这把Agent治理成熟度从“是否写了制度、配了看板”推进到“控制是否强制执行、责任能否追到个人、证据能否随时调取”。因此，只有资产清单或人工审批流程，不足以证明Agent已经处于可控制、可审计的生产状态。",
+          "evidence": "这是ServiceNow委托Phronesis Partners开展的自报式调查，97%的受访机构年收入不低于2.5亿美元。公开页面未披露完整问卷、四档评分权重、事件定义或控制措施与事故率之间的因果结果，因此应视为厂商研究提出的评价基线，而非已形成共识的行业标准。",
+          "supporting_details": "调查还显示，90%的机构称过去一年发生过Agent相关安全事件，但只有36%能在24小时内完成遏制；66%在Agent行为异常时不能自动采取行动，只有19%能实时看到超过90%的Agent。这些比例均来自受访者自报。",
+          "impact": ""
+        }
+      ],
+      "recommendations": [],
+      "sources": [
+        {
+          "name": "ServiceNow Research：Deployed but ungoverned — The state of agentic security",
+          "date": "2026-10-20",
+          "url": "https://www.servicenow.com/nl/workflow/ethics/state-agentic-security.html",
+          "evidence_strength": "中"
+        },
+        {
+          "name": "ServiceNow Newsroom：Ungoverned Agentic AI Exposure Is Compounding Inside Enterprises",
+          "date": "2026-10-20",
+          "url": "https://newsroom.servicenow.com/press-releases/details/2026/ServiceNow-Research-Study-Warns-Security-Leaders-Ungoverned-Agentic-AI-Exposure-Is-Compounding-Inside-Enterprises/default.aspx",
+          "evidence_strength": "中"
+        }
+      ],
+      "updatedAt": "2026-10-21T07:41:29+08:00"
+    },
     {
       "id": "agent-governance:2026-10-20",
       "radarKey": "agent-governance",
