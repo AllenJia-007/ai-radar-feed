@@ -2,8 +2,56 @@
   "schemaVersion": 1,
   "radarKey": "frontier-regulation",
   "radarTitle": "前沿 AI 监管",
-  "updatedAt": "2026-10-19T00:51:30.000Z",
+  "updatedAt": "2026-10-20T00:29:08.000Z",
   "reports": [
+    {
+      "id": "frontier-regulation:2026-10-20",
+      "radarKey": "frontier-regulation",
+      "radarTitle": "前沿 AI 监管",
+      "reportDate": "2026-10-20",
+      "headline": "美国命令联邦民用系统排除并移除DeepSeek",
+      "conclusion": "",
+      "briefVersion": 2,
+      "currentStatus": "DHS排除令于2026年7月24日签发即生效，10月20日拟刊载公告；适用于联邦民用系统和采购，设连续性与隔离研究例外；H.R.10538、S.5493仍在委员会。",
+      "items": [
+        {
+          "title": "美国命令联邦民用系统排除并移除DeepSeek",
+          "what": "美国国土安全部（DHS）已公开一份定于10月20日刊载的联邦公报通知，披露部长于7月24日签发且立即生效的供应链排除令。联邦民用行政机构不得再采购DeepSeek及其关联实体开发的信息技术产品和服务，并须从现有系统移除DeepSeek产品、关联方产品，以及使用DeepSeek实现开发的第三方产品和服务。美国网络安全和基础设施安全局（CISA）被要求向各机构下发包含期限的实施指令；例外仅限保障既有任务连续性的过渡期，以及在隔离、受控环境中开展人工智能研究等情形，机构必须采取并验证风险缓解措施。",
+          "why_it_matters": "这不是只禁用一个应用，而是把联邦部署限制扩展到模型供应链和第三方集成；只要产品建立在DeepSeek实现之上，也可能被排除或要求移除。",
+          "evidence": "命令依据《联邦采购供应链安全法》约束美国联邦民用行政机构及其采购，并非美国商业市场的普遍禁令，也不禁止DeepSeek训练或研发。命令7月24日已生效，10月20日只是预定刊载公开通知。",
+          "supporting_details": "DHS称其在审查联邦采购安全委员会建议及相关证据后作出决定。实施例外需服务于任务连续性或隔离研究，并持续采用、监测和验证缓解措施；具体移除期限由CISA实施指令确定。",
+          "impact": ""
+        }
+      ],
+      "recommendations": [],
+      "sources": [
+        {
+          "name": "Federal Register｜DeepSeek排除与移除命令公开检查页",
+          "date": "2026-10-19",
+          "url": "https://www.federalregister.gov/public-inspection/2026-21447/order-exclusion-and-removal-of-deepseek-products-from-federal-civilian-executive-branch-information",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "DHS｜DeepSeek排除与移除命令及签署附件",
+          "date": "2026-07-24",
+          "url": "https://public-inspection.federalregister.gov/2026-21447.pdf",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "GovInfo｜H.R.10538 Ban Artificial Superintelligence Act of 2026",
+          "date": "2026-09-24",
+          "url": "https://www.govinfo.gov/app/details/BILLS-119hr10538ih",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "GovInfo｜S.5493 Ban Artificial Superintelligence Act of 2026",
+          "date": "2026-09-23",
+          "url": "https://www.govinfo.gov/app/details/BILLS-119s5493is",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-10-20T00:29:08.000Z"
+    },
     {
       "id": "frontier-regulation:2026-10-19",
       "radarKey": "frontier-regulation",
