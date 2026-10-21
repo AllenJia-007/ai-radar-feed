@@ -2,8 +2,44 @@
   "schemaVersion": 1,
   "radarKey": "ai-capability",
   "radarTitle": "AI 能力",
-  "updatedAt": "2026-10-18T01:06:43.755Z",
+  "updatedAt": "2026-10-21T08:38:30+08:00",
   "reports": [
+    {
+      "id": "ai-capability:2026-10-21",
+      "radarKey": "ai-capability",
+      "radarTitle": "AI 能力",
+      "reportDate": "2026-10-21",
+      "headline": "Claude连续运行64小时设计蛋白，17个候选通过双实验室结合验证",
+      "conclusion": "",
+      "briefVersion": 2,
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "Claude连续运行64小时设计蛋白，17个候选通过双实验室结合验证",
+          "what": "Anthropic让内部研究型Claude在Claude Science环境中设计针对五种蝎毒神经毒素的微型蛋白结合体。Agent先自主运行24小时，研究团队用四次后续提示调整方向；64小时内，它调用12种设计工具生成318,484个方案、筛选180个候选，团队另在Claude协助下补充31个。Adaptyv Bio和Twist Bioscience分别表达并测试全部211个设计，17个同时达到两家实验室设定的结合标准，其中最强候选对Cn2毒素达到个位数纳摩尔亲和力。",
+          "why_it_matters": "这不是只在数字基准上提高分数，而是长任务Agent把检索、工具编排、批量设计、筛选和对外送样连接成科学工作流，并得到跨实验室物理测量支持。它说明前沿Agent已能在明确目标、成熟计算工具和人工阶段性指导下，产出可进入实验验证的科学候选；能力边界开始从“辅助研究”向“执行一次完整的设计迭代”移动。",
+          "evidence": "结果只证明重组毒素结合，尚未验证候选能在细胞或动物中中和毒性，也没有制成抗毒血清；针对多种毒素的设计没有一个同时通过多目标标准。研究使用约10,000 GPU小时、内部未发布模型和预先配置的专业工具，且四次人工追问影响了搜索方向，不能外推为非专家可无监督完成药物发现。",
+          "supporting_details": "实验把“命中”定义为两家实验室每次重复均显示结合、解离常数不高于1微摩尔，且对无关人类蛋白CLEC12A无信号。两家实验室采用不同表达体系并以表面等离子体共振测量结合；Anthropic公开了211个设计及数据，便于后续复核。",
+          "impact": ""
+        }
+      ],
+      "recommendations": [],
+      "sources": [
+        {
+          "name": "Anthropic｜How Claude designed protein binders against scorpion neurotoxins",
+          "date": "2026-10-20",
+          "url": "https://www.anthropic.com/research/claude-scorpion-toxin-binder-design",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Anthropic｜De novo design of protein binders against scorpion toxins（技术报告）",
+          "date": "2026-10-20",
+          "url": "https://www-cdn.anthropic.com/31ac578806cffd8b3d92d8affe6edc4c04d502e1.pdf",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-10-21T08:38:30+08:00"
+    },
     {
       "id": "ai-capability:2026-10-18",
       "radarKey": "ai-capability",
