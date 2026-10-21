@@ -2,8 +2,50 @@
   "schemaVersion": 1,
   "radarKey": "finance-ai-cases",
   "radarTitle": "财经 AI 案例",
-  "updatedAt": "2026-10-16T07:31:37.298Z",
+  "updatedAt": "2026-10-21T08:22:11+08:00",
   "reports": [
+    {
+      "id": "finance-ai-cases:2026-10-21",
+      "radarKey": "finance-ai-cases",
+      "radarTitle": "财经 AI 案例",
+      "reportDate": "2026-10-21",
+      "headline": "Visa、BILL与Billtrust让AI执行已批准的供应商门户付款",
+      "conclusion": "",
+      "briefVersion": 2,
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "Visa、BILL与Billtrust让AI执行已批准的供应商门户付款",
+          "what": "Visa、BILL和Billtrust于10月20日启动现场试点：BILL Payment Agent在买方完成发票审批后，依据该笔付款指令和令牌化凭据进入Billtrust供应商门户，发起并完成卡付款；Billtrust利用Visa Trusted Agent Protocol识别、验证并放行Agent，随后按既有收款政策处理和对账。Agent不决定是否付款，也不共享供应商门户账号；人仍负责发票审批、支付规则与例外处理，Agent接手原本需要员工登录门户并逐项录入的最后一步。官方称试点已在参与买方与Billtrust供应商之间处理端到端真实交易，但未披露交易数量、成功率或节省时长。",
+          "why_it_matters": "这是财经Agent把“已批准”与“可执行”跨越两个企业平台：身份、授权意图和凭据能被对方门户验证，受控付款不再依赖共享账号或人工登录。",
+          "evidence": "当前仅为小范围现场试点，参与买方未具名，也无生产规模、差错率、拒付或应收账款周转天数实测；它证明机制可运行，不等于规模化支付已经成熟。",
+          "supporting_details": "Agent通过Visa Agentic Directory登记，以签名和令牌化凭据向供应商门户证明身份；支付控制绑定到客户已批准的具体发票指令，供应商仍按自身收款政策决定是否接受。",
+          "impact": ""
+        }
+      ],
+      "recommendations": [],
+      "sources": [
+        {
+          "name": "Visa｜Visa、BILL与Billtrust启动可信AI Agent付款现场试点",
+          "date": "2026-10-20",
+          "url": "https://usa.visa.com/about-visa/newsroom/press-releases.releaseId.22856.html",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Visa Developer｜Trusted Agent Protocol规范",
+          "date": "2026-10-20",
+          "url": "https://developer.visa.com/docs/trusted-agent-protocol/trusted-agent-protocol-specifications",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "FinTech Magazine｜Visa, BILL and Billtrust's AI Agents for Invoice Payments",
+          "date": "2026-10-20",
+          "url": "https://fintechmagazine.com/news/visa-bill-billtrust-pilot-ai-agents-for-invoice-payments",
+          "evidence_strength": "中"
+        }
+      ],
+      "updatedAt": "2026-10-21T08:22:11+08:00"
+    },
     {
       "id": "finance-ai-cases:2026-10-16",
       "radarKey": "finance-ai-cases",
