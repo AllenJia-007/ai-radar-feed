@@ -2,8 +2,44 @@
   "schemaVersion": 1,
   "radarKey": "ai-capability",
   "radarTitle": "AI 能力",
-  "updatedAt": "2026-10-21T08:38:30+08:00",
+  "updatedAt": "2026-10-22T08:32:05+08:00",
   "reports": [
+    {
+      "id": "ai-capability:2026-10-22",
+      "radarKey": "ai-capability",
+      "radarTitle": "AI 能力",
+      "reportDate": "2026-10-22",
+      "headline": "数千个GPT-Rosalind Agent在32分钟内完成全脑基因扰动分析",
+      "conclusion": "",
+      "briefVersion": 2,
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "数千个GPT-Rosalind Agent在32分钟内完成全脑基因扰动分析",
+          "what": "OpenAI、PerturbAI 与 Scripps Research 将全脑 CRISPR 图谱中的基因扰动拆分给数千个 GPT‑Rosalind Agent：每个 Agent 分析细胞反应、检索论文并提出机制解释，再合并成连接基因、细胞效应、文献与候选机制的“推理图谱”。系统在 32 分钟内分析数百万个小鼠脑细胞数据；最大负载下，分布式 Agent 引用了 700 多篇文献，而同等模型与资源下的单 Agent 只引用 11 篇。盲评专家在 75% 的比较中更偏好分布式 Agent 报告。",
+          "why_it_matters": "这项结果说明，多 Agent 的价值不只在流程并发，也可以通过“按实验对象分片、独立推理、再汇总”扩大复杂科学数据的解释覆盖面；能力增量来自编排结构，而不是单个模型分数提升。",
+          "evidence": "结果来自研究团队论文预印本，尚未同行评审或独立复现；输入是已有小鼠数据，新增结论仍是待验证假说，并非新的湿实验、临床证据或治疗成果。公开材料也未披露数千 Agent 的总计算成本。",
+          "supporting_details": "为降低直接复述原研究结论的可能，Agent 未访问源论文；论文报告其恢复了已知结论、预测留出扰动效应，并给出可供后续实验筛选的候选关联。推理图谱和数据已公开，便于研究人员继续核查。",
+          "impact": ""
+        }
+      ],
+      "recommendations": [],
+      "sources": [
+        {
+          "name": "OpenAI｜Using thousands of AI agents to uncover new leads in biological data",
+          "date": "2026-10-21",
+          "url": "https://openai.com/index/scaling-ai-research-for-complex-biological-data/",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "bioRxiv｜Distributed AI agents enable comprehensive discovery of biological insights at scale",
+          "date": "2026-10-16",
+          "url": "https://www.biorxiv.org/content/10.64898/2026.10.15.759436v1",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-10-22T08:32:05+08:00"
+    },
     {
       "id": "ai-capability:2026-10-21",
       "radarKey": "ai-capability",
