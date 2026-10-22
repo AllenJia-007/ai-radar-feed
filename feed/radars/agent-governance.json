@@ -2,8 +2,50 @@
   "schemaVersion": 1,
   "radarKey": "agent-governance",
   "radarTitle": "Agent 治理",
-  "updatedAt": "2026-10-22T07:38:41+08:00",
+  "updatedAt": "2026-10-23T07:35:02+08:00",
   "reports": [
+    {
+      "id": "agent-governance:2026-10-23",
+      "radarKey": "agent-governance",
+      "radarTitle": "Agent 治理",
+      "reportDate": "2026-10-23",
+      "headline": "Google让Agent流量先过注册表与策略检查",
+      "conclusion": "",
+      "briefVersion": 2,
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "Google让Agent流量先过注册表与策略检查",
+          "what": "Google于10月22日将Agent Registry定义为所有获批运行的Agent、工具、MCP服务器、Skill、模型和端点的权威清单，并把它接入Agent Gateway的运行数据路径。平台与安全团队在“治理项目”中维护登记对象、身份和访问策略；Agent或外部端点发起调用时，网关在转发前查询注册表，核验Agent身份，并执行IAM与内容安全策略。由此，某个对象是否登记、谁可以调用、可访问哪个目标，不再只显示在资产看板中，而会直接影响请求能否被路由。",
+          "why_it_matters": "资产总账开始从“看见有什么”变成执行授权的事实来源：登记状态、唯一身份和策略绑定到同一资源标识，运行中的Agent无权自行绕开。治理决策由平台和安全团队设定，网关在每次交互时执行，比上线审批后依赖Agent自觉遵守规则更接近可验证闭环。",
+          "evidence": "官方文档显示，Agent Gateway目前仅对Gemini Enterprise Agent Platform上的Agent可用。GKE、Cloud Run、跨云与本地数据中心的策略执行点仍是即将开放的早期预览，终端编码Agent治理尚未可用；Token和成本政策也仅计划本季度进入预览。Google未披露生产规模下的拦截准确率、额外时延或治理成效，不能把跨环境统一治理视为已经完成。",
+          "supporting_details": "Agent Gateway支持MCP、A2A、REST和gRPC，并可在MCP调用中提取工具名和方法属性执行细粒度策略；当前每个网关实例最多治理5,000个已登记资源。Agent Registry可自动登记治理项目中的受支持工作负载，外部云、私有环境等远端组件仍需手工登记。",
+          "impact": ""
+        }
+      ],
+      "recommendations": [],
+      "sources": [
+        {
+          "name": "Google Cloud：Introducing Agent Compute Engine and expanded agent governance",
+          "date": "2026-10-22",
+          "url": "https://cloud.google.com/blog/topics/ai-infrastructure/introducing-agent-compute-engine-and-expanded-agent-governance",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Google Cloud Docs：Agent Registry overview",
+          "date": "2026-10-22",
+          "url": "https://docs.cloud.google.com/agent-registry/overview",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Google Cloud Docs：Agent Gateway overview",
+          "date": "2026-10-22",
+          "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/govern/gateways/agent-gateway-overview",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-10-23T07:35:02+08:00"
+    },
     {
       "id": "agent-governance:2026-10-22",
       "radarKey": "agent-governance",
