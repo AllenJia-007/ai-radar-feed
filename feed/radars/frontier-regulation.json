@@ -2,8 +2,56 @@
   "schemaVersion": 1,
   "radarKey": "frontier-regulation",
   "radarTitle": "前沿 AI 监管",
-  "updatedAt": "2026-10-20T00:29:08.000Z",
+  "updatedAt": "2026-10-22T00:36:49.000Z",
   "reports": [
+    {
+      "id": "frontier-regulation:2026-10-22",
+      "radarKey": "frontier-regulation",
+      "radarTitle": "前沿 AI 监管",
+      "reportDate": "2026-10-22",
+      "headline": "OpenAI限制模型训练用途并要求路由平台先获批准",
+      "conclusion": "",
+      "briefVersion": 2,
+      "currentStatus": "OpenAI新Usage Policies已公布，2026年11月20日生效；属服务与合作方访问政策，并非政府法律；H.R.10538、S.5493仍在委员会。",
+      "items": [
+        {
+          "title": "OpenAI限制模型训练用途并要求路由平台先获批准",
+          "what": "OpenAI于10月21日公布将于11月20日生效的新版Usage Policies，并把同一安全边界延伸至自营服务、合作托管及转售渠道。任何让第三方直接访问OpenAI模型的路由器、AI网关或其他模型访问中介，须先接受OpenAI审查并获批；提供模型访问的合作方还须维持与OpenAI一致的护栏、调查潜在违规并协调执行。新政策同时禁止使用OpenAI模型或输出，为意在替代OpenAI模型或服务的模型制作训练数据、强化学习环境、评分、奖励、偏好等训练信号；高风险领域的自动化行为必须保留人工复核，国家安全、情报和执法用途也需另行审批。",
+          "why_it_matters": "这把前沿模型的发布与停用边界从直接API扩展至多云托管、路由和转售链路；第三方分发渠道也须先获准，并在发现滥用时协同执行限制。",
+          "evidence": "这是OpenAI对其服务与合作方施加的平台及合同政策，不是政府法规；11月20日才生效。普通应用仅因集成模型并不自动成为需审批的访问中介，合同约定的例外仍可能适用。",
+          "supporting_details": "OpenAI称，限制访问将基于已记录的行为与风险，并会在用户承诺或护栏发生实质变化后重新评估；其还计划引入SafetyIDs，让合作方在不披露用户身份的情况下配合个体级滥用调查。",
+          "impact": ""
+        }
+      ],
+      "recommendations": [],
+      "sources": [
+        {
+          "name": "OpenAI｜Broad access through consistent standards",
+          "date": "2026-10-21",
+          "url": "https://openai.com/index/broad-access-through-consistent-standards/",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "OpenAI｜Usage Policies（2026年11月20日生效版）",
+          "date": "2026-10-21",
+          "url": "https://openai.com/policies/usage-policies/",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "GovInfo｜H.R.10538 Ban Artificial Superintelligence Act of 2026",
+          "date": "2026-09-24",
+          "url": "https://www.govinfo.gov/app/details/BILLS-119hr10538ih",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "GovInfo｜S.5493 Ban Artificial Superintelligence Act of 2026",
+          "date": "2026-09-23",
+          "url": "https://www.govinfo.gov/app/details/BILLS-119s5493is",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-10-22T00:36:49.000Z"
+    },
     {
       "id": "frontier-regulation:2026-10-20",
       "radarKey": "frontier-regulation",
