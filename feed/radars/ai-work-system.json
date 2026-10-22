@@ -2,8 +2,44 @@
   "schemaVersion": 1,
   "radarKey": "ai-work-system",
   "radarTitle": "AI 工作系统",
-  "updatedAt": "2026-10-20T07:40:48+08:00",
+  "updatedAt": "2026-10-22T08:06:00+08:00",
   "reports": [
+    {
+      "id": "ai-work-system:2026-10-22",
+      "radarKey": "ai-work-system",
+      "radarTitle": "AI 工作系统",
+      "reportDate": "2026-10-22",
+      "headline": "Claude Duet开始主动巡检工作并在需要时找人",
+      "conclusion": "",
+      "briefVersion": 2,
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "Claude Duet开始主动巡检工作并在需要时找人",
+          "what": "Anthropic于10月21日开放Claude Duet研究预览。与需要用户先下达任务的聊天或Cowork不同，Duet会继承Claude账户中的记忆、Skill和已连接应用，在一条持续对话中承接即时请求或跨周项目；它依靠独立虚拟机和浏览器在后台工作，每隔数小时检查连接账户，主动发送晨间摘要或需要关注的提醒。Duet可自行读取、起草和准备工作，但发送消息、付款、签署文件或删除内容前，必须展示具体动作并等待用户批准；证券交易、账户间转账等行为即使获批也不允许执行。",
+          "why_it_matters": "工作入口由“人发现事项后调用Agent”推进到“Agent持续观察工作状态、主动提出事项并完成准备，人处理例外和审批”。记忆、Skill与连接器开始服务于一个持续存在的工作主体，而不是一次会话。",
+          "evidence": "目前仅是面向美国Pro和Max用户的候补名单研究预览，Duet仍与主Claude应用分离、不能向用户展示其浏览器，且官方承认可能误读对话或误判紧急程度；公开案例主要来自内部和少量早期用户，尚无规模化稳定性数据。",
+          "supporting_details": "后台巡检本身计入Claude套餐用量，复杂任务会消耗更多模型轮次。Anthropic称Duet可使用Claude Marketplace中的连接器和插件，并通过凭据隔离、动作分类器及敏感信息检查限制其行为；这些安全机制的实际误判率与企业管理能力尚未披露。",
+          "impact": ""
+        }
+      ],
+      "recommendations": [],
+      "sources": [
+        {
+          "name": "Anthropic｜Introducing Claude Duet",
+          "date": "2026-10-21",
+          "url": "https://claude.com/resources/articles/claude-duet",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Anthropic Help Center｜Claude release notes",
+          "date": "2026-10-21",
+          "url": "https://support.claude.com/en/articles/12138966-release-notes",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-10-22T08:06:00+08:00"
+    },
     {
       "id": "ai-work-system:2026-10-20",
       "radarKey": "ai-work-system",
