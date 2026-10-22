@@ -2,8 +2,38 @@
   "schemaVersion": 1,
   "radarKey": "finance-ai-cases",
   "radarTitle": "财经 AI 案例",
-  "updatedAt": "2026-10-21T08:22:11+08:00",
+  "updatedAt": "2026-10-22T08:15:47+08:00",
   "reports": [
+    {
+      "id": "finance-ai-cases:2026-10-22",
+      "radarKey": "finance-ai-cases",
+      "radarTitle": "财经 AI 案例",
+      "reportDate": "2026-10-22",
+      "headline": "Birlasoft用六个Agent接管合同义务提取与核验",
+      "conclusion": "",
+      "briefVersion": 2,
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "Birlasoft用六个Agent接管合同义务提取与核验",
+          "what": "Birlasoft已把Contract.ai投入从合同签署到项目交付的交接流程。一个规划Agent编排六个专业Agent，读取主服务协议、工作说明书和任务单，提取义务、把结论回链原文、交叉校验并标出矛盾，再把需跟踪的承诺交给交付经理及相关法务、财务、税务人员。系统不作最终财务或法律判断；人工仍复核关键义务、确认责任人并决定处置。微软客户案例称，该系统已实现每年约4,000人时的节省。",
+          "why_it_matters": "这不是合同摘要助手，而是把义务提取、相互核验和持续跟踪嵌入履约控制。AI承担高频证据整理，人保留法律与财务责任，说明流程嵌入型Agent已能在可回链、可复核条件下处理核心控制工作。",
+          "evidence": "证据来自微软官方客户案例和Birlasoft管理人员陈述，属于企业自报、未独立审计；公开材料未披露漏报率、误报率、人工复核比例或对违约损失的影响，不能把节时直接等同于控制有效性。",
+          "supporting_details": "系统使用335项元数据解释合同上下文，并以Azure Data Factory、Data Lake、Databricks、Key Vault及AI Content Safety支撑数据摄取、分析、权限和内容安全。案例称系统已常态化处理项目工作说明书，并将义务原文、负责人及到期状态连接到交付跟踪。",
+          "impact": ""
+        }
+      ],
+      "recommendations": [],
+      "sources": [
+        {
+          "name": "Microsoft Source Asia｜How Birlasoft turned contract obligations into a delivery advantage with AI agents and Microsoft Azure",
+          "date": "2026-10-21",
+          "url": "https://news.microsoft.com/source/asia/features/how-birlasoft-turned-contract-obligations-into-a-delivery-advantage-with-ai-agents-and-microsoft-azure/",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-10-22T08:15:47+08:00"
+    },
     {
       "id": "finance-ai-cases:2026-10-21",
       "radarKey": "finance-ai-cases",
