@@ -2,8 +2,58 @@
   "schemaVersion": 1,
   "radarKey": "ai-key-people",
   "radarTitle": "AI 关键人物观点",
-  "updatedAt": "2026-10-19T00:46:21Z",
+  "updatedAt": "2026-10-23T00:42:32Z",
   "reports": [
+    {
+      "id": "ai-key-people:2026-10-23",
+      "radarKey": "ai-key-people",
+      "radarTitle": "AI 关键人物观点",
+      "reportDate": "2026-10-23",
+      "headline": "Hassabis前移AGI判断，Mollick重画人机协作分工",
+      "conclusion": "",
+      "briefVersion": 2,
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "Demis Hassabis把AGI预测收窄到两至三年",
+          "what": "Demis Hassabis在《华尔街日报》10月21日发布的专访中，把自己今年早些时候“距离通用人工智能（AGI）仍有三至五年”的判断改为“两至三年”，并称预测正不断向近处更新。他仍把AGI定义为覆盖人类大脑的完整认知范围，而不是在少数基准或任务上超过人类；因此，这是一项明确的时间窗修正，并非宣称现有模型已经达到AGI。",
+          "why_it_matters": "Hassabis过去对时间表相对克制，此次收窄意味着他认为关键缺口消失的速度快于先前预期；但其定义仍要求跨任务稳定性和完整认知能力，不能用单项模型成绩代替。",
+          "evidence": "这是Hassabis的个人预测，专访没有给出新的模型、评测阈值或独立实验来解释修正。时间自然推移也能解释部分窗口缩短，因而更适合视为预期更新，而不是能力突破证据。",
+          "supporting_details": "2025年1月的完整访谈中，Hassabis把推理、分层规划、长期记忆、稳定性及提出原创科学假说列为AGI仍缺失的能力，并给出三至五年的判断；本次报道未说明这些缺口分别取得了何种可验证进展。",
+          "impact": ""
+        },
+        {
+          "title": "Ethan Mollick把人机协作从“人在环内”更新为“召集并验收代理”",
+          "what": "Ethan Mollick在10月20日的长文中提出“召集者”这一新的人机协作角色，补充他过去描述的“半人马式分工”和“人与AI交织工作”。他用Claude Projects中的编排代理生成研究、图表、版式、图片和引用，自己主要给出方向、选择方案并验收结果；据其个人体验，过去需数小时的工作可在数分钟内完成，人在每一步操作转为设定目标、调用代理和评估交付。",
+          "why_it_matters": "这一框架把知识工作的核心瓶颈从提示和逐步执行，进一步推向任务选择、质量判断与责任承担；它描述的是代理能力提升后人类角色的变化，而不只是又一个效率工具。",
+          "evidence": "证据来自Mollick的一次个人工作流和其对模型、基准数据的整理，没有受控的时间、质量或错误率对照，也未验证长期组织任务。他同时强调能力仍高度参差，长文写作等领域依旧薄弱，小缺口仍会造成大量人工复核。",
+          "supporting_details": "Mollick称当前模型领先者频繁更替，且可完成的连续任务时长快速增长；但他没有据此主张完全自治，而是把人保留在目标设定和结果评价位置，并警告人类会更难看清代理为得到结果具体做了什么。",
+          "impact": ""
+        }
+      ],
+      "recommendations": [],
+      "sources": [
+        {
+          "name": "The Wall Street Journal｜Why AI’s Deepest Mind Believes the World Is About to Change Radically",
+          "date": "2026-10-21",
+          "url": "https://www.wsj.com/tech/ai/demis-hassabis-ai-deepmind-google-isomorphic-2b4e3153",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Big Technology｜Google DeepMind CEO Demis Hassabis: The Path To AGI",
+          "date": "2025-01-23",
+          "url": "https://www.bigtechnology.com/p/google-deepmind-ceo-demis-hassabis",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Ethan Mollick｜30 Months on the Exponential (in Charts)",
+          "date": "2026-10-20",
+          "url": "https://www.oneusefulthing.org/p/30-months-on-the-exponential-in-charts",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-10-23T00:42:32Z"
+    },
     {
       "id": "ai-key-people:2026-10-19",
       "radarKey": "ai-key-people",
