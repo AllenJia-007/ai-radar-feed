@@ -2,8 +2,44 @@
   "schemaVersion": 1,
   "radarKey": "finance-ai-cases",
   "radarTitle": "财经 AI 案例",
-  "updatedAt": "2026-10-22T08:15:47+08:00",
+  "updatedAt": "2026-10-23T08:10:19+08:00",
   "reports": [
+    {
+      "id": "finance-ai-cases:2026-10-23",
+      "radarKey": "finance-ai-cases",
+      "radarTitle": "财经 AI 案例",
+      "reportDate": "2026-10-23",
+      "headline": "Starling让AI完成交易监测告警调查并给出最终判断",
+      "conclusion": "",
+      "briefVersion": 2,
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "Starling让AI完成交易监测告警调查并给出最终判断",
+          "what": "Starling Bank高管称，银行约三周前已把自研“金融犯罪调查员”部署到核心银行引擎：系统直接接收交易监测告警，读取实时遥测、历史行为与交易上下文，独立完成调查、生成端到端审计轨迹，并给出有理由的最终判断。早期公司数据称单条告警处理少于17秒。公开材料把原本由分析师逐屏收集材料和撰写叙述的整段工作交给Agent，但没有说明最终判断是否自动结案、是否需要人工逐笔复核，或哪些案件必须升级给分析师。",
+          "why_it_matters": "这把反洗钱AI从辅助检索推进到核心系统内的端到端任务委托；真正需要验证的不再只是速度，而是权限边界、抽样复核、错误纠正和责任归属。",
+          "evidence": "目前仅有Starling高管自报和二手报道；尚未披露告警量、误报或漏报、人工推翻率、监管反馈或独立验证，因此只能确认这是已部署的早期生产案例，不能确认已经实现规模化安全自治。",
+          "supporting_details": "Agent由银行自建并嵌入核心银行引擎，不依赖外部插件；公司称这使其可直接访问实时遥测、历史行为和交易上下文，并保留端到端审计轨迹。",
+          "impact": ""
+        }
+      ],
+      "recommendations": [],
+      "sources": [
+        {
+          "name": "Bernadette Smith（Starling Bank首席客户与银行官）｜Agentic Financial Crime Investigator部署说明",
+          "date": "2026-10-21",
+          "url": "https://www.linkedin.com/feed/update/urn:li:activity:7518244385906401280/",
+          "evidence_strength": "中"
+        },
+        {
+          "name": "Finextra｜Starling build agentic fincrime investigator that takes 17 seconds",
+          "date": "2026-10-21",
+          "url": "https://www.finextra.com/newsarticle/48623/starling-build-agentic-fincrime-investigator-that-takes-17-seconds",
+          "evidence_strength": "中"
+        }
+      ],
+      "updatedAt": "2026-10-23T08:10:19+08:00"
+    },
     {
       "id": "finance-ai-cases:2026-10-22",
       "radarKey": "finance-ai-cases",
