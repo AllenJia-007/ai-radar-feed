@@ -2,8 +2,50 @@
   "schemaVersion": 1,
   "radarKey": "ai-work-system",
   "radarTitle": "AI 工作系统",
-  "updatedAt": "2026-10-22T08:06:00+08:00",
+  "updatedAt": "2026-10-23T08:34:00+08:00",
   "reports": [
+    {
+      "id": "ai-work-system:2026-10-23",
+      "radarKey": "ai-work-system",
+      "radarTitle": "AI 工作系统",
+      "reportDate": "2026-10-23",
+      "headline": "ChatGPT Slides把演示稿变成团队共同维护的工作资产",
+      "conclusion": "",
+      "briefVersion": 2,
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "ChatGPT Slides把演示稿变成团队共同维护的工作资产",
+          "what": "OpenAI于10月16日开始向拥有Space权限的Pro、Business和Enterprise用户滚动开放ChatGPT Slides。用户可以让ChatGPT Work根据对话、文件、提纲或示例模板生成可编辑演示稿，再直接修改文本、图像、形状、表格和图表，或选中元素要求ChatGPT调整。演示稿保存在Space中，多名成员可以实时共同编辑、通过共享评论讨论并@ChatGPT或个人Dot执行修改；完成后可直接演示，或导出为PowerPoint、PDF及Google Slides。",
+          "why_it_matters": "AI交付物不再只是一名用户从会话中下载的文件，而成为共享工作空间里的持续资产：人共同评审和编辑，各自的Agent围绕同一份材料协作，反馈、修改与交付保留在同一对象中。",
+          "evidence": "Slides仍在分批开放，必须具备Space权限；Enterprise共享需要管理员选择启用。Windows缺少指定组件时，本地模式仍生成普通PPTX文件，不能使用协作式Slides；发布初期没有“仅评论”权限，官方也要求使用前复核文字、数字和版式。",
+          "supporting_details": "共享页面不会把个人私有对话或记忆直接开放给协作者，但个人记忆被Agent写入演示稿后会成为共享内容。每位协作者使用自己的ChatGPT处理同一材料，组织的共享策略和原始外部文件权限仍分别生效。",
+          "impact": ""
+        }
+      ],
+      "recommendations": [],
+      "sources": [
+        {
+          "name": "OpenAI Help Center｜ChatGPT release notes：Create and collaborate on slides",
+          "date": "2026-10-16",
+          "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "OpenAI Help Center｜Creating and collaborating on slides in ChatGPT",
+          "date": "2026-10-16",
+          "url": "https://help.openai.com/en/articles/20001605-creating-and-collaborating-on-slides-in-chatgpt",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "OpenAI Help Center｜Getting started with Space in ChatGPT",
+          "date": "2026-10-16",
+          "url": "https://help.openai.com/en/articles/20001549-getting-started-with-space-in-chatgpt",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-10-23T08:34:00+08:00"
+    },
     {
       "id": "ai-work-system:2026-10-22",
       "radarKey": "ai-work-system",
