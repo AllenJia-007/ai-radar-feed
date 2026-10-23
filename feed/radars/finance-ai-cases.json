@@ -2,8 +2,38 @@
   "schemaVersion": 1,
   "radarKey": "finance-ai-cases",
   "radarTitle": "财经 AI 案例",
-  "updatedAt": "2026-10-23T08:10:19+08:00",
+  "updatedAt": "2026-10-24T07:30:50+08:00",
   "reports": [
+    {
+      "id": "finance-ai-cases:2026-10-24",
+      "radarKey": "finance-ai-cases",
+      "radarTitle": "财经 AI 案例",
+      "reportDate": "2026-10-24",
+      "headline": "Pinion让AI承担数百客户月结首轮制备并回写分录",
+      "conclusion": "",
+      "briefVersion": 2,
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "Pinion让AI承担数百客户月结首轮制备并回写分录",
+          "what": "美国会计与咨询机构Pinion已把Basis用于客户会计服务的经常性月结，并在数百客户账套中形成统一作业方式。AI先完成账套接入、复杂资产负债表科目勾稽、工作簿准备和分录生成，再把分录回写相关总账并提示异常；会计人员复核产出、处理异常，依据各客户要求作出最终判断。Pinion称，复杂科目勾稽由5小时缩短至35分钟。",
+          "why_it_matters": "这表明会计Agent已从单点助手变成跨客户复用的首轮制备与执行层；规模化的关键不是取消专业判断，而是标准化输入、程序和异常交接，让人工集中在差异与责任判断。",
+          "evidence": "证据来自Basis发布的具名客户案例及Pinion多名管理人员陈述，属于客户与厂商自报、未独立审计；公开材料未披露分录差错或冲销率、重大性阈值、抽样复核比例及客户审批规则。",
+          "supporting_details": "Pinion按批次推进部署，配套共享月结蓝图、批量客户接入、培训、实时支持和内部推广人；管理看板统一展示各客户月结状态、会计人员负荷及制备—复核进度。",
+          "impact": ""
+        }
+      ],
+      "recommendations": [],
+      "sources": [
+        {
+          "name": "Basis客户案例｜How Pinion standardized AI-enabled delivery across hundreds of CAS clients",
+          "date": "2026-10-23",
+          "url": "https://www.getbasis.ai/customer-stories/pinion",
+          "evidence_strength": "中"
+        }
+      ],
+      "updatedAt": "2026-10-24T07:30:50+08:00"
+    },
     {
       "id": "finance-ai-cases:2026-10-23",
       "radarKey": "finance-ai-cases",
