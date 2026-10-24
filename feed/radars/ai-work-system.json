@@ -2,8 +2,38 @@
   "schemaVersion": 1,
   "radarKey": "ai-work-system",
   "radarTitle": "AI 工作系统",
-  "updatedAt": "2026-10-23T08:34:00+08:00",
+  "updatedAt": "2026-10-24T08:36:00+08:00",
   "reports": [
+    {
+      "id": "ai-work-system:2026-10-24",
+      "radarKey": "ai-work-system",
+      "radarTitle": "AI 工作系统",
+      "reportDate": "2026-10-24",
+      "headline": "Claude可与用户同时编辑Google文档",
+      "conclusion": "",
+      "briefVersion": 2,
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "Claude可与用户同时编辑Google文档",
+          "what": "Anthropic在10月24日更新的官方帮助文档中确认，Claude现可在网页和桌面端直接新建或编辑Google Docs、Sheets和Slides：原文件会在聊天旁打开，用户与Claude可以同时修改，Claude每次写入前会重新读取当前内容。Google Workspace连接器也可发送或回复邮件、创建和修改日历事件，以及上传、分享、移动或删除Drive文件；默认每次写操作需用户批准，Team和Enterprise管理员可把具体动作设为始终允许、需要批准或阻止。相较此前主要搜索和读取工作资料，使用者现在可以让AI留在同一份办公资产里协作，并直接完成后续动作。",
+          "why_it_matters": "连接器不再只是给模型提供上下文，而开始成为原文件协作和业务动作的执行层；成果继续保存在既有办公套件及权限体系中，减少了在AI工作台与办公软件之间复制、下载和重新上传的交接。",
+          "evidence": "官方文档给出了可用步骤和权限模型，但未披露组织级使用规模、质量或并发冲突率。内嵌实时编辑仅支持Claude网页端的Chrome浏览器，以及开启内置浏览器的Claude Desktop；Slides暂不能添加图表，修改也可能不在侧栏即时显示，繁忙文件仍需人工检查。",
+          "supporting_details": "Google Docs、Sheets和Slides使用与Drive分开的连接器；底层仍受用户现有Google权限约束。Google Drive文件只能加入私有Project的Files区，共享Project中该入口不可用。",
+          "impact": ""
+        }
+      ],
+      "recommendations": [],
+      "sources": [
+        {
+          "name": "Claude Help Center｜Use Google Workspace connectors",
+          "date": "2026-10-24",
+          "url": "https://support.claude.com/en/articles/10166901-use-google-workspace-connectors",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-10-24T08:36:00+08:00"
+    },
     {
       "id": "ai-work-system:2026-10-23",
       "radarKey": "ai-work-system",
