@@ -2,8 +2,38 @@
   "schemaVersion": 1,
   "radarKey": "agent-governance",
   "radarTitle": "Agent 治理",
-  "updatedAt": "2026-10-24T08:22:01+08:00",
+  "updatedAt": "2026-10-25T07:43:30+08:00",
   "reports": [
+    {
+      "id": "agent-governance:2026-10-25",
+      "radarKey": "agent-governance",
+      "radarTitle": "Agent 治理",
+      "reportDate": "2026-10-25",
+      "headline": "ServiceNow用自主处理量与解决质量共同决定Agent版本是否保留",
+      "conclusion": "",
+      "briefVersion": 2,
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "ServiceNow用自主处理量与解决质量共同决定Agent版本是否保留",
+          "what": "ServiceNow于10月23日公开了将L1 Service Desk AI Specialist推进到正式可用时的版本门禁：每次改动先由自动评审器依据历史工单判断答案是否正确、完整、安全，再以生产结果——工单是否保持关闭、是否重开——校准快速评审。版本不能只提高“无需人工解决的工单占比”，还要同时保持解决质量；一次发布前版本在联合测试中明显回退，被拦截并修复后才发布。技术团队负责实验与回归，业务方按每个客户在“自主处理量—解决质量”曲线上选择运行点；无法可靠作答的案例转交人工。",
+          "why_it_matters": "这把发布和扩容从单一准确率或自主率，改为业务可解释的双指标权衡，并用延迟出现的真实结果反校准自动评分。Agent扩大多少自治范围由业务方决定，版本能否保留则由可复现的回归证据决定。",
+          "evidence": "这是ServiceNow公开的内部产品开发方法，文章明确用于L1 Service Desk AI Specialist达到正式可用；但图表只给方向、删除了数值，未披露准确率、自主率、客户规模、上线阈值或改进幅度，也没有独立验证。将方法嵌入全平台测试服务与自动优化循环仍在建设，不能视为所有客户已自动运行。",
+          "supporting_details": "ServiceNow把从改动发布到获得结果证据的时间称为“平均学习时间”；真实结果持续回流到事故库和自动评审器。计划中的共享基础设施还包括统一测试服务、Agent动作记录格式、按测试结果路由模型，以及可追踪、可审计的评分。",
+          "impact": ""
+        }
+      ],
+      "recommendations": [],
+      "sources": [
+        {
+          "name": "ServiceNow Workflow：Hill-climbing enterprise AI: How ServiceNow built its AI specialists",
+          "date": "2026-10-23",
+          "url": "https://www.servicenow.com/workflow/ai/hill-climbing-how-we-built-enterprise-ai-agents.html",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-10-25T07:43:30+08:00"
+    },
     {
       "id": "agent-governance:2026-10-24",
       "radarKey": "agent-governance",
