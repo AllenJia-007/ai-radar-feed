@@ -2,8 +2,38 @@
   "schemaVersion": 1,
   "radarKey": "agent-governance",
   "radarTitle": "Agent 治理",
-  "updatedAt": "2026-10-23T07:35:02+08:00",
+  "updatedAt": "2026-10-24T08:22:01+08:00",
   "reports": [
+    {
+      "id": "agent-governance:2026-10-24",
+      "radarKey": "agent-governance",
+      "radarTitle": "Agent 治理",
+      "reportDate": "2026-10-24",
+      "headline": "Broughton Partners让Agent只筛查异常，最终拒绝仍由人工决定",
+      "conclusion": "",
+      "briefVersion": 2,
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "Broughton Partners让Agent只筛查异常，最终拒绝仍由人工决定",
+          "what": "Salesforce于10月23日公开Broughton Partners的已上线做法：这家法律服务公司把20多项案件审查拆给18个Agent，并先按“答案是否可由确定规则得出、错误后果有多大、持续运行成本多高”决定使用规则自动化还是AI推理。Agent自动检查身份、欺诈、合同和医疗材料，发现歧义时只呈现证据与理由并转交专员；Agent不得拒绝申请人，人工保留最终决定权，系统同时记录决定人及改判理由。五人团队的日审查能力提高到原来的2倍，日常审查工作量下降60%，申请人流失率下降10%。",
+          "why_it_matters": "这是少见的生产案例，显示企业不必在“全部人工审批”和“Agent全权处理”之间二选一：可按可确定性、错误后果和成本分配执行权，把人力集中到异常与高后果决定，同时用证据和改判记录评价Agent。",
+          "evidence": "18个Agent均已上线，但案例由Salesforce发布，效果数字来自客户口径，未见独立审计。公开材料没有给出歧义、错误后果或升级人工的数值阈值，也未披露误报、漏报及Agent对结果的净因果贡献；底层部署早于本次发布，本期新增的是官方披露的决策规则和结果口径。",
+          "supporting_details": "该项目先以7个Agent上线，随后扩展至18个；明确规则的问题由Salesforce Flow和Apex处理，需要阅读解释的材料才交给Agentforce。六个医疗核验Agent可并行检查不同证据并汇总成单一结果，供专员复核。",
+          "impact": ""
+        }
+      ],
+      "recommendations": [],
+      "sources": [
+        {
+          "name": "Salesforce客户案例：How Broughton Partners Implemented 18 Agentforce Agents to Improve Case Quality",
+          "date": "2026-10-23",
+          "url": "https://www.salesforce.com/customer-stories/broughton-partners/",
+          "evidence_strength": "中"
+        }
+      ],
+      "updatedAt": "2026-10-24T08:22:01+08:00"
+    },
     {
       "id": "agent-governance:2026-10-23",
       "radarKey": "agent-governance",
