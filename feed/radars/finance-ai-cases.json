@@ -2,8 +2,37 @@
   "schemaVersion": 1,
   "radarKey": "finance-ai-cases",
   "radarTitle": "财经 AI 案例",
-  "updatedAt": "2026-10-24T07:30:50+08:00",
+  "updatedAt": "2026-10-27T07:39:51+08:00",
   "reports": [
+    {
+      "id": "finance-ai-cases:2026-10-27",
+      "radarKey": "finance-ai-cases",
+      "radarTitle": "财经 AI 案例",
+      "reportDate": "2026-10-27",
+      "headline": "Anders把会计Agent扩展到百余客户月结",
+      "conclusion": "",
+      "briefVersion": 2,
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "Anders把会计Agent扩展到百余客户月结",
+          "what": "美国Top 100会计与咨询机构Anders已在其虚拟CFO业务中，把Basis用于100多个活跃客户的月结。Agent依据每个客户的流程、会计语境和统一月结模板，执行复杂收入分录、工资计提、账户调节和试算平衡等首轮制备，并支持员工与离岸团队并行运行；控制人员不再逐步指导，而是在产出完成后复核、处理判断事项并最终签结。这已属于任务委托型Agent，而非单点提示或问答辅助。",
+          "why_it_matters": "该案例把“AI先做、人复核”的月结模式从单一流程推进到跨客户组合运营，说明规模化关键不只在模型，而在客户级上下文、标准模板与控制人员终审的组合。",
+          "evidence": "已进入实际生产，覆盖100多个活跃客户；但证据来自Basis于2026年10月26日发布的厂商客户案例，虽有Anders管理人员具名引述，仍未披露差错率、返工率、关账天数或独立审计结果。",
+          "impact": ""
+        }
+      ],
+      "recommendations": [],
+      "sources": [
+        {
+          "name": "Basis｜How Anders used Basis to expand capacity across its Virtual CFO practice",
+          "date": "2026-10-26",
+          "url": "https://www.getbasis.ai/customer-stories/anders",
+          "evidence_strength": "中"
+        }
+      ],
+      "updatedAt": "2026-10-27T07:39:51+08:00"
+    },
     {
       "id": "finance-ai-cases:2026-10-24",
       "radarKey": "finance-ai-cases",
