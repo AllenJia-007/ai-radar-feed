@@ -2,8 +2,43 @@
   "schemaVersion": 1,
   "radarKey": "ai-work-system",
   "radarTitle": "AI 工作系统",
-  "updatedAt": "2026-10-24T08:36:00+08:00",
+  "updatedAt": "2026-10-27T07:53:52+08:00",
   "reports": [
+    {
+      "id": "ai-work-system:2026-10-27",
+      "radarKey": "ai-work-system",
+      "radarTitle": "AI 工作系统",
+      "reportDate": "2026-10-27",
+      "headline": "Claude把问答与长任务合并为企业统一入口",
+      "conclusion": "",
+      "briefVersion": 2,
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "Claude把问答与长任务合并为企业统一入口",
+          "what": "Anthropic于10月23日宣布，“Chat+Cowork”统一体验在Claude Enterprise正式可用。员工无需在聊天和Agent模式之间预选：普通问题在当前对话快速回答；一旦任务需要读写文件或运行代码，Claude会在同一对话转入隔离云会话，关机后继续，并可在网页、桌面和移动端接续。现有项目、连接器、Skill、Plugin和历史任务继续沿用。管理员可按角色分批开放，并集中控制网络出口、连接器审批、自动批准、远程控制、定时任务、模型和预算；满足条件但未作选择的组织将于11月16日自动启用。",
+          "why_it_matters": "这把“何时该切到Agent”从用户决策变成系统按任务需要自动升级，同一个入口既承接轻问答也承接持续执行；企业控制面也从管理两个产品转为管理一条统一工作链。",
+          "evidence": "已对Claude Enterprise正式可用，Team仍为Beta。零数据保留、HIPAA配置或客户管理密钥组织暂不支持；本地文件、浏览器和计算机操作仍受桌面在线与管理员策略限制。",
+          "impact": ""
+        }
+      ],
+      "recommendations": [],
+      "sources": [
+        {
+          "name": "Anthropic｜Claude Cowork and chat come together for Enterprise",
+          "date": "2026-10-23",
+          "url": "https://claude.com/resources/articles/unified-claude-enterprise",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Claude Help Center｜Set up and manage the new unified Claude experience for your Enterprise organization",
+          "date": "2026-10-23",
+          "url": "https://support.claude.com/en/articles/17444462-set-up-and-manage-the-new-unified-claude-experience-for-your-enterprise-organization",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-10-27T07:53:52+08:00"
+    },
     {
       "id": "ai-work-system:2026-10-24",
       "radarKey": "ai-work-system",
