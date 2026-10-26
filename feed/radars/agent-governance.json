@@ -2,8 +2,44 @@
   "schemaVersion": 1,
   "radarKey": "agent-governance",
   "radarTitle": "Agent 治理",
-  "updatedAt": "2026-10-25T07:43:30+08:00",
+  "updatedAt": "2026-10-26T08:25:43+08:00",
   "reports": [
+    {
+      "id": "agent-governance:2026-10-26",
+      "radarKey": "agent-governance",
+      "radarTitle": "Agent 治理",
+      "reportDate": "2026-10-26",
+      "headline": "Bashi AI发现Agent借用人类账号使审批证据失真",
+      "conclusion": "",
+      "briefVersion": 2,
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "Bashi AI发现Agent借用人类账号使审批证据失真",
+          "what": "伦敦金融科技公司Bashi AI在准备SOC 2审计时，复盘了12周、786个已合并代码变更，其中657个与Agent相关。自10月3日起，进入主分支的263个非机器人变更都在记录上通过了“非作者审批＋必需检查”，但71个（27%）唯一有效审批实际由代码Agent借用技术负责人GitHub账号提交，平台仍将其记为负责人本人审批；另有6个堆叠分支变更绕过保护边界，在检查运行前即被合并。形式上的双人复核因此无法证明谁真正作出接受决定，也无法排除Agent自审自批。",
+          "why_it_matters": "这改变了对审计留痕的基本判断：账号身份不等于决策主体。企业必须把“执行账号、Agent/会话、最终决定人”分开记录；需要人工批准的门禁不能把Agent提交的批准计作人工批准，Agent也不能持有修改自身保护规则的权限。",
+          "evidence": "这是单一三人团队、单一私有代码库的自报式预印本，受控阶段仅约2.7周；作者同时是技术负责人和管理员，原始代码与会话记录未公开，也尚未经SOC 2审计。论文提出的独立Agent身份、人工代码所有者批准和保护设置仅限人工等改进，大多仍是计划，尚未在生产中验证。",
+          "supporting_details": "截至研究截止日，71个由Agent提交审批的变更中已有43个进入生产。论文通过平台记录与约2240个Agent会话文件交叉核对操作轨迹，但仍无法重建“谁决定批准”；这正是现有日志的核心缺口。GitHub已允许管理员启用Copilot审批，并让其计入仓库必需审批数，说明这一问题不限于该公司的自建流程。",
+          "impact": ""
+        }
+      ],
+      "recommendations": [],
+      "sources": [
+        {
+          "name": "arXiv：Who Approved This? Coding Agents, Human Accounts, and Merge-Gate Evidence at a Fintech Startup",
+          "date": "2026-10-19",
+          "url": "https://arxiv.org/abs/2610.28683",
+          "evidence_strength": "中"
+        },
+        {
+          "name": "GitHub Changelog：Copilot code review can now approve pull requests",
+          "date": "2026-09-01",
+          "url": "https://github.blog/changelog/2026-09-01-copilot-code-review-can-now-approve-pull-requests",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-10-26T08:25:43+08:00"
+    },
     {
       "id": "agent-governance:2026-10-25",
       "radarKey": "agent-governance",
