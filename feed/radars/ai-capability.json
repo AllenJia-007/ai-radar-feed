@@ -2,8 +2,56 @@
   "schemaVersion": 1,
   "radarKey": "ai-capability",
   "radarTitle": "AI 能力",
-  "updatedAt": "2026-10-24T09:25:16+08:00",
+  "updatedAt": "2026-10-27T08:46:47+08:00",
   "reports": [
+    {
+      "id": "ai-capability:2026-10-27",
+      "radarKey": "ai-capability",
+      "radarTitle": "AI 能力",
+      "reportDate": "2026-10-27",
+      "headline": "OpenAI模型提出三项基础科学突破，验证瓶颈转向人类理解",
+      "conclusion": "",
+      "briefVersion": 2,
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "OpenAI模型提出三项基础科学突破，验证瓶颈转向人类理解",
+          "what": "OpenAI于10月26日公开内部模型产出的三项基础研究结果：一项声称证明所有维度的局部平滑猜想，并由此解决Kakeya及Stein限制猜想；一项给出固定宽CNF精确计数的次指数时间算法，从而反驳被大量复杂性研究采用的指数时间假设；另一项声称给出含规范场和费米子的四维相互作用量子场论存在性证明，覆盖Yang–Mills、量子色动力学和标准模型的一种统一扩展。前两项的自然语言稿与Lean形式化已公开；物理材料暂由外部专家组先行解释。与10月6日直接批量发布相比，本次把模型输出明确视为“原始研究数据”，分别采用公开验证、外部工作组和延后发布。",
+          "why_it_matters": "如果公开结果经领域专家核查成立，模型能力边界将从辅助检索和局部证明推进到提出可能改写基础领域的完整结果；更直接的变化是，科研瓶颈从模型能否生成长证明，转向学界能否验证、解释、分配信用并吸收这些结果。",
+          "evidence": "当前证据仍不等于科学共识。Lean验证的是形式系统中给定陈述的推导，并不自动排除定义、前提或形式化命题与原问题之间的偏差；指数时间假设工作组尚在复核，物理结果也未公开。OpenAI此前10月批量发布的数学稿中曾撤回3篇并修订多篇，说明公开输出仍须持续的人类审查。",
+          "supporting_details": "OpenAI称，局部平滑证明于10月18日生成、次日完成Lean形式化；指数时间假设反例于10月16日生成、次日形式化。官方GitHub同时记录：10月7日因证明缺口撤回3篇稿件、修复14篇，并补充或改进多项形式化；独立数学顾问组AGMAI强调，公开只是形成数学理解的起点，并反对由公司指定少数专家率先解释结果。",
+          "impact": ""
+        }
+      ],
+      "recommendations": [],
+      "sources": [
+        {
+          "name": "OpenAI｜Working with academic communities to build scientific understanding",
+          "date": "2026-10-26",
+          "url": "https://openai.com/index/building-scientific-understanding-with-academic-communities/",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "OpenAI GitHub｜math/history.md",
+          "date": "2026-10-26",
+          "url": "https://github.com/openai/math/blob/main/history.md",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "OpenAI GitHub｜The Exponential Time Hypothesis is False",
+          "date": "2026-10-26",
+          "url": "https://github.com/openai/math/blob/main/preprints/The-Exponential-Time-Hypothesis-is-False-October-25-2026/paper.pdf",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "AGMAI｜Disadvantages of Designating Mathematicians for AI Output Releases",
+          "date": "2026-10-25",
+          "url": "https://agmai.org/",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-10-27T08:46:47+08:00"
+    },
     {
       "id": "ai-capability:2026-10-24",
       "radarKey": "ai-capability",
