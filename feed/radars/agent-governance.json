@@ -2,8 +2,43 @@
   "schemaVersion": 1,
   "radarKey": "agent-governance",
   "radarTitle": "Agent 治理",
-  "updatedAt": "2026-10-26T08:25:43+08:00",
+  "updatedAt": "2026-10-28T07:41:49+08:00",
   "reports": [
+    {
+      "id": "agent-governance:2026-10-28",
+      "radarKey": "agent-governance",
+      "radarTitle": "Agent 治理",
+      "reportDate": "2026-10-28",
+      "headline": "IBM把Agent授权改为可追踪、可实时撤销的任务级委托链",
+      "conclusion": "",
+      "briefVersion": 2,
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "IBM把Agent授权改为可追踪、可实时撤销的任务级委托链",
+          "what": "IBM于10月27日宣布 Agent Identity 正式商用。企业管理员先在中央清单登记Agent、指定Owner、标注风险和批准的工具连接；随后由IBM Verify保留“代表谁执行”的委托上下文，并以OAuth短期、任务范围令牌控制每一步。对不能直接使用委托令牌的系统，HashiCorp Vault按已批准上下文发放即时、目标系统专用凭证。若Agent请求超出批准权限，系统可拒绝访问并实时撤销会话；审计记录把人类身份、Agent身份、凭证发放、策略判断和下游动作串在一起。",
+          "why_it_matters": "这把“账号可追踪”推进为“授权来源可验证”：不仅知道哪个Agent做了什么，还能证明它代表谁、为何获权，并在运行中收回权限，直接补上Agent借用人类账号导致审批证据失真的漏洞。",
+          "evidence": "Agent Identity、Vault 2.2及Orchestrate评测能力已正式可用；跨平台自动发现、沙箱隔离和一键停机仍仅技术预览。IBM未公开授权阈值、误拦截率、撤权时延或规模化生产成效，客户材料只证明相关组件在使用，尚不能视为完整闭环已验证。",
+          "impact": ""
+        }
+      ],
+      "recommendations": [],
+      "sources": [
+        {
+          "name": "IBM｜IBM Introduces Identity and Control for AI Agents",
+          "date": "2026-10-27",
+          "url": "https://newsroom.ibm.com/2026-10-27-ibm-introduces-identity-and-control-for-ai-agents,-securing-frontier-intelligence-for-the-enterprise",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "IBM｜IBM Agent Identity is now generally available",
+          "date": "2026-10-26",
+          "url": "https://www.ibm.com/new/announcements/ibm-agent-identity-is-now-generally-available-building-trust-for-the-agentic-era",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-10-28T07:41:49+08:00"
+    },
     {
       "id": "agent-governance:2026-10-26",
       "radarKey": "agent-governance",
