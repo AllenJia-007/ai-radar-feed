@@ -2,8 +2,37 @@
   "schemaVersion": 1,
   "radarKey": "agent-governance",
   "radarTitle": "Agent 治理",
-  "updatedAt": "2026-10-28T07:41:49+08:00",
+  "updatedAt": "2026-10-29T07:39:17+08:00",
   "reports": [
+    {
+      "id": "agent-governance:2026-10-29",
+      "radarKey": "agent-governance",
+      "radarTitle": "Agent 治理",
+      "reportDate": "2026-10-29",
+      "headline": "Salesforce用线上质量阈值触发Agent隔离或停机",
+      "conclusion": "",
+      "briefVersion": 2,
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "Salesforce用线上质量阈值触发Agent隔离或停机",
+          "what": "Salesforce于10月27日发布 Agent Evals。企业团队先定义线上质量阈值和处置策略，系统在上线前自动生成测试，并在生产期持续评估Agent、模型和MCP服务器；结果低于阈值时，可按预设规则提醒Owner、申请隔离或触发Agent Kill Switch，是否需要人工批准由团队策略决定。官方示例中，零售商切换到低价模型后，系统发现延迟订单答复失真，先请求人工批准隔离，修改指令并复测通过后再恢复上线。",
+          "why_it_matters": "这把评测从监控看板变成运行控制条件：业务或治理团队决定质量阈值、处置动作和审批要求，系统负责持续检测并启动隔离或停机，形成“指标—阈值—动作—复测恢复”的生命周期闭环。",
+          "evidence": "Agent Evals和API Evals计划于2026年11月进入Beta、2027年1月正式可用；自动触发Kill Switch也要到2027年1月，当前正式可用的是人工Kill Switch。ASICS仅为Beta设计伙伴，官方未公开真实质量阈值、误停率、恢复时长或生产成效，因此这是明确的产品机制与可用计划，尚不是已验证的企业运行制度。",
+          "impact": ""
+        }
+      ],
+      "recommendations": [],
+      "sources": [
+        {
+          "name": "Salesforce｜Agent Fabric adds Agent Evals and automated interventions",
+          "date": "2026-10-27",
+          "url": "https://www.salesforce.com/news/stories/agent-fabric-catch-failures-control-ai-costs/",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-10-29T07:39:17+08:00"
+    },
     {
       "id": "agent-governance:2026-10-28",
       "radarKey": "agent-governance",
