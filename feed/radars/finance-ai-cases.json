@@ -2,8 +2,58 @@
   "schemaVersion": 1,
   "radarKey": "finance-ai-cases",
   "radarTitle": "财经 AI 案例",
-  "updatedAt": "2026-10-27T07:39:51+08:00",
+  "updatedAt": "2026-10-29T07:32:52+08:00",
   "reports": [
+    {
+      "id": "finance-ai-cases:2026-10-29",
+      "radarKey": "finance-ai-cases",
+      "radarTitle": "财经 AI 案例",
+      "reportDate": "2026-10-29",
+      "headline": "两家企业把月结从期末冲刺改为月内持续完成",
+      "conclusion": "",
+      "briefVersion": 2,
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "Canada Goose让对账Agent持续运行在ERP生产系统",
+          "what": "Canada Goose已在Dynamics 365 Finance生产环境启用对账Agent，持续比对应付、应收及银行交易与总账，并把差异提前暴露给财务团队。Agent承担跨子账匹配和异常建议；财务人员仍核查差异、选择或调整处置动作，并在变更入账前保留确认责任。该模式已覆盖一家跨40多个法人实体运营的上市公司，但其月结提速还来自ERP迁移、流程重构和基础自动化，不能全部归因于Agent。",
+          "why_it_matters": "这证明“持续关账”已不只是产品演示：对账Agent可以在核心ERP中常态运行，但当前成熟边界仍是持续发现、解释并建议，人负责异常处置和最终会计责任。",
+          "evidence": "微软于2026年10月27日发布的具名客户案例确认Agent持续在生产运行；产品本身仍标注为production-ready preview，公开资料未披露匹配准确率、异常量、人工推翻率或Agent对关账天数的独立贡献。",
+          "supporting_details": "微软产品文档显示，Agent当前主要处理凭证金额不一致、子账与总账单边存在等异常，可建议创建分录、冲销、关联交易或不作变更；用户仍需接受建议或选择其他动作，活动与撤销均留痕。",
+          "impact": ""
+        },
+        {
+          "title": "OnBoard用会计Agent把月结工作前移到整个月",
+          "what": "OnBoard的六人会计团队把现金应用、银行对账、应计和差异分析从月末集中处理改为月内持续运行。Stacks从银行流水识别收款、匹配未结发票并提出应用方案，团队成员逐笔复核后才从Stacks回写NetSuite；应计Agent先形成待审应计，银行对账Agent按团队描述的流程完成首轮工作。经过两年流程重构，月结由12天缩短到通常3小时；公司财务负责人明确表示，Stacks是关键因素，但不是唯一原因。",
+          "why_it_matters": "该案例说明Agent带来的结构性变化不是把月末动作做得更快，而是把工作持续前移，让会计人员从逐项制备转为按日复核例外，最终月结只剩最后银行流水和签结。",
+          "evidence": "这是Stacks于2026年10月27日发布的厂商客户案例，包含OnBoard具名财务负责人和生产流程细节；效果为客户自报，未独立审计，也未披露错配率、冲销率或审计抽样结果，不能把全部关账压缩归因于AI。",
+          "supporting_details": "案例称现金应用每天运行，约九成按建议通过、其余由人工调整；应计Agent于9月启用。由于只保留一个决定性效果指标，正文未展开其他采用量数据。",
+          "impact": ""
+        }
+      ],
+      "recommendations": [],
+      "sources": [
+        {
+          "name": "Microsoft Customer Stories｜Canada Goose transforms global finance and builds an agentic future",
+          "date": "2026-10-27",
+          "url": "https://www.microsoft.com/en/customers/story/27526-canada-goose-dynamics-365-finance",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Microsoft Learn｜Account Reconciliation Agent (production ready preview)",
+          "date": "2026-09-08",
+          "url": "https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/acct-rec-agent",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Stacks客户案例｜OnBoard’s Path to Real-Time Accounting: From a 12-Day Close to 3 Hours",
+          "date": "2026-10-27",
+          "url": "https://stacks.ai/resources/how-onboard-accelerated-its-close-from-12-days-to-3-hours",
+          "evidence_strength": "中"
+        }
+      ],
+      "updatedAt": "2026-10-29T07:32:52+08:00"
+    },
     {
       "id": "finance-ai-cases:2026-10-27",
       "radarKey": "finance-ai-cases",
