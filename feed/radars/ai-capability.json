@@ -2,8 +2,58 @@
   "schemaVersion": 1,
   "radarKey": "ai-capability",
   "radarTitle": "AI 能力",
-  "updatedAt": "2026-10-27T08:46:47+08:00",
+  "updatedAt": "2026-10-28T09:30:00+08:00",
   "reports": [
+    {
+      "id": "ai-capability:2026-10-28",
+      "radarKey": "ai-capability",
+      "radarTitle": "AI 能力",
+      "reportDate": "2026-10-28",
+      "headline": "计算机操作成本骤降，世界模型进入可交互训练环境",
+      "conclusion": "",
+      "briefVersion": 2,
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "OpenAI把高水平计算机操作能力压到高吞吐成本区间",
+          "what": "OpenAI发布GPT-6.1 Terra，将视觉理解和桌面操作集中到面向高吞吐任务的轻量模型。按OpenAI自测，在专业计算机任务基准Agents’ Last Exam上，中等推理强度较GPT-5.6 Terra高15个百分点、单任务成本约为其三分之一；表现接近GPT-6 Astra，但每个Token价格约为后者十分之一，任务完成速度则超过Astra和GPT-6.1 Sol三倍。标准API价格为每百万输入/输出Token 1美元/5美元，已向API及ChatGPT Work、Codex的付费与教育用户开放。",
+          "why_it_matters": "计算机操作不再只是旗舰模型的昂贵能力：如果厂商评测能迁移到真实桌面任务，大批量表单、票据、视觉审核和软件操作的单位经济性会明显改变，模型路由也可从“默认最强模型”转向按任务难度分层。",
+          "evidence": "结果主要来自OpenAI内部或受控基准，研究环境与生产系统的提示词和工具可能不同；复杂编码仍建议使用更强模型。系统卡把该模型按网络安全能力视为Critical，并沿用旗舰模型的防护栈。",
+          "supporting_details": "OpenAI还报告：Terminal-Bench 4.0最高推理强度得分由GPT-5.6 Terra的21.5%升至50.3%；在用户曾标记为事实错误的高难样本上，Terra的表现接近GPT-6.1 Sol，但这些样本不代表生产流量中的真实幻觉率。",
+          "impact": ""
+        },
+        {
+          "title": "Google用实时世界模型加规划模型生成可交互训练环境",
+          "what": "Google DeepMind发布Genie 4研究预览，把世界模型从可观看视频推进为可实时操控的多模态环境：用户可用键盘和文本改变场景，模型同步生成画面、环境声与互动对话。更关键的是，Gemini 3.8 Flash作为循环中的指导Agent持续观察画面、拆解目标、检查每一步是否成功并在场景变化后改写计划；DeepMind也展示了Gemini 4 Argon分步指导Genie 4模拟机器人完成任务。",
+          "why_it_matters": "这把“世界模型”和“Agent规划”接成同一训练回路：系统可以在低风险、可变的生成环境里练习和验证多步行动，世界模型因此从内容生成器开始转向Agent与机器人训练基础设施。",
+          "evidence": "目前仅向可信测试者提供研究预览，核心证据是厂商演示而非公开可复现实验。DeepMind明确承认其只在短时会话中保持一致，长时间运行或多次复杂编辑后会出现物体恒常性、空间精度、物理交互和音频漂移。",
+          "supporting_details": "Genie 4的原生音频和实时对话由同一世界模拟生成；生成内容带有SynthID水印。面向Google AI Ultra、Gemini API与AI Studio早期伙伴的更广泛访问仍处于“即将开放”阶段。",
+          "impact": ""
+        }
+      ],
+      "recommendations": [],
+      "sources": [
+        {
+          "name": "OpenAI｜Introducing GPT-6.1 Terra",
+          "date": "2026-10-26",
+          "url": "https://openai.com/index/introducing-gpt-6-1-terra/",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "OpenAI Deployment Safety Hub｜GPT-6.1 Terra System Card Addendum",
+          "date": "2026-10-26",
+          "url": "https://deploymentsafety.openai.com/gpt-6-1-terra",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Google DeepMind｜Genie 4: A new generation of world simulation",
+          "date": "2026-10-27",
+          "url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-10-28T09:30:00+08:00"
+    },
     {
       "id": "ai-capability:2026-10-27",
       "radarKey": "ai-capability",
