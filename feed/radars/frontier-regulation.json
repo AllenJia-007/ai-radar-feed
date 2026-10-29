@@ -2,8 +2,62 @@
   "schemaVersion": 1,
   "radarKey": "frontier-regulation",
   "radarTitle": "前沿 AI 监管",
-  "updatedAt": "2026-10-24T00:21:50.000Z",
+  "updatedAt": "2026-10-29T09:05:00+08:00",
   "reports": [
+    {
+      "id": "frontier-regulation:2026-10-29",
+      "radarKey": "frontier-regulation",
+      "radarTitle": "前沿 AI 监管",
+      "reportDate": "2026-10-29",
+      "headline": "英国上议院写入AI Agent失控调查权，但否决开发者事故报告义务",
+      "conclusion": "",
+      "briefVersion": 2,
+      "currentStatus": "英国《网络安全与韧性法案》已完成上议院报告阶段，三读定于11月2日；尚未经下院审议修正案或御准，新增权力还须后续法规启动。H.R.10538与S.5493仍停留在委员会。",
+      "items": [
+        {
+          "title": "英国上议院写入AI Agent失控调查权，但否决开发者事故报告义务",
+          "what": "英国上议院10月26日在《网络安全与韧性（网络和信息系统）法案》报告阶段通过政府第70号修正案，已重印为HL Bill 62第32条。它允许政府以后通过法规，在AI Agent失去监督或控制、危及受监管网络与信息系统时，授权国务大臣要求受监管主体保存和生成资料、接受调查与测试、采取隔离或缓解措施，并可配置现场搜查、扣押、跨境取证及罚款权。上议院还通过第163号修正案，要求法案通过后12个月内审查是否把前沿AI纳入NIS范围，以及是否赋予AI Security Institute部署前审计、检查、设定标准和要求暂停或限制部署的权力。",
+          "why_it_matters": "英国首次把“AI Agent失控”明确写进正在推进的法定调查和执法架构，并为前沿模型部署前审计与暂停权设置强制复审路径；监管重点开始从一般网络安全义务转向可识别、取证和处置Agent自主失控。",
+          "evidence": "目前仍是经上议院报告阶段修订的法案，并非生效法律；第32条只是授权框架，具体定义、适用要求和权力须由后续肯定性程序法规确定。直接要求前沿模型开发商在24小时内报告事故的第41号修正案以95票对165票被否决，部署前审计、红线和紧急停机修正案也未纳入现文本。",
+          "supporting_details": "法案当前仅直接面向受NIS制度覆盖的主体及相关网络系统，并非普遍的前沿模型许可制度。上议院三读定于2026年11月2日，之后仍须下院审议上议院修正案及御准。美国Ban Artificial Superintelligence Act的H.R.10538最后动作仍为2026年9月24日提交众议院监督与政府改革委员会，S.5493最后动作仍为2026年9月23日提交参议院商务、科学与运输委员会；未见审议、修订、表决或行政部门明确立场。",
+          "impact": ""
+        }
+      ],
+      "recommendations": [],
+      "sources": [
+        {
+          "name": "英国议会：HL Bill 62（报告阶段修订文本）",
+          "date": "2026-10-26",
+          "url": "https://bills.parliament.uk/publications/68323/documents/8980",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "英国上议院Hansard：报告阶段辩论与表决",
+          "date": "2026-10-26",
+          "url": "https://hansard.parliament.uk/Lords/2026-10-26/debates/67881243-5bb5-40e7-8290-976f253166e3/LordsChamber",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "英国议会：法案阶段与当前状态",
+          "date": "2026-10-29",
+          "url": "https://bills.parliament.uk/bills/4035/stages",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "GovInfo：H.R.10538当前状态",
+          "date": "2026-09-24",
+          "url": "https://www.govinfo.gov/app/details/BILLS-119hr10538ih",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "GovInfo：S.5493当前状态",
+          "date": "2026-09-23",
+          "url": "https://www.govinfo.gov/app/details/BILLS-119s5493is",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-10-29T09:05:00+08:00"
+    },
     {
       "id": "frontier-regulation:2026-10-24",
       "radarKey": "frontier-regulation",
