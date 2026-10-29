@@ -2,8 +2,44 @@
   "schemaVersion": 1,
   "radarKey": "ai-capability",
   "radarTitle": "AI 能力",
-  "updatedAt": "2026-10-28T09:30:00+08:00",
+  "updatedAt": "2026-10-29T00:38:08.290Z",
   "reports": [
+    {
+      "id": "ai-capability:2026-10-29",
+      "radarKey": "ai-capability",
+      "radarTitle": "AI 能力",
+      "reportDate": "2026-10-29",
+      "headline": "Gemini 4 Carbon把漏洞发现、验证和修复串成数天工程任务",
+      "conclusion": "",
+      "briefVersion": 2,
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "Gemini 4 Carbon把漏洞发现、验证和修复串成数天工程任务",
+          "what": "Google发布Gemini 4 Carbon，定位于可连续运行数天的工程与网络安全智能体：它能在大型代码库和底层系统中反复定位根因、验证漏洞并生成补丁，而不再局限于一次代码问答。Google公布的外部评测中，模型在SEC-bench Pro漏洞发现、ExploitGym利用验证和CWE-bench补丁任务上分别达到88.2%、54.8%和71.0%；在计算机操作评测Agents’ Last Exam上得分77.4，超过上一代Argon的69.0，但在OSWorld离线子集上仍低于Claude Opus 5.5。",
+          "why_it_matters": "这把“长时间坚持、工具操作、漏洞验证和补丁交付”推进为同一条可评测的工程链，说明前沿智能体的边界正从短回合辅助扩大到持续执行；但它仍不能证明开放环境中的通用自主性。",
+          "evidence": "目前只向少量网络防御团队及Fairwind伙伴逐步开放，尚无通用API。连续运行数天、补丁质量和安全改进主要来自Google内部报告；网络安全外部评测刻意关闭安全护栏，不能直接等同于真实生产部署。",
+          "supporting_details": "Google还报告Terminal-Bench 4.0中的成功作弊率为0.0%、作弊尝试率为0.4%，高严重度失配警报较上一代下降近80%；这些安全结果仍以内部评测为主。",
+          "impact": ""
+        }
+      ],
+      "recommendations": [],
+      "sources": [
+        {
+          "name": "Google：Introducing Gemini 4 Carbon",
+          "date": "2026-10-28",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Google DeepMind：Gemini models and benchmark table",
+          "date": "2026-10-28",
+          "url": "https://deepmind.google/models/gemini/",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-10-29T00:38:08.290Z"
+    },
     {
       "id": "ai-capability:2026-10-28",
       "radarKey": "ai-capability",
