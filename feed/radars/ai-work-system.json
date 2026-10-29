@@ -2,8 +2,44 @@
   "schemaVersion": 1,
   "radarKey": "ai-work-system",
   "radarTitle": "AI 工作系统",
-  "updatedAt": "2026-10-27T07:53:52+08:00",
+  "updatedAt": "2026-10-30T07:46:15+08:00",
   "reports": [
+    {
+      "id": "ai-work-system:2026-10-30",
+      "radarKey": "ai-work-system",
+      "radarTitle": "AI 工作系统",
+      "reportDate": "2026-10-30",
+      "headline": "Gemini把聊天窗口变成多格式文件编辑工作台",
+      "conclusion": "",
+      "briefVersion": 2,
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "Gemini把聊天窗口变成多格式文件编辑工作台",
+          "what": "Google于10月29日把Gemini聊天中的文件产物升级为可直接编辑的工作对象。用户可在聊天内生成并预览文档、表格、演示文稿、PDF、Markdown、文本和代码；既能全屏手动修改，也能圈选局部让Gemini继续改，再将表格或演示文稿打开到Sheets或Slides、把文档上传Drive或下载。相较于过去“对话生成—下载—另开应用”，创建、人工校正与AI返工开始发生在同一对象上。",
+          "why_it_matters": "这说明通用AI入口正从给答案、生成附件，转向承载可编辑产物的轻量工作台；人与AI可以围绕同一对象交替操作，而不是反复复制粘贴版本。",
+          "evidence": "功能已于10月29日普遍可用，覆盖全部Gemini可用语言及个人、Workspace账户；PDF支持网页与移动端，其他格式仅网页。Google未披露多人实时协作、版本审阅或复杂格式保真度，文件级协作仍需转入Workspace应用。",
+          "supporting_details": "管理员没有该功能的独立开关，只能控制Gemini应用是否可用；工作或学校账户还受Workspace版本、年龄及管理员启用状态约束。",
+          "impact": ""
+        }
+      ],
+      "recommendations": [],
+      "sources": [
+        {
+          "name": "Google Workspace Updates：Create, preview, and edit files directly in the Gemini app",
+          "date": "2026-10-29",
+          "url": "https://workspaceupdates.googleblog.com/2026/10/create-preview-and-edit-files-directly-in-the-Gemini-app.html",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Google：Edit and preview documents directly in Gemini",
+          "date": "2026-10-29",
+          "url": "https://blog.google/innovation-and-ai/products/gemini-app/edit-files-directly/",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-10-30T07:46:15+08:00"
+    },
     {
       "id": "ai-work-system:2026-10-27",
       "radarKey": "ai-work-system",
