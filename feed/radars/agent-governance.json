@@ -2,8 +2,44 @@
   "schemaVersion": 1,
   "radarKey": "agent-governance",
   "radarTitle": "Agent 治理",
-  "updatedAt": "2026-10-29T07:39:17+08:00",
+  "updatedAt": "2026-10-31T07:34:19+08:00",
   "reports": [
+    {
+      "id": "agent-governance:2026-10-31",
+      "radarKey": "agent-governance",
+      "radarTitle": "Agent 治理",
+      "reportDate": "2026-10-31",
+      "headline": "SAP让Agent资产变更自动触发风险复评",
+      "conclusion": "",
+      "briefVersion": 2,
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "SAP让Agent资产变更自动触发风险复评",
+          "what": "SAP在AI Agent Hub中引入AI Governance Assistant：它检查Agent资产总账中的材料完整性，从既有评估自动预填字段，识别疑似高风险但尚未分类的系统，并在Agent事实表发生实质变化时触发重新评估。系统只形成审查草稿，法律与合规人员保留风险分类、复评结论和后续放行的最终决定权。",
+          "why_it_matters": "这把Agent治理从上线前的一次性审查推进到由资产变更事件触发的持续复评，同时明确机器负责发现缺口和发起流程、人类负责作出合规决定。",
+          "evidence": "SAP于2026年10月30日正式披露该机制；AI Governance Assistant目前仍处预览，未公开“实质变化”阈值、误报率、客户生产部署规模或治理成效。",
+          "supporting_details": "该机制依托AI Agent Hub的统一资产事实表运行，关注文档完整性、风险分类和变更后的复评；它不是独立的自动放行器，也没有取代法律与合规审查。",
+          "impact": ""
+        }
+      ],
+      "recommendations": [],
+      "sources": [
+        {
+          "name": "SAP Shows How to Lead with AI Governance at SAP TechEd",
+          "date": "2026-10-30",
+          "url": "https://news.sap.com/2026/10/sap-teched-shows-how-to-lead-with-ai-governance/",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "SAP AI Agent Hub Reference Architecture",
+          "date": "2026-10-19",
+          "url": "https://architecture.learning.sap.com/docs/ref-arch/jfhsd9",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-10-31T07:34:19+08:00"
+    },
     {
       "id": "agent-governance:2026-10-29",
       "radarKey": "agent-governance",
