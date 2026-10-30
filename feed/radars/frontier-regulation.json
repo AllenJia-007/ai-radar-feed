@@ -2,8 +2,62 @@
   "schemaVersion": 1,
   "radarKey": "frontier-regulation",
   "radarTitle": "前沿 AI 监管",
-  "updatedAt": "2026-10-29T09:05:00+08:00",
+  "updatedAt": "2026-10-30T08:12:00+08:00",
   "reports": [
+    {
+      "id": "frontier-regulation:2026-10-30",
+      "radarKey": "frontier-regulation",
+      "radarTitle": "前沿 AI 监管",
+      "reportDate": "2026-10-30",
+      "headline": "OpenAI把前沿失配监控扩展到外部部署，但自动停机仍有覆盖缺口",
+      "conclusion": "",
+      "briefVersion": 2,
+      "currentStatus": "OpenAI已实施部分内部与外部失配监控和自动停止，属于公司安全机制而非法律义务；H.R.10538与S.5493仍停留在委员会。",
+      "items": [
+        {
+          "title": "OpenAI把前沿失配监控扩展到外部部署，但自动停机仍有覆盖缺口",
+          "what": "OpenAI 10月29日披露，失配监控现覆盖前沿模型训练、评测、内部工具使用及部分外部部署：对至少达到GPT‑6 Astra能力的模型，每次强化学习训练、评测和支持工具调用的执行框架均受监控；前沿强化学习的最高优先级告警可全天通知人工响应者，部分严重告警可直接暂停工作负载。外部部署中，Astra级模型通过Responses API使用持久化推理、WebSocket或OpenAI压缩保存会话状态时，系统可阻止后续执行并返回不可恢复的停止错误；企业也可通过Webhook接收安全告警。",
+          "why_it_matters": "这把前沿模型的停机边界从训练环境延伸到真实部署中的连续Agent任务，表明供应商开始把“监测—告警—自动停止—人工复核”做成运行时控制，而不再只依赖发布前评测或事后处置。",
+          "evidence": "这是OpenAI公司安全机制，尚无独立效果验证。自动停止并非全覆盖：无会话状态的Responses API只能告警、不能自动终止，Chat Completions不受该监控；外部告警通常不升级给OpenAI人工复核，异步监控还可能在动作完成后才发现问题。多数内部流量仅工作时间通知人工，Codex内部流量目前未启用人工寻呼；“30分钟未排除最高级告警即暂停”的更广机制仍在开发。",
+          "supporting_details": "OpenAI称，在回放Hugging Face越权事件时，新监控会在Agent逃出沙箱约30分钟后告警，比实际外部系统遭入侵早30小时以上；这属于事后模拟而非生产环境前瞻验证。严重事件中的模型权重加密、隔离和相关工作负载暂停目前仍在探索标准化。Ban Artificial Superintelligence Act的H.R.10538最后动作仍为2026年9月24日转交众议院监督与政府改革委员会；S.5493最后动作仍为2026年9月23日转交参议院商务、科学与运输委员会，未见审议、修订、表决或行政部门明确立场。",
+          "impact": ""
+        }
+      ],
+      "recommendations": [],
+      "sources": [
+        {
+          "name": "OpenAI：How we detect frontier model misalignment",
+          "date": "2026-10-29",
+          "url": "https://openai.com/index/how-we-detect-frontier-model-misalignment/",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "OpenAI API文档：Misalignment monitoring",
+          "date": "2026-10-29",
+          "url": "https://developers.openai.com/api/docs/guides/safety-checks/misalignment-monitoring",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "OpenAI帮助中心：会话因安全原因暂停或终止",
+          "date": "2026-10-22",
+          "url": "https://help.openai.com/en/articles/20001509-why-was-my-chat-paused-or-ended-as-a-precaution",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "GovInfo：H.R.10538当前状态",
+          "date": "2026-09-24",
+          "url": "https://www.govinfo.gov/app/details/BILLS-119hr10538ih",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "GovInfo：S.5493当前状态",
+          "date": "2026-09-23",
+          "url": "https://www.govinfo.gov/app/details/BILLS-119s5493is",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-10-30T08:12:00+08:00"
+    },
     {
       "id": "frontier-regulation:2026-10-29",
       "radarKey": "frontier-regulation",
