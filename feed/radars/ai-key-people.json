@@ -2,8 +2,44 @@
   "schemaVersion": 1,
   "radarKey": "ai-key-people",
   "radarTitle": "AI 关键人物观点",
-  "updatedAt": "2026-10-23T00:42:32Z",
+  "updatedAt": "2026-10-31T00:51:40.781Z",
   "reports": [
+    {
+      "id": "ai-key-people:2026-10-31",
+      "radarKey": "ai-key-people",
+      "radarTitle": "AI 关键人物观点",
+      "reportDate": "2026-10-31",
+      "headline": "Altman主张限制单体智能，把多智能体制衡作为安全路线",
+      "conclusion": "",
+      "briefVersion": 2,
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "Altman主张限制单体智能，把多智能体制衡作为安全路线",
+          "what": "Sam Altman在10月29日发布的完整访谈中，把多智能体团队从能力扩展手段进一步定义为安全与社会结构选择。他认为，单靠沙箱只能防护到一定能力阶段，行为监控能再延伸一段，但面对远超人类的系统，最终仍依赖对模型目标对齐的高度确信；相比一个集中式、极强的单体智能，他更希望大量“略超人类”的智能体进入社会，通过协作与相互制衡形成类似多元社会的韧性。他还判断，现有数学研究管线可能迁移到AI研究，若未来进展放缓，更可能源于人类主动限制单体模型强度，而不是AI缺乏研究能力。",
+          "why_it_matters": "这把前沿安全判断从“为更强单体模型加固外围防线”扩展为“限制单体能力并设计多智能体制衡结构”：智能如何分布，开始被视为与模型本身是否对齐同等重要的问题。",
+          "evidence": "这是Altman的路线判断和预测，并非OpenAI已经实施的发布政策或经验证的安全机制。多智能体团队可能同时放大能力与失配差异；访谈也明确承认，AI自主发现Transformer级架构仍做不到，OpenAI的AI辅助研究方式仍处实验阶段。",
+          "supporting_details": "Altman称当前可把一个团队并行运行一万次，并推测多智能体在能力与对齐上都可能存在新的扩展规律；这些说法没有随访谈公开任务定义、成功率、算力成本或独立复现，不能视为通用多智能体能力已经成熟。",
+          "impact": ""
+        }
+      ],
+      "recommendations": [],
+      "sources": [
+        {
+          "name": "Cheeky Pint｜Why Sam Altman is against a single superintelligence（完整文字稿）",
+          "date": "2026-10-29",
+          "url": "https://cheekypint.transistor.fm/39/transcript",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Cheeky Pint｜Why Sam Altman is against a single superintelligence（节目页）",
+          "date": "2026-10-29",
+          "url": "https://cheekypint.transistor.fm/39",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-10-31T00:51:40.781Z"
+    },
     {
       "id": "ai-key-people:2026-10-23",
       "radarKey": "ai-key-people",
