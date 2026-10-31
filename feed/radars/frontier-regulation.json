@@ -2,8 +2,56 @@
   "schemaVersion": 1,
   "radarKey": "frontier-regulation",
   "radarTitle": "前沿 AI 监管",
-  "updatedAt": "2026-10-30T08:12:00+08:00",
+  "updatedAt": "2026-10-31T00:25:06.303+00:00",
   "reports": [
+    {
+      "id": "frontier-regulation:2026-10-31",
+      "radarKey": "frontier-regulation",
+      "radarTitle": "前沿 AI 监管",
+      "reportDate": "2026-10-31",
+      "headline": "OpenAI以受控准入开放高能力生物模型",
+      "conclusion": "",
+      "briefVersion": 2,
+      "currentStatus": "OpenAI已开始限量部署，属公司自愿安全与合同准入政策；H.R.10538、S.5493仍分别停留在众议院监督委员会和参议院商务委员会，未生效。",
+      "items": [
+        {
+          "title": "OpenAI以受控准入开放高能力生物模型",
+          "what": "OpenAI于10月30日开始向获批科研人员、研究机构、企业和政府伙伴限量部署GPT‑Rosalind‑6 Research。该模型与GPT‑6 Astra使用相同权重，却对部分双重用途生物问题减少拒答；OpenAI将其生物与化学能力定为High、网络能力定为Critical，但四项生物Critical评测均未达到指示性阈值。开放前，OpenAI审查申请方使命、用途、治理和安全能力；获批组织须限制授权用户、实行最小权限与内部人员风险控制，并在输出用于实验、论文或重大决策前进行合格人员复核。服务保留实时网络安全拦截、持续监测及滥用后限制或撤销访问；企业工作区默认关闭并先进入两周管理员预览。",
+          "why_it_matters": "这把高风险生物能力的发布边界从“一般模型统一拒答”改为“经组织和用途审查后放宽部分双重用途能力”，并把继续访问与客户安全控制、人工复核及平台监测绑定。",
+          "evidence": "这是OpenAI自愿部署政策和合同准入条件，并非政府许可制度。Critical阈值为初步估计；GPT‑Rosalind‑6的生物安全红队仍在部署后重复进行，未见独立验证。",
+          "supporting_details": "系统卡显示，模型在四项High能力评测中有三项超过指示性阈值；工具行为评测中，“遇到警告后成功绕过限制”的比例为21.7%，模拟工作任务中的失配结果为1.4%。这些结果用于描述风险边界，不等同于现实危害发生率。",
+          "impact": ""
+        }
+      ],
+      "recommendations": [],
+      "sources": [
+        {
+          "name": "OpenAI Deployment Safety Hub：GPT‑Rosalind‑6 System Card Addendum",
+          "date": "2026-10-30",
+          "url": "https://deploymentsafety.openai.com/gpt-rosalind-6",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "OpenAI Help Center：Model Release Notes",
+          "date": "2026-10-30",
+          "url": "https://help.openai.com/en/articles/9624314-model-release-notes",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "GovInfo：H.R.10538当前状态",
+          "date": "2026-09-24",
+          "url": "https://www.govinfo.gov/app/details/BILLS-119hr10538ih",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "GovInfo：S.5493当前状态",
+          "date": "2026-09-23",
+          "url": "https://www.govinfo.gov/app/details/BILLS-119s5493is",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-10-31T00:25:06.303+00:00"
+    },
     {
       "id": "frontier-regulation:2026-10-30",
       "radarKey": "frontier-regulation",
