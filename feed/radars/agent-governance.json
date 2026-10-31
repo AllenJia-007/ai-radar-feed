@@ -2,8 +2,50 @@
   "schemaVersion": 1,
   "radarKey": "agent-governance",
   "radarTitle": "Agent 治理",
-  "updatedAt": "2026-10-31T07:34:19+08:00",
+  "updatedAt": "2026-11-01T07:42:00+08:00",
   "reports": [
+    {
+      "id": "agent-governance:2026-11-01",
+      "radarKey": "agent-governance",
+      "radarTitle": "Agent 治理",
+      "reportDate": "2026-11-01",
+      "headline": "Google把Agent治理边界提升到文件夹和组织级",
+      "conclusion": "",
+      "briefVersion": 2,
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "Google把Agent治理边界提升到文件夹和组织级",
+          "what": "Google于10月30日为Agent Registry新增跨项目管理边界。拥有文件夹或组织级管理权限的管理员可在Resource Manager中定义边界，并把一个管理项目设为中央治理项目；受支持的Agent和MCP服务器仍在各成员项目运行，但会自动汇聚到管理项目供统一发现、查询和治理。成员项目开发者只管理本项目资产，管理项目的查看者无需逐个取得成员项目权限即可看到边界内资产；安全管理员还可用组织策略或IAM拒绝策略禁止成员项目本地登记写入，把外部Agent和绑定的登记权集中到管理项目。",
+          "why_it_matters": "这把Agent治理单元从单个项目提升为文件夹或组织边界，并明确分离部署权与治理权：业务团队保留本地运行，中央管理员决定哪些项目纳入边界、谁能跨项目查看，以及登记权是否必须集中。",
+          "evidence": "跨项目管理边界目前仍为预览。自动汇聚只覆盖受支持的Google Cloud运行时；手工登记的资源不会从成员项目自动上卷，外部或自定义资源要在管理项目登记才会全边界可见。Google未公开客户生产规模、同步时延、误登记率或治理成效。",
+          "supporting_details": "边界可覆盖整个文件夹或组织，也可由集中管理的Resource Manager标签划分生产与开发等范围；标签匹配后项目自动加入。一个项目在同一父级的同一标签键下最多属于一个边界。管理项目集中承担Agent Registry的访问控制、配额、计费与聚合元数据，但不承载成员项目的计算运行时。",
+          "impact": ""
+        }
+      ],
+      "recommendations": [],
+      "sources": [
+        {
+          "name": "Google Cloud Agent Registry release notes",
+          "date": "2026-10-30",
+          "url": "https://docs.cloud.google.com/agent-registry/release-notes",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Google Cloud：Cross-project boundaries",
+          "date": "2026-10-29",
+          "url": "https://docs.cloud.google.com/agent-registry/boundaries-and-topology",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Google Cloud：Agent Registry roles and permissions",
+          "date": "2026-10-29",
+          "url": "https://docs.cloud.google.com/agent-registry/roles-permissions",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-11-01T07:42:00+08:00"
+    },
     {
       "id": "agent-governance:2026-10-31",
       "radarKey": "agent-governance",
