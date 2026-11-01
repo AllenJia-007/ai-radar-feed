@@ -2,8 +2,50 @@
   "schemaVersion": 1,
   "radarKey": "ai-work-system",
   "radarTitle": "AI 工作系统",
-  "updatedAt": "2026-10-30T07:46:15+08:00",
+  "updatedAt": "2026-11-02T07:47:57+08:00",
   "reports": [
+    {
+      "id": "ai-work-system:2026-11-02",
+      "radarKey": "ai-work-system",
+      "radarTitle": "AI 工作系统",
+      "reportDate": "2026-11-02",
+      "headline": "豆包工作把桌面操作演示沉淀为可复用技能",
+      "conclusion": "",
+      "briefVersion": 2,
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "豆包工作把桌面操作演示沉淀为可复用技能",
+          "what": "10月28日，豆包通过公众号宣布升级豆包工作的电脑操作能力。用户在“更多技能”中授权“录制操作生成技能”后，可以一边操作 Mac 上的本地软件，一边口述范围和规则；录制结束，系统把操作流程与讲解整理成个人技能。再次执行时，用户选择该技能、补充本次处理对象即可；开启“允许豆包在锁屏时工作”后，电脑锁屏仍可执行，用户还能从手机下达任务、查看结果，回到电脑后解锁接管。相较此前仅能录制浏览器操作，这把本地桌面示范、个人方法沉淀和跨端续跑串成一条工作链。",
+          "why_it_matters": "这把 Skill 作者从会写提示词或脚本的人扩展到会做业务操作的人：个人经验可通过“示范＋讲解”变成可重复调用的执行方法，并由本地电脑承担高权限动作。个人 AI 工作台的竞争点也开始从“能操作电脑”转向“能否把人的操作方法持续积累为资产”。",
+          "evidence": "目前可核验的是10月28日官方公众号公告的媒体转述，公开官方网页尚未出现同一公告；明确范围仅到 Mac、个人技能、用户授权和可随时接管。未披露对界面变化的适应能力、跨用户共享、企业审核或规模化成功率，不能视为稳定的桌面流程自动化平台。",
+          "supporting_details": "豆包开放平台把 Skill 定义为包含结构化指令、专业规则、工具依赖、参考资料和交付标准的任务扩展单元，并要求上架版本经过检测与审核；但本次“录制生成”的个人技能是否进入同一治理链路，公开资料没有说明。",
+          "impact": ""
+        }
+      ],
+      "recommendations": [],
+      "sources": [
+        {
+          "name": "IT之家｜豆包工作功能上新：支持将“录制电脑操作”保存为技能",
+          "date": "2026-10-28",
+          "url": "https://www.ithome.com/1/018/860.htm",
+          "evidence_strength": "中"
+        },
+        {
+          "name": "豆包开放平台｜Skill 接入指南",
+          "date": "未标注（2026-11-02核验）",
+          "url": "https://open.doubao.com/document/doubao-developer-guide/skill-integration-guide",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "飞书｜豆包工作全新发布：核心价值、主要功能及产品关系",
+          "date": "2026-08-24",
+          "url": "https://www.feishu.cn/content/article/7677519271848610746",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-11-02T07:47:57+08:00"
+    },
     {
       "id": "ai-work-system:2026-10-30",
       "radarKey": "ai-work-system",
