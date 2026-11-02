@@ -2,8 +2,50 @@
   "schemaVersion": 1,
   "radarKey": "agent-governance",
   "radarTitle": "Agent 治理",
-  "updatedAt": "2026-11-01T07:42:00+08:00",
+  "updatedAt": "2026-11-03T07:55:15+08:00",
   "reports": [
+    {
+      "id": "agent-governance:2026-11-03",
+      "radarKey": "agent-governance",
+      "radarTitle": "Agent 治理",
+      "reportDate": "2026-11-03",
+      "headline": "Oracle计划把Agent敏感操作审批绑定到真人核验",
+      "conclusion": "",
+      "briefVersion": 2,
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "Oracle计划把Agent敏感操作审批绑定到真人核验",
+          "what": "Oracle于10月27日提出，在Agent准备放款、修改访问权限或执行其他敏感操作时，由应用暂停流程，要求获授权人员完成新鲜的人脸、指纹或语音核验，再由应用根据权限决定是否继续。这里的新增点不是再加一个“人工批准”按钮，而是把批准证据从登录账号提升为“真实的人在场、该人有权批准、批准对应这一次具体动作”。Oracle同时披露，其内部Enterprise ChatGPT、Codex和运维Agent推广已采用即时权限、最小权限复核及敏感操作人工批准。",
+          "why_it_matters": "这补上了人工门禁中的身份缺口：账号记录只能证明某个会话提交了批准，不能证明批准者本人在场。高后果Agent的审批证据应同时记录真实批准人、具体动作、授权范围与时间；但生物识别只验证“是谁”，是否有权批准仍必须由业务应用和IAM策略判断。",
+          "evidence": "OCI IAM的人脸Identity Assurance已在美国PHX和IAD区域正式可用，Oracle也在内部使用身份与生物核验保护资产；但由Agent动作触发核验并把批准绑定到具体操作仍是计划中的应用集成，指纹和语音支持范围也受硬件与流程限制。官方未披露Agent场景的生产客户、误拒/误受率、审批时延或规模化效果。",
+          "supporting_details": "Oracle说明，应用可在工作流中使用核验结果、审计记录和风险信号，但验证本人并不自动授予操作权限。面向Agent的上下文授权仍在开发：允许、拒绝或转人工将结合当前操作、受信信号与既有IAM策略决定。",
+          "impact": ""
+        }
+      ],
+      "recommendations": [],
+      "sources": [
+        {
+          "name": "Oracle：Advances Enterprise Security for the AI Era",
+          "date": "2026-10-27",
+          "url": "https://www.oracle.com/sg/news/announcement/ai-world-oracle-advances-enterprise-security-for-the-ai-era-2026-10-27/",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Oracle：Verify the Human Behind Sensitive Actions and AI Agent Approvals",
+          "date": "2026-10-27",
+          "url": "https://blogs.oracle.com/cloud-infrastructure/introducing-iam-identity-assurance",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Oracle：Building trusted access for AI agents with OCI IAM",
+          "date": "2026-10-30",
+          "url": "https://blogs.oracle.com/cloud-infrastructure/building-trusted-access-for-ai-agents-with-oci-iam",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-11-03T07:55:15+08:00"
+    },
     {
       "id": "agent-governance:2026-11-01",
       "radarKey": "agent-governance",
