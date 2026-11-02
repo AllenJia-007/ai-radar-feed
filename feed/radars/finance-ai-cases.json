@@ -2,8 +2,44 @@
   "schemaVersion": 1,
   "radarKey": "finance-ai-cases",
   "radarTitle": "财经 AI 案例",
-  "updatedAt": "2026-10-29T07:32:52+08:00",
+  "updatedAt": "2026-11-02T08:10:20.009+08:00",
   "reports": [
+    {
+      "id": "finance-ai-cases:2026-11-02",
+      "radarKey": "finance-ai-cases",
+      "radarTitle": "财经 AI 案例",
+      "reportDate": "2026-11-02",
+      "headline": "Parafin让KYC Agent自动批准低风险案件",
+      "conclusion": "",
+      "briefVersion": 2,
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "Parafin让KYC Agent自动批准低风险案件",
+          "what": "Parafin 已在 Persona 的身份审查平台中部署 Case Review Agent。Agent 读取既有 KYC/KYB 资料，按 Parafin 的政策和历史判断，自动批准低风险资本产品中的合格案件；高额贷款和例外案件只生成建议或转交人工，分析师保留拒绝、制裁命中、异常及其他高风险案件的最终判断。上线前，团队先用历史案件回测，再以“仅建议、分析师逐案决定”模式运行，随后分阶段开放自动批准。资本产品 KYC 的中位审核用时由约 18 小时降至不足 1 小时（Persona 与 Parafin 披露口径）。",
+          "why_it_matters": "这把风险与控制场景从“整理证据、辅助建议”推进到按风险分层的生产决策委托：低风险案件可由 Agent 落最终决定，高风险与例外仍由人承担责任。",
+          "evidence": "已在生产流程使用，并披露了回测、推荐模式和分阶段放权过程；但效果来自厂商客户案例，未见独立审计，自动批准仅覆盖 Parafin 划定的合格低风险案件。",
+          "supporting_details": "",
+          "impact": ""
+        }
+      ],
+      "recommendations": [],
+      "sources": [
+        {
+          "name": "Persona｜How Parafin cut KYC review time by 95% with Persona",
+          "date": "2026-10-29",
+          "url": "https://withpersona.com/customers/parafin",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Persona Help Center｜Case Review Agents",
+          "date": "2026-10-16",
+          "url": "https://help.withpersona.com/articles/44UKvqlhVbsaNTcVDrepbD/",
+          "evidence_strength": "中"
+        }
+      ],
+      "updatedAt": "2026-11-02T08:10:20.009+08:00"
+    },
     {
       "id": "finance-ai-cases:2026-10-29",
       "radarKey": "finance-ai-cases",
