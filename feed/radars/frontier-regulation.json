@@ -2,8 +2,62 @@
   "schemaVersion": 1,
   "radarKey": "frontier-regulation",
   "radarTitle": "前沿 AI 监管",
-  "updatedAt": "2026-10-31T00:25:06.303+00:00",
+  "updatedAt": "2026-11-03T00:50:44.359Z",
   "reports": [
+    {
+      "id": "frontier-regulation:2026-11-03",
+      "radarKey": "frontier-regulation",
+      "radarTitle": "前沿 AI 监管",
+      "reportDate": "2026-11-03",
+      "headline": "英国前沿AI审查条款通过上议院三读，转回下院审议",
+      "conclusion": "",
+      "briefVersion": 2,
+      "currentStatus": "英国法案已完成上议院三读，待下院审议上院修正案并获御准；AISI仅列入法定审查，尚未获新增审计或停用权。H.R.10538、S.5493仍在委员会。",
+      "items": [
+        {
+          "title": "英国前沿AI审查条款通过上议院三读，转回下院审议",
+          "what": "英国上议院11月2日完成《网络安全与韧性（网络和信息系统）法案》三读，并将法案连同修正案退回下议院。10月26日通过的制度有效性审查条款因此跨过上议院全部阶段：法案若按现文本成立，政府须在12个月内评估前沿AI是否应纳入关键网络与信息系统监管，并审查AI安全研究所（AISI）是否应具备部署前审计、制定安全标准、检查开发者与部署者，以及要求整改、暂停或限制系统提供或部署的权力。上议院此前否决了要求前沿模型开发者直接按24小时和72小时节点报告事故的修正案，因此该义务不在现文本中。",
+          "why_it_matters": "这使AISI获得前沿模型部署前审计和停用权的问题，从议员建议升级为已通过上议院的法定审查要求；但是否成为最终法律以及是否真正授予权力，仍取决于下议院、御准和后续立法。",
+          "evidence": "这是法案程序和审查义务的实质推进，不是现行许可或停训制度；法案尚未获御准，AISI目前也未因该条款直接获得审计、整改或暂停部署权。",
+          "supporting_details": "三读仅通过四项技术性文字修正，随后法案以修正案形式返回下议院。H.R.10538和配套参议院S.5493截至本次核对仍分别停留在众议院监督与政府改革委员会、参议院商务、科学与交通委员会，未见审议、修订或表决。",
+          "impact": ""
+        }
+      ],
+      "recommendations": [],
+      "sources": [
+        {
+          "name": "英国议会上议院三读记录",
+          "date": "2026-11-02",
+          "url": "https://hansard.parliament.uk/Lords/2026-11-02/debates/9A654131-98CE-48C2-86D6-65BFA9A71414/CyberSecurityAndResilience%28NetworkAndInformationSystems%29Bill",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "英国议会法案阶段页",
+          "date": "2026-11-02",
+          "url": "https://bills.parliament.uk/bills/4035/stages",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "英国议会法案报告阶段文本（HL Bill 62）",
+          "date": "2026-10-26",
+          "url": "https://bills.parliament.uk/publications/68323/documents/8980",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "美国政府出版局H.R.10538状态",
+          "date": "2026-09-24",
+          "url": "https://www.govinfo.gov/app/details/BILLS-119hr10538ih",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "美国政府出版局S.5493状态",
+          "date": "2026-09-23",
+          "url": "https://www.govinfo.gov/app/details/BILLS-119s5493is",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-11-03T00:50:44.359Z"
+    },
     {
       "id": "frontier-regulation:2026-10-31",
       "radarKey": "frontier-regulation",
