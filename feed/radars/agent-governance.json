@@ -2,8 +2,44 @@
   "schemaVersion": 1,
   "radarKey": "agent-governance",
   "radarTitle": "Agent 治理",
-  "updatedAt": "2026-11-03T07:55:15+08:00",
+  "updatedAt": "2026-11-04T08:20:00+08:00",
   "reports": [
+    {
+      "id": "agent-governance:2026-11-04",
+      "radarKey": "agent-governance",
+      "radarTitle": "Agent 治理",
+      "reportDate": "2026-11-04",
+      "headline": "Snowflake让预算规则直接阻断AI请求",
+      "conclusion": "",
+      "briefVersion": 2,
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "Snowflake让预算规则直接阻断AI请求",
+          "what": "Snowflake在11月3日宣布Cortex AI Gateway的成本治理正式可用：平台可按用户、团队、部门、Agent或应用归集AI支出，并把预算规则接入执行链。管理员可设置日/月配额，超限后数分钟内阻断请求；自定义预算也可在预测或实际消耗达到阈值时触发暂停等动作。客户Kargo称已用成本拆分和硬限制识别哪些团队、哪些Agent在消耗预算，并在Agent数量继续增长时防止失控流程持续烧钱。",
+          "why_it_matters": "Agent成本治理由事后看板推进到运行时放行权：预算负责人可以用明确额度决定请求是否继续执行，而不必等到账单生成后再追责。",
+          "evidence": "成本归集、预算和配额控制已正式可用，Kargo为Snowflake披露的具名客户实践；未公开其具体额度、节省比例或独立验证。MCP工具调用治理仍为公测，Agent滥用检测仍为私测，不能据此认定整套治理闭环均已商用。",
+          "supporting_details": "Snowflake文档区分了两类机制：普通预算额度默认用于通知，但可配置阈值动作；按用户配额则直接执行日/月限额并在数分钟内阻断。新闻稿进一步称成本可归集到Agent或应用，并设置硬上限。",
+          "impact": ""
+        }
+      ],
+      "recommendations": [],
+      "sources": [
+        {
+          "name": "Snowflake｜Snowflake Helps Enterprises Deploy AI Agents with Trusted Business Context and Built-In Controls",
+          "date": "2026-11-03",
+          "url": "https://www.snowflake.com/en/news/press-releases/expedition-2026-business-ontology-ai-gateway/",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Snowflake Engineering Blog｜Building the Modern AI Infrastructure Stack with Cortex AI Gateway",
+          "date": "2026-10-08",
+          "url": "https://www.snowflake.com/en/blog/cortex-ai-gateway-control-plane-enterprise-ai/",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-11-04T08:20:00+08:00"
+    },
     {
       "id": "agent-governance:2026-11-03",
       "radarKey": "agent-governance",
