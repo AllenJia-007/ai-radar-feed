@@ -2,8 +2,50 @@
   "schemaVersion": 1,
   "radarKey": "finance-ai-cases",
   "radarTitle": "财经 AI 案例",
-  "updatedAt": "2026-11-02T08:10:20.009+08:00",
+  "updatedAt": "2026-11-04T07:56:48.856+08:00",
   "reports": [
+    {
+      "id": "finance-ai-cases:2026-11-04",
+      "radarKey": "finance-ai-cases",
+      "radarTitle": "财经 AI 案例",
+      "reportDate": "2026-11-04",
+      "headline": "Storytel用实时银行数据运行每日现金监控Agent",
+      "conclusion": "",
+      "briefVersion": 2,
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "Storytel用实时银行数据运行每日现金监控Agent",
+          "what": "Storytel 的财资经理把已连接银行和 NetSuite 的 Atlar 实时数据接入 Claude，已用于生成月度财资报告、每日运行现金监控 Agent，并建立营运资金模型。监控 Agent 每天检查付款账户余额，读取邮箱中的贸易文件估算即将发生的资金流出；当账户需要补充资金时，只起草给应付账款团队的调拨邮件，由财资经理检查并发送。Storytel 将 Claude 权限设为只读，不能修改数据或发起付款；月报准备由约两天缩短到数小时（Atlar 与 Storytel 披露口径）。",
+          "why_it_matters": "这说明财资 AI 已从一次性问数推进到基于实时银行数据的定时监控，但成熟边界仍是“Agent 发现并准备、人负责判断和执行”，属于流程嵌入型而非自主资金调度。",
+          "evidence": "案例描述的是日常实际使用，并明确了只读权限和人工发送动作；但效果来自厂商客户案例，未披露独立准确率、持续运行周期或误报情况，营运资金预测模型仍在与另一套模型比较。",
+          "supporting_details": "Atlar 连接器由管理员启用，沿用用户角色权限并记录查询审计轨迹；Storytel 主动选择只读模式，体现对资金操作风险的控制。",
+          "impact": ""
+        }
+      ],
+      "recommendations": [],
+      "sources": [
+        {
+          "name": "Atlar｜What Storytel Built With Claude and Live Treasury Data",
+          "date": "2026-11-02",
+          "url": "https://www.atlar.com/blog/what-storytel-built-with-claude-and-live-treasury-data",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Atlar｜Atlar Is Now Official in Claude",
+          "date": "2026-09-03",
+          "url": "https://www.atlar.com/blog/atlar-is-now-official-in-claude",
+          "evidence_strength": "中"
+        },
+        {
+          "name": "Anthropic Claude Marketplace｜Atlar connector",
+          "date": "2026-08",
+          "url": "https://claude.com/marketplace/connectors/atlar",
+          "evidence_strength": "中"
+        }
+      ],
+      "updatedAt": "2026-11-04T07:56:48.856+08:00"
+    },
     {
       "id": "finance-ai-cases:2026-11-02",
       "radarKey": "finance-ai-cases",
