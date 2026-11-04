@@ -2,8 +2,62 @@
   "schemaVersion": 1,
   "radarKey": "frontier-regulation",
   "radarTitle": "前沿 AI 监管",
-  "updatedAt": "2026-11-03T00:50:44.359Z",
+  "updatedAt": "2026-11-04T00:40:25.748Z",
   "reports": [
+    {
+      "id": "frontier-regulation:2026-11-04",
+      "radarKey": "frontier-regulation",
+      "radarTitle": "前沿 AI 监管",
+      "reportDate": "2026-11-04",
+      "headline": "纽约州提案把算力限速与部署禁令纳入前沿AI监管",
+      "conclusion": "",
+      "briefVersion": 2,
+      "currentStatus": "纽约州S.10731已提交参议院规则委员会，尚未审议、表决或生效；现行RAISE Act仍按2026年Chapter 96执行。H.R.10538、S.5493仍停留在委员会。",
+      "items": [
+        {
+          "title": "纽约州提案把算力限速与部署禁令纳入前沿AI监管",
+          "what": "纽约州参议员Andrew Gounardes于10月28日提出S.10731（“RAISE Act 2.0”），拟在已签署的RAISE Act上增设更强的前沿模型约束。适用门槛拟从10^26降至10^25次训练运算，并覆盖过去36个月投入超过10亿美元的大型开发者；开发者须披露AI研发自动化程度和算力用途，在风险明显上升时72小时内报告，并聘请独立“前沿审查员”持续评估、每90天提交风险报告。州DIGIT办公室可为防止重大事故限制训练或自动化AI研发所用算力，州检察长还可请求法院停止相关活动，限制模型在纽约州的部署、使用或提供。",
+          "why_it_matters": "该提案把前沿监管从安全框架和事故披露推进到可直接压低训练算力、持续外部审计及司法停用，若通过将形成美国州级最接近“训练节奏控制”的制度之一。",
+          "evidence": "S.10731目前仅完成提出并转交参议院规则委员会，尚无委员会审议、两院表决或州长签署；上述算力限制、审查员制度和部署禁令均不是现行法律义务。",
+          "supporting_details": "现行纽约RAISE Act已于2026年3月27日作为Chapter 96签署，要求大型前沿开发者公开安全框架并报告关键安全事故。S.10731是对该现行制度的增量修订，但纽约州议会页面目前未列出对应的众议院同案编号。",
+          "impact": ""
+        }
+      ],
+      "recommendations": [],
+      "sources": [
+        {
+          "name": "纽约州参议院S.10731法案页与全文",
+          "date": "2026-10-28",
+          "url": "https://www.nysenate.gov/legislation/bills/2025/S10731",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "纽约州参议员S.10731发布说明",
+          "date": "2026-10-29",
+          "url": "https://www.nysenate.gov/newsroom/press-releases/2026/andrew-gounardes/sen-gounardes-proposes-major-new-ai-safety-and",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "纽约州现行RAISE Act（S.8828）状态",
+          "date": "2026-03-27",
+          "url": "https://www.nysenate.gov/legislation/bills/2025/S8828",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "美国政府出版局H.R.10538状态",
+          "date": "2026-09-24",
+          "url": "https://www.govinfo.gov/app/details/BILLS-119hr10538ih",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "美国政府出版局S.5493状态",
+          "date": "2026-09-23",
+          "url": "https://www.govinfo.gov/app/details/BILLS-119s5493is",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-11-04T00:40:25.748Z"
+    },
     {
       "id": "frontier-regulation:2026-11-03",
       "radarKey": "frontier-regulation",
