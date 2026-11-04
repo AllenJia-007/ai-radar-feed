@@ -2,8 +2,50 @@
   "schemaVersion": 1,
   "radarKey": "ai-work-system",
   "radarTitle": "AI 工作系统",
-  "updatedAt": "2026-11-02T07:47:57+08:00",
+  "updatedAt": "2026-11-05T07:41:02+08:00",
   "reports": [
+    {
+      "id": "ai-work-system:2026-11-05",
+      "radarKey": "ai-work-system",
+      "radarTitle": "AI 工作系统",
+      "reportDate": "2026-11-05",
+      "headline": "WorkBuddy取消办公、开发、设计入口，统一按任务组织工作",
+      "conclusion": "",
+      "briefVersion": 2,
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "WorkBuddy取消办公、开发、设计入口，统一按任务组织工作",
+          "what": "WorkBuddy 5.11.0在灰度阶段下线首页“办公／开发／设计”三个入口，统一任务栏、菜单和顶栏；用户不再先选择业务场景，而是直接创建任务，每个任务独立保存工作空间与上下文，再在任务内按需要切换 Agent、Plan 或 Ask。定时工作也被纳入同一任务体系：本地、项目和云端任务可集中查看，本地和云端任务支持立即运行、暂停、编辑，并按时间线查看每次运行状态、执行过程和产物；任务可沿用当前身份以及已配置的专家、Skill、MCP和连接器。",
+          "why_it_matters": "WorkBuddy的入口逻辑从“按工作领域分应用”转为“以任务为中心”：专业差异更多由工作空间、执行模式和能力组合决定，而不是要求用户先判断该进入哪个产品入口。这表明其工作客户端正在收敛为统一任务工作台。",
+          "evidence": "5.11.0于11月3日发布且仍标注“灰度中”，尚非普遍可用。官方文档已说明任务和定时运行的实际组织方式，但未披露用户采用规模或长任务成功率；本地定时任务仍要求电脑和客户端在线，默认权限下的敏感操作会等待人工确认，云端任务则不能访问本机文件。",
+          "supporting_details": "同一项定时任务在侧栏只占一个入口，历次运行集中在时间线中；项目内创建的定时任务虽然能在总览中查看，但编辑和暂停仍需回到对应项目。",
+          "impact": ""
+        }
+      ],
+      "recommendations": [],
+      "sources": [
+        {
+          "name": "WorkBuddy 更新日志 5.11.0",
+          "date": "2026-11-03",
+          "url": "https://www.workbuddy.cn/docs/workbuddy/Changelog",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "WorkBuddy：新建任务栏（本地 AI 工作台）",
+          "date": "未标注（2026-11-05核验）",
+          "url": "https://www.workbuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Task-Bar",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "WorkBuddy：定时任务",
+          "date": "未标注（2026-11-05核验）",
+          "url": "https://www.workbuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Automation-Guide",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-11-05T07:41:02+08:00"
+    },
     {
       "id": "ai-work-system:2026-11-02",
       "radarKey": "ai-work-system",
