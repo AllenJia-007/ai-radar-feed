@@ -2,8 +2,44 @@
   "schemaVersion": 1,
   "radarKey": "agent-governance",
   "radarTitle": "Agent 治理",
-  "updatedAt": "2026-11-04T08:20:00+08:00",
+  "updatedAt": "2026-11-05T08:24:03+08:00",
   "reports": [
+    {
+      "id": "agent-governance:2026-11-05",
+      "radarKey": "agent-governance",
+      "radarTitle": "Agent 治理",
+      "reportDate": "2026-11-05",
+      "headline": "IBM把Agent一键停机和双主体审计正式商用",
+      "conclusion": "",
+      "briefVersion": 2,
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "IBM把Agent一键停机和双主体审计正式商用",
+          "what": "IBM于11月3日宣布，watsonx Orchestrate中的Agent Identity、Agent访问日志和一键停机已正式可用。平台内原生Agent及导入其运行环境的外部Agent（如LangGraph Agent）可登记到IBM Verify或Microsoft Entra并指定Owner；每条访问事件分别记录执行Agent、被代表用户、连接与工具。安全团队可在一个操作中将异常Agent从生产环境撤下并终止其活跃会话，执行前还会显示可能受影响的协作Agent。",
+          "why_it_matters": "这把事故处置从“找到凭据再撤权”升级为平台级停机权，同时把审计责任拆成Agent与被代表的人两个主体；多Agent环境中的停机决定开始显式考虑连带影响。",
+          "evidence": "IBM官方公告明确标注上述能力正式可用，较10月27日“Contain技术预览”状态形成实质更新。适用范围仍限于watsonx Orchestrate中运行或导入的Agent；未披露停机时延、触发阈值、规模化事故数据或独立客户验证，也不能推断跨平台发现和沙箱隔离已同步正式商用。",
+          "supporting_details": "停机动作的公开边界是“undeploy Agent并结束活跃会话”，并非删除身份或自动回滚其已完成的业务操作。访问日志可按事件类型筛选，并把原始事件传入现有安全工具。",
+          "impact": ""
+        }
+      ],
+      "recommendations": [],
+      "sources": [
+        {
+          "name": "IBM｜Agent Identity in IBM watsonx Orchestrate is now generally available",
+          "date": "2026-11-03",
+          "url": "https://www.ibm.com/new/announcements/agent-identity-in-ibm-watsonx-orchestrate-is-now-generally-available",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "IBM Newsroom｜IBM Introduces Identity and Control for AI Agents",
+          "date": "2026-10-27",
+          "url": "https://newsroom.ibm.com/2026-10-27-ibm-introduces-identity-and-control-for-ai-agents%2C-securing-frontier-intelligence-for-the-enterprise",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-11-05T08:24:03+08:00"
+    },
     {
       "id": "agent-governance:2026-11-04",
       "radarKey": "agent-governance",
