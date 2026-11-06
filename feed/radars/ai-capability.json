@@ -2,8 +2,50 @@
   "schemaVersion": 1,
   "radarKey": "ai-capability",
   "radarTitle": "AI 能力",
-  "updatedAt": "2026-11-05T01:04:41.868Z",
+  "updatedAt": "2026-11-06T01:12:03.429Z",
   "reports": [
+    {
+      "id": "ai-capability:2026-11-06",
+      "radarKey": "ai-capability",
+      "radarTitle": "AI 能力",
+      "reportDate": "2026-11-06",
+      "headline": "独立评估称Anthropic模型研发速度约翻倍，AI贡献占多数",
+      "conclusion": "",
+      "briefVersion": 2,
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "独立评估称Anthropic模型研发速度约翻倍，AI贡献占多数",
+          "what": "独立评测机构METR于8月12日至10月29日进入Anthropic开展高权限评估，查看预训练、强化学习、训练算力、内部未发布模型评测和研发访谈等资料。按Anthropic版Epoch综合能力指数（AECI）估算，自2025年10月以来模型在定义明确任务上的进步速度约为此前的1.9倍，95%置信区间为1.5至2.8倍，相当于过去一年取得了此前约两年的基准进展。METR判断训练算力增长不是加速主因，并认为当前加速的大部分可能来自AI参与研发；AI主要放大研究人员产出，而不是独立完成最关键的训练工作。",
+          "why_it_matters": "这是少见的第三方进入前沿实验室后给出的量化证据，表明“AI帮助研发更强AI”的反馈回路已经以人机协作形式影响能力进步速度，而不再只是实验室负责人预测。它修正了两种极端判断：自我改进并非尚未发生，但也远未达到模型自主完成端到端研发的递归自我改进。",
+          "evidence": "结论主要适用于可明确评分的基准任务，能否迁移到开放式、难验证的研究问题仍不确定。不同合理建模选择给出的加速率可从1.1倍到2.9倍；METR也表示真实整体速度可能更接近1.3倍或3倍。Anthropic删去了多数对结论很重要的内部证据，公众无法独立复核；评估同时明确，没有证据表明AI已能对训练流程最重要部分作出高度重要且完全自主的贡献。",
+          "supporting_details": "METR认为AI可能解释当前加速的多数部分，主观估计约80%，但明确标注为高度不确定；内部访谈与调查总体支持约2倍提速，同时研究人员对不同环节的判断差异很大。评估未发现未来12个月算法、训练算力、实验算力或数据存在明确硬瓶颈，但METR承认其对这些瓶颈的理解曾随信息增加多次变化。",
+          "impact": ""
+        }
+      ],
+      "recommendations": [],
+      "sources": [
+        {
+          "name": "METR｜Independent Assessment of AI R&D Acceleration at Anthropic",
+          "date": "2026-11-05",
+          "url": "https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment/",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "METR｜Review of Anthropic Risk Report section on automated R&D",
+          "date": "2026-11-05",
+          "url": "https://metr.org/blog/2026-11-05-rd-section-anthropic-risk-report-august-2026-review/",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Reuters｜Anthropic models improving nearly twice as fast with help from AI",
+          "date": "2026-11-05",
+          "url": "https://www.reuters.com/technology/anthropics-models-improving-nearly-twice-fast-with-help-ai-study-finds-2026-11-05/",
+          "evidence_strength": "中"
+        }
+      ],
+      "updatedAt": "2026-11-06T01:12:03.429Z"
+    },
     {
       "id": "ai-capability:2026-11-05",
       "radarKey": "ai-capability",
