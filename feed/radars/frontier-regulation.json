@@ -2,8 +2,44 @@
   "schemaVersion": 1,
   "radarKey": "frontier-regulation",
   "radarTitle": "前沿 AI 监管",
-  "updatedAt": "2026-11-04T00:40:25.748Z",
+  "updatedAt": "2026-11-06T00:39:44.920Z",
   "reports": [
+    {
+      "id": "frontier-regulation:2026-11-06",
+      "radarKey": "frontier-regulation",
+      "radarTitle": "前沿 AI 监管",
+      "reportDate": "2026-11-06",
+      "headline": "OpenAI以受限准入部署网络安全Critical级GPT‑6 Cyber",
+      "conclusion": "",
+      "briefVersion": 2,
+      "currentStatus": "OpenAI自愿部署政策，非法律义务；GPT‑6 Cyber已通过Daybreak Red受限开放，Critical网络能力触发准入、监控与中止机制。",
+      "items": [
+        {
+          "title": "OpenAI以受限准入部署网络安全Critical级GPT‑6 Cyber",
+          "what": "OpenAI于11月5日发布网络安全专用模型GPT‑6 Cyber，并按其Preparedness Framework将其定为网络安全“Critical”、生物化学“High”、AI自我改进低于“High”。公司没有将该模型普遍开放：只有另行获批的Daybreak Red企业组织可在内部授权安全工作中使用，禁止客户面向、第三方或下游产品流量；组织需满足单点登录、多因素认证、托管设备、最小权限和API IP白名单等要求。对工业控制、关键服务、选举系统及可能导致严重人身或物理损害的高风险协助，系统会额外检测并阻断；监控发现严重问题时可暂停Codex任务等待确认或直接终止请求，调查认定滥用后可限制、暂停或撤销访问。",
+          "why_it_matters": "这是Critical级网络能力从“是否发布”转向“在强准入与可中止控制下部署”的明确实例：能力阈值直接决定谁能使用、能用于什么场景，以及提供方何时阻断运行或撤权。",
+          "evidence": "依据OpenAI公司系统卡和访问规则；属自愿政策而非法律义务。模型仅限获批组织，评测主要来自公司与受控实验，尚不代表开放环境中的独立生产验证。",
+          "supporting_details": "GPT‑6 Cyber需单独模型批准，Daybreak Red批准本身并不自动授予访问。Zero Data Retention客户通常还须启用Private Safety Processing；系统卡披露部分例外仍可经批准获得。",
+          "impact": ""
+        }
+      ],
+      "recommendations": [],
+      "sources": [
+        {
+          "name": "OpenAI《GPT‑6 Cyber System Card》",
+          "date": "2026-11-05",
+          "url": "https://deploymentsafety.openai.com/gpt-6-cyber",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "OpenAI Help Center《Daybreak Trusted Access for Cyber overview》",
+          "date": "2026-11-06",
+          "url": "https://help.openai.com/en/articles/20001258-openai-daybreak-trusted-access-for-cyber-overview",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-11-06T00:39:44.920Z"
+    },
     {
       "id": "frontier-regulation:2026-11-04",
       "radarKey": "frontier-regulation",
