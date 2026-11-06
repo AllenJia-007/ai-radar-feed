@@ -2,8 +2,44 @@
   "schemaVersion": 1,
   "radarKey": "agent-governance",
   "radarTitle": "Agent 治理",
-  "updatedAt": "2026-11-05T08:24:03+08:00",
+  "updatedAt": "2026-11-06T00:26:59.445Z",
   "reports": [
+    {
+      "id": "agent-governance:2026-11-06",
+      "radarKey": "agent-governance",
+      "radarTitle": "Agent 治理",
+      "reportDate": "2026-11-06",
+      "headline": "LTM给1,500个Agent配经理并纳入年度绩效评审",
+      "conclusion": "",
+      "briefVersion": 2,
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "LTM给1,500个Agent配经理并纳入年度绩效评审",
+          "what": "LTM披露，1,500个已在HR、IT、安全和项目交付中运行的Agent，均配有员工编号、指定经理和明确角色，并接受培训与年度绩效评审。治理层以结构化准入、统一评价、标准化审计和定期健康检查管理整个Agent组合；在具体运行中，一个IT服务Agent每月调查并建议处理38,000起事件，但保留人工决策。相比此前只披露“编号＋经理”，本次公开材料首次补出了持续考核与组合运营方式。",
+          "why_it_matters": "这证明Agent的Owner制度可以在千级生产规模上进一步落为“经理负责＋定期评审＋集中台账”，而不是登记一次即结束；评价对象也从单次回答扩展到Agent作为长期资产的角色、运行和业务结果。",
+          "evidence": "这是ServiceNow发布的具名客户案例和双方公告，生产规模及业务数据来自LTM与厂商口径，尚无独立审计。年度评审未公开评分阈值、未达标后的降级或下线规则；“AI资产管理效率提升80%”仍是预测，不能视为已实现成效。",
+          "supporting_details": "LTM披露，AI Agent使HR团队生产率提高21%、IT工单量降低30%；这些是业务运营结果，材料未证明其由治理制度单独造成。治理下一阶段才计划增加风险与价值评估及定制报告。",
+          "impact": ""
+        }
+      ],
+      "recommendations": [],
+      "sources": [
+        {
+          "name": "ServiceNow客户案例：LTM为1,500个AI Agent建立经理与年度评审制度",
+          "date": "未标注（2026-11-05官方公告引用）",
+          "url": "https://www.servicenow.com/customers/ltm.html",
+          "evidence_strength": "中"
+        },
+        {
+          "name": "ServiceNow与LTM扩大合作公告",
+          "date": "2026-11-05",
+          "url": "https://newsroom.servicenow.com/press-releases/details/2026/LTM-and-ServiceNow-expand-partnership-to-scale-agentic-AI-and-accelerate-joint-go-to-market/default.aspx",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-11-06T00:26:59.445Z"
+    },
     {
       "id": "agent-governance:2026-11-05",
       "radarKey": "agent-governance",
