@@ -2,8 +2,44 @@
   "schemaVersion": 1,
   "radarKey": "finance-ai-cases",
   "radarTitle": "财经 AI 案例",
-  "updatedAt": "2026-11-04T07:56:48.856+08:00",
+  "updatedAt": "2026-11-06T08:26:21+08:00",
   "reports": [
+    {
+      "id": "finance-ai-cases:2026-11-06",
+      "radarKey": "finance-ai-cases",
+      "radarTitle": "财经 AI 案例",
+      "reportDate": "2026-11-06",
+      "headline": "Worldwide Express用三类Agent处理货运账单异常，人工闸门转为批量审批",
+      "conclusion": "",
+      "briefVersion": 2,
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "Worldwide Express用三类Agent处理货运账单异常，人工闸门转为批量审批",
+          "what": "Worldwide Express把货运账单异常处理嵌入SpeedShip生产流程：发票匹配、价格差异、附加费校验三个Agent调用与分析师相同的API，并按承运商规则库检索后写入处理建议和说明。系统每周关闭约1万条异常；初期每条建议都由财务运营人员审批，达到既定准确率门槛后改为批量审批，人工转向复杂争议与否决，否决记录继续用于更新提示词和知识库。",
+          "why_it_matters": "这比通用问答更进一步：Agent已承担跨系统调查、规则解释和回写，放权依据不是主观信任，而是用错误率、人工否决率和分阶段审批逐步松绑。",
+          "evidence": "已生产运行六个月并覆盖数十家承运商；结果来自AWS与客户联合案例，未经过独立审计，且原文对自动化占比的表述不完全一致。",
+          "supporting_details": "三个Agent分别处理发票与货运记录匹配、合同价格差异和附加费有效性；每次处理先检索对应承运商的费率、附加费定义、争议步骤和容差规则，再通过现有SpeedShip接口写入结果及自然语言说明。",
+          "impact": ""
+        }
+      ],
+      "recommendations": [],
+      "sources": [
+        {
+          "name": "AWS Machine Learning Blog｜How Worldwide Express automated freight exceptions with Amazon Bedrock",
+          "date": "2026-10-30",
+          "url": "https://aws.amazon.com/blogs/machine-learning/how-worldwide-express-automated-freight-exceptions-with-amazon-bedrock/",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "PYMNTS｜Worldwide Express Unfreezes $10 Million With AWS AI Agents",
+          "date": "2026-11-03",
+          "url": "https://www.pymnts.com/news/artificial-intelligence/2026/worldwide-express-unfreezes-10-million-with-aws-ai-agents/",
+          "evidence_strength": "中"
+        }
+      ],
+      "updatedAt": "2026-11-06T08:26:21+08:00"
+    },
     {
       "id": "finance-ai-cases:2026-11-04",
       "radarKey": "finance-ai-cases",
