@@ -2,8 +2,44 @@
   "schemaVersion": 1,
   "radarKey": "agent-governance",
   "radarTitle": "Agent 治理",
-  "updatedAt": "2026-11-06T00:26:59.445Z",
+  "updatedAt": "2026-11-07T00:12:40.462Z",
   "reports": [
+    {
+      "id": "agent-governance:2026-11-07",
+      "radarKey": "agent-governance",
+      "radarTitle": "Agent 治理",
+      "reportDate": "2026-11-07",
+      "headline": "Microsoft按Agent触达范围拆分IT准入门槛",
+      "conclusion": "",
+      "briefVersion": 2,
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "Microsoft按Agent触达范围拆分IT准入门槛",
+          "what": "Microsoft Digital公开了内部Agent分级准入制度：仅在企业租户内通过Microsoft Graph工作的简单Agent，继承既有数据标签和用户权限，可不经过IT门禁；一旦Agent连接业务系统，则须像专业开发的应用一样完成运行环境、连接器、设计和隐私评审。自治Agent还需配置Entra身份和多个具名Owner，避免创建人转岗后成为无人负责的资产。",
+          "why_it_matters": "这把“风险分级”落成了可执行的准入边界：是否超出租户内既有权限、是否触达业务系统，直接决定审批深度。企业因此可以同时保留低风险Agent的自助创新，并对进入关键流程的Agent实施应用级门禁。",
+          "evidence": "Microsoft官方社区文章称这些实践由Microsoft Digital开发并已运营化，但材料是面向美国国防工业基础的安全指导总结，不是面向所有客户自动生效的产品规则。除触达范围、数据敏感性和后果外，未公开量化分级阈值、审批时限或生产事故成效；部分GCC High配套能力仍标注为未来可用。",
+          "supporting_details": "Microsoft Digital的六项治理要求还包括最小权限、数据标签不可被Agent自行降级、从建设到退役的生命周期、行为审计与阻断能力，以及由常设委员会持续更新政策。",
+          "impact": ""
+        }
+      ],
+      "recommendations": [],
+      "sources": [
+        {
+          "name": "Microsoft Community Hub：Microsoft发现与保护AI的方法（第二部分）",
+          "date": "2026-11-04",
+          "url": "https://techcommunity.microsoft.com/blog/PublicSectorBlog/securing-ai-adoption-in-the-dib-part-2-microsofts-approach-to-discovering--secur/4569669",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Microsoft Inside Track：Microsoft如何实施Agent 365治理",
+          "date": "2026-08-06",
+          "url": "https://www.microsoft.com/insidetrack/blog/implementing-agent-365-how-were-governing-and-managing-ai-agents-at-microsoft/",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-11-07T00:12:40.462Z"
+    },
     {
       "id": "agent-governance:2026-11-06",
       "radarKey": "agent-governance",
