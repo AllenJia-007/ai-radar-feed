@@ -2,8 +2,44 @@
   "schemaVersion": 1,
   "radarKey": "ai-work-system",
   "radarTitle": "AI 工作系统",
-  "updatedAt": "2026-11-05T07:41:02+08:00",
+  "updatedAt": "2026-11-08T07:52:00+08:00",
   "reports": [
+    {
+      "id": "ai-work-system:2026-11-08",
+      "radarKey": "ai-work-system",
+      "radarTitle": "AI 工作系统",
+      "reportDate": "2026-11-08",
+      "headline": "Qwen Code把本地Agent变成跨项目、多机器工作台",
+      "conclusion": "",
+      "briefVersion": 2,
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "Qwen Code把本地Agent变成跨项目、多机器工作台",
+          "what": "Qwen团队于11月2日发布Qwen Code桌面端和本地Web Shell，用户不必再把终端当作唯一入口：同一界面集中展示会话、已加入的项目、当前项目文件及文件变更，每个工作区仍绑定独立目录；一个浏览器页面还能同时连接多台机器上的Qwen Code服务。启用后台守护进程后，关闭网页不会终止正在执行的任务。11月5日发布的桌面版v0.26.8覆盖macOS、Windows和Linux，并补充会话活动视图、分屏、远程访问设置和频道事件时间线。",
+          "why_it_matters": "这不是给命令行加一层皮肤，而是把本地执行运行时与交互入口分离：个人可以在一个持续存在的任务工作台中管理多个项目和多台机器，同时保留文件与执行环境在本机。它表明AI编程工具正在沿着“终端助手→本地任务工作台”演进，工作组织单位也从单次对话转向工作区、会话和后台任务。",
+          "evidence": "桌面安装包和源码已公开，官方文档明确支持macOS、Windows、Linux及后台运行；但Web Shell本质上仍连接本机服务，任务续跑依赖宿主机器和守护进程保持在线。官方尚未披露多人共享、企业权限隔离或规模化使用成效，因此目前能确认的是个人/开发者的本地多工作区形态，而不是成熟的团队协作平台。",
+          "supporting_details": "Web Shell默认在本机127.0.0.1地址运行；项目通过“Add workspace”加入并分别绑定目录。桌面端与Web Shell使用相同界面，后者可安装为独立窗口；官方还提供受控的手机访问方式，但不等同于云端托管任务。",
+          "impact": ""
+        }
+      ],
+      "recommendations": [],
+      "sources": [
+        {
+          "name": "Qwen Code Docs｜Beyond the Terminal: Qwen Code on Desktop and in the Web Shell",
+          "date": "2026-11-02",
+          "url": "https://qwenlm.github.io/qwen-code-docs/en/blog/quickstart/web-shell-and-desktop/",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "QwenLM GitHub｜Qwen Code Desktop v0.26.8",
+          "date": "2026-11-05",
+          "url": "https://github.com/QwenLM/qwen-code/releases/tag/desktop-v0.26.8",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-11-08T07:52:00+08:00"
+    },
     {
       "id": "ai-work-system:2026-11-05",
       "radarKey": "ai-work-system",
