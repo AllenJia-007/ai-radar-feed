@@ -2,8 +2,44 @@
   "schemaVersion": 1,
   "radarKey": "ai-key-people",
   "radarTitle": "AI 关键人物观点",
-  "updatedAt": "2026-10-31T00:51:40.781Z",
+  "updatedAt": "2026-11-07T00:46:36.013Z",
   "reports": [
+    {
+      "id": "ai-key-people:2026-11-07",
+      "radarKey": "ai-key-people",
+      "radarTitle": "AI 关键人物观点",
+      "reportDate": "2026-11-07",
+      "headline": "Hassabis把危险阈值定位为取消人工复核的闭环自我改进",
+      "conclusion": "",
+      "briefVersion": 2,
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "Hassabis把危险阈值定位为取消人工复核的闭环自我改进",
+          "what": "Demis Hassabis在10月录制、11月6日发布的完整访谈中，把递归自我改进分成两个阶段：当前阶段主要让工程师提效约3至5倍，人仍审阅代码和设计架构；真正危险的转折点是取消人工复核，让系统在可验证的数学、编程等领域自行生成数据、训练下一版并持续闭环。他以AlphaZero从随机下棋到12小时内超越所有人类和程序为证据，认为同样的闭环若扩展到通用智能，速度会更快，但结果可能落入人类难以理解的“异质心智空间”。",
+          "why_it_matters": "这比泛泛的“自我改进有风险”更具体：风险阈值不只由模型分数决定，而取决于改进回路是否仍有人工架构、审阅和停止点。它也给出了可观察的前兆——编码系统从辅助工程师转为自主迭代自身；Hassabis主张在跨过这一步前加强沙箱、监控、形式化边界，并建立第三方审计与实验室间相互红队。",
+          "evidence": "这是Hassabis基于AlphaZero经验和当前工程观察提出的个人框架，不是已经发生的通用递归自我改进，也没有给出闭环系统的公开实测结果。他称当前工程提效约3至5倍属于经验性估计；访谈转录由节目自动生成，核心观点同时可由25分钟完整视频核对。",
+          "supporting_details": "Hassabis还区分“智能工具”与“有自我意志的意识实体”，认为自我意志会与可纠正性冲突；这一部分是规范性判断，尚不能作为意识或安全机制的实证结论。",
+          "impact": ""
+        }
+      ],
+      "recommendations": [],
+      "sources": [
+        {
+          "name": "Masters of Scale｜Demis Hassabis: Society is “not ready” for the AI future（完整访谈与转录）",
+          "date": "2026-11-06",
+          "url": "https://mastersofscale.com/demis-hassabis-society-is-not-ready-for-the-ai-future/",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Masters of Scale｜Google DeepMind's Demis Hassabis: How AI could become dangerous（完整视频）",
+          "date": "2026-11-05",
+          "url": "https://mastersofscale.com/video/google-deepminds-demis-hassabis-how-ai-could-become-dangerous-with-reid-hoffman-summit-26/",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-11-07T00:46:36.013Z"
+    },
     {
       "id": "ai-key-people:2026-10-31",
       "radarKey": "ai-key-people",
