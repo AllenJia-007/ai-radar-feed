@@ -2,8 +2,38 @@
   "schemaVersion": 1,
   "radarKey": "finance-ai-cases",
   "radarTitle": "财经 AI 案例",
-  "updatedAt": "2026-11-06T08:26:21+08:00",
+  "updatedAt": "2026-11-07T00:21:31.976Z",
   "reports": [
+    {
+      "id": "finance-ai-cases:2026-11-07",
+      "radarKey": "finance-ai-cases",
+      "radarTitle": "财经 AI 案例",
+      "reportDate": "2026-11-07",
+      "headline": "Greenlight让Luna自主处理九成安全与金融风险案件",
+      "conclusion": "",
+      "briefVersion": 2,
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "Greenlight让Luna自主处理九成安全与金融风险案件",
+          "what": "Greenlight Financial 已把多智能体系统 Luna 接入真实风险队列，自动核对卡片状态、交易记录、客户会话、工单与欺诈评分，对暗网泄露卡、身份异常及可疑交易等案件作出风险判断；低置信度或高风险案件携带完整证据链升级给分析师。Luna 可以记录和监控低风险案件，但补救动作仍须由人工分析师或预先批准的自动化政策授权执行。按 Greenlight 向 AWS 提供的生产数据，Luna 对安全与金融风险案件的自主解决率超过 90%。",
+          "why_it_matters": "这是风险与控制场景从“辅助调查”进入“常规案件委托”的清晰实例：Agent 已承担跨系统取证、判断与结案，人工责任收缩到复杂案件、补救授权和例外处置。",
+          "evidence": "已在生产运行，但 90% 是安全与金融风险合并口径；金融风险覆盖约一个月，未单独披露误判率、人工抽检结果或独立验证。",
+          "supporting_details": "Luna 采用分层主管结构：第一层处理高频案件，第二层对复杂案件做更深的跨源调查；历史处置结果写入记忆与规则，重复模式可被后续案件复用。",
+          "impact": ""
+        }
+      ],
+      "recommendations": [],
+      "sources": [
+        {
+          "name": "AWS Machine Learning Blog｜How Greenlight Financial built an autonomous SOC solution on Amazon Bedrock AgentCore",
+          "date": "2026-11-06",
+          "url": "https://aws.amazon.com/blogs/machine-learning/how-greenlight-financial-built-an-autonomous-soc-solution-on-amazon-bedrock-agentcore/",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-11-07T00:21:31.976Z"
+    },
     {
       "id": "finance-ai-cases:2026-11-06",
       "radarKey": "finance-ai-cases",
