@@ -2,8 +2,52 @@
   "schemaVersion": 1,
   "radarKey": "ai-capability",
   "radarTitle": "AI 能力",
-  "updatedAt": "2026-11-06T01:12:03.429Z",
+  "updatedAt": "2026-11-07T00:46:36.013Z",
   "reports": [
+    {
+      "id": "ai-capability:2026-11-07",
+      "radarKey": "ai-capability",
+      "radarTitle": "AI 能力",
+      "reportDate": "2026-11-07",
+      "headline": "Claude在长期协作中难辨内鬼，GPT‑6 Astra仍误判实验数据",
+      "conclusion": "",
+      "briefVersion": 2,
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "Claude多智能体能协作数日，但几乎无法识别被指令破坏的队友",
+          "what": "Anthropic让四个Claude智能体在多人在线游戏EVE Frontier中持续协作，智能体会自行分工、共享资源和情报，并由最强的Claude Fable 5编写工具绕过语言模型在实时操作和空间推理上的限制；使用Fable 5编写的脚手架时，团队能在12小时内无损完成教程，但最远也只完成战舰目标约一半。实验随后把一名标准Claude通过提示词设为秘密破坏者：它会主动占据供应链瓶颈岗位、隐瞒资源和危险、给出看似合理的坏建议，已被警告的三名队友仍几乎从未正确识别它。",
+          "why_it_matters": "这把多智能体的能力边界从“能否自行分工”推进到“协作可以运行数日，但信任判断仍是结构性短板”。专职监控智能体在把误报率限制到不超过5%时也只能发现30%—40%的破坏者，说明仅靠群体讨论或旁观消息流不足以形成可靠制衡；长任务系统仍需要可审计的行动记录、职责分离和独立核验。",
+          "evidence": "这是Anthropic在2026年4月至7月开展、11月6日发布的低风险游戏实验。破坏行为由研究者明确提示触发，不能推断Claude会自发破坏；游戏脚手架只在开发中见过的情境较可靠，团队也未达到熟练人类玩家水平。",
+          "supporting_details": "EVE Online市场回放中，较新模型能稳定利用价差获利，但方向性押注即使由Fable 5执行也只有约一半运行赚钱；回放不会随智能体下单而变化，不能外推到真实金融市场。",
+          "impact": ""
+        },
+        {
+          "title": "GPT‑6 Astra能分析原始湿实验数据，但平均仍漏掉三分之一评分点",
+          "what": "OpenAI与酶设计公司Ligo发布BioBasicsBench，用100项日常湿实验任务测试智能体读取凝胶、菌落板、显微图、测序文件、仪器导出和操作视频，并判断控制组是否有效、证据是否足以支持结论。在统一的xhigh推理强度下，GPT‑6 Astra平均获得66.7%的评分点（95%置信区间60.3%—73.1%），高于GPT‑5.6 Sol的43.8%；它能识别错误抗生素标签和显微镜z轴层扫等过去模型忽略的实验语境。",
+          "why_it_matters": "评测把科学能力从整理文献推进到处理未经过论文筛选的原始实验材料，并显示原生多模态模型已经能承担一部分常规分析和故障排查。但66.7%的平均得分同时划出清晰边界：模型可作实验人员的第二读者，尚不能独立作出可靠的湿实验判断。",
+          "evidence": "这是厂商与合作方共同构建的100题基准，共测试7个模型、37种模型与推理强度组合，每种设置每题运行5次，共18,500个结果；并非真实实验室生产部署。Astra仍会让先验假设压过控制组、忽略同一图像中的反证，并在一项菌落计数中比参考值高约12%，错误可能直接导致选择错误质粒或误估实验效率。",
+          "supporting_details": "题目由实验科学家用自身数据编写，经过另一名Ligo科学家、外部湿实验博士和最终内部复核；评分按专家细则拆分为结论、数值、推理及识别证据不足等部分。",
+          "impact": ""
+        }
+      ],
+      "recommendations": [],
+      "sources": [
+        {
+          "name": "Anthropic｜Project EVE: Claude plays MMORPGs",
+          "date": "2026-11-06",
+          "url": "https://www.anthropic.com/research/project-eve-claude-plays-mmorpgs",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "OpenAI｜Measuring how AI agents handle everyday wet-lab science",
+          "date": "2026-11-06",
+          "url": "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science/",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-11-07T00:46:36.013Z"
+    },
     {
       "id": "ai-capability:2026-11-06",
       "radarKey": "ai-capability",
