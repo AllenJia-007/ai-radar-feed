@@ -2,8 +2,56 @@
   "schemaVersion": 1,
   "radarKey": "frontier-regulation",
   "radarTitle": "前沿 AI 监管",
-  "updatedAt": "2026-11-06T00:39:44.920Z",
+  "updatedAt": "2026-11-07T00:13:10.262Z",
   "reports": [
+    {
+      "id": "frontier-regulation:2026-11-07",
+      "radarKey": "frontier-regulation",
+      "radarTitle": "前沿 AI 监管",
+      "reportDate": "2026-11-07",
+      "headline": "欧盟法院顾问划定LLM训练版权许可边界",
+      "conclusion": "",
+      "briefVersion": 2,
+      "currentStatus": "欧盟C‑250/25尚待法院判决；现仅为首席法律顾问非约束性意见，训练问题被建议认定不可受理。美国H.R.10538、S.5493仍在委员会。",
+      "items": [
+        {
+          "title": "欧盟法院顾问划定LLM训练版权许可边界",
+          "what": "欧盟法院首席法律顾问Maciej Szpunar于11月3日在C‑250/25 Like Company诉Google Ireland案发表意见。他认为，收集受保护作品并用于大语言模型训练会发生版权法意义上的“复制”，但商业模型训练原则上可适用《数字单一市场版权指令》第4条的文本与数据挖掘例外，前提是作品可合法访问且权利人未明确保留相关权利；如果权利人限制访问，或以适当的机器可读方式声明不允许文本与数据挖掘，开发者须取得许可。意见同时认为，训练完成后的模型参数通常不是作品复制品，但模型输出若逐字或近似复现受保护表达，仍可能按个案构成侵权。",
+          "why_it_matters": "该意见首次由欧盟最高司法机构的高级法律顾问系统拆分“训练时复制—数据挖掘例外—权利保留—模型输出”边界，可能使机器可读的版权保留信号成为训练数据能否合法使用的关键许可闸门。",
+          "evidence": "这不是法院判决，法律顾问意见不具约束力；其本人还认为涉案训练问题因缺乏Google使用该出版商文章的证据而属假设性、应不予受理，法院尚未作出最终解释。",
+          "supporting_details": "意见没有最终解决在欧盟以外训练、但模型随后进入欧盟市场时的适用法问题，并建议立法者进一步明确。案件直接争点主要是Gemini实时检索和复用新闻内容，训练分析属于为完整性提供的附带论述。",
+          "impact": ""
+        }
+      ],
+      "recommendations": [],
+      "sources": [
+        {
+          "name": "欧盟法院C‑250/25案首席法律顾问意见全文",
+          "date": "2026-11-03",
+          "url": "https://infocuria.curia.europa.eu/tabs/redirect/juris/documents.jsf?num=C-250%2F25",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "欧盟法院C‑250/25案官方说明",
+          "date": "2026-11-03",
+          "url": "https://curia.europa.eu/site/jcms/p1_1000088866/en/opinion-case-c-250/jcms/p1_1000088863/en/opinion-of-the-advocate-general-at-the-court-maciej-szpunar-in-case-c-250/25",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "美国GovInfo：H.R.10538状态页",
+          "date": "2026-09-24",
+          "url": "https://www.govinfo.gov/app/details/BILLS-119hr10538ih",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "美国GovInfo：S.5493状态页",
+          "date": "2026-09-23",
+          "url": "https://www.govinfo.gov/app/details/BILLS-119s5493is",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-11-07T00:13:10.262Z"
+    },
     {
       "id": "frontier-regulation:2026-11-06",
       "radarKey": "frontier-regulation",
