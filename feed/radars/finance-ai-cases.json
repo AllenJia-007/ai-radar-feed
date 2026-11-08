@@ -2,8 +2,50 @@
   "schemaVersion": 1,
   "radarKey": "finance-ai-cases",
   "radarTitle": "财经 AI 案例",
-  "updatedAt": "2026-11-07T00:21:31.976Z",
+  "updatedAt": "2026-11-08T00:23:22.799Z",
   "reports": [
+    {
+      "id": "finance-ai-cases:2026-11-08",
+      "radarKey": "finance-ai-cases",
+      "radarTitle": "财经 AI 案例",
+      "reportDate": "2026-11-08",
+      "headline": "BILL让三类Agent预制授信案件，核保人员保留最终决定",
+      "conclusion": "",
+      "briefVersion": 2,
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "BILL让三类Agent预制授信案件，核保人员保留最终决定",
+          "what": "BILL 的风险团队已在 Spend & Expense 业务中运行由三类 AI Agent 组成的 Robin：系统接收授信或额度调整请求，将案件路由给合适的核保人员，从聊天、邮件和多个数据面板汇集客户付款与行为数据，生成统一摘要并提供一键决策入口。核保人员仍负责批准、拒绝或调整额度；Agent 没有获得授信决定权。BILL 在 2026 年 11 月 5 日业绩电话会上称，单案处理及客户等待时间已由约 3 小时降至约 12 分钟。",
+          "why_it_matters": "该案例说明风险流程的首个高价值落点不一定是让 Agent 代替专业判断，而是把案件搜集、跨系统取证、归纳和分派整体委托给 Agent，让人工只处理最终判断。",
+          "evidence": "已在 BILL 内部生产流程运行，效果为公司业绩电话会口径；未披露样本量、授信质量变化、人工纠错率，也未说明 Agent 起草的信用评估和模型文档如何复核。",
+          "supporting_details": "BILL 同期称其风险团队已构建百余个持续运行的 Agent，任务包括拉取案件材料、起草信用评估及模型文档；但公开资料未把这些任务的权限和复核控制逐项展开。",
+          "impact": ""
+        }
+      ],
+      "recommendations": [],
+      "sources": [
+        {
+          "name": "BILL｜First Quarter Fiscal Year 2027 Financial Results",
+          "date": "2026-11-05",
+          "url": "https://investor.bill.com/news/news-details/2026/BILL-Reports-First-Quarter-Fiscal-Year-2027-Financial-Results/default.aspx",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "BILL Q1 FY2027 Earnings Call Transcript｜The Motley Fool",
+          "date": "2026-11-06",
+          "url": "https://www.fool.com/earnings/call-transcripts/2026/11/06/bill-bill-q1-2027-earnings-call-transcript/",
+          "evidence_strength": "中"
+        },
+        {
+          "name": "PYMNTS｜BILL Slashes Underwriting Times From 3 Hours to 12 Minutes With AI",
+          "date": "2026-11-05",
+          "url": "https://www.pymnts.com/earnings/2026/bill-slashes-underwriting-times-from-3-hours-to-12-minutes-with-ai/",
+          "evidence_strength": "中"
+        }
+      ],
+      "updatedAt": "2026-11-08T00:23:22.799Z"
+    },
     {
       "id": "finance-ai-cases:2026-11-07",
       "radarKey": "finance-ai-cases",
