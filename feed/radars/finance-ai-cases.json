@@ -2,8 +2,38 @@
   "schemaVersion": 1,
   "radarKey": "finance-ai-cases",
   "radarTitle": "财经 AI 案例",
-  "updatedAt": "2026-11-08T00:23:22.799Z",
+  "updatedAt": "2026-11-08T23:53:42.085Z",
   "reports": [
+    {
+      "id": "finance-ai-cases:2026-11-09",
+      "radarKey": "finance-ai-cases",
+      "radarTitle": "财经 AI 案例",
+      "reportDate": "2026-11-09",
+      "headline": "Miro让Agent接管客户应付门户操作，异常才回到应收团队",
+      "conclusion": "",
+      "briefVersion": 2,
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "Miro让Agent接管客户应付门户操作，异常才回到应收团队",
+          "what": "Miro的应收账款团队已把企业客户应付门户的日常操作交给Monto Agent：系统从ERP出发，在Coupa、Ariba、Tipalti等门户查找采购订单，按各客户规则提交发票并持续回收付款状态，结果汇总到单一工作台，用于日常催收和月末、季末报告。遇到知识层未覆盖的规则或异常时，Agent向应收人员询问而不是猜测，并把人工答案纳入后续处理；团队仍负责异常判断、催收策略和客户沟通。Miro称自2022年持续使用后，应收账款周转天数（DSO）在四年内缩短约10天。",
+          "why_it_matters": "这不是单次生成催款文案或提供问答，而是把跨企业、跨门户的采购订单查找、发票提交和状态跟踪作为连续任务委托给Agent。它表明应收自动化可以越过本企业ERP边界进入客户侧作业界面，但稳定运行依赖每个门户的规则记忆、异常升级和人工反馈闭环。",
+          "evidence": "已在生产流程持续使用，Miro应收负责人提供具名说明；但证据来自Monto客户案例，未披露覆盖门户数、发票量、错误率或人工接管率。约10天的DSO改善是客户对四年变化的自报，未独立验证，也不能排除催收策略及其他运营变化的共同贡献。",
+          "supporting_details": "Monto称每个客户门户由独立的规则上下文维护；当门户变化或规则缺失时，系统先向Miro团队提问，得到确认后再复用该答案。Miro团队把统一状态视图用于月末和季末报告。",
+          "impact": ""
+        }
+      ],
+      "recommendations": [],
+      "sources": [
+        {
+          "name": "Monto｜How Miro’s AR team took almost ten days off DSO with autonomous AI agents",
+          "date": "2026-11-04",
+          "url": "https://montopay.com/miro-customer-story/",
+          "evidence_strength": "中"
+        }
+      ],
+      "updatedAt": "2026-11-08T23:53:42.085Z"
+    },
     {
       "id": "finance-ai-cases:2026-11-08",
       "radarKey": "finance-ai-cases",
