@@ -2,8 +2,44 @@
   "schemaVersion": 1,
   "radarKey": "finance-ai-cases",
   "radarTitle": "财经 AI 案例",
-  "updatedAt": "2026-11-08T23:53:42.085Z",
+  "updatedAt": "2026-11-09T23:35:24.508Z",
   "reports": [
+    {
+      "id": "finance-ai-cases:2026-11-10",
+      "radarKey": "finance-ai-cases",
+      "radarTitle": "财经 AI 案例",
+      "reportDate": "2026-11-10",
+      "headline": "Village Roadshow让DIANA逐笔筛查重复发票，付款判断仍由应付团队作出",
+      "conclusion": "",
+      "briefVersion": 2,
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "Village Roadshow让DIANA逐笔筛查重复发票，付款判断仍由应付团队作出",
+          "what": "Village Roadshow 已把重复发票分析与通知 Agent“DIANA”接入 SAP 应付生产流程：Agent 在付款前读取并评分全部供应商发票，对疑似重复项排序、附上支持证据并通知应付团队。每一个标记仍由应付人员复核并作出最终处置，系统记录建议、人工决定及处理结果；公开活动材料称 DIANA 每年覆盖约 13.2 万张发票。",
+          "why_it_matters": "这把重复付款控制从抽样复核推进到全量、持续筛查，但并未把财务控制责任交给 Agent。成熟形态是“机器覆盖全量并准备证据，人对异常逐项裁决”，属于核心流程嵌入型，而不是自主付款型 Agent。",
+          "evidence": "Village Roadshow 官方发布确认 DIANA 已在真实 SAP 环境上线，并明确所有标记均由人复核。覆盖规模来自即将举行的 Mastering SAP Collaborate 客户案例摘要，尚未披露准确率的计算方法、误报与漏报口径、实际避免损失金额，也未经过独立审计；完整案例演讲安排在 2026 年 11 月 19 日。",
+          "supporting_details": "公开材料还披露了明确的 Agent 负责人和持续辅导角色，以及建议证据和人工决定的审计记录；这些治理细节说明生产化重点不仅是检测模型，还包括责任归属、人工闸门和后续监控。",
+          "impact": ""
+        }
+      ],
+      "recommendations": [],
+      "sources": [
+        {
+          "name": "Village Roadshow｜DIANA AI Co-worker for Accounts Payable（官方发布）",
+          "date": "2026-08-26",
+          "url": "https://www.linkedin.com/posts/village-roadshow_villageroadshow-artificialintelligence-activity-7498262935006244864-EwE5",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Mastering SAP Collaborate 2026｜Village Roadshow DIANA customer case agenda",
+          "date": "2026-11-19",
+          "url": "https://sapteched.sydney/agenda/id/4466881",
+          "evidence_strength": "中"
+        }
+      ],
+      "updatedAt": "2026-11-09T23:35:24.508Z"
+    },
     {
       "id": "finance-ai-cases:2026-11-09",
       "radarKey": "finance-ai-cases",
