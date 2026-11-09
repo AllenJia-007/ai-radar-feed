@@ -2,8 +2,50 @@
   "schemaVersion": 1,
   "radarKey": "ai-work-system",
   "radarTitle": "AI 工作系统",
-  "updatedAt": "2026-11-08T07:52:00+08:00",
+  "updatedAt": "2026-11-09T00:13:14.111Z",
   "reports": [
+    {
+      "id": "ai-work-system:2026-11-09",
+      "radarKey": "ai-work-system",
+      "radarTitle": "AI 工作系统",
+      "reportDate": "2026-11-09",
+      "headline": "Qwen Code让多个子Agent并行提问，人可按任意顺序回应",
+      "conclusion": "",
+      "briefVersion": 2,
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "Qwen Code让多个子Agent并行提问，人可按任意顺序回应",
+          "what": "Qwen Code 0.27.0把多Agent长任务中的人工介入从单一阻塞表单改为并行决策队列：同一托管Agent会话里，多个子任务可同时挂起各自问题，父页面显示问题来源，人可先回答任意一个；被回答的子任务继续工作，其他问题保持原操作和截止状态，草稿、提交状态与错误按子任务隔离。等待中的子任务会释放自己的执行席位，恢复时重新绑定原运行身份；Web Shell还可为某个待决问题启动不触碰主会话的“Ask for details”旁路任务，解释选项、影响与风险并给出建议，但不代替用户作决定。",
+          "why_it_matters": "过去多Agent系统一遇到多个分支需要人确认，往往由根任务串行处理或自动选中一个表单，兄弟任务因此相互阻塞。这个机制把人从持续盯着单一对话，转为处理一组异步决策：系统可在部分分支等待时继续推进其他分支，同时保留明确的问题来源和逐项恢复状态。它改变的是长任务中的状态管理与人机分工，而不是底层模型能力。",
+          "evidence": "这是官方开源项目在2026年11月8日（北京时间）发布的v0.27.0正式版本，相关变更已合入主分支。并行问题功能明确覆盖托管Agent会话、普通本地Files/Shell会话及内置一层公共子任务；Web Shell的旁路解释还要求daemon声明side-task能力。官方材料验证了产品机制与代码合入，但没有提供大规模生产使用数据、并发上限或真实任务完成率。",
+          "supporting_details": "相关测试要求：当子任务A与B同时提问时，用户可先回答B；B继续执行并写入自己的结果，A仍保持原有Action与deadline。旁路解释产物写入Agent临时目录并在右侧HTML预览中打开，主问题继续保持待决。",
+          "impact": ""
+        }
+      ],
+      "recommendations": [],
+      "sources": [
+        {
+          "name": "QwenLM/qwen-code｜Release v0.27.0",
+          "date": "2026-11-08",
+          "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.27.0",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "QwenLM/qwen-code｜支持多个子任务并行等待提问（PR #16484）",
+          "date": "2026-11-06",
+          "url": "https://github.com/QwenLM/qwen-code/pull/16484",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "QwenLM/qwen-code｜为待决问题启动解释旁路任务（PR #16458）",
+          "date": "2026-11-07",
+          "url": "https://github.com/QwenLM/qwen-code/pull/16458",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-11-09T00:13:14.111Z"
+    },
     {
       "id": "ai-work-system:2026-11-08",
       "radarKey": "ai-work-system",
