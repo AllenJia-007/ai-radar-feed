@@ -2,8 +2,38 @@
   "schemaVersion": 1,
   "radarKey": "agent-governance",
   "radarTitle": "Agent 治理",
-  "updatedAt": "2026-11-10T00:04:52.344Z",
+  "updatedAt": "2026-11-10T23:43:29.766Z",
   "reports": [
+    {
+      "id": "agent-governance:2026-11-11",
+      "radarKey": "agent-governance",
+      "radarTitle": "Agent 治理",
+      "reportDate": "2026-11-11",
+      "headline": "ServiceNow计划由控制责任人设规则，持续处置Agent权限与控制失效",
+      "conclusion": "",
+      "briefVersion": 2,
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "ServiceNow计划由控制责任人设规则，持续处置Agent权限与控制失效",
+          "what": "ServiceNow于11月10日宣布在Integrated Risk Management（综合风险管理）中加入Agent持续控制监测：控制责任人把一项控制映射到实际执行它的身份、云、容器、SaaS或本地工具，治理、风险及合规团队用控制叙述和既定政策规定合格条件；系统中的Agent负责配置检查、解释结果，发现控制漂移或失效时自动标记并开单，只有在已定义政策允许的范围内才能自动修复。Access Graph还把人、机器和AI Agent的访问生命周期纳入同一检查，用于确认员工或Agent离开时权限是否已经撤销；官方称首批覆盖100多项预置集成。",
+          "why_it_matters": "这里的决策权仍在人而不在执行Agent：控制责任人和治理团队决定控制含义、适用系统与自动处置边界，Agent只持续执行检查和政策内动作。这比周期性抽样审计更接近可运营的Agent治理，因为权限撤销和控制失效会形成实时信号、责任工单及处置记录；但它目前只能说明ServiceNow正在把这套分工产品化，不能证明企业已经取得闭环效果。",
+          "evidence": "Agentic AI for Continuous Controls Monitoring预计到2027年第一季度才正式可用，ServiceNow也将相关表述列为前瞻性声明。公告没有公开哪些数值触发自动修复、误报或漏报率、权限撤销时延，也没有给出客户在生产环境完成“发现—修复—复核”的结果；因此“自动闭环”目前是产品设计与厂商承诺，不是已验证制度。",
+          "supporting_details": "同一控制可映射到SOX、PCI-DSS、ISO 27001、HIPAA和欧盟AI法案等多个框架；系统计划把失败控制分派给控制责任人和治理、风险及合规团队，内部审计可独立查看测试结果及证据。框架复用属于合规映射，不等于一次测试已满足所有监管要求。",
+          "impact": ""
+        }
+      ],
+      "recommendations": [],
+      "sources": [
+        {
+          "name": "ServiceNow Newsroom｜ServiceNow Brings Agentic Monitoring to Every Control in the Enterprise at Machine Speed",
+          "date": "2026-11-10",
+          "url": "https://newsroom.servicenow.com/press-releases/details/2026/ServiceNow-Brings-Agentic-Monitoring-to-Every-Control-in-the-Enterprise-at-Machine-Speed/default.aspx",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-11-10T23:43:29.766Z"
+    },
     {
       "id": "agent-governance:2026-11-10",
       "radarKey": "agent-governance",
