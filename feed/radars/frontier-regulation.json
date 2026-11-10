@@ -2,8 +2,56 @@
   "schemaVersion": 1,
   "radarKey": "frontier-regulation",
   "radarTitle": "前沿 AI 监管",
-  "updatedAt": "2026-11-07T00:13:10.262Z",
+  "updatedAt": "2026-11-10T00:21:20.233Z",
   "reports": [
+    {
+      "id": "frontier-regulation:2026-11-10",
+      "radarKey": "frontier-regulation",
+      "radarTitle": "前沿 AI 监管",
+      "reportDate": "2026-11-10",
+      "headline": "OpenAI把前沿训练停止权下沉到推理层，35秒内切断模型输出",
+      "conclusion": "",
+      "briefVersion": 2,
+      "currentStatus": "OpenAI Control Room是已部署的公司内部自愿安全控制，不是法律义务；其故障关闭机制已覆盖全部前沿模型研究负载，其余研究负载仍在完成部署。美国H.R.10538与S.5493仍分别停留在众议院监督与政府改革委员会、参议院商务、科学和运输委员会，尚无审议、修订或投票。",
+      "items": [
+        {
+          "title": "OpenAI把前沿训练停止权下沉到推理层，35秒内切断模型输出",
+          "what": "OpenAI于11月9日披露，已在研究基础设施部署统一的Control Room，覆盖训练、评测、数据处理等所有研究推理负载；其中任何执行智能体推理的任务都必须绑定已批准的安全论证。监控系统或人员决定暂停后，Control Room会撤销任务授权，推理引擎在下一次生成前拒绝请求，使任务即使仍在运行也无法继续取得模型输出；公司称从收到停止指令到无法继续推进最多35秒，全部前沿强化学习任务还会由另一模型持续监控。",
+          "why_it_matters": "这把“发现风险后暂停训练”从依赖研究人员或不断变化的任务代码，改成由集中授权服务和少数推理引擎强制执行的基础设施条件。它首次较完整地公开了前沿训练的实际停机链路：安全论证决定任务是否可启动，监控或人工触发停止，推理层统一切断输出；即使负载代码失效或试图绕过，也不能自行恢复生成。",
+          "evidence": "这是OpenAI自述的已部署内部控制，适用于其研究基础设施，不构成外部监管义务。故障关闭机制现已覆盖全部前沿模型研究负载，并称将在数日内扩展到其余研究负载；35秒是收到停止指令后的最长输出切断时间，不包括发现风险和作出停止决定所需时间，也不等同于终止所有计算进程。尚无独立审计验证。",
+          "supporting_details": "推理引擎会携带任务ID向Control Room查询授权；服务不可用时采用“失败即关闭”，拒绝相关推理请求。OpenAI称外部模型服务栈本身更集中，已有独立的快速下线能力。",
+          "impact": ""
+        }
+      ],
+      "recommendations": [],
+      "sources": [
+        {
+          "name": "OpenAI：Control Room",
+          "date": "2026-11-09",
+          "url": "https://openai.com/index/control-room/",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "OpenAI：Towards safety cases for frontier AI training",
+          "date": "2026-09-28",
+          "url": "https://openai.com/index/towards-safety-cases-for-frontier-ai-training/",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "GovInfo：H.R.10538",
+          "date": "2026-09-24",
+          "url": "https://www.govinfo.gov/app/details/BILLS-119hr10538ih",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "GovInfo：S.5493",
+          "date": "2026-09-23",
+          "url": "https://www.govinfo.gov/app/details/BILLS-119s5493is",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-11-10T00:21:20.233Z"
+    },
     {
       "id": "frontier-regulation:2026-11-07",
       "radarKey": "frontier-regulation",
