@@ -2,8 +2,58 @@
   "schemaVersion": 1,
   "radarKey": "ai-capability",
   "radarTitle": "AI 能力",
-  "updatedAt": "2026-11-07T00:46:36.013Z",
+  "updatedAt": "2026-11-10T00:34:11.750Z",
   "reports": [
+    {
+      "id": "ai-capability:2026-11-10",
+      "radarKey": "ai-capability",
+      "radarTitle": "AI 能力",
+      "reportDate": "2026-11-10",
+      "headline": "Claude千Agent自行协调完成形式化证明，并产出三款可工作的电子原型",
+      "conclusion": "",
+      "briefVersion": 2,
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "一千个Claude Agent自行建立协作机制，29小时完成费马大定理形式化",
+          "what": "Anthropic让1,000个运行Claude Fable 5.2早期版本的Agent，在没有专用数学协作平台和研究者持续指挥的情况下，把费马大定理的既有证明完整写成Lean可机检代码。研究方只提供60个待证明陈述、47个已证明引理、一句经典路线提示以及Git、SQL数据库和无网络沙箱；一个主Agent在最初10分钟自行设计任务表，999个助手通过数据库认领和拆分工作，最终用28.7小时完成证明。相较9月依赖专用Prove2Me平台和人类指导的11天实验，本次输出Token约为三分之一，证明长度约为七分之一。",
+          "why_it_matters": "决定性变化不只是模型更会写证明，而是大量通用Agent能在长任务中自行发明协调结构、动态重分配人员，并把原先判断成功率低于1%的难点拆成2,418个任务继续推进。这表明，面对可拆分、可自动验证且工具边界清晰的问题，多Agent系统已经能把单体模型的短时能力放大为持续一天以上的工程执行力。",
+          "evidence": "这是Anthropic组织的一次“玩具实验”，每个模型只运行一次，并非对新数学定理的原创证明：Agent获得了Wiles证明路线中的中间陈述和47个既有引理，目标是形式化而不是发现证明。系统运行在1,000个隔离虚拟机中，依赖Git、共享Postgres数据库、自动评分器、工具调用分类器和离线监控；结果不能外推到目标模糊、难以自动验收或无法大规模并行的开放式研究。",
+          "supporting_details": "团队在超过100万次工具调用中没有触发实时阻断；但Anthropic指出，Agent会过早放弃并误判难度，专用协作平台和关键节点的人类鼓励仍可能提升效率。",
+          "impact": ""
+        },
+        {
+          "title": "Claude从一句需求完成三款电子原型设计，人类负责制造和实物测试",
+          "what": "Anthropic与电路板公司Diode让Claude Fable 5.2分别设计USB扬声器电话、家庭语音助手和掌上虚拟宠物。模型从一段需求出发，自行编写规格、选择有现货的元件、绘制四层印刷电路板并反复重布线，完成外壳的计算机辅助设计、固件、物料清单和装配说明；每块板在一天内达到可制造状态。Diode工程师按模型文件生产并在Claude指导下装配、测试，三款设备都无需修改电路便能工作，其中扬声器电话已连续使用数周。",
+          "why_it_matters": "这比“生成一张电路图”跨出了一整段能力边界：模型能跨电子、机械、供应链和软件约束保持一致，并在布局走不通时主动推翻重做，最终把数字设计交给人类转成可运行实物。它说明在目标明确、工具数字化且有工程师承担物理操作与验收时，通用模型已经可以承担从概念到早期硬件样机的大部分设计循环。",
+          "evidence": "这是Anthropic与其商业合作方Diode完成的三件原型，尚未经过完整电气验证、天线调谐、热测试、量产设计或商业认证；模型也没有直接连接测试仪器和制造设备，实物制造与测试均由人类完成。PCB Gym的69%来自Diode内部评测，公开BenchCAD 2.1的83.5%也只覆盖从图纸重建零件、装配和电路板的特定任务。",
+          "supporting_details": "此前模型经常留下约95%完成但无法制造的板子；Fable 5.2会交换可互换引脚、删除拥挤走线并自行编写路由算法。Diode从模型设计文件直接制造三块板，没有经历通常的工厂修改往返。",
+          "impact": ""
+        }
+      ],
+      "recommendations": [],
+      "sources": [
+        {
+          "name": "Anthropic｜Introducing Claude Fable 5.2 and Claude Mythos 5.2",
+          "date": "2026-11-09",
+          "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Claude Developer Blog｜Safely scaling multi-agent teams with Claude Fable 5.2",
+          "date": "2026-11-09",
+          "url": "https://claude.dev/blog/safely-scaling-multi-agent-teams-with-fable-5-2/",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Anthropic Research｜Testing Claude on real-world electronics design",
+          "date": "2026-11-09",
+          "url": "https://www.anthropic.com/research/claude-electronics-design",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-11-10T00:34:11.750Z"
+    },
     {
       "id": "ai-capability:2026-11-07",
       "radarKey": "ai-capability",
