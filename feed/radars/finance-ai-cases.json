@@ -2,8 +2,44 @@
   "schemaVersion": 1,
   "radarKey": "finance-ai-cases",
   "radarTitle": "财经 AI 案例",
-  "updatedAt": "2026-11-09T23:35:24.508Z",
+  "updatedAt": "2026-11-10T23:36:46.434Z",
   "reports": [
+    {
+      "id": "finance-ai-cases:2026-11-11",
+      "radarKey": "finance-ai-cases",
+      "radarTitle": "财经 AI 案例",
+      "reportDate": "2026-11-11",
+      "headline": "Northern Trust让Agent转换多年交易历史，分析师复核后客户才上线",
+      "conclusion": "",
+      "briefVersion": 2,
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "Northern Trust让Agent转换多年交易历史，分析师复核后客户才上线",
+          "what": "Northern Trust 已在资产服务 Front Office Solutions 的机构客户 onboarding 流程部署 AI Agent：系统把来自多种来源、跨越多年的投资与交易历史转换成 Northern Trust 的标准化报告格式。分析师继续检查输出和推理、处理例外、核对错误并批准最终数据，客户只有在起始数据验证完成后才上线。Northern Trust 对真实生产案例的测量显示，包含数据转换、人工复核、异常处理和最终验证在内的准备时间缩短 83%，由约两周半降至三天。",
+          "why_it_matters": "这把高度依赖人工映射和历史重建的机构资产服务流程推进到“Agent 完成首轮转换、人负责例外和最终验证”。关键变化不是单点提取，而是 Agent 产出已进入正式 onboarding 主链路，并以端到端周期而非模型演示速度衡量效果。",
+          "evidence": "该能力已部署，时间改善来自 Northern Trust 与 Microsoft 联合发布的生产案例口径；公开材料未披露生产测量覆盖的客户数和案例数。另行公布的首轮质量测试只覆盖七个匿名化历史案例，属于受控测试，不能直接当作全部生产数据的准确率；尚无独立审计。",
+          "supporting_details": "Microsoft 工程团队只使用匿名化材料调优，Northern Trust 保留客户数据控制权；Agent 结果进入 Excel、SharePoint 等现有工具供分析师检查、修订和批准，获批的 onboarding 知识再进入受治理的知识层。",
+          "impact": ""
+        }
+      ],
+      "recommendations": [],
+      "sources": [
+        {
+          "name": "Microsoft Source｜Northern Trust and Microsoft Frontier Company collaborate to transform client onboarding through AI",
+          "date": "2026-11-09",
+          "url": "https://news.microsoft.com/source/2026/11/09/northern-trust-and-microsoft-frontier-company-collaborate-to-transform-client-onboarding-through-ai/",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "CIO｜Northern Trust streamlines client onboarding with AI agent",
+          "date": "2026-11-09",
+          "url": "https://www.cio.com/article/4245961/northern-trust-streamlines-client-onboarding-with-ai-agent.html",
+          "evidence_strength": "中"
+        }
+      ],
+      "updatedAt": "2026-11-10T23:36:46.434Z"
+    },
     {
       "id": "finance-ai-cases:2026-11-10",
       "radarKey": "finance-ai-cases",
