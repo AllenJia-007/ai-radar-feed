@@ -2,8 +2,70 @@
   "schemaVersion": 1,
   "radarKey": "ai-work-system",
   "radarTitle": "AI 工作系统",
-  "updatedAt": "2026-11-09T00:13:14.111Z",
+  "updatedAt": "2026-11-10T23:35:06.756Z",
   "reports": [
+    {
+      "id": "ai-work-system:2026-11-11",
+      "radarKey": "ai-work-system",
+      "radarTitle": "AI 工作系统",
+      "reportDate": "2026-11-11",
+      "headline": "Google把团队方法做成可组合Skill，Claude把协作对象搬进AI入口",
+      "conclusion": "",
+      "briefVersion": 2,
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "Google把Workspace Skill变成可测试、可组合、可定时运行的团队方法",
+          "what": "Google于11月10日正式开始在Workspace Studio及Gmail、Docs、Slides、Drive、Chat中推出Skills。团队可以在Studio或Docs中编写并协作修改Markdown原生的SKILL.md，用真实邮件、文档或演示任务测试后再启用；工作时既可由用户用@点名一个或多个Skill，也可让Gemini自动选择适用Skill，还能把Skill接入手动或定时启动的Workspace Studio流程。分享并不是多人共同维护同一个Skill：接收者得到独立副本，原作者后续修改不会自动覆盖；引用的Drive资料也必须另行授予权限。",
+          "why_it_matters": "10月初能够确认的还是Skill替代Gems的迁移计划，本次新增事实是团队工作方法已经进入原生办公应用和自动化流程。专业人员不必离开当前邮件或文档去配置独立Agent，就能把规则、参考资料和处理方式沉淀成可测试、可复用的工作资产；但复制式分享和两套Skill库不同步，也意味着团队版本维护尚未形成完整闭环。",
+          "evidence": "Rapid Release域自11月9日起分批开放，最长15天可见；Scheduled Release域自11月30日起分批开放。覆盖Business Starter/Standard/Plus、Enterprise Starter/Standard/Plus、Google AI Pro for Education及AI Expanded Access，限18岁以上用户，目前只支持英文指令；创建、编辑、测试和分享限网页，调用还支持Google Chat移动端，Sheets与Meet尚不支持。管理员可按域、组织单位或群组关闭并审计活动；Gemini自动选择Skill仅对Gemini Beta用户开放。",
+          "supporting_details": "Workspace与Gemini应用中的Skills/Gems是两套独立库，不会自动同步；2027年的剩余Gem迁移只进入Gemini应用。两端都采用开放SKILL.md格式，因此可手工复制指令，但仍需分别启用和验证。",
+          "impact": ""
+        },
+        {
+          "title": "Claude让团队与AI共同维护表格、白板和嵌入式应用",
+          "what": "Anthropic于11月10日推出Claude Sheets和Claude Whiteboards测试版：成员与Claude可在同一张表格的单元格中实时编辑、查看公式和变更，或在共享白板上共同整理想法、移动结构，再让Claude把结果转成文档或演示文稿；这些对象持续保存在Artifacts中，而不只是一次对话附件。与此同时，Interactive Connectors可把Asana任务板、Canva设计、Figma批注或Slack消息等实时界面直接嵌入Claude，用户可以自己操作，也可以要求Claude在连接器开放的动作范围内修改，并逐项批准执行。",
+          "why_it_matters": "AI工作入口开始承载团队长期共同维护的工作对象，而不只是生成后交给外部软件的文件：人可以直接校正单元格、重排白板或操作嵌入式应用，Claude则在同一对象上继续加工。这减少了对话、文件下载和业务系统之间的交接，但目前仍是Anthropic产品内的早期形态，不能据此推断已形成稳定的大规模跨应用协作。",
+          "evidence": "Sheets和Whiteboards均为Beta，覆盖Pro、Max、Ultra、Team和Enterprise；Team默认开启，Enterprise默认关闭，需管理员在Artifacts设置中启用。Sheets上限10万个单元格，尚不支持透视表、受保护区域、宏/VBA、Power Query、DAX或从连接应用拉取实时数据，移动端仅可基础只读；Whiteboards不读取连接应用上下文，且不适用于HIPAA-ready组织。Interactive Connectors面向Claude、Cowork、Desktop和移动端用户，但侧栏、全屏及固定入口仍只在新版网页和Desktop灰度，具体界面与可执行动作由各连接器开发者决定。",
+          "supporting_details": "Sheets保留版本历史并以描边显示Claude写入，团队成员可在相同单元格同步工作；Whiteboards允许组织外成员通过邮件加入，但Team/Enterprise管理员需先允许外部邀请。连接器动作沿用Claude现有审批方式，Claude不能执行开发者未暴露的动作。",
+          "impact": ""
+        }
+      ],
+      "recommendations": [],
+      "sources": [
+        {
+          "name": "Google Workspace Updates｜Scale customized AI across your team with skills in Google Workspace and Workspace Studio",
+          "date": "2026-11-10",
+          "url": "https://workspaceupdates.googleblog.com/2026/11/skills-in-workspace.html",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Google Workspace Studio Help｜Learn how skills work in Google Workspace & Google Workspace Studio",
+          "date": "2026-11-10（核验）",
+          "url": "https://support.google.com/workspace-studio/answer/17307546",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Claude Help Center｜Get started with Claude Sheets",
+          "date": "2026-11-10",
+          "url": "https://support.claude.com/en/articles/18324300-get-started-with-claude-sheets",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Claude Help Center｜Get started with Claude Whiteboards",
+          "date": "2026-11-10",
+          "url": "https://support.claude.com/en/articles/18324319-get-started-with-claude-whiteboards",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Claude Help Center｜Use interactive connectors in Claude",
+          "date": "2026-11-10",
+          "url": "https://support.claude.com/en/articles/13454812-use-interactive-connectors-in-claude",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-11-10T23:35:06.756Z"
+    },
     {
       "id": "ai-work-system:2026-11-09",
       "radarKey": "ai-work-system",
