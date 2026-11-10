@@ -2,8 +2,44 @@
   "schemaVersion": 1,
   "radarKey": "agent-governance",
   "radarTitle": "Agent 治理",
-  "updatedAt": "2026-11-07T00:12:40.462Z",
+  "updatedAt": "2026-11-10T00:04:52.344Z",
   "reports": [
+    {
+      "id": "agent-governance:2026-11-10",
+      "radarKey": "agent-governance",
+      "radarTitle": "Agent 治理",
+      "reportDate": "2026-11-10",
+      "headline": "Microsoft把Agent治理从一次审批改为常设决策机制",
+      "conclusion": "",
+      "briefVersion": 2,
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "Microsoft把Agent治理从一次审批改为常设决策机制",
+          "what": "Microsoft在11月9日面向美国国防工业基础发布的治理指南中，要求设立常设AI安全委员会，或扩大既有架构评审委员会职权，由其决定哪些Agent用例可获准、可访问哪些数据、哪些连接器或第三方可用，以及例外何时失效。每个Agent同时设置Owner与Sponsor：Owner负责日常运行、访问和全生命周期管理，Sponsor负责业务问责并持续确认其业务必要性。停用、隔离、转交、删除Agent以及禁用身份、撤销会话或授权等处置手段，应事先明确谁有权启动，并计量从发现或批准处置到完成撤权的时延。",
+          "why_it_matters": "这把Agent治理从“上线前做一次技术审批”改为持续运行的决策机制，并明确拆开技术运营责任、业务必要性确认和事故处置权。治理重点因此不只是有没有控制功能，而是决策权是否常设、例外是否到期、停机权是否预先授权且可计时验证。",
+          "evidence": "这是Microsoft面向国防工业客户的官方实施指南，不是某家企业已经运行并验证成效的制度。指南明确指出，当前GCC High环境仍依赖人工台账及Power Platform、Entra等现有控制，部分Agent 365生命周期与策略能力标为未来能力；未公开准入评分、撤权时延目标或生产事故结果。",
+          "supporting_details": "建议的运行节奏是：前30天建立台账与责任人，31—60天执行数据、连接器和高权限基线，61—90天成立有审批与例外授权权力的委员会，并将Owner、权限、例外和证据纳入季度复核；高风险Agent按数据敏感度、系统访问、自主程度和业务影响采用更严格路径。",
+          "impact": ""
+        }
+      ],
+      "recommendations": [],
+      "sources": [
+        {
+          "name": "Microsoft Public Sector Blog｜Securing AI Adoption in the Defense Industrial Base — Part 3: Governing AI and a 90-Day Plan",
+          "date": "2026-11-09",
+          "url": "https://techcommunity.microsoft.com/blog/publicsectorblog/securing-ai-adoption-in-the-defense-industrial-base-%E2%80%94-part-3-governing-ai-and-a-/4570782",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Microsoft Learn｜Entra Agent ID lifecycle policies (preview)",
+          "date": "2026-10-09",
+          "url": "https://learn.microsoft.com/en-us/entra/id-governance/agent-lifecycle-policies",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-11-10T00:04:52.344Z"
+    },
     {
       "id": "agent-governance:2026-11-07",
       "radarKey": "agent-governance",
