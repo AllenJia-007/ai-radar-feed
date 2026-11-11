@@ -2,8 +2,62 @@
   "schemaVersion": 1,
   "radarKey": "frontier-regulation",
   "radarTitle": "前沿 AI 监管",
-  "updatedAt": "2026-11-10T00:21:20.233Z",
+  "updatedAt": "2026-11-11T00:24:56.119Z",
   "reports": [
+    {
+      "id": "frontier-regulation:2026-11-11",
+      "radarKey": "frontier-regulation",
+      "radarTitle": "前沿 AI 监管",
+      "reportDate": "2026-11-11",
+      "headline": "澳大利亚拟强制前沿AI公司接受独立评测并快速报告事故",
+      "conclusion": "",
+      "briefVersion": 2,
+      "currentStatus": "澳大利亚政府已作出立法政策承诺，但《AI Standards》法案文本尚未公布、尚未提交或通过议会，六项义务和专门监管机构均未生效；适用的“前沿AI公司”定义、能力或算力门槛、报告时限、罚款额度及监管者是否拥有暂停训练或部署权仍待法案明确。美国H.R.10538与S.5493仍分别停留在众议院监督与政府改革委员会、参议院商务、科学和运输委员会。",
+      "items": [
+        {
+          "title": "澳大利亚拟强制前沿AI公司接受独立评测并快速报告事故",
+          "what": "澳大利亚政府11月10日宣布，将通过拟议的《AI Standards》立法，把强制安全义务施加给所有希望在澳大利亚运营的前沿AI公司，并拟设立专门AI安全监管机构、由澳大利亚AI安全研究所提供技术支持。政府列出的六项义务覆盖模型开发和部署全周期安全控制、严重风险识别与管理、允许独立模型评测、向政府快速报告事故、公开安全与安保框架，以及随技术变化遵守更新后的标准和规则；监管机构还将能够对不合规企业施加重大处罚。该决定同时落实了政府对OpenAI智能体未经授权访问政府医保统计系统事件快速审查的回应，审查建议把失配行为和智能体网络事件纳入有时限的强制报告。",
+          "why_it_matters": "这使澳大利亚从依赖企业自愿通报和一般网络安全规则，转向准备建立针对前沿模型提供方的专门法定义务。独立评测、全生命周期安全控制和可动态更新的标准若按公告落地，将使模型能否在澳运营不再只由开发商自行判断；事故报告也会把训练、评测或部署期间的异常智能体行为更早带入政府处置流程。",
+          "evidence": "这是总理和工业科技部长公布的政府立法方案及已接受的审查建议，不是现行法律。政府尚未公布法案文本、适用门槛、具体报告时限和罚款额度，也未明确监管者是否可直接命令暂停训练、拒绝部署或下线模型；因此目前不能称为许可制、部署前审批或已生效的强制评测。",
+          "supporting_details": "快速审查提出18项建议，其中第3项要求政府考虑对失配行为或智能体网络事件实施有时限的强制安全报告；政府表示已接受建议并开始实施。新法的更多细节仍待详细设计与咨询完成后公布。",
+          "impact": ""
+        }
+      ],
+      "recommendations": [],
+      "sources": [
+        {
+          "name": "澳大利亚总理府：New Australian AI safety and security protections",
+          "date": "2026-11-10",
+          "url": "https://www.pm.gov.au/media/new-australian-ai-safety-and-security-protections",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "澳大利亚总理与内阁部：AI驱动网络事件快速审查建议",
+          "date": "2026-11-10",
+          "url": "https://www.pmc.gov.au/resources/rapid-review-australian-government-arrangements-ai-driven-cyber-incident/rapid-review-australian-government-arrangements-ai-driven-cyber-incident-recommendations",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "澳大利亚工业、科学与资源部：Strengthening Australia against AI-driven cyber incidents",
+          "date": "2026-11-10",
+          "url": "https://www.minister.industry.gov.au/t-ayres/media/strengthening-australia-against-ai-driven-cyber-incidents",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "GovInfo：H.R.10538",
+          "date": "2026-09-24",
+          "url": "https://www.govinfo.gov/app/details/BILLS-119hr10538ih",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "GovInfo：S.5493",
+          "date": "2026-09-23",
+          "url": "https://www.govinfo.gov/app/details/BILLS-119s5493is",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-11-11T00:24:56.119Z"
+    },
     {
       "id": "frontier-regulation:2026-11-10",
       "radarKey": "frontier-regulation",
