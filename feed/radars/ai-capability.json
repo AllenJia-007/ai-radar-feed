@@ -2,8 +2,50 @@
   "schemaVersion": 1,
   "radarKey": "ai-capability",
   "radarTitle": "AI 能力",
-  "updatedAt": "2026-11-10T00:34:11.750Z",
+  "updatedAt": "2026-11-11T00:56:38.135Z",
   "reports": [
+    {
+      "id": "ai-capability:2026-11-11",
+      "radarKey": "ai-capability",
+      "radarTitle": "AI 能力",
+      "reportDate": "2026-11-11",
+      "headline": "Google用AI Agent把Signal核心加密实现验证到机器码层",
+      "conclusion": "",
+      "briefVersion": 2,
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "Google用AI Agent把Signal核心加密实现验证到机器码层",
+          "what": "Google DeepMind用AlphaProof Code验证Signal参考实现libsignal的核心加密代码：人类密码学和形式化验证专家先与模型共同把安全目标写成Lean规格，并逐项审阅批准；随后由Gemini Carbon驱动的Agent团队，把未经修改的Rust代码编译为AArch64机器码，自动生成约650万行Lean证明，证明PQXDH握手和Triple Ratchet满足前向保密、身份认证、受攻陷后恢复等既定安全性质。整个验证历时约四周，典型证明任务由40—80个Agent连续运行24—72小时；Lean内核只接受与人类批准规格完全一致的证明，研究人员最终只需重点复核约1%的代码。",
+          "why_it_matters": "这首次把AI辅助形式化验证推进到广泛部署的加密协议实际实现与编译后机器码，而非只验证抽象协议模型或为验证专门重写的代码。能力变化在于：一旦人类确定“究竟要证明什么”，大量证明编写和分解可交给Agent并由机器内核逐步验真，使过去需要多年专家劳动的高强度安全保证有机会进入更多真实软件；真正的责任瓶颈则转向规格定义、假设选择和范围取舍。",
+          "evidence": "这是Google DeepMind发布的研究成果，论文、规格和证明工件已公开，团队还重新引入两个历史漏洞，系统均证明相应二进制不安全。但结论并不覆盖完整Signal应用：对象是libsignal 0.105.4的一对一会话和特定libsignal-cli构建，群聊、多设备状态、侧信道、线程、动态链接以及部分真实环境行为未纳入；若人类批准的规格过弱，Lean只能证明“代码符合该规格”，不能自动保证规格代表全部真实安全需求。部分后量子保证仅在理想化符号模型中成立，若干底层密码例程也以可信契约作为前提。",
+          "supporting_details": "证明依赖约26,000行需信任和审计的规格与AArch64语义；系统用隔离保存的人类批准规格、确定性比较器和Lean内核阻止Agent通过悄悄削弱定理来完成任务。",
+          "impact": ""
+        }
+      ],
+      "recommendations": [],
+      "sources": [
+        {
+          "name": "Google DeepMind｜Introducing AlphaProof Code",
+          "date": "2026-11-10",
+          "url": "https://deepmind.google/blog/introducing-alphaproof-code/",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Google DeepMind｜AlphaProof Code technical paper",
+          "date": "2026-11-10",
+          "url": "https://deepmind.google/documents/36/Formal_Verification_of_Signal_4.pdf",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Google DeepMind｜Signal verification artifacts",
+          "date": "2026-11-10",
+          "url": "https://google-deepmind.github.io/code-verification/",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-11-11T00:56:38.135Z"
+    },
     {
       "id": "ai-capability:2026-11-10",
       "radarKey": "ai-capability",
