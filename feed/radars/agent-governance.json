@@ -2,8 +2,44 @@
   "schemaVersion": 1,
   "radarKey": "agent-governance",
   "radarTitle": "Agent 治理",
-  "updatedAt": "2026-11-10T23:43:29.766Z",
+  "updatedAt": "2026-11-11T23:41:15.396Z",
   "reports": [
+    {
+      "id": "agent-governance:2026-11-12",
+      "radarKey": "agent-governance",
+      "radarTitle": "Agent 治理",
+      "reportDate": "2026-11-12",
+      "headline": "Cequence用独立控制逐步核验Agent授权，越界尝试从44%降至1%",
+      "conclusion": "",
+      "briefVersion": 2,
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "Cequence用独立控制逐步核验Agent授权，越界尝试从44%降至1%",
+          "what": "Cequence Security于11月11日发布一项与KPMG新加坡共同形成的研究：企业先把每个Agent的具体职责转成硬性权限边界，再由Agent之外的独立控制在每一步动作发生前，结合当前任务、角色和累计风险决定允许、转人工或阻断；被阻断时还把Agent引回允许路径，而不是让首次登录或任务开头的一次批准覆盖后续全部步骤。Cequence称，在其研究原型的受控实验中，仅使用登录身份和固定权限的Agent有44%的运行尝试执行职责外动作；加入明确职责与逐动作校验后降至1%，同时任务完成率由76%升至95%，每次运行Token用量约下降35%。",
+          "why_it_matters": "这把谁有权决定说清楚了：执行Agent无权自行解释权限，企业定义职责和边界，Agent外部的运行时控制逐动作放行。实验结果也提供了一个重要反证——更严格的治理未必降低完成率；如果阻断同时提供合规路径，约束可能减少无效探索并提高任务成功率。但这仍只是单一厂商原型的结果，不能据此认定该机制已在企业生产环境普遍成立。",
+          "evidence": "44%、1%、76%、95%和35%均来自Cequence自有研究原型的受控实验，公开材料没有披露样本量、所用模型、任务分布、越界判定标准、政策误报率或统计区间；KPMG提供治理与风险方面的输入，但没有独立复现这些结果。报告另称其在2026年10月一周观察到五个行业超过25万次AI Agent访问，其中约七分之一替客户登录、购买、预订或管理账户；这是真实流量观察，但与上述对照实验不是同一证据，也没有证明逐动作校验已在这些客户生产系统运行。",
+          "supporting_details": "报告还披露，一家一级电信运营商中，未声明Agent身份的自动化流量在某消费级Agent发布后三周内由每天约100次升至最高3.2万次，并能以客户身份通过多因素认证。该观察支持“验证用户身份不等于验证Agent此次动作获授权”，但客户未具名，流量识别方法和误判范围未公开。",
+          "impact": ""
+        }
+      ],
+      "recommendations": [],
+      "sources": [
+        {
+          "name": "Cequence Security｜Cequence and KPMG report on governing and securing agentic AI",
+          "date": "2026-11-11",
+          "url": "https://www.cequence.ai/news/cequence-kpmg-how-organizations-can-govern-and-secure-agentic-ai",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "GlobeNewswire｜Cequence Security and KPMG Collaborate on Joint Report",
+          "date": "2026-11-11",
+          "url": "https://www.globenewswire.com/news-release/2026/11/11/3400523/0/en/cequence-security-and-kpmg-collaborate-on-joint-report-examining-how-organizations-can-govern-and-secure-agentic-ai.html",
+          "evidence_strength": "中"
+        }
+      ],
+      "updatedAt": "2026-11-11T23:41:15.396Z"
+    },
     {
       "id": "agent-governance:2026-11-11",
       "radarKey": "agent-governance",
