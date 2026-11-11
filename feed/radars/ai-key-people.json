@@ -2,8 +2,50 @@
   "schemaVersion": 1,
   "radarKey": "ai-key-people",
   "radarTitle": "AI 关键人物观点",
-  "updatedAt": "2026-11-07T00:46:36.013Z",
+  "updatedAt": "2026-11-11T00:57:52.663Z",
   "reports": [
+    {
+      "id": "ai-key-people:2026-11-11",
+      "radarKey": "ai-key-people",
+      "radarTitle": "AI 关键人物观点",
+      "reportDate": "2026-11-11",
+      "headline": "Mollick把前沿模型称为“锯齿型AGI”，核心缺口从答错转向不会自我评判",
+      "conclusion": "",
+      "briefVersion": 2,
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "Mollick把前沿模型称为“锯齿型AGI”，核心缺口从答错转向不会自我评判",
+          "what": "Ethan Mollick基于对Claude Fable 5.2的发布前长期试用，把当前前沿模型描述为“接近通用人工智能，但仍呈锯齿状”：它能从单个提示逆向分析小键盘并写出六款游戏，完成接近MBA团队水平的商业方案，开展学术研究，并让约25,000次Agent运行生成数百个三维世界；这些跨领域任务在很多环节达到他所说的“多数人类专家”水平。但长任务暴露的新缺口不再主要是简单算错或编造事实：模型会写出准确却乏味的课程、堆成182页而不知取舍的论文，并把“打磨作品”解释成不断增加审查规则，最终形成204节、87,500字的规则手册，使新作品交付从一天数百个降到约一天一个。",
+          "why_it_matters": "这修正了“能力强后只需增加事实核查和批评Agent”的判断。Mollick发现，模型已经会布置批评者、事实核查者和评委，但这些角色只会发现局部错误并追加修补，无法主动意识到整体作品过长、重复、无趣，或协作流程已经被自身规则拖垮；人类价值因此从逐步操作进一步转向判断“这件事整体是否仍值得做、何时该删减或停下”。这也让他把此前的“锯齿前沿”推进为“锯齿型AGI”：能力广度已接近专家群体，稳定的自我品味和元判断仍未补齐。",
+          "evidence": "这是Mollick个人的发布前使用观察，不是受控实验或通用AGI测量；他获得了未计费的早期模型使用，但声明未接受实验室资金、Anthropic未预审文章。商业项目在联系真实客户前被他叫停，学术论文尚未由人类完整复核，长项目也接受了他的方向调整；因此结论应视为有大量可查看产物支持的经验框架，不能证明Fable 5.2已达到AGI，也不能外推到所有任务和模型。",
+          "supporting_details": "Mollick此前把人类角色概括为召集Agent并验收结果；此次进一步指出，验收不是末端抽查，而是持续识别目标漂移、流程膨胀和作品整体质量的元判断。",
+          "impact": ""
+        }
+      ],
+      "recommendations": [],
+      "sources": [
+        {
+          "name": "Ethan Mollick｜Fable 5.2 and Jagged AGI",
+          "date": "2026-11-09",
+          "url": "https://www.oneusefulthing.org/p/fable-52-and-jagged-agi",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Ethan Mollick｜AI Portals project code",
+          "date": "2026-11-09",
+          "url": "https://github.com/emollick/ai-portals",
+          "evidence_strength": "中"
+        },
+        {
+          "name": "Ethan Mollick｜Auden course project code",
+          "date": "2026-11-09",
+          "url": "https://github.com/emollick/auden-class",
+          "evidence_strength": "中"
+        }
+      ],
+      "updatedAt": "2026-11-11T00:57:52.663Z"
+    },
     {
       "id": "ai-key-people:2026-11-07",
       "radarKey": "ai-key-people",
