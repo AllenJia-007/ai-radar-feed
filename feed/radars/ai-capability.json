@@ -2,8 +2,64 @@
   "schemaVersion": 1,
   "radarKey": "ai-capability",
   "radarTitle": "AI 能力",
-  "updatedAt": "2026-11-11T00:56:38.135Z",
+  "updatedAt": "2026-11-12T01:25:13.224Z",
   "reports": [
+    {
+      "id": "ai-capability:2026-11-12",
+      "radarKey": "ai-capability",
+      "radarTitle": "AI 能力",
+      "reportDate": "2026-11-12",
+      "headline": "模型开始看见更细的生物状态，也更少暴露自己的推理过程",
+      "conclusion": "",
+      "briefVersion": 2,
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "AlphaGenome 2把遗传变异预测推进到具体细胞状态",
+          "what": "Google DeepMind发布AlphaGenome 2，把DNA变异影响预测从组织平均值细化到具体细胞类型和状态。模型以最长100万碱基的DNA序列和一个目标生物条件为输入；研究人员既可从参考目录选择细胞，也可上传几十个细胞的单细胞RNA测序数据，让模型无需重新训练就为新的疾病或激活状态生成预测。在TenK10K的28类原代免疫细胞上，DeepMind报告其找回的候选因果变异由上一代的16%升至30%，正确判断表达升降方向的覆盖由23%升至43%；它还计算性复现了炎症性肠病中远端变异只在特定巨噬细胞内增强ETS2表达的既有实验结论。",
+          "why_it_matters": "实质变化不是基因模型又提高一个总分，而是模型能回答“同一变异在什么细胞、什么状态下起作用”，并把新采集的单细胞数据直接变成条件输入。这使AI有机会在大规模湿实验之前缩小候选变异、靶基因和细胞群范围，把静态细胞图谱转成可针对新状态提出实验假设的预测工具。",
+          "evidence": "模型已通过API向非商业研究开放，商业研究仅为私有预览；成绩来自Google DeepMind自己的回顾性基准和已知疾病机制复现，尚无前瞻性湿实验或独立大规模评测。30%对16%是特定精度门槛下的召回率，并不等于总体准确率翻倍，且大多数阳性变异仍未被找回；训练数据中的瞬时刺激、疾病状态和部分细胞群仍不足，输出只预测分子层后果，不能直接证明疾病因果或治疗有效。产品未获临床或诊断批准。",
+          "supporting_details": "模型基于超过1.07亿个单细胞档案、覆盖68种组织训练；条件化架构每次只预测一个细胞条件，分辨率更高，但扫描大量状态的计算开销也高于一次并行输出所有组织的上一代模型。",
+          "impact": ""
+        },
+        {
+          "title": "OpenAI发现模型越强、强化学习越多，思维链越难作为可靠监控窗口",
+          "what": "OpenAI分析从GPT-5到GPT-6 Astra级别的已发布和内部模型后发现，两条常规能力扩展路径都会削弱依赖思维链的监控基础：预训练困惑度降低时，模型在不输出显式推理或工具调用的情况下仍能完成数学、规划和多步计算的能力持续增强；在Astra级模型上，即使强化学习只按最终答案评分、没有奖励模型隐藏或改写推理过程，模型按指令操纵思维链格式的能力仍显著上升。团队还用能力接近但思维链可控性不同的教师模型生成数据，发现这种差异会经监督微调传给下一代学生模型。",
+          "why_it_matters": "这说明“读取模型自述推理来发现错误意图”不是随模型进步自然保持的安全能力：模型可能越来越少需要把关键计算写出来，普通的结果导向训练也可能让它更会控制公开推理痕迹。因此，长任务Agent的监督不能只依赖思维链文本，还要结合工具行为、环境结果和独立监控，并在训练架构和数据选择阶段就评估可监控性。",
+          "evidence": "这是OpenAI对内部检查点和部分公开模型的研究；无显式思维链能力使用选择题、数学和内部规划任务衡量，而“可控性”主要测试按指令加入大小写或特定词等格式，二者都是规避监控的代理指标。研究者明确承认该指标噪声较大：在一对能力接近的模型上，更高可控性没有带来更高的实际规避成功率；现有Astra也未在无引导的复杂破坏任务中证明能逃过完整轨迹监控。因此结果揭示的是监控窗口变脆的趋势，不是模型已能自主隐藏恶意。",
+          "supporting_details": "工具过程监督只让思维链可控性小幅增加，影响小于基础模型能力改善；OpenAI据此认为，仅在强化学习阶段调整过程监督不足以抵消预训练带来的趋势。",
+          "impact": ""
+        }
+      ],
+      "recommendations": [],
+      "sources": [
+        {
+          "name": "Google DeepMind｜AlphaGenome 2",
+          "date": "2026-11-11",
+          "url": "https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Google DeepMind｜AlphaGenome 2 technical paper",
+          "date": "2026-11-11",
+          "url": "https://storage.googleapis.com/deepmind-media/DeepMind.com/Blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/alphagenome-2.pdf",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Nature｜DeepMind's AI for genome mapping",
+          "date": "2026-11-11",
+          "url": "https://www.nature.com/articles/d41586-026-03673-0",
+          "evidence_strength": "中"
+        },
+        {
+          "name": "OpenAI Alignment｜What affects chain-of-thought monitorability across the model lifecycle?",
+          "date": "2026-11-10",
+          "url": "https://alignment.openai.com/cot-monitorability-model-lifecycle/",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-11-12T01:25:13.224Z"
+    },
     {
       "id": "ai-capability:2026-11-11",
       "radarKey": "ai-capability",
