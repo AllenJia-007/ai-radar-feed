@@ -2,8 +2,62 @@
   "schemaVersion": 1,
   "radarKey": "ai-work-system",
   "radarTitle": "AI 工作系统",
-  "updatedAt": "2026-11-10T23:35:06.756Z",
+  "updatedAt": "2026-11-12T00:14:48.477Z",
   "reports": [
+    {
+      "id": "ai-work-system:2026-11-12",
+      "radarKey": "ai-work-system",
+      "radarTitle": "AI 工作系统",
+      "reportDate": "2026-11-12",
+      "headline": "千问办公2.0把多人、数字员工和钉钉群资料放进同一协作空间",
+      "conclusion": "",
+      "briefVersion": 2,
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "千问办公2.0把多人、数字员工和钉钉群资料放进同一协作空间",
+          "what": "千问办公于11月9日发布2.0，把团队工作从“每个人分别和自己的Agent对话”改成围绕项目建立协作空间：成员在同一原生即时通信界面讨论和交办，空间可关联多个钉钉群聊、AI听记、文档和表格，每个空间配置一名可命名、设定技能与回复规则的数字员工。数字员工基于团队共同上下文整理进展、生成内容、建立并跟进待办，讨论、过程和产物继续留在空间，项目换人后可直接接续；团队成员负责补充背景、处理确认和业务判断。2.0还把定时任务扩展为事件触发任务，可在指定消息、审批或待办变化满足条件时自动启动处理，并保留每次执行过程、结果和失败原因。",
+          "why_it_matters": "这把Agent的工作单位从个人会话推进到团队共同维护的项目空间：群聊不再只是通知入口，群资料、已确认共识、任务状态和数字员工成为同一工作上下文，人和Agent可以围绕同一件事持续接力。它与此前Qwen Code面向个人或开发者的多会话工作台不同，新增的是多人共享上下文、明确数字员工角色以及业务事件主动触发的组合形态；但目前只能证明千问办公已经实现这套机制，不能外推为企业协作Agent的普遍成熟形态。",
+          "evidence": "官方客户端更新日志确认2.0.0已于2026年11月9日发布，但协作空间只面向企业组织，入口仍取决于版本、组织和开放范围；网页端需使用电脑浏览器，移动网页和钉钉内嵌页暂不开放。关联钉钉群与邀请空间成员是两项独立操作，普通群成员发起关联还需群管理员审批，原文档、表格和应用继续沿用各自权限。人机共创按版本和账号逐步开放，本地Office直接编辑仅限已开放能力的桌面版本。触发任务每小时最多运行200次，授权过期、权限不足、积分不足或电脑不具备在线执行条件都可能导致失败。",
+          "supporting_details": "空间数字员工可设为仅被@时回复，或由系统判断是否需要介入；空间记忆可由成员查看、纠正和停用。自动任务每次运行会创建独立对话，用户可查看完整执行过程并继续追问；纯云端任务可在电脑关闭后继续，本地任务和需要本机连接器的动作仍受设备与授权状态约束。",
+          "impact": ""
+        }
+      ],
+      "recommendations": [],
+      "sources": [
+        {
+          "name": "千问办公｜千问办公2.0：主动与协同，迈向Team Agent时代",
+          "date": "2026-11-09",
+          "url": "https://docs.qwenwork.cn/podcasts/qwenwork-2-team-agent",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "千问办公｜客户端更新日志 2.0.0",
+          "date": "2026-11-09",
+          "url": "https://docs.qwenwork.cn/release-notes/desktop",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "千问办公｜协作空间",
+          "date": "2026-11-12（核验）",
+          "url": "https://docs.qwenwork.cn/web/collaboration",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "千问办公｜自动任务",
+          "date": "2026-11-12（核验）",
+          "url": "https://docs.qwenwork.cn/desktop/scheduled-tasks",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "千问办公｜人机共创",
+          "date": "2026-11-12（核验）",
+          "url": "https://docs.qwenwork.cn/desktop/co-editing",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-11-12T00:14:48.477Z"
+    },
     {
       "id": "ai-work-system:2026-11-11",
       "radarKey": "ai-work-system",
