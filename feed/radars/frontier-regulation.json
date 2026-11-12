@@ -2,8 +2,62 @@
   "schemaVersion": 1,
   "radarKey": "frontier-regulation",
   "radarTitle": "前沿 AI 监管",
-  "updatedAt": "2026-11-11T00:24:56.119Z",
+  "updatedAt": "2026-11-12T08:01:16+08:00",
   "reports": [
+    {
+      "id": "frontier-regulation:2026-11-12",
+      "radarKey": "frontier-regulation",
+      "radarTitle": "前沿 AI 监管",
+      "reportDate": "2026-11-12",
+      "headline": "纽约州上线RAISE Act注册与事故报送入口，前沿开发者进入执行准备期",
+      "conclusion": "",
+      "briefVersion": 2,
+      "currentStatus": "纽约州RAISE Act已成法，注册入口已经上线；大型前沿开发者须在2027年1月1日前注册，安全框架、透明度与事故报告等义务自该日起适用。H.R.10538与参议院配套案S.5493仍分别停留在众议院监督与政府改革委员会、参议院商务、科学与交通委员会，未见审议、修订或表决。",
+      "items": [
+        {
+          "title": "纽约州上线RAISE Act注册与事故报送入口，前沿开发者进入执行准备期",
+          "what": "纽约州金融服务部（DFS）已上线Responsible AI Safety and Education（RAISE）Act专门门户，并由新设的数字创新、治理、诚信与信任办公室（DIGIT）负责执行；大型前沿模型开发者须在2027年1月1日前完成注册。自该日起，在纽约运营的全部前沿开发者须报告关键安全事故并发布模型透明度报告；上一年度营收超过5亿美元的大型开发者还须公开安全框架，关键安全事故原则上须在认定后72小时内报告。州检察长可就大型开发者未提交法定报告或虚假陈述提起民事诉讼，首次违法罚款最高100万美元，后续违法最高300万美元。",
+          "why_it_matters": "这一步把已经签署的州法从纸面义务推进到可实际使用的注册和报送基础设施，OpenAI、Anthropic等达到门槛的开发者现在必须在截止日前判断适用范围并完成登记。边界也很明确：现行RAISE Act主要强制透明度、事故报告和安全框架，并未像仍属提案的S.10731那样授权州政府限制训练算力、暂停自动化AI研发或请求法院禁止模型部署。",
+          "evidence": "DFS官方页面与RAISE门户已在线，TechCrunch于2026年11月10日报道门户当天开放。完整合规义务要到2027年1月1日才开始适用；配套的纽约AI责任与研究中心承担独立研究和协助审查安全框架，但现有公开材料没有赋予其强制取得未发布模型或实施部署前审批的权力。",
+          "supporting_details": "RAISE Act由纽约州长于2025年12月19日签署；DIGIT首份年度报告计划于2028年1月2日发布。",
+          "impact": ""
+        }
+      ],
+      "recommendations": [],
+      "sources": [
+        {
+          "name": "纽约州金融服务部：DIGIT与RAISE Act执行页面",
+          "date": "2026-11-10",
+          "url": "https://www.dfs.ny.gov/digit",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "纽约州RAISE Act专门门户",
+          "date": "2026-11-10",
+          "url": "https://raise.ny.gov/",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "TechCrunch：纽约开放前沿AI开发者注册入口",
+          "date": "2026-11-10",
+          "url": "https://techcrunch.com/2026/11/10/openai-anthropic-face-new-oversight-as-new-yorks-ai-safety-law-takes-effect/",
+          "evidence_strength": "中"
+        },
+        {
+          "name": "纽约州长办公室：签署RAISE Act",
+          "date": "2025-12-19",
+          "url": "https://www.governor.ny.gov/news/governor-hochul-signs-nation-leading-legislation-require-ai-frameworks-ai-frontier-models",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "美国政府出版局：H.R.10538与S.5493状态",
+          "date": "2026-11-12",
+          "url": "https://www.govinfo.gov/app/details/BILLS-119hr10538ih",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-11-12T08:01:16+08:00"
+    },
     {
       "id": "frontier-regulation:2026-11-11",
       "radarKey": "frontier-regulation",
