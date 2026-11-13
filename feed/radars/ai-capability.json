@@ -2,8 +2,44 @@
   "schemaVersion": 1,
   "radarKey": "ai-capability",
   "radarTitle": "AI 能力",
-  "updatedAt": "2026-11-12T01:25:13.224Z",
+  "updatedAt": "2026-11-13T00:40:42.658Z",
   "reports": [
+    {
+      "id": "ai-capability:2026-11-13",
+      "radarKey": "ai-capability",
+      "radarTitle": "AI 能力",
+      "reportDate": "2026-11-13",
+      "headline": "OpenAI用自动攻击器生成越狱训练数据，使双用途安全在自适应攻击下更稳",
+      "conclusion": "",
+      "briefVersion": 2,
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "OpenAI用自动攻击器生成越狱训练数据，使双用途安全在自适应攻击下更稳",
+          "what": "OpenAI提出一套自动红队流程，让攻击模型在每轮看到防守模型的回复和安全判定后继续改写提示，并用“worst@n”规则要求同一攻击在多次独立采样中全部成功，减少安全判定噪声被误当成真实漏洞。研究团队再把这些稳定越狱样本加入强化学习后训练：在从同一内部GPT-5.6 Terra检查点出发的对照实验中，模型对未见过的固定越狱的安全回复率从45%升至68%，面对会根据回复继续调整的在线多轮攻击时从71%升至92%；这套方法随后用于GPT-6 Astra和Sol，Astra在一组针对旧模型生成的网络安全越狱上安全回复率为91.5%，对照的GPT-5.6 Sol为59%。",
+          "why_it_matters": "关键变化是安全训练不再只依赖人工整理的静态违规问题，而能让另一个模型持续搜索防线、把找到的稳定失败转成下一轮训练数据。对保留攻击器和自适应多轮攻击仍有提升，说明这类闭环有望随攻击算力扩展，为网络安全、生物等边界模糊的双用途能力建立更可测量的防护；但它提高的是特定攻击预算下的稳健性，不等于模型已经无法被越狱。",
+          "evidence": "结果来自OpenAI内部模型与自动安全判定器的受控研究，评测覆盖网络安全和生物任务，且刻意关闭了生产环境的额外阻断层；尚无独立复现。论文只执行了一轮离线攻击数据生成，worst@n可降低随机误判，却不能消除安全判定器的系统性偏差；对经强化学习持续适配的攻击者，训练主要是延缓而非彻底阻止性能下降，因此不能外推为对新型攻击或真实部署的完整保证。",
+          "supporting_details": "普通推理模型即使没有专门红队训练也能找到大量越狱，经过自博弈训练的攻击模型则以更少反馈轮数达到更高成功率。研究只讨论模型层，实际部署还叠加可信访问、输入输出监控等其他防线。",
+          "impact": ""
+        }
+      ],
+      "recommendations": [],
+      "sources": [
+        {
+          "name": "OpenAI Alignment｜Improving Fuzzy Robustness in LLM Safety with Automated Red Teaming",
+          "date": "2026-11-12",
+          "url": "https://alignment.openai.com/fuzzy-robustness/",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "OpenAI｜Improving Fuzzy Robustness in LLM Safety with Automated Red Teaming（论文）",
+          "date": "2026-11-12",
+          "url": "https://cdn.openai.com/pdf/OAI_Improving_Fuzzy_Robustness_in_LLM_Safety_with_Automated_Red_Teaming.pdf",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-11-13T00:40:42.658Z"
+    },
     {
       "id": "ai-capability:2026-11-12",
       "radarKey": "ai-capability",
