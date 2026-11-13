@@ -2,8 +2,44 @@
   "schemaVersion": 1,
   "radarKey": "finance-ai-cases",
   "radarTitle": "财经 AI 案例",
-  "updatedAt": "2026-11-10T23:36:46.434Z",
+  "updatedAt": "2026-11-13T08:01:32+08:00",
   "reports": [
+    {
+      "id": "finance-ai-cases:2026-11-13",
+      "radarKey": "finance-ai-cases",
+      "radarTitle": "财经 AI 案例",
+      "reportDate": "2026-11-13",
+      "headline": "Island Waters把月结SOP做成定时Skill，所有写账仍由会计师批准",
+      "conclusion": "",
+      "briefVersion": 2,
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "Island Waters把月结SOP做成定时Skill，所有写账仍由会计师批准",
+          "what": "美国会计与CFO服务公司 Island Waters Accounting 把一套面向客户账簿的月结标准作业程序写成 Claude Skill，连接经授权的 QuickBooks Online 与 Xero，并在每月第三个自然日定时运行。Agent负责交易复核、预付与折旧等月末分录建议、定制报表、关键指标复核和董事会材料；平台只提出写账动作，每一笔入账前仍须专业人员批准，最终会计判断与客户交付责任留在人。",
+          "why_it_matters": "这是任务委托型 Agent 进入小型专业服务生产流程的清晰实例：可重复的月结方法不再只是提示词，而是被固化为有日历触发、系统连接和审批闸门的 Skill。它说明在账簿写权限被限制为“建议—人工批准”的条件下，单人会计团队也能把跨系统月结与报告委托给 Agent，而不必先建设大型定制平台。",
+          "evidence": "案例由 NumbersGame 以客户故事发布，Island Waters 官方页面确认其方法在实际执业中用于月结与报告，并强调企业仍负责会计判断和最终批准。创始人自报其单人工作流中，每月日常记账至月结报告由约10—15小时降至约1—2小时；这是单一小型机构的自估结果，未独立审计，也未披露客户数量、差错率或连续运行月份，不能外推为规模化会计运营。",
+          "supporting_details": "前置条件包括：客户明确授权连接账簿；通过 MCP 连接器访问受支持系统；把现有 SOP、客户背景、复核标准和例外处理写入 Skill；对调整建议、证据和异常进行人工复核。该机构并非注册会计师事务所，不提供审计、鉴证或税务申报服务，本案例只证明月结与管理报告工作流。",
+          "impact": ""
+        }
+      ],
+      "recommendations": [],
+      "sources": [
+        {
+          "name": "NumbersGame / EIN Presswire：Island Waters Accounting Uses NumbersGame to Build Its Own AI Agents for Close, Reporting and CFO Advisory",
+          "date": "2026-11-12",
+          "url": "https://mergersacquisitions.einnews.com/pr_news/956219253/island-waters-accounting-uses-numbersgame-to-build-its-own-ai-agents-for-close-reporting-and-cfo-advisory",
+          "evidence_strength": "中"
+        },
+        {
+          "name": "Island Waters Accounting：AI Consulting for Accounting Firms",
+          "date": "未标注（2026-11-13访问）",
+          "url": "https://islandwaters.ai/ai-consulting/",
+          "evidence_strength": "中"
+        }
+      ],
+      "updatedAt": "2026-11-13T08:01:32+08:00"
+    },
     {
       "id": "finance-ai-cases:2026-11-11",
       "radarKey": "finance-ai-cases",
