@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "radarKey": "finance-ai-cases",
   "radarTitle": "财经 AI 案例",
-  "updatedAt": "2026-11-13T08:01:32+08:00",
+  "updatedAt": "2026-11-13T02:52:30.245Z",
   "reports": [
     {
       "id": "finance-ai-cases:2026-11-13",
@@ -39,6 +39,48 @@
         }
       ],
       "updatedAt": "2026-11-13T08:01:32+08:00"
+    },
+    {
+      "id": "tax-digital-ai:2026-11-13",
+      "radarKey": "finance-ai-cases",
+      "radarTitle": "财经 AI 案例",
+      "reportDate": "2026-11-13",
+      "headline": "【税务数字化】OECD：六成税务机关直连企业业务数据，AI主要辅助风险识别",
+      "conclusion": "",
+      "briefVersion": 2,
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "【税务数字化】OECD：六成税务机关直连企业业务数据，AI主要辅助风险识别",
+          "what": "OECD于2026年11月12日发布覆盖108个经济体的税务数字化报告。根据其引用的2025年调查，61%的税务机关已在工资代扣数据之外直接接收企业业务系统数据；在这些税务机关中，82%支持至少部分数据通过机器间连接自动传输。49%的税务机关使用AI，其中74%用于识别逃税或欺诈、70%用于风险评估。OECD显示，税务数字化正同时沿企业系统直连与AI辅助征管两条线推进，而不是仅把纸质申报改成线上填写。",
+          "why_it_matters": "对集团企业而言，税务数字化需要前移到ERP、交易、发票与主数据治理，使规则、申报底稿和业务数据之间有可核查的映射与溯源。AI/Agent更适合优先承担政策检索、风险筛查、异常解释和底稿预审，人工保留税务判断和结果批准；这些属于基于行业调查提出的规划启示，不是某项新的法定义务。",
+          "evidence": "报告发表于2026年11月12日，但主要统计来自2025年税务科技调查，不能解读成2026年当期新增法规。61%基于全部受访税务机关，82%基于已接收企业系统数据的税务机关，74%和70%基于已使用AI的税务机关；该调查是机关自报能力，不能推定所有企业都已完成系统直连，也不能推断AI可独立作出最终税务行政决定。",
+          "supporting_details": "OECD还指出，超过80%的税务机关在开发API，超过半数向外部提供API；17%的税务机关表示其IT系统可例行直接访问纳税人原有系统内保存的数据，这与基于接口接收税务数据并非同一成熟度。",
+          "impact": ""
+        }
+      ],
+      "recommendations": [],
+      "sources": [
+        {
+          "name": "OECD 2026报告与摘要",
+          "date": "2026-11-12",
+          "url": "https://www.oecd.org/en/publications/digitalisation-and-digital-transformation-in-tax-administrations_5976063c-en/full-report/executive-summary_d54a5aeb.html",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "OECD 第4章：数据管理与系统直连",
+          "date": "2026-11-12",
+          "url": "https://www.oecd.org/en/publications/digitalisation-and-digital-transformation-in-tax-administrations_5976063c-en/full-report/data-management-and-standards_cffc9b22.html",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "OECD 第5章：AI税收征管用途",
+          "date": "2026-11-12",
+          "url": "https://www.oecd.org/en/publications/digitalisation-and-digital-transformation-in-tax-administrations_5976063c-en/full-report/tax-rule-management-and-application_7c45f0f7.html",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-11-13T02:52:30.245Z"
     },
     {
       "id": "finance-ai-cases:2026-11-11",
