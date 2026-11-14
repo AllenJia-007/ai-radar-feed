@@ -2,8 +2,44 @@
   "schemaVersion": 1,
   "radarKey": "finance-ai-cases",
   "radarTitle": "财经 AI 案例",
-  "updatedAt": "2026-11-13T02:52:30.245Z",
+  "updatedAt": "2026-11-14T00:18:29Z",
   "reports": [
+    {
+      "id": "tax-digital-ai:2026-11-14",
+      "radarKey": "finance-ai-cases",
+      "radarTitle": "财经 AI 案例",
+      "reportDate": "2026-11-14",
+      "headline": "【税务数字化】欧盟拟取消进口电商 VAT 一站式申报的 €150 门槛",
+      "conclusion": "",
+      "briefVersion": 2,
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "【税务数字化】欧盟拟取消进口电商 VAT 一站式申报的 €150 门槛",
+          "what": "11月9日，欧盟理事会就跨境电商 VAT 新方案达成一致。进口一站式申报（IOSS）拟覆盖各货值档，并扩展至非欧盟经营者销售存放于欧盟海关仓库的商品。按理事会公布的方案，欧盟海关数据枢纽启动后，向欧盟消费者销售商品的非欧盟线上平台将按视同供应商承担 VAT 代收代缴责任，不再按货值区分。",
+          "why_it_matters": "对通过平台或海关仓库向欧盟消费者销售的集团主体，建议提前复核订单、仓库、税引擎与申报数据的衔接。优先盘点目前按 €150 分流的订单、仓库路径和平台代征标识，并检验结账税额、清关记录与 IOSS 申报能否按订单对账。税务团队应按销售渠道确认责任归属，IT 团队可据此评估规则及接口改造范围。",
+          "evidence": "理事会已达成一致，仍须征询欧洲议会意见并由理事会正式通过。拟自2028年7月1日起适用。此次变化针对面向欧盟消费者的进口电商销售。",
+          "supporting_details": "",
+          "impact": ""
+        }
+      ],
+      "recommendations": [],
+      "sources": [
+        {
+          "name": "欧盟理事会公告",
+          "date": "2026-11-09",
+          "url": "https://www.consilium.europa.eu/en/press/press-releases/2026/11/09/taxation-council-approves-further-vat-simplification-rules-for-online-sales/",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "欧盟理事会妥协文本",
+          "date": "2026-11-09",
+          "url": "https://data.consilium.europa.eu/doc/document/ST-15480-2026-INIT/en/pdf",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-11-14T00:18:29Z"
+    },
     {
       "id": "finance-ai-cases:2026-11-13",
       "radarKey": "finance-ai-cases",
