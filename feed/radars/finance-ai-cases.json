@@ -2,8 +2,38 @@
   "schemaVersion": 1,
   "radarKey": "finance-ai-cases",
   "radarTitle": "财经 AI 案例",
-  "updatedAt": "2026-11-14T00:18:29Z",
+  "updatedAt": "2026-11-15T00:39:03.641Z",
   "reports": [
+    {
+      "id": "tax-digital-ai:2026-11-15",
+      "radarKey": "finance-ai-cases",
+      "radarTitle": "财经 AI 案例",
+      "reportDate": "2026-11-15",
+      "headline": "【税务数字化】巴基斯坦明确油气合资项目按份额开具电子税票",
+      "conclusion": "",
+      "briefVersion": 2,
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "【税务数字化】巴基斯坦明确油气合资项目按份额开具电子税票",
+          "what": "巴基斯坦联邦税收委员会（FBR）于11月13日发布第36号销售税通令。自2026年12月所属期的销售税申报起，列名油气勘探与生产企业的合资伙伴须以作业方发票为依据，按各自份额开具数字发票。非作业方可上传由作业方代开的销售税发票，由FBR系统生成唯一发票号码和二维码。作业方继续按合同安排开具商业发票。",
+          "why_it_matters": "跨境油气合资项目应优先验证从作业方原票到各伙伴份额、税局唯一票号和申报附件的对账。在集团系统设计中，建议把商业发票、合资份额与电子税票分别记录并建立关联，明确由谁上传、由谁在申报前复核更正。单做电子发票接口还无法解决一张原票如何对应多方税务凭证的问题。",
+          "evidence": "这是已发布的正式通令，仅适用于附件列出的13家企业，包括United Energy Pakistan Limited。数字发票须于月度申报提交之日或之前开具。企业可在提交前把暂存发票从电子开票平台带入申报附件C，并在提交前修改或删除附件中已填报的发票。",
+          "supporting_details": "",
+          "impact": ""
+        }
+      ],
+      "recommendations": [],
+      "sources": [
+        {
+          "name": "巴基斯坦联邦税收委员会第36号销售税通令",
+          "date": "2026-11-13",
+          "url": "https://download1.fbr.gov.pk/Docs/2026111316112623185STGO36of2026.pdf",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-11-15T00:39:03.641Z"
+    },
     {
       "id": "tax-digital-ai:2026-11-14",
       "radarKey": "finance-ai-cases",
