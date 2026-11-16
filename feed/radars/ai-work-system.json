@@ -2,8 +2,64 @@
   "schemaVersion": 1,
   "radarKey": "ai-work-system",
   "radarTitle": "AI 工作系统",
-  "updatedAt": "2026-11-12T00:14:48.477Z",
+  "updatedAt": "2026-11-16T00:12:53.410Z",
   "reports": [
+    {
+      "id": "ai-work-system:2026-11-16",
+      "radarKey": "ai-work-system",
+      "radarTitle": "AI 工作系统",
+      "reportDate": "2026-11-16",
+      "headline": "Claude把会议变成实时工作入口，Anthropic给出常驻Agent运行架构",
+      "conclusion": "",
+      "briefVersion": 2,
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "Claude把视频会议变成边讨论边执行的共享工作入口",
+          "what": "Anthropic于11月12日开始向Claude Team和Enterprise推出Claude Meetings测试版。团队把Claude作为可见参会者加入Google Meet后，可以在讨论中直接要求它查询已连接系统、起草计划、搭建白板并记录行动项；调用每个人的连接工具前需取得该人的许可。会议结束后，转写、摘要、行动项和生成的文档继续保存在独立会议页，受邀的组织成员可查看和编辑，后续还能围绕同一次会议继续提问。与会后再把录音交给总结工具相比，新委派的任务是让Agent在决策尚未结束时就开始查证和制作交付物，把口头讨论、业务数据与共享产物留在同一上下文中。",
+          "why_it_matters": "会议由“信息记录点”变成了工作启动点：人负责讨论、判断和授权，Agent同步做资料查找与产物搭建，减少会后再次解释背景和重新建任务。通用平台需要提供参会身份、会议状态、持久页面、连接器权限和共享边界；领域团队仍要定义会议中可调用的资料、业务Skill、可自动执行的动作以及需要人工确认和独立复核的结果，才能把实时协作变成可靠作业。",
+          "evidence": "这是逐步开放的Beta，不是普遍可用：当前仅支持Google Meet，Team计划默认可用但管理员可关闭，Enterprise必须由管理员为全部或部分组织开启。默认有外部来宾时Claude不加入、外部人员中途加入时会离开；管理员可改写这一规则。产品保存转写、摘要和屏幕描述而非音频；ZDR、HIPAA-ready或客户管理加密密钥的组织目前不能使用。官方展示了内部流程和产品场景，但尚无独立证据证明复杂会议中的任务识别、数据调用和行动项长期稳定。",
+          "supporting_details": "Claude在会议中默认以文字回答。口头提出的连接器调用目前每次都要确认说话者；聊天中的回答对全体参会者可见。Beta期间笔记、转写及普通回答免费，使用连接工具仍计入计划用量，会议生成的文档和白板免费期截至2027年2月10日。",
+          "impact": ""
+        },
+        {
+          "title": "Anthropic把常驻Agent拆成可恢复的事件系统，并允许企业自托管控制面",
+          "what": "Anthropic于11月13日公开“常驻Agent”架构：Agent并非持续运行，而是在用户消息、Webhook或定时器到来时被唤醒，每次Run在会话中执行后把进度写回；支撑这一循环的五个持久原语是事件收件箱、定时器、记忆、权限和发件箱。事件以数据库为事实源并去重，单个收件箱同一时间只允许一个Worker，执行崩溃后可重取事件；需要人工判断时，系统保存停在工具调用中的会话，把请求发给人，回复再作为新事件恢复，而Agent可继续处理其他事件。一天前发布的Self-hosted Claude Managed Agents私有测试又把这套Harness、沙箱、凭据和会话历史全部放进企业自有云或本地环境；会话事件日志独立于短生命周期沙箱，凭据由沙箱外代理注入，网络按允许域名限制，完整轨迹可经OpenTelemetry送入现有监控。",
+          "why_it_matters": "这把可委派范围从“让Agent连续跑几个小时”推进到“让Agent长期承担持续责任”：监测事件、按期复查、等待他人回复、跨多次运行续接，并在重启或人工审批后恢复。企业平台团队适合统一建设事件与定时调度、会话和记忆存储、凭据代理、沙箱、权限、日志与恢复机制；领域团队负责定义什么事件值得唤醒、任务指令和业务工具、进度状态、人工接管点以及验收和独立验证规则。这样既避免每个领域重复造运行时，也不把业务判断固化进通用底座。",
+          "evidence": "五原语是Anthropic的工程指南和推荐架构，不是对大规模客户生产效果的独立评测；其中主动跟进、消息节奏和“做梦式”记忆整理仍需场景评测。Self-hosted Managed Agents仅为需联系客户团队申请的私有Beta，Managed Agents整体仍为Beta；自托管可以让会话历史和凭据留在企业环境并适用ZDR安排，但HIPAA仍不支持，模型请求仍会发往企业选择的Anthropic、云平台或自有网关。当前证据证明的是架构与产品边界已公开，不等于常驻Agent已能稳定承担开放式岗位。",
+          "supporting_details": "Anthropic建议记忆只保存无法从外部系统重新查询的内容，外部事实尽量存指针；任务进度单独持久化，并在会话压缩或换新会话前写入。自托管架构把调用模型的Harness与执行代码的沙箱分开，沙箱只在工具需要时启动，因此任务连续性不依赖同一个沙箱始终存活。",
+          "impact": ""
+        }
+      ],
+      "recommendations": [],
+      "sources": [
+        {
+          "name": "Anthropic｜Introducing Claude Meetings",
+          "date": "2026-11-12",
+          "url": "https://claude.com/resources/articles/claude-meetings",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Anthropic｜Building always-on agents",
+          "date": "2026-11-13",
+          "url": "https://claude.com/resources/articles/building-always-on-agents",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Anthropic｜Operate Claude Managed Agents inside your security perimeter",
+          "date": "2026-11-12",
+          "url": "https://claude.com/resources/articles/self-hosted-claude-managed-agents",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Claude Platform Docs｜Claude Managed Agents overview",
+          "date": "2026-11-16（核验）",
+          "url": "https://platform.claude.com/docs/en/managed-agents/overview",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-11-16T00:12:53.410Z"
+    },
     {
       "id": "ai-work-system:2026-11-12",
       "radarKey": "ai-work-system",
