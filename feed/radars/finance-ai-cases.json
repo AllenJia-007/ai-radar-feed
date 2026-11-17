@@ -2,8 +2,44 @@
   "schemaVersion": 1,
   "radarKey": "finance-ai-cases",
   "radarTitle": "财经 AI 案例",
-  "updatedAt": "2026-11-15T00:39:03.641Z",
+  "updatedAt": "2026-11-17T23:36:48.217Z",
   "reports": [
+    {
+      "id": "finance-ai-cases:2026-11-18",
+      "radarKey": "finance-ai-cases",
+      "radarTitle": "财经 AI 案例",
+      "reportDate": "2026-11-18",
+      "headline": "KPMG把审计Agent嵌入500个团队，审计师保留独立复核与最终判断",
+      "conclusion": "",
+      "briefVersion": 2,
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "KPMG把审计Agent嵌入500个团队，审计师保留独立复核与最终判断",
+          "what": "KPMG披露，KPMG Clara intelligence（KCi）已在2026年实际用于审计，并正扩展至全球500多个团队。它不是独立聊天工具，而是嵌入Clara审计平台：专用Agent读取项目数据，起草初步风险评估和第一版审计文档，协调里程碑与资料请求，在选定审计领域分析全部交易并标出异常，还为控制测试和样本评价准备结果。审计师负责给出方向、监督和复核，检查底层数据来源并独立佐证Agent发现，只有通过判断的内容才进入审计底稿系统；审计结论和最终责任仍由审计师承担。",
+          "why_it_matters": "这是审计Agent从单点辅助进入正式项目作业链的一项规模化证据：AI承担风险识别、资料编排和标准程序的第一遍生产，人工不再逐项从零准备，而把精力前移到异常调查、证据评价和重大判断。其可迁移机制不是取消复核，而是把Agent输出、来源追溯、独立佐证和最终签字放进同一受控流程。",
+          "evidence": "证据来自KPMG 2026年11月17日官方发布及ACCA对亚洲审计实践的采访。500多个团队属于KPMG披露的推广规模，并非独立审计；也不等于已覆盖全部审计。KPMG称2027年覆盖美国全部私营公司审计仍是目标，上市公司审计只是分阶段计划。官方提到部分项目周期最多缩短三周半，但未给出样本、基线及AI的独立贡献，因此不把该数字作为已验证效果。",
+          "supporting_details": "",
+          "impact": ""
+        }
+      ],
+      "recommendations": [],
+      "sources": [
+        {
+          "name": "KPMG U.S.｜KPMG Clara intelligence美国发布与2026年实际使用范围",
+          "date": "2026-11-17",
+          "url": "https://kpmg.com/us/en/media/news/kpmg-unveils-next-era-of-ai-enabled-human-assured-audit-with-us-launch-of-kpmg-clara-intelligence.html",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "ACCA Accounting and Business｜Audit’s new agents",
+          "date": "2026-09",
+          "url": "https://abmagazine.accaglobal.com/global/articles/2026/sept/practice/audit-s-new-agents.html",
+          "evidence_strength": "中"
+        }
+      ],
+      "updatedAt": "2026-11-17T23:36:48.217Z"
+    },
     {
       "id": "tax-digital-ai:2026-11-15",
       "radarKey": "finance-ai-cases",
