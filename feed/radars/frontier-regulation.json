@@ -2,8 +2,56 @@
   "schemaVersion": 1,
   "radarKey": "frontier-regulation",
   "radarTitle": "前沿 AI 监管",
-  "updatedAt": "2026-11-12T08:01:16+08:00",
+  "updatedAt": "2026-11-18T23:59:40.923Z",
   "reports": [
+    {
+      "id": "frontier-regulation:2026-11-19",
+      "radarKey": "frontier-regulation",
+      "radarTitle": "前沿 AI 监管",
+      "reportDate": "2026-11-19",
+      "headline": "OpenAI把安全审查设为前沿模型逐阶段放行门槛，并披露曾推迟GPT‑6.1 Astra",
+      "conclusion": "",
+      "briefVersion": 2,
+      "currentStatus": "公司自愿政策，非法律义务或政府审批。OpenAI要求前沿模型从研究、内部部署到外部部署逐阶段通过安全审查，证据不足时可暂停训练或暂缓发布；GPT‑6.2 Astra达到“高”级AI自我改进能力后仍获外部发布，说明该能力等级并非自动停线阈值。美国Ban Artificial Superintelligence Act的H.R.10538仍停留在众议院监督与政府改革委员会，配套参议院版本S.5493仍停留在参议院商务、科学和运输委员会，均未出现审议、修订或表决。",
+      "items": [
+        {
+          "title": "OpenAI把安全审查设为前沿模型逐阶段放行门槛，并披露曾推迟GPT‑6.1 Astra",
+          "what": "OpenAI于11月18日把前沿模型从研究、内部部署到外部部署的推进过程明确为逐阶段安全审查：每一阶段都要同时审查模型行为及配套防护，证据不足时可以暂停内部训练或暂缓发布；公司并首次披露，GPT‑6.1 Astra曾因需要更多时间满足安全标准而被推迟。最新GPT‑6.2 Astra系统卡显示，这套门槛并不等同于达到某个能力等级就自动停止：该模型是OpenAI首个以“高”级AI自我改进能力对外发布的模型，公司在扩大内部Codex使用前完成对齐评估和防护验证，并将其失控风险评为Tier 1后仍决定发布。",
+          "why_it_matters": "这使安全证据从发布后的监测措施上升为模型供应前的正式公司放行门槛，意味着即使没有监管机构下达禁令，前沿模型也可能因内部审查而延迟训练、内部使用或市场供应。但企业不能把“高”级能力标签直接解释为必然停线：实际决定仍取决于提供方对模型行为、防护措施和具体风险等级的综合判断。",
+          "evidence": "依据是OpenAI正式政策说明及GPT‑6.2 Astra系统卡，属于提供方自愿承诺与内部治理，不是法律义务、第三方认证或政府事前审批。OpenAI未公布适用于所有模型的统一量化发布阈值，亦未披露GPT‑6.1 Astra被推迟的具体日期、时长或未通过项目，因此外部无法独立复核该次延迟的完整过程。H.R.10538与S.5493本周没有状态变化，仍只是委员会阶段提案，尚未形成对美国模型开发者的法律约束。",
+          "supporting_details": "OpenAI称研究阶段的前沿训练不开放实时互联网；内部阶段监测全部内部Codex流量、强化学习训练和评测以及使用工具的运行环境；外部阶段因GPT‑6.2 Astra达到关键级网络安全能力而继续实施监测。上述技术控制支持逐阶段审查，但最终暂停或放行仍由公司治理机构作出。",
+          "impact": ""
+        }
+      ],
+      "recommendations": [],
+      "sources": [
+        {
+          "name": "OpenAI｜Managing frontier AI risk: From training to deployment",
+          "date": "2026-11-18",
+          "url": "https://openai.com/index/managing-frontier-ai-risk/",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "OpenAI Deployment Safety Hub｜GPT‑6.2 Astra and GPT‑6.2 Sol System Card",
+          "date": "2026-11-17",
+          "url": "https://deploymentsafety.openai.com/gpt-6-2-astra-sol",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "GovInfo｜H.R.10538 — Ban Artificial Superintelligence Act of 2026",
+          "date": "2026-09-24",
+          "url": "https://www.govinfo.gov/app/details/BILLS-119hr10538ih",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "GovInfo｜S.5493 — Ban Artificial Superintelligence Act of 2026",
+          "date": "2026-09-23",
+          "url": "https://www.govinfo.gov/app/details/BILLS-119s5493is",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-11-18T23:59:40.923Z"
+    },
     {
       "id": "frontier-regulation:2026-11-12",
       "radarKey": "frontier-regulation",
