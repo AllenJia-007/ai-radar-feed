@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "radarKey": "finance-ai-cases",
   "radarTitle": "财经 AI 案例",
-  "updatedAt": "2026-11-17T23:36:48.217Z",
+  "updatedAt": "2026-11-18T00:45:26.127Z",
   "reports": [
     {
       "id": "finance-ai-cases:2026-11-18",
@@ -39,6 +39,36 @@
         }
       ],
       "updatedAt": "2026-11-17T23:36:48.217Z"
+    },
+    {
+      "id": "tax-digital-ai:2026-11-18",
+      "radarKey": "finance-ai-cases",
+      "radarTitle": "财经 AI 案例",
+      "reportDate": "2026-11-18",
+      "headline": "【税务数字化】Thomson Reuters计划将Agent嵌入交易校验与季度税务底稿",
+      "conclusion": "",
+      "briefVersion": 2,
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "【税务数字化】Thomson Reuters计划将Agent嵌入交易校验与季度税务底稿",
+          "what": "Thomson Reuters于11月17日宣布，将CoCounsel扩展至ONESOURCE与Pagero的企业税务流程。交易合规工作流拟在客户、供应商和产品建档及发票送达税局前进行检查，核对后续变更并预填申报表，由专业人员批准后提交。直接税工作流拟准备常见底稿，把计算及研究依据带入ONESOURCE Tax Provision，并起草披露材料。",
+          "why_it_matters": "这为集团税务Agent提供了两个具体方向：在交易发生时发现并修复异常，以及在季度关账时准备有来源依据的税务初稿。建议据此评估试点，先验证能否取得完整交易上下文、调用确定性税务计算规则，并把异常或底稿交给责任人复核。",
+          "evidence": "此次为官方产品路线图，新工作流计划从2027年开始推出。公告未给出具名企业对这些新工作流的生产验证或实际成效，采购与上线判断仍需核对具体功能、法域覆盖及可用日期。",
+          "supporting_details": "",
+          "impact": ""
+        }
+      ],
+      "recommendations": [],
+      "sources": [
+        {
+          "name": "Thomson Reuters官方发布",
+          "date": "2026-11-17",
+          "url": "https://www.thomsonreuters.com/en/press-releases/2026/november/thomson-reuters-brings-cocounsel-agentic-ai-to-the-tax-and-compliance-products-professionals-trust",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-11-18T00:45:26.127Z"
     },
     {
       "id": "tax-digital-ai:2026-11-15",
