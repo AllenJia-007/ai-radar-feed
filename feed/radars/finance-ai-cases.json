@@ -2,8 +2,38 @@
   "schemaVersion": 1,
   "radarKey": "finance-ai-cases",
   "radarTitle": "财经 AI 案例",
-  "updatedAt": "2026-11-19T00:07:33.599Z",
+  "updatedAt": "2026-11-19T23:56:11.048Z",
   "reports": [
+    {
+      "id": "finance-ai-cases:2026-11-20",
+      "radarKey": "finance-ai-cases",
+      "radarTitle": "财经 AI 案例",
+      "reportDate": "2026-11-20",
+      "headline": "Workday让合同Agent扫描全部合同，财务与采购人员保留谈判和最终决策",
+      "conclusion": "",
+      "briefVersion": 2,
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "Workday让合同Agent扫描全部合同，财务与采购人员保留谈判和最终决策",
+          "what": "Workday披露，其财务团队已在实际运营中使用由Evisort AI驱动的Contract Intelligence扫描公司的全部合同，自动查找关键条款、跟踪续约，并提示可能的费率节省机会；采购人员在续约前直接查看主服务协议、工作说明书和修订文件中既有谈判条件。系统承担跨合同检索和机会提示，财务与采购人员仍负责判断是否采纳、如何谈判及最终签约；Workday称该应用累计节省了数万小时。",
+          "why_it_matters": "这是流程嵌入型案例：AI没有替代签约责任人，而是接管了原本需要人工逐份查找、比对和跟踪的合同准备工作，并把人力集中到价格、条款和风险取舍。它表明财经Agent较成熟的生产入口，可能不是直接记账或自主付款，而是先围绕已有合同库承担高覆盖率的信息准备和异常提示。",
+          "evidence": "Workday于2026年11月13日以“客户零号”身份披露内部使用结果，明确称不是实验室测试，而是面向全球企业运营压力的实际应用；但效果数字为Workday自报，未给出统计周期、合同数量或独立审计。文中所述增值税/商品服务税识别与税款追回仍是扩展探索，不能写成已实现收益；财务审计Agent和零日结账也属于下一步计划。",
+          "supporting_details": "上线前提包括完整合同集中化、可检索的条款数据、续约日期与协议版本关系，以及把AI输出定位为可追溯的决策输入。Workday同时强调上游数据去重、治理和控制，否则合同或销售系统中的错误会继续流入财务流程。",
+          "impact": ""
+        }
+      ],
+      "recommendations": [],
+      "sources": [
+        {
+          "name": "Workday：Early Wins From Testing Our Own AI in Finance",
+          "date": "2026-11-13",
+          "url": "https://blog.workday.com/en-us/early-wins-from-testing-our-own-ai-in-finance.html",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-11-19T23:56:11.048Z"
+    },
     {
       "id": "finance-ai-cases:2026-11-19",
       "radarKey": "finance-ai-cases",
