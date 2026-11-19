@@ -2,8 +2,74 @@
   "schemaVersion": 1,
   "radarKey": "finance-ai-cases",
   "radarTitle": "财经 AI 案例",
-  "updatedAt": "2026-11-18T00:45:26.127Z",
+  "updatedAt": "2026-11-19T00:07:33.599Z",
   "reports": [
+    {
+      "id": "finance-ai-cases:2026-11-19",
+      "radarKey": "finance-ai-cases",
+      "radarTitle": "财经 AI 案例",
+      "reportDate": "2026-11-19",
+      "headline": "Hyundai Card与J.P. Morgan让财资Agent完成换汇模拟，越权交易由银行拦截或转人工",
+      "conclusion": "",
+      "briefVersion": 2,
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "Hyundai Card与J.P. Morgan让财资Agent完成换汇模拟，越权交易由银行拦截或转人工",
+          "what": "Hyundai Card与Kinexys by J.P. Morgan完成一项接入后台系统的财资概念验证：Hyundai Card的Agent定时检查法兰克福欧元账户，余额低于目标时向三家银行询价、选择最优报价，并向Kinexys的执行Agent发出卖出伦敦账户英镑、补足欧元账户的指令。企业负责人先审核并批准机器可执行的授权书；交易时，银行侧Agent逐笔核验Agent身份、委托主体、账户、币种、金额、时段和升级阈值，并记录目标、计划、检查与结果。全部条件满足且低于阈值才自动执行，超过阈值转人工批准，授权范围之外直接拒绝；决策Agent与执行Agent相互分离。",
+          "why_it_matters": "这项案例把财资Agent从“看余额、提建议”推进到可发出换汇和资金调拨指令的完整委托链，同时把控制从提示词移到银行基础设施：Agent可以规划和择优，却不能自行授予权限，也不能绕过逐笔身份与授权校验。它为高风险财经作业提供了可迁移的人机边界——人批准授权范围并处理升级，机构系统在执行点强制校验和留痕。",
+          "evidence": "当前仅为第一阶段概念验证：在与后台系统集成的测试环境中使用虚构海外法人和模拟交易，没有真实资金流转，也不是已上线产品；J.P. Morgan尚未承诺商业化。两家公司官方材料能核对任务、授权和回退机制，但没有生产量、成功率或财务效果数据，因此只能证明控制架构和交易流程可实现，不能据此认定财资Agent已进入规模化生产。",
+          "supporting_details": "Agent可以按公开规则起草授权书，但授权书只有经企业负责人在Kinexys门户批准、并绑定到该Agent公钥后才生效。银行侧每次请求有三种结果：自动执行、转企业负责人批准、拒绝。",
+          "impact": ""
+        }
+      ],
+      "recommendations": [],
+      "sources": [
+        {
+          "name": "Kinexys by J.P. Morgan｜Governing AI Agents Operating Under Delegated Authority",
+          "date": "2026-11-18",
+          "url": "https://www.jpmorgan.com/content/dam/jpm/static_sites/kinexys/documents/kinexys-trust-in-the-agentic-economy.pdf",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Hyundai Card Newsroom｜AI Agent-based Financial Transaction PoC",
+          "date": "2026-11-18",
+          "url": "https://newsroom.hyundaicard.com/front/board/%ED%98%84%EB%8C%80%EC%B9%B4%EB%93%9C_AI%20%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%20%EA%B8%B0%EB%B0%98%20%EA%B8%88%EC%9C%B5%EA%B1%B0%EB%9E%98%20PoC",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-11-19T00:07:33.599Z"
+    },
+    {
+      "id": "tax-digital-ai:2026-11-18",
+      "radarKey": "finance-ai-cases",
+      "radarTitle": "财经 AI 案例",
+      "reportDate": "2026-11-18",
+      "headline": "【税务数字化】Thomson Reuters计划将Agent嵌入交易校验与季度税务底稿",
+      "conclusion": "",
+      "briefVersion": 2,
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "【税务数字化】Thomson Reuters计划将Agent嵌入交易校验与季度税务底稿",
+          "what": "Thomson Reuters于11月17日宣布，将CoCounsel扩展至ONESOURCE与Pagero的企业税务流程。交易合规工作流拟在客户、供应商和产品建档及发票送达税局前进行检查，核对后续变更并预填申报表，由专业人员批准后提交。直接税工作流拟准备常见底稿，把计算及研究依据带入ONESOURCE Tax Provision，并起草披露材料。",
+          "why_it_matters": "这为集团税务Agent提供了两个具体方向：在交易发生时发现并修复异常，以及在季度关账时准备有来源依据的税务初稿。建议据此评估试点，先验证能否取得完整交易上下文、调用确定性税务计算规则，并把异常或底稿交给责任人复核。",
+          "evidence": "此次为官方产品路线图，新工作流计划从2027年开始推出。公告未给出具名企业对这些新工作流的生产验证或实际成效，采购与上线判断仍需核对具体功能、法域覆盖及可用日期。",
+          "supporting_details": "",
+          "impact": ""
+        }
+      ],
+      "recommendations": [],
+      "sources": [
+        {
+          "name": "Thomson Reuters官方发布",
+          "date": "2026-11-17",
+          "url": "https://www.thomsonreuters.com/en/press-releases/2026/november/thomson-reuters-brings-cocounsel-agentic-ai-to-the-tax-and-compliance-products-professionals-trust",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-11-18T00:45:26.127Z"
+    },
     {
       "id": "finance-ai-cases:2026-11-18",
       "radarKey": "finance-ai-cases",
@@ -39,36 +105,6 @@
         }
       ],
       "updatedAt": "2026-11-17T23:36:48.217Z"
-    },
-    {
-      "id": "tax-digital-ai:2026-11-18",
-      "radarKey": "finance-ai-cases",
-      "radarTitle": "财经 AI 案例",
-      "reportDate": "2026-11-18",
-      "headline": "【税务数字化】Thomson Reuters计划将Agent嵌入交易校验与季度税务底稿",
-      "conclusion": "",
-      "briefVersion": 2,
-      "currentStatus": null,
-      "items": [
-        {
-          "title": "【税务数字化】Thomson Reuters计划将Agent嵌入交易校验与季度税务底稿",
-          "what": "Thomson Reuters于11月17日宣布，将CoCounsel扩展至ONESOURCE与Pagero的企业税务流程。交易合规工作流拟在客户、供应商和产品建档及发票送达税局前进行检查，核对后续变更并预填申报表，由专业人员批准后提交。直接税工作流拟准备常见底稿，把计算及研究依据带入ONESOURCE Tax Provision，并起草披露材料。",
-          "why_it_matters": "这为集团税务Agent提供了两个具体方向：在交易发生时发现并修复异常，以及在季度关账时准备有来源依据的税务初稿。建议据此评估试点，先验证能否取得完整交易上下文、调用确定性税务计算规则，并把异常或底稿交给责任人复核。",
-          "evidence": "此次为官方产品路线图，新工作流计划从2027年开始推出。公告未给出具名企业对这些新工作流的生产验证或实际成效，采购与上线判断仍需核对具体功能、法域覆盖及可用日期。",
-          "supporting_details": "",
-          "impact": ""
-        }
-      ],
-      "recommendations": [],
-      "sources": [
-        {
-          "name": "Thomson Reuters官方发布",
-          "date": "2026-11-17",
-          "url": "https://www.thomsonreuters.com/en/press-releases/2026/november/thomson-reuters-brings-cocounsel-agentic-ai-to-the-tax-and-compliance-products-professionals-trust",
-          "evidence_strength": "强"
-        }
-      ],
-      "updatedAt": "2026-11-18T00:45:26.127Z"
     },
     {
       "id": "tax-digital-ai:2026-11-15",
