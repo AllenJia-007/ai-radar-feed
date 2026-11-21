@@ -2,8 +2,44 @@
   "schemaVersion": 1,
   "radarKey": "finance-ai-cases",
   "radarTitle": "财经 AI 案例",
-  "updatedAt": "2026-11-19T23:56:11.048Z",
+  "updatedAt": "2026-11-21T00:00:03.879Z",
   "reports": [
+    {
+      "id": "finance-ai-cases:2026-11-21",
+      "radarKey": "finance-ai-cases",
+      "radarTitle": "财经 AI 案例",
+      "reportDate": "2026-11-21",
+      "headline": "Thomson Reuters把问数Agent嵌入月度经营复盘，人工聚焦行动决策",
+      "conclusion": "",
+      "briefVersion": 2,
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "Thomson Reuters把问数Agent嵌入月度经营复盘，人工聚焦行动决策",
+          "what": "Thomson Reuters已将DeepVista的AI问数Agent和月度经营复盘应用投入企业级使用：分析师与管理者可在Microsoft Teams或复盘应用中用自然语言询问收入、客户、人员及产品表现，答案统一来自经认证的财务与企业语义模型；应用同时显示每个数字的来源和最近刷新时间，并允许团队补充业务说明。Agent负责即时取数、统一口径和准备复盘信息，分析师与管理者仍负责提出问题、解释业务背景并决定后续行动；自2026年6月上线以来，公司称活跃用户已达数千人。",
+          "why_it_matters": "这是流程嵌入型案例，而非一般聊天问数：同一套受控语义模型同时服务仪表板、Teams Agent和月度经营复盘，管理会议不再先花时间核对各自报表，而是直接围绕差异原因和行动展开。它说明经营分析Agent要进入正式管理流程，关键不只是自然语言能力，而是把认证指标、业务语义、身份权限和数字溯源做成可复用的数据上下文。",
+          "evidence": "Thomson Reuters于2026年11月18日披露，该系统已在一个财年内从试点转为企业部署；Microsoft的同期技术材料也确认其月度经营复盘运行在Fabric应用上。成熟度属于已投产的辅助/流程嵌入型，不是Agent自主作经营决策；用户规模和使用情况均为企业与厂商口径，未披露问数准确率、节省工时或独立验证结果。",
+          "supporting_details": "生产前提包括认证的Power BI语义模型、统一的财务与企业语义层、业务上下文层，以及贯穿Microsoft Entra ID和Teams的身份与行级权限。当前已验证的是按需问数和复盘准备；主动发现异常并在人提问前推送，仍被公司列为下一步。",
+          "impact": ""
+        }
+      ],
+      "recommendations": [],
+      "sources": [
+        {
+          "name": "Thomson Reuters：Trusted data, faster decisions",
+          "date": "2026-11-18",
+          "url": "https://www.thomsonreuters.com/en-us/posts/innovation/trusted-data-faster-decisions-how-thomson-reuters-turned-its-finance-data-into-decision-intelligence-using-microsoft-fabric/",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Microsoft：What's new in databases at Ignite 2026",
+          "date": "2026-11-17",
+          "url": "https://techcommunity.microsoft.com/blog/azuresqlblog/whats-new-in-databases-at-microsoft-ignite-2026-ai-ready-data-for-apps-and-agent/4570764",
+          "evidence_strength": "中"
+        }
+      ],
+      "updatedAt": "2026-11-21T00:00:03.879Z"
+    },
     {
       "id": "finance-ai-cases:2026-11-20",
       "radarKey": "finance-ai-cases",
