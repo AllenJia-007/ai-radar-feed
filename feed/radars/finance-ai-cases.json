@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "radarKey": "finance-ai-cases",
   "radarTitle": "财经 AI 案例",
-  "updatedAt": "2026-11-21T00:00:03.879Z",
+  "updatedAt": "2026-11-21T00:28:49.452Z",
   "reports": [
     {
       "id": "finance-ai-cases:2026-11-21",
@@ -39,6 +39,42 @@
         }
       ],
       "updatedAt": "2026-11-21T00:00:03.879Z"
+    },
+    {
+      "id": "tax-digital-ai:2026-11-21",
+      "radarKey": "finance-ai-cases",
+      "radarTitle": "财经 AI 案例",
+      "reportDate": "2026-11-21",
+      "headline": "【税务数字化】比利时议会报告明确：发票报送可能先于企业审核",
+      "conclusion": "",
+      "briefVersion": 2,
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "【税务数字化】比利时议会报告明确：发票报送可能先于企业审核",
+          "what": "比利时众议院11月20日公布电子报送法案委员会报告。报告说明，拟从2028年起以逐票、近实时数据替代年度客户清单，供应商与收票方双边报送，报送期限上限为五个日历日。财政部长明确指出，数据可能在企业完成业务审核及纠错前即已报送。",
+          "why_it_matters": "对在比利时运营的集团实体，建议提前检验收票、报送、审核、入账和更正能否分别跟踪状态。税务Agent可优先用于关联原票与更正凭证、解释双边暂时差异，并将持续或重大异常交给税务人员确认。流程设计需考虑发票尚在争议或审批中时的数据报送。",
+          "evidence": "新证据来自11月20日发布的委员会报告，审议会议实际发生于11月3日和10日，法案原案于10月27日提交。这里的2028年时间表和五日期限属于立法方案及部长说明，最终法律与实施细则仍须跟踪。报告还说明，收发双方的暂时差异本身不代表错误或欺诈。",
+          "supporting_details": "",
+          "impact": ""
+        }
+      ],
+      "recommendations": [],
+      "sources": [
+        {
+          "name": "比利时众议院委员会报告 DOC 56 1846/002",
+          "date": "2026-11-20",
+          "url": "https://www.dekamer.be/flwb/pdf/56/1846/56K1846002.pdf",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "比利时电子报送法案 DOC 56 1846/001",
+          "date": "2026-10-27",
+          "url": "https://www.dekamer.be/flwb/pdf/56/1846/56K1846001.pdf",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-11-21T00:28:49.452Z"
     },
     {
       "id": "finance-ai-cases:2026-11-20",
