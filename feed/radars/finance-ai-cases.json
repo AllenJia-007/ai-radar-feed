@@ -2,8 +2,38 @@
   "schemaVersion": 1,
   "radarKey": "finance-ai-cases",
   "radarTitle": "财经 AI 案例",
-  "updatedAt": "2026-11-21T00:28:49.452Z",
+  "updatedAt": "2026-11-22T00:19:55.290Z",
   "reports": [
+    {
+      "id": "tax-digital-ai:2026-11-22",
+      "radarKey": "finance-ai-cases",
+      "radarTitle": "财经 AI 案例",
+      "reportDate": "2026-11-22",
+      "headline": "【税务数字化】荷兰征求意见：国内电子开票与税务报送拟分两年实施",
+      "conclusion": "",
+      "briefVersion": 2,
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "【税务数字化】荷兰征求意见：国内电子开票与税务报送拟分两年实施",
+          "what": "荷兰财政部11月18日就ViDA实施法案启动公开征求意见，至12月16日结束。方案拟于2030年7月1日起要求欧盟内部跨境B2B交易电子开票及数字报送，同日扩展国内B2B电子开票；国内交易数字报送则拟从2031年7月1日起实施。方案还拟要求供应商开票时或应开票时即报送，买方在收到发票后的五日内报送。",
+          "why_it_matters": "荷兰实体的系统路线图需分别跟踪电子票交换、跨境交易报送与国内交易报送的适用范围和启用日期。建议集团税务与IT共同评估应收、应付端能否准确记录开票、收票及报送状态，避免把买方报送任务只放在入账后的周期性申报环节。",
+          "evidence": "当前为征求意见稿，实施日期和细节仍可能调整。企业需核对自身交易是否属于拟议范围，方案中的系统要求尚待最终立法确认。",
+          "supporting_details": "",
+          "impact": ""
+        }
+      ],
+      "recommendations": [],
+      "sources": [
+        {
+          "name": "荷兰政府公开咨询平台—ViDA电子开票与数字报送实施法案",
+          "date": "2026-11-18",
+          "url": "https://internetconsultatie.nl/efactuur/b1",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-11-22T00:19:55.290Z"
+    },
     {
       "id": "finance-ai-cases:2026-11-21",
       "radarKey": "finance-ai-cases",
