@@ -2,8 +2,44 @@
   "schemaVersion": 1,
   "radarKey": "finance-ai-cases",
   "radarTitle": "财经 AI 案例",
-  "updatedAt": "2026-11-22T00:19:55.290Z",
+  "updatedAt": "2026-11-22T23:48:32.558Z",
   "reports": [
+    {
+      "id": "finance-ai-cases:2026-11-23",
+      "radarKey": "finance-ai-cases",
+      "radarTitle": "财经 AI 案例",
+      "reportDate": "2026-11-23",
+      "headline": "Delaware North让对账Agent准备库存对账，会计人员复核结果并执行政策动作",
+      "conclusion": "",
+      "briefVersion": 2,
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "Delaware North让对账Agent准备库存对账，会计人员复核结果并执行政策动作",
+          "what": "Delaware North已把BlackLine Verity Prepare用于月结中的150项库存对账。由Vera协调的多Agent负责读取支持材料、执行分组与计算、识别调节项、起草差异说明并组装可供审计的对账包；财务人员不再逐表准备，而是分析输出、处理例外、执行政策动作，并保留最终复核与认证责任。BlackLine客户案例称，这一账户类型每月节省约60小时；该效果为客户与厂商口径。",
+          "why_it_matters": "这是任务委托/Agent型案例：AI承担的不是单点取数或摘要，而是记录到报告流程中一段完整、可验收的复杂对账准备工作，产物直接进入月结签核链。它表明核心会计作业可以按“Agent准备完整工作底稿—人员处理例外并签核”的方式重构，前提是数据和支持材料已接入受控平台，Agent的计算、理由和操作都能追溯。",
+          "evidence": "BlackLine于11月17日确认Delaware North已部署Verity Prepare，客户案例进一步给出150项库存对账的生产范围和人员分工。当前能确认的是对账准备已投产；把Verity Match扩展到高交易量财资及信用卡业务仍是后续计划。每月节省约60小时未经独立验证，客户页未标发布日期；月结缩短及自动分录等其他数字来自更广泛的BlackLine平台改造，不能单独归因于该AI Agent。",
+          "supporting_details": "Delaware North的记录到报告、收入集成和财资团队目前使用300多个BlackLine许可。Verity Prepare在隔离实例和既有权限、职责分离、审计日志下运行，Agent输出需由专业人员最终批准。",
+          "impact": ""
+        }
+      ],
+      "recommendations": [],
+      "sources": [
+        {
+          "name": "BlackLine客户案例｜Delaware North",
+          "date": "2026-11-23（核验；页面未标发布日期）",
+          "url": "https://www.blackline.com/customers/delaware-north/",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "BlackLine｜BeyondTheBlack 2026 Agentic AI innovations",
+          "date": "2026-11-17",
+          "url": "https://www.blackline.com/about/press-releases/2026/blackline-advances-the-future-of-finance-with-groundbreaking-agentic-innovations-at-beyondtheblack-2026/",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-11-22T23:48:32.558Z"
+    },
     {
       "id": "tax-digital-ai:2026-11-22",
       "radarKey": "finance-ai-cases",
