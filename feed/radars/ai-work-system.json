@@ -2,8 +2,44 @@
   "schemaVersion": 1,
   "radarKey": "ai-work-system",
   "radarTitle": "AI 工作系统",
-  "updatedAt": "2026-11-16T00:12:53.410Z",
+  "updatedAt": "2026-11-23T00:14:27.914Z",
   "reports": [
+    {
+      "id": "ai-work-system:2026-11-23",
+      "radarKey": "ai-work-system",
+      "radarTitle": "AI 工作系统",
+      "reportDate": "2026-11-23",
+      "headline": "Qwen Code把持久Agent会话接入代码评审与团队聊天入口",
+      "conclusion": "",
+      "briefVersion": 2,
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "Qwen Code把持久Agent会话接入代码评审与团队聊天入口",
+          "what": "Qwen Code在11月17日的v0.28.0和11月21日的v0.28.3中，把原先主要由终端或网页启动的编码任务扩展成可由钉钉、GitHub、Microsoft Teams等工作入口唤起并续跑的持久会话。团队现在可以把Agent绑定到拉取请求或聊天渠道：拉取请求的持续集成失败、冲突或分支更新能够唤醒原会话，消息可以在会话间转交；托管会话在空闲时挂起，下次请求再恢复，任务记录、目标状态和产物仍由会话承接。新能委派的因而不只是一次性“改一段代码”，而是持续盯住一个交付单元，在事件发生时回到原上下文继续处理，并把结果送回团队正在使用的渠道；用于验证拉取请求的工作流还要求先声明验证边界，由运行时持有监视状态。",
+          "why_it_matters": "这表明编码Agent正在从个人工具转向事件驱动的团队工作单元：人不必反复打开同一终端、重述仓库背景或手工转发结果，Agent可以围绕同一交付对象被不同入口唤醒并保持连续状态。通用的集团级平台更适合负责统一Agent循环、会话与工作区隔离、渠道适配、挂起恢复、审批、目标与产物状态；领域团队则定义要绑定的仓库和群组、默认Skill、验证边界、完成标准以及异常时交给谁，避免通用平台替业务决定什么算“完成”。",
+          "evidence": "v0.28.0和v0.28.3均为Qwen Code官方稳定版，而非预览版；相关能力已进入公开代码和发布包。不过成熟度并不一致：企业微信适配器明确标为实验性，空闲时保留MCP连接需要主动开启，统一聊天界面的底层契约也注明尚无用户可见变化。发布说明证明机制已交付，但没有客户生产规模、长时间无人值守成功率或独立可靠性评测，因此不能据此判断跨渠道长任务已经稳定规模化运行。",
+          "supporting_details": "v0.28.0先把无头会话、终端界面和子Agent默认收敛到共享Agent循环，并加入外部工作区执行、跨会话消息、独立工作树与交接；v0.28.3再加入GitHub和Teams渠道、通用Webhook输出、空闲会话挂起与冷恢复、拉取请求事件唤醒以及跨会话产物库。两次发布连起来看，新增价值来自统一运行时和持久状态，而不是单独增加一个聊天入口。",
+          "impact": ""
+        }
+      ],
+      "recommendations": [],
+      "sources": [
+        {
+          "name": "Qwen Code v0.28.3 官方发布说明",
+          "date": "2026-11-21",
+          "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.28.3",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Qwen Code v0.28.0 官方发布说明",
+          "date": "2026-11-17",
+          "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.28.0",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-11-23T00:14:27.914Z"
+    },
     {
       "id": "ai-work-system:2026-11-16",
       "radarKey": "ai-work-system",
