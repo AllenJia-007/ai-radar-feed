@@ -2,8 +2,44 @@
   "schemaVersion": 1,
   "radarKey": "finance-ai-cases",
   "radarTitle": "财经 AI 案例",
-  "updatedAt": "2026-11-22T23:48:32.558Z",
+  "updatedAt": "2026-11-24T00:07:56.820Z",
   "reports": [
+    {
+      "id": "finance-ai-cases:2026-11-24",
+      "radarKey": "finance-ai-cases",
+      "radarTitle": "财经 AI 案例",
+      "reportDate": "2026-11-24",
+      "headline": "BNY与微软让两个Agent协商美国国债报价，交易员批准后才成交",
+      "conclusion": "",
+      "briefVersion": 2,
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "BNY与微软让两个Agent协商美国国债报价，交易员批准后才成交",
+          "what": "BNY与微软在一笔美国短期国债试点交易中，把原来由交易员往返沟通的报价协商交给双方Agent。微软财资团队先给Agent下达交易指令，BNY的Agentic Negotiation Protocol验证交易对手、证券、规模、结算条件和可用价格后，允许两个Agent在授权区间内交换报价与还价；达成一致后，双方Agent分别提交条款，由中央账本比对一致，BNY与微软交易员再审批，成交和记账仍通过各自现有交易系统完成。",
+          "why_it_matters": "这是任务委托/Agent型试点：Agent开始承担跨机构、带博弈和协商的财资任务，而不是只做行情查询或交易建议；人保留最终商业判断、授权与执行责任。更重要的新机制是把Agent协商和资金交易分成两层——Agent只能在确定性边界内谈条件，独立账本先核验双方理解一致，再把结果交给人和既有系统——为跨企业财经Agent提供了一种可审计、可回退的接入方式。",
+          "evidence": "BNY于2026年11月17日披露该案例，当前仅验证一笔双边美国短期国债试点，不是常态化生产交易或规模化运行。公开材料未披露交易金额、谈判轮次、价格改善、节省时间、异常率或压力市场表现；Agent不能自行执行交易。BNY计划继续测试，并评估回购交易及其他合同谈判，这些范围尚未部署。",
+          "supporting_details": "协议保留参与者、Agent消息、控制检查和人工决策记录，可重建协商过程；参与方控制使用预先批准的价格输入、确定性规则与AI安全检查限制Agent。BNY将该协议标注为专利申请中。",
+          "impact": ""
+        }
+      ],
+      "recommendations": [],
+      "sources": [
+        {
+          "name": "BNY｜BNY and Microsoft Complete First Agentic Negotiation of a U.S. Treasury Trade",
+          "date": "2026-11-17",
+          "url": "https://www.bny.com/corporate/global/en/about-us/newsroom/press-release/bny-and-microsoft-complete-first-agentic-negotiation-of-a-us-treasury-trade.html",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Microsoft｜Microsoft Ignite 2026: Empowering human ambition, intelligence and trust",
+          "date": "2026-11-17",
+          "url": "https://news.microsoft.com/source/2026/11/17/microsoft-ignite-2026-empowering-human-ambition-intelligence-and-trust",
+          "evidence_strength": "中"
+        }
+      ],
+      "updatedAt": "2026-11-24T00:07:56.820Z"
+    },
     {
       "id": "finance-ai-cases:2026-11-23",
       "radarKey": "finance-ai-cases",
