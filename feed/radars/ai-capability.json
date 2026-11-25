@@ -2,8 +2,78 @@
   "schemaVersion": 1,
   "radarKey": "ai-capability",
   "radarTitle": "AI 能力",
-  "updatedAt": "2026-11-18T01:24:18.373Z",
+  "updatedAt": "2026-11-25T01:13:49.862Z",
   "reports": [
+    {
+      "id": "ai-capability:2026-11-25",
+      "radarKey": "ai-capability",
+      "radarTitle": "AI 能力",
+      "reportDate": "2026-11-25",
+      "headline": "AI把可验证设计推进到数学证明、生产芯片和蛋白质",
+      "conclusion": "",
+      "briefVersion": 2,
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "Claude参与生成的黎曼猜想Lean证明通过多套独立内核复核",
+          "what": "数学家Levent Alpöge于11月20日发布一套与Claude协作生成的Lean形式化证明，直接证明Mathlib中对黎曼猜想的标准定义，并覆盖所有模数、所有Dirichlet特征的L函数广义版本。公开库包含175,187个模块、约1700万行代码；MIT数学家Andrew Sutherland随后在隔离环境重建全部源码，Lean默认与严格内核、nanoda、con-leche、con-ron和lean4lean等多套实现均接受导出的五个核心定理，且依赖仅限Lean常用的三项标准公理。Alpöge负责选择数学路线、识别关键结构并判断证明目标，Claude承担大规模探索和形式化展开；这不是模型独自从题目到结论的无人监督运行。",
+          "why_it_matters": "这次变化不只是AI给出一个难以核验的数学答案，而是人类专家与模型产出的超大规模证明能由多个独立检查器逐步验真，并与既有Robin型等价条件组合得到不再提及ζ函数零点的算术推论。它表明在目标可形式化、答案可由小型可信内核检查的前沿研究中，AI已经能把人类尚未写成可读论文的复杂论证推进到机器可复核状态；新的瓶颈转向数学路线选择、定义是否准确，以及把1700万行形式化对象压缩成人类可理解的证明。",
+          "evidence": "截至11月24日，多套独立内核、隔离重建和定理陈述比对均已通过，但Lean 4.36的完整Comparator长跑仍在进行；一个模块因Lean 4.33并行编译竞态产生非确定字节输出，复核者已定位到后来修复的编译器问题，内核接受结果未受影响。机器校验说明这些Lean陈述在Mathlib定义与标准公理下成立，不等同于数学共同体已审阅、理解并接受其人类数学论证；广义结论只覆盖Dirichlet L函数，不含所有更一般的L函数。",
+          "supporting_details": "Sutherland还把证明与独立形式化的Robin1984库连接，得到对所有n>5040的Robin不等式等三个无假设算术定理，并用同一套内核与公理审计复核，以降低“只是在某个ζ函数定义上做文章”的疑虑。",
+          "impact": ""
+        },
+        {
+          "title": "OpenAI模型的芯片优化进入流片和量产设计文件",
+          "what": "OpenAI披露，模型已从开源芯片基准进入真实硬件设计：在自研推理芯片Jalapeño中，模型提出的改动令向量单元标准单元面积约降13%、矩阵单元约降10%，并在芯片回片启动阶段得到验证；与AMD合作时，模型重写SystemVerilog RTL，再由Synopsys电子设计自动化工具检查功能一致性并评估功耗、性能和面积，在高度优化的旗舰GPU模块上取得最高14%的综合改进，把约一年的人工进展压到不足五个月。AMD已把部分改动放进近期送制造的设计，另一些纳入量产设计文件，并在下一代旗舰CPU关键模块上验证了个位数百分比提升。",
+          "why_it_matters": "芯片设计过去被视为需要长期积累、容错极低的专家任务，这些结果把模型能力从“写出能跑的RTL”推进到在成熟设计上寻找净新增优化，并通过既有工业验证工具进入真实流片流程。可行的人机分工也更清楚：模型大范围提出和改写微架构实现，工程师与EDA工具负责功能等价、时序、面积、功耗和制造放行；在规则明确、验证自动化程度高的企业工程任务中，模型已可创造而不仅是节省文档或编码时间。",
+          "evidence": "Jalapeño的面积收益已有硅片验证，AMD的GPU改动部分已送制造，强于只在仿真基准上得分；但公开数字仍由OpenAI与合作方披露，没有公开完整RTL、验证报告或独立复现。开源RISC-V评测共9,881次运行，GPT‑6.2 Astra领先前代，但从文字规格设计时可能省略性能计数器和额外指令，且未完成物理综合后的完整时序检查，因此不能把该基准直接外推为端到端自主芯片设计。",
+          "supporting_details": "OpenAI正与Synopsys训练能直接使用专业EDA工具的GPT‑Synopsys；这仍是工程师监督下的设计优化系统，而不是模型独立签署规格、验证并承担流片责任。",
+          "impact": ""
+        },
+        {
+          "title": "GPT‑6.2用通用推理与代码设计蛋白质，并在湿实验中得到结合结果",
+          "what": "OpenAI与Onava报告，GPT‑6.2在不调用专用蛋白生成模型的设计阶段，仅用推理和通用代码工具就能提出蛋白骨架、氨基酸序列及抗体结合环。实验团队把它为五个靶点设计的322个微型结合蛋白做成实物，其中35个（10.9%）出现目标结合；对既有三维骨架重新设计序列时，三个公开靶点的初筛结合率分别为85%、62%和14%，对六个小型抗体重写结合环后182个设计中128个（70%）保留结合。模型负责生成候选结构或序列，专用模型继续承担补序列、折叠预测和候选筛选，研究人员负责合成与实验验证。",
+          "why_it_matters": "关键增量是通用前沿模型无需为单一生物任务重新训练，就能把自然语言约束、三维结构、化学与代码推理组合进同一设计过程，并产出能通过湿实验第一道门槛的分子候选。这扩大了通用模型可承担的企业研发任务：科研人员可以用提示指定结合位置、整体形状甚至局部相互作用，再用专用模型和实验室把大量候选收敛；它还没有取代专业生物模型，但已开始成为跨步骤的可编程设计层。",
+          "evidence": "实验验证比纯计算基准更强，但研究由OpenAI与合作伙伴完成，论文仍是预印本，尚无外部复现。10.9%的总体命中率低于原RFdiffusion研究报告，且筛选口径会显著影响比较；流程仍依赖SolubleMPNN、ProteinMPNN、Boltz‑2等专用模型，不能称为零样本端到端蛋白设计。结合只是可用药物或工具的第一步，特异性、稳定性、生物活性、可制造性以及安全与疗效均未验证；完整蛋白折叠预测仍明显落后于专用模型。",
+          "supporting_details": "在抗体片段实验中，按要求修改约一半结合环氨基酸的272个设计里179个（66%）保留对PD‑1或PD‑L1的结合；这些数字证明可控重设计能力，但不代表亲和力更高或具备治疗效果。",
+          "impact": ""
+        }
+      ],
+      "recommendations": [],
+      "sources": [
+        {
+          "name": "Levent Alpöge｜黎曼猜想Lean证明说明",
+          "date": "2026-11-20",
+          "url": "https://alpo.ge/remark.pdf",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "Andrew Sutherland（MIT）｜黎曼猜想Lean证明独立复核",
+          "date": "2026-11-24",
+          "url": "https://math.mit.edu/~drew/grh/",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "OpenAI｜Advancing chip design with OpenAI models",
+          "date": "2026-11-18",
+          "url": "https://openai.com/index/advancing-chip-design-with-our-models/",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "OpenAI｜GPT‑6 models demonstrate intrinsic protein-design capabilities",
+          "date": "2026-11-24",
+          "url": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities/",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "OpenAI｜GPT‑6 as a Universal Foundation Model for Protein Biology（预印本）",
+          "date": "2026-11-24",
+          "url": "https://cdn.openai.com/pdf/gpt-6-a-universal-foundation-model-for-protein-biology.pdf",
+          "evidence_strength": "中"
+        }
+      ],
+      "updatedAt": "2026-11-25T01:13:49.862Z"
+    },
     {
       "id": "ai-capability:2026-11-18",
       "radarKey": "ai-capability",
