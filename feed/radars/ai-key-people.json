@@ -2,8 +2,44 @@
   "schemaVersion": 1,
   "radarKey": "ai-key-people",
   "radarTitle": "AI 关键人物观点",
-  "updatedAt": "2026-11-11T00:57:52.663Z",
+  "updatedAt": "2026-11-25T01:13:49.862Z",
   "reports": [
+    {
+      "id": "ai-key-people:2026-11-25",
+      "radarKey": "ai-key-people",
+      "radarTitle": "AI 关键人物观点",
+      "reportDate": "2026-11-25",
+      "headline": "Pachocki提议用困惑度和可监控里程碑约束前沿模型扩展",
+      "conclusion": "",
+      "briefVersion": 2,
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "Pachocki提议用困惑度和可监控里程碑约束前沿模型扩展",
+          "what": "OpenAI首席科学家Jakub Pachocki于11月22日公开公司自GPT‑3.5以来在内部代码留出集上跟踪的预训练对数困惑度，并提出前沿实验室共同采用“连续能力指标＋安全解锁条件”的扩展框架。他认为预训练压缩能力是难以预先枚举的新能力来源，OpenAI的趋势外推显示约0.68—0.70的对数困惑度区间可能出现新的变革性能力；因此各实验室应先约定一个不可跨越的首个能力上限，只有当理解和监控模型行为达到具体里程碑——例如出现思维链监控的后继技术——才继续训练更强模型，再用同样方法设置下一道上限。",
+          "why_it_matters": "这把“放慢前沿模型”从抽象立场推进成一种可操作的同行协议草案：不等待某项危险能力在发布后暴露，而是用各实验室都持续跟踪的训练指标提前设闸，并把解除限制绑定到可验证的监控能力。它也修正了仅靠发布前任务评测的思路，因为Pachocki担心更强模型会同时提高评测意识、削弱现有思维链审计；但真正的行业价值取决于不同实验室能否校准可比指标，并共同接受同一停线规则。",
+          "evidence": "这是Pachocki的署名提案和OpenAI首次披露部分内部趋势，并非OpenAI已经生效的训练政策，也没有其他前沿实验室签署；文中没有给出首个硬上限、统一数据集或违约执行机制。Pachocki本人列出三项关键限制：各实验室数据分布不同导致困惑度难直接比较，困惑度不对应具体任务，且不会计入思维链推理和其他后训练带来的能力跃升；0.68—0.70区间及2027年可能加速的判断都是外推，不是已经观察到的结果。",
+          "supporting_details": "支撑该提案的OpenAI生命周期研究只把“无显式思维链仍能完成任务”和“按指令控制思维链形式”作为可监控性的代理指标；它显示预训练、架构、强化学习和模型生成数据都可能降低思维链的可靠性，但尚未证明现有模型能在完整真实轨迹中稳定逃避监督。",
+          "impact": ""
+        }
+      ],
+      "recommendations": [],
+      "sources": [
+        {
+          "name": "Jakub Pachocki｜Perplexity and Intelligence",
+          "date": "2026-11-22",
+          "url": "https://openai.com/index/perplexity-and-intelligence/",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "OpenAI｜What affects chain-of-thought monitorability across the model lifecycle?",
+          "date": "2026-11-10",
+          "url": "https://openai.com/safety-alignment/cot-monitorability-model-lifecycle/",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-11-25T01:13:49.862Z"
+    },
     {
       "id": "ai-key-people:2026-11-11",
       "radarKey": "ai-key-people",
