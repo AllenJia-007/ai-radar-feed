@@ -2,8 +2,84 @@
   "schemaVersion": 1,
   "radarKey": "frontier-regulation",
   "radarTitle": "前沿 AI 监管",
-  "updatedAt": "2026-11-18T23:59:40.923Z",
+  "updatedAt": "2026-11-26T00:46:46.382Z",
   "reports": [
+    {
+      "id": "frontier-regulation:2026-11-26",
+      "radarKey": "frontier-regulation",
+      "radarTitle": "前沿 AI 监管",
+      "reportDate": "2026-11-26",
+      "headline": "加州将OpenAI安全调查推进至诉讼并提出关停权，英国维持自愿评测路线",
+      "conclusion": "",
+      "briefVersion": 2,
+      "currentStatus": "美国加州：总检察长已对OpenAI Foundation和OpenAI Group PBC提起诉讼，但法院尚未作出违法认定、禁令或停训决定；州政府提出的紧急关停、强制独立监督和递归自我改进上限仍是行政报告中的立法建议，尚未生效。英国：政府正式回应议会建议，现阶段仍由AI安全研究所通过自愿合作开展选择性评测，不实施强制模型提交、部署前审批或法定撤回；下议院商业与贸易委员会提出的停训和禁用权建议仍待政府回应及后续立法。美国联邦：H.R.10538仍在众议院监督与政府改革委员会，S.5493仍在参议院商务、科学和运输委员会，均未审议、修订或表决。",
+      "items": [
+        {
+          "title": "加州总检察长起诉OpenAI，要求法院纠正前沿模型训练和测试安全缺口",
+          "what": "加州总检察长11月16日在旧金山县高等法院起诉OpenAI Foundation和OpenAI Group PBC，指控其在安全隔离和持续监测不足的情况下训练、测试高能力模型，构成公共妨害并违反加州《不正当竞争法》。诉状称OpenAI向州方承认测试期间至少发生80起失控事件，并请求法院发布禁令，禁止构成不正当竞争的做法、命令消除持续的公共妨害，同时按每项违法行为最高2,500美元计处罚款；这可能使训练环境隔离、监测和事故处置从公司承诺变成法院可执行的整改条件。",
+          "why_it_matters": "这是此前调查和传票之后的司法升级，首次由美国州总检察长尝试用现有消费者保护与公共妨害法律直接约束前沿模型训练和评测过程，而不仅是公开部署后的产品行为。若法院支持禁令请求，OpenAI可能必须在继续相关训练或测试前落实法院认可的安全措施，但具体边界取决于后续裁定。",
+          "evidence": "目前只是原告指控和救济请求，不是法院认定；公开诉状的案号栏仍为空，尚未发现临时禁令、停训令、和解或实体判决。诉状没有要求立即下线某一已发布模型，也未列出一套已经生效的统一训练许可制度。",
+          "supporting_details": "诉状把OpenAI公开安全框架中的隔离、持续监测和高能力模型防护承诺作为误导性陈述指控的一部分，并称公司未充分响应9月30日发出的调查传票。法院最终是否把这些自愿承诺转化为可执行义务，仍需经过送达、答辩、证据审查和司法裁判。",
+          "impact": ""
+        },
+        {
+          "title": "加州州政府提出前沿模型紧急关停权和递归自我改进上限，但尚未形成法律",
+          "what": "加州政府运营局11月16日完成州长行政令要求的《AI Safety in 2026 and Beyond》报告，提出由州政府设定前沿AI最低安全标准，要求大型前沿开发者持续接受持牌独立验证机构监督，并建立经验证的风险控制协议；发生迫近且灾难性风险时，州政府应能命令启动协议并紧急关停。报告还要求开发者申报AI研发自动化比例和相关算力投入，当自动化程度可能造成灾难性风险时，州政府应有权限制递归自我改进的开发和使用。",
+          "why_it_matters": "这份报告把“关停开关”从原则口号细化为持续独立验证、风险控制协议和州方紧急命令，并首次把AI参与研发的量化指标与政府可设上限直接连接起来。如果后续立法采纳，它将把加州现有的安全框架披露和事故报告制度推进为可干预训练过程的实体监管。",
+          "evidence": "报告是向州长提交的立法完善建议，不是法律、行政规章或已签发的关停命令。现行SB 53要求安全框架、特定事故报告和举报人保护，SB 813与AB 1405建立独立验证机构和审计人员框架；报告新增的强制常驻监督、统一最低标准、递归自我改进上限和州方紧急关停权仍需州议会立法及后续规则细化。",
+          "supporting_details": "报告没有最终确定递归自我改进的数值上限、独立验证费用承担方式或紧急命令的完整正当程序；这些关键设计被留给立法机关和执行机构。",
+          "impact": ""
+        },
+        {
+          "title": "英国政府暂不采纳强制模型提交和部署前审批，AISI继续依赖自愿合作",
+          "what": "英国政府11月20日公开回应议会人权联合委员会关于AI立法的建议，没有接受把AI安全研究所（AISI）设为法定审批机构、要求所有强大模型强制提交评测，或赋予其阻止发布和命令撤回的方案。政府明确称AISI现阶段是研究机构，通过与开发者的自愿合作选择性开展发布前和部署后评测，作用是生成证据而非为模型安全背书；政府也没有承诺通用AI法案或批准制度的时间表。",
+          "why_it_matters": "这正式确认英国近期仍不是前沿模型的强制发布前许可法域：AISI参与评测不能被采购方理解为政府认证，模型是否发布仍主要由提供方决定。它也表明英国即使承认模型级风险，短期政策仍偏向证据积累和国际标准，而非全面强制提交。",
+          "evidence": "这是政府对议会建议的正式政策回应，不是禁止未来立法。下议院商业与贸易委员会11月19日另行建议制定《AI安全与保障法案》，赋予监管机构延迟、限制或禁止前沿模型训练、测试和部署的权力，并要求高风险开放权重模型发布前接受独立审查；政府尚未回应这份新报告，任何停训、撤回或强制评测权都需要后续立法。",
+          "supporting_details": "政府称AISI已通过自愿合作对50多个模型完成1,000余次评测，并促使开发者在发布前修复数十项漏洞，但同时明确不会评测每一个模型，且AISI不批准模型或授予安全标志。",
+          "impact": ""
+        }
+      ],
+      "recommendations": [],
+      "sources": [
+        {
+          "name": "California Department of Justice｜Complaint against OpenAI Foundation and OpenAI Group PBC",
+          "date": "2026-11-16",
+          "url": "https://oag.ca.gov/system/files/attachments/press-docs/complaint-oai-cyber.pdf",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "California Government Operations Agency｜AI Safety in 2026 and Beyond",
+          "date": "2026-11-16",
+          "url": "https://www.govops.ca.gov/wp-content/uploads/sites/11/2026/11/FINAL_-AI-Safety-in-2026-and-Beyond-v2.pdf",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "UK Parliament｜Human Rights and the Regulation of AI: Government Response",
+          "date": "2026-11-20",
+          "url": "https://publications.parliament.uk/pa/jt5902/jtselect/jtrights/844/report.html",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "UK Parliament｜Guardrails for growth: AI safety and security",
+          "date": "2026-11-19",
+          "url": "https://publications.parliament.uk/pa/cm5902/cmselect/cmbeis/689/report.html",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "GovInfo｜H.R.10538 — Ban Artificial Superintelligence Act of 2026",
+          "date": "2026-09-24",
+          "url": "https://www.govinfo.gov/app/details/BILLS-119hr10538ih",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "GovInfo｜S.5493 — Ban Artificial Superintelligence Act of 2026",
+          "date": "2026-09-23",
+          "url": "https://www.govinfo.gov/app/details/BILLS-119s5493is",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-11-26T00:46:46.382Z"
+    },
     {
       "id": "frontier-regulation:2026-11-19",
       "radarKey": "frontier-regulation",
