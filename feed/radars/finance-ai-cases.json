@@ -2,8 +2,62 @@
   "schemaVersion": 1,
   "radarKey": "finance-ai-cases",
   "radarTitle": "财经 AI 案例",
-  "updatedAt": "2026-11-24T00:07:56.820Z",
+  "updatedAt": "2026-11-27T00:01:47.515Z",
   "reports": [
+    {
+      "id": "tax-digital-ai:2026-11-27",
+      "radarKey": "finance-ai-cases",
+      "radarTitle": "财经 AI 案例",
+      "reportDate": "2026-11-27",
+      "headline": "【税务数字化】西班牙延后开票软件合规期限，集团须区分SIF与B2B电子发票排期",
+      "conclusion": "",
+      "briefVersion": 2,
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "【税务数字化】西班牙延后开票软件合规期限，集团须区分SIF与B2B电子发票排期",
+          "what": "西班牙11月25日公布第43/2026号皇家法令，11月26日生效，调整开票软件系统（SIF，通常称VERI*FACTU法规）的适配期限。税务机关AEAT确认，适用纳税人的系统须在2028年10月6日前完成适配。受影响的是开票系统如何生成、保存和追溯记录，包括记录防篡改、连续哈希及发票二维码等要求。法规允许向税局传送记录的VERI*FACTU模式，也允许符合附加安全要求的本地保存模式，并非所有企业都必须逐票实时上传。",
+          "why_it_matters": "这会改变西班牙实体的项目优先级和验收时间，但不能把所有发票改造一并推迟。AEAT另列的B2B电子发票日历仍要求：上一年度VAT营业额超过800万欧元的适用企业，自2027年10月6日起具备电子发票开具、接收及状态报送能力；其余企业原则上从2028年10月6日起实施。集团应先按法人核对适用范围，再分别管理SIF记录合规、B2B票据交换和状态报送的上线条件，避免用一个“西班牙电子发票截止日”安排全部工作。",
+          "evidence": "这是已经公布并生效的法令及AEAT官方解释，仍需跟踪议会追认和后续修订。SIF范围包括西班牙普通税制地区的企业、个体经营者及有关常设机构；巴斯克、纳瓦拉地区及已纳入VAT即时信息报送SII的企业存在排除，跨国集团不能仅凭有西班牙业务就判定适用。B2B电子发票有独立范围，SIF排除不等于免除该义务。本次是合规排期变化，没有新增企业税务Agent生产案例。",
+          "supporting_details": "建议税务与IT共同更新实体—制度—系统对应表：对非SII且落入SIF范围的实体，可重排开票软件适配资源；对B2B电子发票范围内的实体，继续核验ERP、交换平台及收付款状态接口的准备情况。AI可辅助识别制度差异和整理变更影响，适用范围判断与上线批准仍由税务责任人确认。",
+          "impact": ""
+        }
+      ],
+      "recommendations": [],
+      "sources": [
+        {
+          "name": "西班牙官方公报BOE｜皇家法令43/2026，最终条款第一、第四条",
+          "date": "2026-11-25",
+          "url": "https://www.boe.es/boe/dias/2026/11/25/pdfs/BOE-A-2026-24701.pdf",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "AEAT｜法令43/2026税务措施及SIF延期说明",
+          "date": "2026-11-25",
+          "url": "https://sede.agenciatributaria.gob.es/Sede/todas-noticias/2026/noviembre/25/medidas-tributarias-introducidas-real-decreto-432026.html",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "AEAT｜SIF适用主体及SII排除范围",
+          "date": "未标注（2026-11-27核验）",
+          "url": "https://sede.agenciatributaria.gob.es/Sede/iva/sistemas-informaticos-facturacion-verifactu/cuestiones-generales/quienes-estan-obligados-que-operaciones-incluyen.html",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "AEAT｜B2B电子发票实施日历",
+          "date": "未标注（2026-11-27核验）",
+          "url": "https://sede.agenciatributaria.gob.es/Sede/iva/factura-electronica/calendario-implantacion.html",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "AEAT｜SIF记录及两种合规模式",
+          "date": "未标注（2026-11-27核验）",
+          "url": "https://sede.agenciatributaria.gob.es/Sede/iva/sistemas-informaticos-facturacion-verifactu/cuestiones-generales.html",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-11-27T00:01:47.515Z"
+    },
     {
       "id": "finance-ai-cases:2026-11-24",
       "radarKey": "finance-ai-cases",
