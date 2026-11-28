@@ -2,8 +2,44 @@
   "schemaVersion": 1,
   "radarKey": "finance-ai-cases",
   "radarTitle": "财经 AI 案例",
-  "updatedAt": "2026-11-27T00:01:47.515Z",
+  "updatedAt": "2026-11-28T00:52:28.868Z",
   "reports": [
+    {
+      "id": "tax-digital-ai:2026-11-28",
+      "radarKey": "finance-ai-cases",
+      "radarTitle": "财经 AI 案例",
+      "reportDate": "2026-11-28",
+      "headline": "【税务数字化】新加坡税局已用AI交叉核验损益表与计税底稿",
+      "conclusion": "",
+      "briefVersion": 2,
+      "currentStatus": null,
+      "items": [
+        {
+          "title": "【税务数字化】新加坡税局已用AI交叉核验损益表与计税底稿",
+          "what": "OECD于11月23日发布《Tax Administration 2026》，披露新加坡税务局IRAS已实施计税自动审阅工具TCAR，用于较简单计税资料的人工审阅环节。它基于政府AISAY工具，以大模型和OCR读取不同格式的财务文件，计算费用占收入比例、提示异常，并检查损益表中的不可扣除费用是否已在计税资料中调增。费用分析与不可扣除项核验的准确率分别为97%和84%；税务人员继续作判断，工具只是辅助参考。",
+          "why_it_matters": "此前归档的OECD材料说明税局总体向系统直连和风险分析发展；本次新增证据把检查对象具体到企业实际提交的损益表、费用分类与纳税调增之间的对应关系。对集团而言，这支持把计税底稿的跨文档一致性预审列为优先候选：先找出账面费用、税务处理及依据之间的缺口，再由税务人员判断是否需要调整，而不是只检查申报表能否提交。",
+          "evidence": "报告按新加坡提供的2026年案例记载为已实施，未披露具体上线日期、处理量、测试样本或准确率定义，不能称为本周刚投产或已全面覆盖复杂集团税务。84%是特定核验任务的披露值，不代表计税或申报整体准确率。此项没有新增企业报送格式或生效义务，也未证明系统能自主执法或直接改动纳税人的申报。",
+          "supporting_details": "建议集团选取同一实体、同一期间的损益表与计税底稿，先验证费用分类映射、调增勾稽及原始凭证回链。AI负责提取、匹配和解释疑点，确定性规则负责计算与对账，税务人员确认例外并批准调整。上线验收应分别统计漏检、误报和人工复核量，尤其覆盖复杂费用、口径差异及版本变更；保留原文件、提取字段和处理记录，使每个疑点能追到证据。以上为基于该案例的集团方案建议，不是IRAS提出的新要求。",
+          "impact": ""
+        }
+      ],
+      "recommendations": [],
+      "sources": [
+        {
+          "name": "OECD｜Tax Administration 2026，第6章新加坡TCAR案例（新加坡提供材料）",
+          "date": "2026-11-23",
+          "url": "https://www.oecd.org/en/publications/tax-administration-2026_14d5750f-en/full-report/compliance-management_4cc830c2.html",
+          "evidence_strength": "强"
+        },
+        {
+          "name": "OECD｜Tax Administration 2026出版信息",
+          "date": "2026-11-23",
+          "url": "https://www.oecd.org/en/publications/tax-administration-2026_14d5750f-en.html",
+          "evidence_strength": "强"
+        }
+      ],
+      "updatedAt": "2026-11-28T00:52:28.868Z"
+    },
     {
       "id": "tax-digital-ai:2026-11-27",
       "radarKey": "finance-ai-cases",
